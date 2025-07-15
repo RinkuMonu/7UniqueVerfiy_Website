@@ -42,7 +42,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.gir }}
+          password: ${{ secrets.SSH_PASSWORD }}
           port: 22527
           script: |
             rm -rf /home/7uniquef/public_html/*
