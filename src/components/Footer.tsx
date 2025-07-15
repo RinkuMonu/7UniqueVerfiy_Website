@@ -295,7 +295,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 border-t border-[#eaeaea] pt-6 text-center text-[#080808] text-sm">
-        <span>© 2025 7Unique Verify. All rights reserved.</span>
+        <span>©️ 2025 7UniqueVerify. A brand of Sevenunique Tech Solutions Pvt. Ltd.. All rights reserved.</span>
       </div>
     </footer>
   );

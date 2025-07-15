@@ -6,43 +6,78 @@ import { ContextData } from "../../config/context";
 import SEO from "../Helmet/helment";
 import { SEOData } from "../../type";
 
-// Define types for your data structures
+// Define types
 interface BlogPost {
   slug: string;
   title: string;
   image: string;
   created_at: string;
-  // Add other properties as needed
 }
 
 export default function BlogPage() {
-  const [blogPosts, setAllblog] = useState<BlogPost[]>([]);
+  const [blogs, setBlogs] = useState<BlogPost[]>([]);
+  const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
   const { seo } = useContext(ContextData) as { seo: SEOData };
 
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const res = await fetch(
-          "https://cms.sevenunique.com/apis/blogs/get-blogs.php?website_id=7&status=2",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
-            },
-          }
-        );
+  const limit = 3;
 
-        const data = await res.json();
-        if (data?.data) {
-          setAllblog(data.data);
+  const fetchBlogs = async (newPage = 1) => {
+    setLoading(true);
+    try {
+      const res = await fetch(
+        `https://cms.sevenunique.com/apis/blogs/get-blogs.php?website_id=7&status=2&page=${newPage}&limit=${limit}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
+          },
         }
-      } catch (error) {
-        console.error("Error fetching blogs:", error);
+      );
+
+      const data = await res.json();
+
+      if (data?.data) {
+        setBlogs((prev) => [...prev, ...data.data]);
+
+        const pagination = data.pagination || {};
+        if (pagination.total_pages) {
+          setTotalPages(pagination.total_pages);
+        }
+
+        if (newPage >= pagination.total_pages) {
+          setHasMore(false);
+        }
+      }
+    } catch (error) {
+      console.error("Error fetching blogs:", error);
+    }
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchBlogs(1);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 600 &&
+        !loading &&
+        hasMore
+      ) {
+        const nextPage = page + 1;
+        setPage(nextPage);
+        fetchBlogs(nextPage);
       }
     };
-    fetchBlogs();
-  }, []);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [loading, hasMore, page]);
 
   return (
     <>
@@ -84,8 +119,8 @@ export default function BlogPage() {
         </section>
 
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-          {blogPosts.length > 0 ? (
-            blogPosts.map((blog) => (
+          {blogs.length > 0 ? (
+            blogs.map((blog) => (
               <article
                 key={blog.slug}
                 className="bg-[#F5F9FA] rounded-xl overflow-hidden shadow-sm"
@@ -126,6 +161,16 @@ export default function BlogPage() {
             </p>
           )}
         </section>
+
+        {loading && (
+          <div className="flex justify-center mt-6">
+            <div className="w-8 h-8 border-4 border-t-transparent border-[#b7603d] rounded-full animate-spin"></div>
+          </div>
+        )}
+
+        {!hasMore && blogs.length > 0 && (
+          <p className="text-center mt-6 text-gray-500">No more blogs to load</p>
+        )}
 
         <HomeCTA />
       </main>
