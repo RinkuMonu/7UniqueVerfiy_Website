@@ -1,8 +1,13 @@
 import type React from "react";
 import { motion } from "framer-motion";
-import Head from "next/head";
+// import Head from "next/head";
+import { ContextData } from "../../config/context";
+import { SEOData } from "../../type";
+import SEO from "../Helmet/helment";
+import { useContext } from "react";
 
 const TermsConditionsPage: React.FC = () => {
+   const { seo } = useContext(ContextData) as { seo: SEOData };
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -29,9 +34,10 @@ const TermsConditionsPage: React.FC = () => {
 
   return (
     <>
-      <Head>
+     <SEO seo={seo} />
+      {/* <Head>
         <title>Terms and Conditions | 7Unique Verify</title>
-      </Head>
+      </Head> */}
       
       <div className="relative overflow-hidden bg-gray-50">
         {/* Background vectors */}

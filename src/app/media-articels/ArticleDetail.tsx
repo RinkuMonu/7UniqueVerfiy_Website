@@ -42,6 +42,7 @@ const ArticleDetail = () => {
   };
 
   return (
+    
     <div className="min-h-screen bg-[#f8f1eb] relative overflow-hidden">
       {/* Decorative elements */}
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0">

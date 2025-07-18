@@ -16,6 +16,7 @@ import { SEOData } from "../type";
 
 export default function Home() {
   const { seo } = useContext(ContextData) as { seo: SEOData };
+
   return (
     <>
       <SEO seo={seo} />

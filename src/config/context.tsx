@@ -47,16 +47,20 @@ export const ContextProvider: React.FC<ContextProviderProps> = ({
 
   useEffect(() => {
     const normalizeUrl = (url: string) =>
-      url?.replace(/\/+$/, "").toLowerCase();
+      url.replace(/(https?:\/\/)?(www\.)?/, "")
+        .replace(/\\\//g, "/")
+        .replace(/\/+$/, "")
+        .toLowerCase();
     const fullUrl = normalizeUrl(
-      window.location.origin + window.location.pathname
+      'https://7uniqueverfiy.com' + pathname
+      // window.location.origin + window.location.pathname
     );
 
-    const matched = allSeoData.find((item) => item?.page_slug === fullUrl);
+    const matched = allSeoData.find((item) => normalizeUrl(item?.page_slug) === fullUrl);
 
     if (matched) {
       setSeo(matched);
-      console.log("Matched SEO:", matched);
+      // console.log("Matched SEO:", matched);
     } else {
       setSeo({});
     }

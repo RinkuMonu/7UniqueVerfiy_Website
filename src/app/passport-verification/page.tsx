@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { ContextData } from "../../config/context";
+import { SEOData } from "../../type";
+import SEO from "../Helmet/helment";
+import { useContext } from "react";
 import {
   FaShieldAlt,
   FaDatabase,
@@ -30,6 +34,7 @@ import {
 import { FaFileAlt } from "react-icons/fa";
 
 const PassportVerificationPage: React.FC = () => {
+   const { seo } = useContext(ContextData) as { seo: SEOData };
   const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -52,6 +57,8 @@ const PassportVerificationPage: React.FC = () => {
   };
 
   return (
+    <>
+     <SEO seo={seo} />
     <main className="w-full pb-24">
       {/* Hero Section */}
       <section
@@ -564,6 +571,7 @@ const PassportVerificationPage: React.FC = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

@@ -31,13 +31,15 @@ interface ContactInfoItem {
 export default function ContactUsPage() {
   const { seo } = useContext(ContextData) as { seo: SEOData };
 
+
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     contact: "",
     message: "",
   });
-  
+
   const [contactDetails, setContactDetails] = useState<ContactDetails | null>(null);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
@@ -54,7 +56,7 @@ export default function ContactUsPage() {
             },
           }
         );
-        
+
         const data = await response.json();
         if (data?.data) {
           setContactDetails(data.data);
@@ -63,7 +65,7 @@ export default function ContactUsPage() {
         console.error("Error fetching contact details:", error);
       }
     };
-    
+
     fetchContactDetails();
   }, []);
 
@@ -91,7 +93,7 @@ export default function ContactUsPage() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     const payload = {
       name: formData.name,
       email: formData.email,
@@ -163,10 +165,10 @@ export default function ContactUsPage() {
         </svg>
       ),
       label: "Location:",
-      value: contactDetails?.address 
+      value: contactDetails?.address
         ? contactDetails.address.split("|").map((addr: string, i: number) => (
-            <p key={i} className="leading-snug">{addr.trim()}</p>
-          ))
+          <p key={i} className="leading-snug">{addr.trim()}</p>
+        ))
         : "Not available",
     },
     {
@@ -176,12 +178,12 @@ export default function ContactUsPage() {
         </svg>
       ),
       label: "Email address:",
-      value: contactDetails?.email 
+      value: contactDetails?.email
         ? contactDetails.email.split(",").map((email: string, i: number) => (
-            <a key={i} href={`mailto:${email.trim()}`} className="block text-sm text-gray-700 hover:underline">
-              {email.trim()}
-            </a>
-          ))
+          <a key={i} href={`mailto:${email.trim()}`} className="block text-sm text-gray-700 hover:underline">
+            {email.trim()}
+          </a>
+        ))
         : "Not available",
     },
     {

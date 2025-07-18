@@ -7,6 +7,7 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({ seo }) => {
+
   const {
     meta_title,
     meta_description,

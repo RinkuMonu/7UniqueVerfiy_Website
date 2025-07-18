@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -24,8 +24,12 @@ import {
   FaFileDownload,
   FaFileAlt
 } from "react-icons/fa";
+import SEO from "../Helmet/helment";
+import { ContextData } from "../../config/context";
+import { SEOData } from "../../type";
 
 const CKYCSearchPage: React.FC = () => {
+   const { seo } = useContext(ContextData) as { seo: SEOData };
   const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -48,6 +52,8 @@ const CKYCSearchPage: React.FC = () => {
   };
 
   return (
+    <>
+     <SEO seo={seo} />
     <main className="w-full pb-24">
       {/* Hero Section */}
       <section
@@ -578,6 +584,7 @@ const CKYCSearchPage: React.FC = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

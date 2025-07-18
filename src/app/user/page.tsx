@@ -1,39 +1,44 @@
 import HomeFAQ from "../../pages/HomeFAQ"
+import { ContextData } from "../../config/context";
+import { SEOData } from "../../type";
+import SEO from "../Helmet/helment";
+import { useContext } from "react";
 
 const UserManagement = () => {
+  const { seo } = useContext(ContextData) as { seo: SEOData };
   return (
     <>
-
-     {/* Hero Section */}
-<section className="bg-gradient-to-r from-indigo-400 to-[#b7603d] text-white py-20">
-  <div className="container mx-auto px-4">
-    <div className="flex flex-col md:flex-row items-center">
-      <div className="md:w-1/2 mb-10 md:mb-0">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          7Unique Verify – User Management API
-        </h1>
-        <p className="text-xl mb-8">
-          Secure, scalable, and intelligent user management solution. Enable real-time user authentication, KYC, and identity lifecycle handling in one seamless API integration.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-white text-[#b7603d] hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition duration-300">
-            Get Started
-          </button>
-          <button className="border border-white text-white hover:bg-white hover:text-[#b7603d] px-6 py-3 rounded-md font-medium transition duration-300">
-            View Documentation
-          </button>
+      <SEO seo={seo} />
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-indigo-400 to-[#b7603d] text-white py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-10 md:mb-0">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                7Unique Verify – User Management API
+              </h1>
+              <p className="text-xl mb-8">
+                Secure, scalable, and intelligent user management solution. Enable real-time user authentication, KYC, and identity lifecycle handling in one seamless API integration.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="bg-white text-[#b7603d] hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition duration-300">
+                  Get Started
+                </button>
+                <button className="border border-white text-white hover:bg-white hover:text-[#b7603d] px-6 py-3 rounded-md font-medium transition duration-300">
+                  View Documentation
+                </button>
+              </div>
+            </div>
+            <div className="md:w-1/2">
+              <img
+                src="../img/images/43.png"
+                alt="User Management Dashboard"
+                className="rounded-lg"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="md:w-1/2">
-        <img
-          src="../img/images/43.png"
-          alt="User Management Dashboard"
-          className="rounded-lg"
-        />
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Features Section */}
       <section className="py-16 bg-[#f7f1ef]

@@ -7,7 +7,7 @@ const navLinks = [
     label: "Product",
     dropdown: true,
   },
-  { to: "/home", label: "Home" },
+  { to: "/", label: "Home" },
   { to: "/blog", label: "Blog" },
   { to: "/media-articles", label: "Media & Article" },
   { to: "/contact-us", label: "Contact Us" },
@@ -30,7 +30,7 @@ export default function Navbar() {
     { icon: "bi bi-person-lock", title: "AI Driven OCR Software", to: "/ocr" },
     { icon: "bi bi-bezier", title: "Utilities", to: "/utilities" },
   ];
-  
+
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-16 py-6 flex items-center justify-between relative">
@@ -44,23 +44,20 @@ export default function Navbar() {
 
         {/* Hamburger for Mobile */}
         <button
-          className={`md:hidden text-2xl text-[#373533] transition duration-200 ${
-            menuOpen ? "text-[#b7603d] rotate-90" : ""
-          }`}
+          className={`md:hidden text-2xl text-[#373533] transition duration-200 ${menuOpen ? "text-[#b7603d] rotate-90" : ""
+            }`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <i
-            className={`fas ${
-              menuOpen ? "bi bi-chevron-bar-right" : "bi bi-layout-sidebar-inset"
-            }`}
+            className={`fas ${menuOpen ? "bi bi-chevron-bar-right" : "bi bi-layout-sidebar-inset"
+              }`}
           ></i>
         </button>
 
         {/* Navigation Links */}
         <ul
-          className={`${
-            menuOpen ? "block hamburgerMenu active" : "hidden"
-          } md:flex gap-8 items-start md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:shadow-none shadow-md transition-all duration-300 p-4 md:p-0 z-50`}
+          className={`${menuOpen ? "block hamburgerMenu active" : "hidden"
+            } md:flex gap-8 items-start md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:shadow-none shadow-md transition-all duration-300 p-4 md:p-0 z-50`}
         >
           {navLinks.map((link) => (
             <li
@@ -72,9 +69,8 @@ export default function Navbar() {
               {link.dropdown ? (
                 <>
                   <div
-                    className={`font-medium text-base flex items-center gap-1 cursor-pointer hover:text-[#b3765e] transition-colors ${
-                      isActive(link.to) ? "text-[#b7603d]" : "text-[#373533]"
-                    }`}
+                    className={`font-medium text-base flex items-center gap-1 cursor-pointer hover:text-[#b3765e] transition-colors ${isActive(link.to) ? "text-[#b7603d]" : "text-[#373533]"
+                      }`}
                     onClick={() => {
                       if (menuOpen) {
                         setHovered(hovered === link.to ? null : link.to);
@@ -83,19 +79,16 @@ export default function Navbar() {
                   >
                     {link.label}
                     <i
-                      className={`fa-solid ${
-                        hovered === link.to ? "bi bi-chevron-up" : "bi bi-chevron-down"
-                      } text-xs`}
+                      className={`fa-solid ${hovered === link.to ? "bi bi-chevron-up" : "bi bi-chevron-down"
+                        } text-xs`}
                     ></i>
                   </div>
 
                   {/* Mega Menu - Now simplified vertical layout */}
                   <div
-                    className={`${
-                      hovered === link.to ? "block" : "hidden"
-                    } absolute md:left-0 bg-white rounded-md shadow-lg z-40 transition-all duration-200 ${
-                      menuOpen ? "relative w-full mt-3" : "w-[250px]"
-                    }`}
+                    className={`${hovered === link.to ? "block" : "hidden"
+                      } absolute md:left-0 bg-white rounded-md shadow-lg z-40 transition-all duration-200 ${menuOpen ? "relative w-full mt-3" : "w-[250px]"
+                      }`}
                   >
                     <div className="p-4 space-y-3">
                       {productItems.map((item, idx) => (
@@ -119,9 +112,8 @@ export default function Navbar() {
               ) : (
                 <Link
                   to={link.to}
-                  className={`block py-2 font-medium text-base hover:text-[#b3765e] transition-colors ${
-                    location.pathname === link.to ? "text-[#b7603d]" : "text-[#373533]"
-                  }`}
+                  className={`block py-2 font-medium text-base hover:text-[#b3765e] transition-colors ${location.pathname === link.to ? "text-[#b7603d]" : "text-[#373533]"
+                    }`}
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
