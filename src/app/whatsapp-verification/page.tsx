@@ -39,12 +39,12 @@ const WhatsappVerificationPage: React.FC = () => {
                 >
                   Get Started with 7Unique Verify
                 </Link>
-                <a
-                  href="#"
+                <Link
+                  to={"https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"}
                   className="inline-block border border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
                 >
                   View API Documentation
-                </a>
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">

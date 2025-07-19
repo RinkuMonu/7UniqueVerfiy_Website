@@ -3,6 +3,7 @@ import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
 import SEO from "../Helmet/helment";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const UserManagement = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -21,12 +22,16 @@ const UserManagement = () => {
                 Secure, scalable, and intelligent user management solution. Enable real-time user authentication, KYC, and identity lifecycle handling in one seamless API integration.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-white text-[#b7603d] hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition duration-300">
-                  Get Started
-                </button>
-                <button className="border border-white text-white hover:bg-white hover:text-[#b7603d] px-6 py-3 rounded-md font-medium transition duration-300">
-                  View Documentation
-                </button>
+                <Link to={'/contact-us'}>
+                  <button className="bg-white text-[#b7603d] hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition duration-300">
+                    Get Started
+                  </button>
+                </Link>
+                <Link to={'https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/'}>
+                  <button className="border border-white text-white hover:bg-white hover:text-[#b7603d] px-6 py-3 rounded-md font-medium transition duration-300">
+                    View Documentation
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="md:w-1/2">

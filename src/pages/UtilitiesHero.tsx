@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const UtilitiesHero: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const UtilitiesHero: React.FC = () => {
       style={{ backgroundImage: "url('/img/bg (2).png')" }}
     >
       <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
-        
+
         {/* Left: Text Content */}
         <div className="w-full md:w-2/3 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -25,12 +26,11 @@ const UtilitiesHero: React.FC = () => {
           <p className="mb-6 text-white">
             Stay compliant, reduce fraud risks, and accelerate your decision-making processes—all through one integrated API platform. Built for performance, backed by accuracy.
           </p>
-          <a
-            href="#"
+          <Link to={'https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/'}
             className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
           >
             Explore APIs
-          </a>
+          </Link>
         </div>
 
         {/* Right: Image */}

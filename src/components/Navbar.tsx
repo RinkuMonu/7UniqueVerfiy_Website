@@ -8,7 +8,7 @@ const navLinks = [
     dropdown: true,
   },
   { to: "/", label: "Home" },
-  { to: "/blog", label: "Blog" },
+  // { to: "/blog", label: "Blog" },
   { to: "/media-articles", label: "Media & Article" },
   { to: "/contact-us", label: "Contact Us" },
 ];
@@ -125,7 +125,7 @@ export default function Navbar() {
           {/* CTA Button (Mobile version) */}
           <li className="block md:hidden mt-3">
             <Link
-              to="/pricing"
+              to="/contact-us"
               className="block text-center bg-[#b7603d] text-white font-semibold rounded px-6 py-2 shadow hover:bg-[#b3765e] transition-colors"
               onClick={() => setMenuOpen(false)}
             >
@@ -136,7 +136,7 @@ export default function Navbar() {
 
         {/* CTA Button (Desktop version) */}
         <Link
-          to="/pricing"
+          to="/contact-us"
           className="hidden md:inline bg-[#b7603d] text-white font-semibold rounded px-6 py-2 ml-6 shadow hover:bg-[#b3765e] transition-colors"
         >
           Get Started

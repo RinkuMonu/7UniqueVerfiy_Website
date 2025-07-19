@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LookUpHero: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const LookUpHero: React.FC = () => {
       style={{ backgroundImage: "url('/img/bg (2).png')" }}
     >
       <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
-        
+
         {/* Left: Text content */}
         <div className="w-full md:w-2/3 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -22,13 +23,13 @@ const LookUpHero: React.FC = () => {
           <p className="mb-4 text-white">
             Whether you're verifying transactions, onboarding users, or targeting communication campaigns, our API helps you retrieve real-time, reliable data with speed and security. Make smarter decisions, reduce fraud, and personalize customer experiences — all with one powerful API.
           </p>
-          
-          <a
-            href="#"
-            className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
+
+          <Link to={'/contact-us'}
+            className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
           >
             Get Started
-          </a>
+          </Link>
+
         </div>
 
         {/* Right: Image */}

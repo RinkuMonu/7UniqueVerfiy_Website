@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OCRHero: React.FC = () => {
   return (
@@ -16,15 +17,15 @@ const OCRHero: React.FC = () => {
           <div className="inline-block bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
             <p className="text-sm font-medium text-[#b7603d]">AI-POWERED DOCUMENT VERIFICATION</p>
           </div>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Transform Documents Into <span className="text-[#b7603d]">Structured Data</span> Instantly
           </h1>
-          
+
           <h2 className="text-xl md:text-2xl font-medium text-[#4b4949]">
             Automate verification workflows with our cutting-edge OCR technology
           </h2>
-          
+
           <div className="space-y-4">
             <div className="flex items-start">
               <div className="flex-shrink-0 mt-1">
@@ -38,7 +39,7 @@ const OCRHero: React.FC = () => {
                 Extract data from IDs, passports, invoices, and bank statements with 99.8% accuracy
               </p>
             </div>
-            
+
             <div className="flex items-start">
               <div className="flex-shrink-0 mt-1">
                 <div className="w-5 h-5 rounded-full bg-gray-500 flex items-center justify-center">
@@ -51,7 +52,7 @@ const OCRHero: React.FC = () => {
                 Seamless API integration for KYC, banking, HR, and compliance workflows
               </p>
             </div>
-            
+
             <div className="flex items-start">
               <div className="flex-shrink-0 mt-1">
                 <div className="w-5 h-5 rounded-full bg-gray-500 flex items-center justify-center">
@@ -65,29 +66,27 @@ const OCRHero: React.FC = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a
-              href="#"
+            <Link to={'/contact-us'}
               className="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white bg-[#b7603d] rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get Started for Free
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
               </svg>
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link to={'https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/'}
               className="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-[#a16952] bg-transparent border border-gray-400 rounded-lg hover:bg-white/10 transition-all duration-300"
             >
               View API Documentation
-            </a>
+            </Link>
           </div>
-          
+
           <div className="pt-6 flex items-center space-x-4">
             <div className="flex -space-x-2">
               {[1, 2, 3, 4].map((item) => (
-                <img 
+                <img
                   key={item}
                   src={`https://randomuser.me/api/portraits/${item % 2 === 0 ? 'women' : 'men'}/${item + 20}.jpg`}
                   alt="User"
@@ -114,7 +113,7 @@ const OCRHero: React.FC = () => {
           <div className="relative w-full max-w-xl">
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-gray-500 rounded-full filter blur-3xl opacity-20"></div>
             <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-purple-500 rounded-full filter blur-3xl opacity-20"></div>
-            
+
             <div className="relative bg-white/5 backdrop-blur-md rounded-2xl overflow-hidden border border-[#b36648] shadow-2xl">
               <img
                 src="/img/AI-Driven OCR/AI-Driven1.png"

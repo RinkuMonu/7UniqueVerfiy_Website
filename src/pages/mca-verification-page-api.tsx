@@ -1,4 +1,5 @@
 import type React from "react"
+import { Link } from "react-router-dom"
 
 const MCAVerificationPageAPI: React.FC = () => {
   return (
@@ -26,18 +27,17 @@ const MCAVerificationPageAPI: React.FC = () => {
               Trusted by banks, financial institutions, and compliance agencies across India.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
-              >
-                Get Started
-              </a>
-              <a
-                href="#"
-                className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
-              >
-                View API Docs
-              </a>
+              <Link to={'/contact-us'}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
             </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
@@ -468,12 +468,11 @@ const MCAVerificationPageAPI: React.FC = () => {
                   <span>Sandbox environment for testing</span>
                 </div>
               </div>
-              <a
-                href="#"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Read Full API Docs
-              </a>
+               <Link to={'https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/'}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
+                >
+                  Read Full API Docs
+                </Link>
             </div>
             <div className="w-full lg:w-1/2">
               <div className="bg-gray-900 rounded-lg p-6 text-green-400 font-mono text-sm overflow-x-auto">

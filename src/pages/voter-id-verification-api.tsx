@@ -1,4 +1,5 @@
 import type React from "react"
+import { Link } from "react-router-dom"
 
 const VoterIDVerificationPageAPI: React.FC = () => {
   return (
@@ -102,10 +103,11 @@ const VoterIDVerificationPageAPI: React.FC = () => {
                   <span>Standard response time</span>
                 </li>
               </ul>
-
-              <button className="w-full bg-[#b7603d] text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
-                Get Started
-              </button>
+              <Link to={'/contact-us'}>
+                <button className="w-full bg-[#b7603d] text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+                  Get Started
+                </button>
+              </Link>
             </div>
 
             {/* Professional Plan */}

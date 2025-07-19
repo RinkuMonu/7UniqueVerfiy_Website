@@ -3,6 +3,7 @@ import SEO from "../app/Helmet/helment";
 import { useContext } from "react";
 import { ContextData } from "../config/context";
 import { SEOData } from "../type";
+import { Link } from "react-router-dom";
 
 const FraudDetectionHero: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -32,12 +33,11 @@ const FraudDetectionHero: React.FC = () => {
             <p className="mb-6 text-white">
               Trusted by fintechs, NBFCs, HR tech, and platforms across India for safe, compliant, and reliable onboarding.
             </p>
-            <a
-              href="#"
-              className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-            >
-              Get Started
-            </a>
+             <Link to={'/contact-us'}
+            className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
+          >
+            Get Started
+          </Link>
           </div>
 
           {/* Right: Image */}

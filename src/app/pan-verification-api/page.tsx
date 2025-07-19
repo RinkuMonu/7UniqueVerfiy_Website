@@ -3,6 +3,7 @@ import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
 import SEO from "../Helmet/helment";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const PANVerificationPageApi: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -35,18 +36,17 @@ const PANVerificationPageApi: React.FC = () => {
                 verification and prevent tax-related fraud.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="#"
+                <Link to={'/contact-us'}
                   className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
                 >
                   Get Started
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link to={'https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/'}
                   className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
                 >
                   View API Docs
-                </a>
+                </Link>
+
               </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
@@ -470,12 +470,11 @@ const PANVerificationPageApi: React.FC = () => {
                     <span>Sandbox environment for testing</span>
                   </div>
                 </div>
-                <a
-                  href="#"
+                <Link to={'https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/'}
                   className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
                 >
                   Read Full API Docs
-                </a>
+                </Link>
               </div>
               <div className="w-full lg:w-1/2">
                 <div className="bg-gray-900 rounded-lg p-6 text-green-400 font-mono text-sm overflow-x-auto">
