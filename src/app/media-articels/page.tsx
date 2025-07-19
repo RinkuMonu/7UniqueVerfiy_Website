@@ -27,14 +27,16 @@ interface ColorPalette {
 }
 
 interface Article {
-  img: string;
   title: string;
-  slug: string;
+  content: string;
+  created_at: string;
+  image: string;
+  summary: string;
+  img: string;
   category: string;
   desc: string;
   date: string;
   premium: boolean;
-  readTime?: string;
 }
 
 interface Category {
