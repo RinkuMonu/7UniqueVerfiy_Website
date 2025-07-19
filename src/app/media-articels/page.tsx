@@ -198,6 +198,7 @@ interface BlogPost {
   summary: string;
   img: string;
   category: string;
+  category_id: string;
   desc: string;
   date: string;
   premium: boolean;
