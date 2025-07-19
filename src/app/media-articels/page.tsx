@@ -42,7 +42,7 @@ interface Article {
   desc: string;
   date: string;
   premium: boolean;
-  slug: boolean;
+  slug: string;
 }
 
 interface Category {
@@ -193,12 +193,17 @@ interface BlogPost {
   id: number;
   title: string;
   content: string;
+  created_at: string;
+  image: string;
   summary: string;
-  img: string;          
-  category: string;     
-  date: string;         
-  premium: boolean;     
+  img: string;
+  category: string;
+  desc: string;
+  date: string;
+  premium: boolean;
+  slug: string;
 }
+
 
 
 
