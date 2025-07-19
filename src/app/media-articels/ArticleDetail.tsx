@@ -16,11 +16,20 @@ interface Category {
   name: string;
   // Add other properties as needed
 }
-
+interface Article {
+  title: string;
+  content: string;
+  created_at: string;
+  image: string;
+  summary: string;
+  category?: string;
+  desc: string;
+  date: string;
+}
 const ArticleDetail = () => {
   const { slug } = useParams();
 
-  const [article, setArticle] = useState()
+  const [article, setArticle] = useState<Article>()
   const [category, setCategory] = useState<Category | null>(null);
 
   const fetchBlogs = async () => {
