@@ -26,6 +26,11 @@ interface ColorPalette {
   lightText: string;
 }
 
+interface Category {
+  id: number;
+  name: string;
+  created_at: string;
+}
 interface Article {
   title: string;
   content: string;
@@ -37,6 +42,7 @@ interface Article {
   desc: string;
   date: string;
   premium: boolean;
+  slug: boolean;
 }
 
 interface Category {
@@ -184,11 +190,16 @@ const CornerVector: React.FC<CornerVectorProps> = ({ position }) => (
 // ];
 
 interface BlogPost {
-  slug: string;
+  id: number;
   title: string;
-  image: string;
-  created_at: string;
+  content: string;
+  summary: string;
+  img: string;          
+  category: string;     
+  date: string;         
+  premium: boolean;     
 }
+
 
 
 
@@ -251,9 +262,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
             >
               {article?.category}
             </span>
-            <span className="text-xs" style={{ color: colors.lightText }}>
+            {/* <span className="text-xs" style={{ color: colors.lightText }}>
               {article?.readTime}
-            </span>
+            </span> */}
           </div>
 
           <Link to={`/articles/${article.slug}`}>
@@ -337,8 +348,7 @@ const MediaArticles: React.FC = () => {
 
       if (data?.data) {
         setBlogs(data.data);
-
-        const categoryPromises = data.data.map(blog =>
+        const categoryPromises = data.data.map((blog: BlogPost) =>
           fetch(`https://cms.sevenunique.com/apis/category/get_category_by_id.php?category_id=${blog.category_id}`, {
             headers: {
               "Content-Type": "application/json",
@@ -349,7 +359,7 @@ const MediaArticles: React.FC = () => {
 
         const categoriesResults = await Promise.all(categoryPromises);
 
-        const categoriesMap = {}; // <-- object banaya yahan
+        const categoriesMap: Record<number, Category> = {};
         categoriesResults.forEach((catRes, idx) => {
           if (catRes.data) {
             categoriesMap[data.data[idx].category_id] = catRes.data;
