@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const KycHero: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const KycHero: React.FC = () => {
       style={{ backgroundImage: "url('/img/bg (2).png')" }}
     >
       <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
-        
+
         {/* Left: Text content */}
         <div className="w-full md:w-2/3 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -25,12 +26,11 @@ const KycHero: React.FC = () => {
           <p className="mb-6 text-white">
             From document scanning to behavior pattern analysis, we deliver precision KYC that’s fast, scalable, and secure—built for India’s digital-first businesses.
           </p>
-          <a
-            href="#"
+          <Link to={'/contact-us'}
             className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
           >
             Get Started
-          </a>
+          </Link>
         </div>
 
         {/* Right: Image */}

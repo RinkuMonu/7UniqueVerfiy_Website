@@ -3,6 +3,7 @@ import SEO from "../app/Helmet/helment";
 import { useContext } from "react";
 import { ContextData } from "../config/context";
 import { SEOData } from "../type";
+import { Link } from "react-router-dom";
 
 const FinancialHero: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -35,12 +36,11 @@ const FinancialHero: React.FC = () => {
             <p className="mb-6 text-white">
               Integrate in minutes. Make informed decisions. Go beyond legacy processes and unlock faster onboarding, safer underwriting, and seamless customer journeys.
             </p>
-            <a
-              href="#"
-              className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
+            <Link to={'/contact-us'}
+              className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
             >
               Get Started
-            </a>
+            </Link>
           </div>
 
           {/* Right: Image */}

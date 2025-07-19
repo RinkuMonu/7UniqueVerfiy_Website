@@ -2,6 +2,7 @@ import SEO from "../app/Helmet/helment";
 import { useContext } from "react";
 import { ContextData } from "../config/context";
 import { SEOData } from "../type";
+import { Link } from "react-router-dom";
 export default function CandyHero() {
   const { seo } = useContext(ContextData) as { seo: SEOData };
   return (
@@ -32,12 +33,12 @@ export default function CandyHero() {
             <p className="mb-6 text-white">
               Boost conversions and cut manual work with smart, scalable ID verification from the house of 7Unique Verify.
             </p>
-            <a
-              href="#"
+            <Link to={'/contact-us'}
+
               className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
             >
               Get Started
-            </a>
+            </Link>
           </div>
 
 

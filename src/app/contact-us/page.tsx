@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { ContextData } from "../../config/context";
 import SEO from "../Helmet/helment";
 import { SEOData } from "../../type";
+import { Link } from "react-router-dom";
 
 // Type definitions
 interface FormData {
@@ -408,13 +409,15 @@ export default function ContactUsPage() {
               <p className="text-[#8c4a2e] text-sm sm:text-base max-w-md mb-6">
                 We are passionate about transforming the way businesses communicate. Specializing in VOIP, telecom.
               </p>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-[#b7603d] hover:bg-[#8c4a2e] text-white font-semibold text-sm rounded-full px-8 py-3 transition-all duration-300 shadow-md hover:shadow-lg"
-              >
-                Get Started
-              </motion.button>
+              <Link to={'/contact-us'}>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-[#b7603d] hover:bg-[#8c4a2e] text-white font-semibold text-sm rounded-full px-8 py-3 transition-all duration-300 shadow-md hover:shadow-lg"
+                >
+                  Get Started
+                </motion.button>
+              </Link>
             </div>
             <motion.div
               initial={{ x: 20 }}

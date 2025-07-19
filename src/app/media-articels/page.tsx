@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import {
@@ -37,6 +37,10 @@ interface Article {
   readTime?: string;
 }
 
+interface Category {
+  name: string;
+
+}
 interface CategoryButton {
   name: string;
   icon: React.ReactNode;
@@ -114,77 +118,87 @@ const CornerVector: React.FC<CornerVectorProps> = ({ position }) => (
 );
 
 // Articles data
-const articleData: Article[] = [
-  {
-    img: "/img/1.1.jpg",
-    title: "How to Create a Cozy Atmosphere",
-    slug: "create-cozy-atmosphere",
-    category: "Candle Tips",
-    desc: "Simple steps to create your home's best warm ambiance.",
-    date: "Saturday, 04 Nov 2023",
-    premium: false,
-    readTime: "5 min read",
-  },
-  {
-    img: "/img/1.2.jpg",
-    title: "The Benefits of Aromatherapy in Home",
-    slug: "benefits-of-aromatherapy",
-    category: "Wellness Tips",
-    desc: "Simple steps to make your home feel warm.",
-    date: "Saturday, 04 Nov 2023",
-    premium: false,
-    readTime: "4 min read",
-  },
-  {
-    img: "/img/1.3.jpg",
-    title: "Sustainable Living: Tips for Homes",
-    slug: "sustainable-living-tips",
-    category: "Candle Tips",
-    desc: "Simple steps to create your home's best warm ambiance.",
-    date: "Saturday, 04 Nov 2023",
-    premium: false,
-    readTime: "6 min read",
-  },
-  {
-    img: "/img/1.4.jpg",
-    title: "How to Create a Cozy Atmosphere",
-    slug: "create-cozy-atmosphere-2",
-    category: "Candle Tips",
-    desc: "Simple steps to create your home's best warm ambiance.",
-    date: "Saturday, 04 Nov 2023",
-    premium: false,
-    readTime: "3 min read",
-  },
-  {
-    img: "/img/1.5.jpg",
-    title: "Creating a Relaxing Outdoor Space",
-    slug: "relaxing-outdoor-space",
-    category: "Wellness Tips",
-    desc: "Simple steps to create your home's best warm ambiance.",
-    date: "Saturday, 04 Nov 2023",
-    premium: false,
-    readTime: "7 min read",
-  },
-  {
-    img: "/img/1.6.jpg",
-    title: "Essential Tips for Home Organization",
-    slug: "home-organization-tips",
-    category: "Candle Tips",
-    desc: "Simple steps to create your home's best warm ambiance.",
-    date: "Saturday, 04 Nov 2023",
-    premium: false,
-    readTime: "5 min read",
-  },
-];
+// const articleData: Article[] = [
+//   {
+//     img: "/img/1.1.jpg",
+//     title: "How to Create a Cozy Atmosphere",
+//     slug: "create-cozy-atmosphere",
+//     category: "Candle Tips",
+//     desc: "Simple steps to create your home's best warm ambiance.",
+//     date: "Saturday, 04 Nov 2023",
+//     premium: false,
+//     readTime: "5 min read",
+//   },
+//   {
+//     img: "/img/1.2.jpg",
+//     title: "The Benefits of Aromatherapy in Home",
+//     slug: "benefits-of-aromatherapy",
+//     category: "Wellness Tips",
+//     desc: "Simple steps to make your home feel warm.",
+//     date: "Saturday, 04 Nov 2023",
+//     premium: false,
+//     readTime: "4 min read",
+//   },
+//   {
+//     img: "/img/1.3.jpg",
+//     title: "Sustainable Living: Tips for Homes",
+//     slug: "sustainable-living-tips",
+//     category: "Candle Tips",
+//     desc: "Simple steps to create your home's best warm ambiance.",
+//     date: "Saturday, 04 Nov 2023",
+//     premium: false,
+//     readTime: "6 min read",
+//   },
+//   {
+//     img: "/img/1.4.jpg",
+//     title: "How to Create a Cozy Atmosphere",
+//     slug: "create-cozy-atmosphere-2",
+//     category: "Candle Tips",
+//     desc: "Simple steps to create your home's best warm ambiance.",
+//     date: "Saturday, 04 Nov 2023",
+//     premium: false,
+//     readTime: "3 min read",
+//   },
+//   {
+//     img: "/img/1.5.jpg",
+//     title: "Creating a Relaxing Outdoor Space",
+//     slug: "relaxing-outdoor-space",
+//     category: "Wellness Tips",
+//     desc: "Simple steps to create your home's best warm ambiance.",
+//     date: "Saturday, 04 Nov 2023",
+//     premium: false,
+//     readTime: "7 min read",
+//   },
+//   {
+//     img: "/img/1.6.jpg",
+//     title: "Essential Tips for Home Organization",
+//     slug: "home-organization-tips",
+//     category: "Candle Tips",
+//     desc: "Simple steps to create your home's best warm ambiance.",
+//     date: "Saturday, 04 Nov 2023",
+//     premium: false,
+//     readTime: "5 min read",
+//   },
+// ];
+
+interface BlogPost {
+  slug: string;
+  title: string;
+  image: string;
+  created_at: string;
+}
+
+
+
 
 // Category buttons data
-const categoryButtons: CategoryButton[] = [
-  { name: "All Collections", icon: <RiHomeHeartLine /> },
-  { name: "Candle Craft", icon: <RiFlaskLine /> },
-  { name: "Wellness", icon: <RiSparklingLine /> },
-  { name: "Eco Living", icon: <RiPlantLine /> },
-  { name: "Lifestyle", icon: <RiSparklingLine /> },
-];
+// const categoryButtons: CategoryButton[] = [
+//   { name: "All Collections", icon: <RiHomeHeartLine /> },
+//   { name: "Candle Craft", icon: <RiFlaskLine /> },
+//   { name: "Wellness", icon: <RiSparklingLine /> },
+//   { name: "Eco Living", icon: <RiPlantLine /> },
+//   { name: "Lifestyle", icon: <RiSparklingLine /> },
+// ];
 
 // ArticleCard component
 const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
@@ -217,8 +231,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src={article.img}
-            alt={article.title}
+            src={article?.image}
+            alt={article?.title}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
@@ -233,10 +247,10 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
                 color: colors.primaryDark,
               }}
             >
-              {article.category}
+              {article?.category}
             </span>
             <span className="text-xs" style={{ color: colors.lightText }}>
-              {article.readTime}
+              {article?.readTime}
             </span>
           </div>
 
@@ -245,7 +259,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
               className="text-xl font-semibold mb-3 leading-tight group-hover:underline"
               style={{ color: colors.text }}
             >
-              {article.title}
+              {article?.title}
             </h3>
           </Link>
 
@@ -253,7 +267,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
             className="text-sm mb-4 flex-grow"
             style={{ color: colors.lightText }}
           >
-            {article.desc}
+            {article?.summary?.split(' ').slice(0, 15).join(' ') + '…'}
           </p>
 
           <div className="flex items-center justify-between">
@@ -265,7 +279,11 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
                 className="mr-2"
                 style={{ color: colors.primary }}
               />
-              <span>{article.date}</span>
+              <span>{new Date(article?.created_at).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              })}</span>
             </div>
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -294,6 +312,71 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
 
 // Main page component
 const MediaArticles: React.FC = () => {
+
+  const [articleData, setBlogs] = useState<BlogPost[]>([]);
+  const [category, setCategory] = useState<Category[]>([]);
+
+  const [loading, setLoading] = useState(false);
+  const fetchBlogs = async (newPage = 1) => {
+    setLoading(true);
+    try {
+      const res = await fetch(
+        `https://cms.sevenunique.com/apis/blogs/get-blogs.php?website_id=7&status=2&page=${newPage}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
+          },
+        }
+      );
+
+      const data = await res.json();
+
+      if (data?.data) {
+        setBlogs(data.data);
+
+        const categoryPromises = data.data.map(blog =>
+          fetch(`https://cms.sevenunique.com/apis/category/get_category_by_id.php?category_id=${blog.category_id}`, {
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
+            },
+          }).then(res => res.json())
+        );
+
+        const categoriesResults = await Promise.all(categoryPromises);
+
+        const categoriesMap = {}; // <-- object banaya yahan
+        categoriesResults.forEach((catRes, idx) => {
+          if (catRes.data) {
+            categoriesMap[data.data[idx].category_id] = catRes.data;
+          }
+        });
+        setCategory(Object.values(categoriesMap));
+
+        const pagination = data.pagination || {};
+        if (pagination.total_pages) {
+          // setTotalPages(pagination.total_pages);
+        }
+
+        if (newPage >= pagination.total_pages) {
+          // setHasMore(false);
+        }
+      }
+    } catch (error) {
+      console.error("Error fetching blogs:", error);
+    }
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchBlogs(1);
+  }, []);
+
+
+
+
   return (
     <div
       className="relative overflow-hidden"
@@ -455,48 +538,48 @@ const MediaArticles: React.FC = () => {
                 Explore Collections
               </motion.h3>
 
-              {categoryButtons.map((cat, i) => (
-                <motion.button
-                  key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.5 + i * 0.1 }}
-                  whileHover={{
-                    x: 8,
-                    backgroundColor:
-                      i === 0 ? colors.primaryDark : colors.primaryLight,
-                  }}
-                  whileTap={{ scale: 0.98 }}
-                  className={`flex items-center px-6 py-4 rounded-xl text-left transition-all ${
-                    i === 0
+              {Array.isArray(category) &&
+                category?.map((cat, i) => (
+                  <motion.button
+                    key={i}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.5 + i * 0.1 }}
+                    whileHover={{
+                      x: 8,
+                      backgroundColor:
+                        i === 0 ? colors.primaryDark : colors.primaryLight,
+                    }}
+                    whileTap={{ scale: 0.98 }}
+                    className={`flex items-center px-6 py-4 rounded-xl text-left transition-all ${i === 0
                       ? `text-white shadow-lg`
                       : `bg-white hover:shadow-md`
-                  }`}
-                  style={{
-                    backgroundColor: i === 0 ? colors.primary : "white",
-                    color: i === 0 ? "white" : colors.text,
-                    border:
-                      i === 0 ? "none" : `1px solid ${colors.primaryLight}`,
-                  }}
-                >
-                  <span
-                    className="mr-4 text-lg"
-                    style={{ color: i === 0 ? "white" : colors.primary }}
+                      }`}
+                    style={{
+                      backgroundColor: i === 0 ? colors.primary : "white",
+                      color: i === 0 ? "white" : colors.text,
+                      border:
+                        i === 0 ? "none" : `1px solid ${colors.primaryLight}`,
+                    }}
                   >
-                    {cat.icon}
-                  </span>
-                  <span>{cat.name}</span>
-                  {i === 0 && (
-                    <motion.span
-                      className="ml-auto text-xs px-2 py-1 rounded-full"
-                      style={{ backgroundColor: "rgba(255,255,255,0.2)" }}
-                      whileHover={{ scale: 1.05 }}
+                    {/* <span
+                      className="mr-4 text-lg"
+                      style={{ color: i === 0 ? "white" : colors.primary }}
                     >
-                      24 articles
-                    </motion.span>
-                  )}
-                </motion.button>
-              ))}
+                      {cat.icon}
+                    </span> */}
+                    <span>{cat?.name}</span>
+                    {/* {i === 0 && (
+                      <motion.span
+                        className="ml-auto text-xs px-2 py-1 rounded-full"
+                        style={{ backgroundColor: "rgba(255,255,255,0.2)" }}
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        24 articles
+                      </motion.span>
+                    )} */}
+                  </motion.button>
+                ))}
             </motion.div>
           </div>
         </section>
@@ -621,45 +704,49 @@ const MediaArticles: React.FC = () => {
               viewport={{ once: true }}
               className="flex flex-row justify-center gap-3"
             >
-              <motion.button
-                whileHover={{
-                  scale: 1.03,
-                  boxShadow: `0 5px 20px ${colors.primary}30`,
-                }}
-                whileTap={{ scale: 0.98 }}
-                className="px-8 py-3.5 rounded-lg font-semibold flex items-center justify-center gap-2"
-                style={{
-                  background: `linear-gradient(135deg, ${colors.primary}, ${colors.accent})`,
-                  color: "white",
-                }}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M5 13L9 17L19 7"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                Join Now
-              </motion.button>
+              <Link to={'/contact-us'}>
+                <motion.button
+                  whileHover={{
+                    scale: 1.03,
+                    boxShadow: `0 5px 20px ${colors.primary}30`,
+                  }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-8 py-3.5 rounded-lg font-semibold flex items-center justify-center gap-2"
+                  style={{
+                    background: `linear-gradient(135deg, ${colors.primary}, ${colors.accent})`,
+                    color: "white",
+                  }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 13L9 17L19 7"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  Join Now
+                </motion.button>
+              </Link>
+              <Link to={'/about-us'}>
+                <motion.button
+                  whileHover={{
+                    scale: 1.03,
+                    backgroundColor: `${colors.primary}08`,
+                    borderColor: colors.primary,
+                  }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-8 py-3.5 rounded-lg font-semibold border-2"
+                  style={{
+                    borderColor: colors.primary,
+                    color: colors.primary,
+                  }}
+                >
+                  See Features
+                </motion.button>
+              </Link>
 
-              <motion.button
-                whileHover={{
-                  scale: 1.03,
-                  backgroundColor: `${colors.primary}08`,
-                  borderColor: colors.primary,
-                }}
-                whileTap={{ scale: 0.98 }}
-                className="px-8 py-3.5 rounded-lg font-semibold border-2"
-                style={{
-                  borderColor: colors.primary,
-                  color: colors.primary,
-                }}
-              >
-                See Features
-              </motion.button>
             </motion.div>
 
             {/* Decorative Bottom Vector */}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const VerificationHero: React.FC = () => {
     return (
@@ -25,12 +26,13 @@ const VerificationHero: React.FC = () => {
                     <p className="mb-6 text-white">
                         Ready to take control of your hiring process? Our solution offers unmatched accuracy, compliance, and automation — allowing HR teams to conduct thorough background verifications with minimal effort. Build a trusted team, faster and smarter.
                     </p>
-                    <a
-                        href="#"
-                        className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
+                    <Link to={'/contact-us'}
+                        className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
                     >
                         Get Started
-                    </a>
+                    </Link>
+                    
+
                 </div>
 
                 {/* Right: Image */}
