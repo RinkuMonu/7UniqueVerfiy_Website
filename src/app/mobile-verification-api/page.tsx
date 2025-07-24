@@ -360,7 +360,7 @@ const MobileVerificationAPIPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/Mobile Verification API/Mobile12png"
+                    src="../img/Mobile Verification API/Mobile2.png"
                     alt="Mobile Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
