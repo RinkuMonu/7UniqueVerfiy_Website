@@ -3,8 +3,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 
-import "./homeTestimonials.css"
-
+import "./homeTestimonials.css";
 
 export default function HomeHero() {
   useEffect(() => {
@@ -28,34 +27,32 @@ export default function HomeHero() {
       <div className="relative z-10 container mx-auto px-6 sm:px-8 lg:px-12 py-12 sm:pt-16 md:pt-20 lg:pt-24 flex flex-col lg:flex-row items-center gap-12">
         {/* Left: Headline and CTA */}
         <div className="w-full lg:w-1/2 flex flex-col text-left space-y-8">
-          <div 
-            className="space-y-6"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
+          <div className="space-y-6" data-aos="fade-right" data-aos-delay="100">
             <h1 className="font-extrabold text-[#2a2a2a] text-4xl sm:text-5xl md:text-[56px] lg:text-[64px] leading-tight">
-              <span className="text-[#b7603d]">Empowering</span> Your Business with{' '}
+              <span className="text-[#b7603d]">Empowering</span> Your Business
+              with{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">Reliable Solutions</span>
-                <svg 
-                  className="absolute -bottom-2 left-0 w-full h-3 text-[#b7603d]/30" 
+                <svg
+                  className="absolute -bottom-2 left-0 w-full h-3 text-[#b7603d]/30"
                   viewBox="0 0 200 20"
                 >
-                  <path 
-                    d="M0,10 Q50,5 100,10 T200,10" 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <path
+                    d="M0,10 Q50,5 100,10 T200,10"
+                    fill="none"
+                    stroke="currentColor"
                     strokeWidth="12"
                   />
                 </svg>
               </span>
             </h1>
             <p className="text-[#6b6b6b] text-lg md:text-xl leading-relaxed tracking-wide max-w-lg">
-              The power of VOIP, telecom, and cloud technologies to deliver seamless communication solutions for businesses.
+              The power of VOIP, telecom, and cloud technologies to deliver
+              seamless communication solutions for businesses.
             </p>
           </div>
 
-          <div 
+          <div
             className="flex flex-row gap-4 sm:gap-6 w-full"
             data-aos="fade-up"
             data-aos-delay="300"
@@ -67,13 +64,18 @@ export default function HomeHero() {
               <span className="absolute inset-0 bg-gradient-to-r from-[#b7603d] to-[#d19983] rounded-lg"></span>
               <span className="absolute inset-0.5 bg-[#b7603d] rounded-md transition-all duration-300 group-hover:bg-[#9c4f32]"></span>
               <span className="relative z-10 text-white">Know More</span>
-              <svg 
-                className="ml-2 relative z-10 w-5 h-5 text-white transition-transform duration-300 group-hover:translate-x-1" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="ml-2 relative z-10 w-5 h-5 text-white transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
               </svg>
             </Link>
             <Link
@@ -84,19 +86,24 @@ export default function HomeHero() {
               <span className="text-[#b7603d] transition-all duration-300 group-hover:text-[#9c4f32]">
                 Contact Us
               </span>
-              <svg 
-                className="ml-2 w-5 h-5 text-[#b7603d] transition-all duration-300 group-hover:text-[#9c4f32] group-hover:translate-x-1" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="ml-2 w-5 h-5 text-[#b7603d] transition-all duration-300 group-hover:text-[#9c4f32] group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
               </svg>
             </Link>
           </div>
 
           {/* Stats section */}
-          <div 
+          <div
             className="grid grid-cols-3 sm:grid-cols-3 gap-4 mt-8"
             data-aos="fade-up"
             data-aos-delay="500"
@@ -104,10 +111,15 @@ export default function HomeHero() {
             {[
               { value: "10K+", label: "Businesses Served" },
               { value: "24/7", label: "Support" },
-              { value: "99.9%", label: "Uptime" }
+              { value: "99.9%", label: "Uptime" },
             ].map((stat, index) => (
-              <div key={index} className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-                <p className="text-2xl font-bold text-[#b7603d]">{stat.value}</p>
+              <div
+                key={index}
+                className="bg-white p-4 rounded-xl shadow-sm border border-gray-100"
+              >
+                <p className="text-2xl font-bold text-[#b7603d]">
+                  {stat.value}
+                </p>
                 <p className="text-sm text-gray-600">{stat.label}</p>
               </div>
             ))}
@@ -115,24 +127,27 @@ export default function HomeHero() {
         </div>
 
         {/* Right: Hero Image with animations */}
-        <div 
+        <div
           className="w-full lg:w-1/2 relative flex justify-center lg:justify-end"
           data-aos="fade-left"
           data-aos-delay="200"
         >
           <div className="relative max-w-md xl:max-w-lg">
             {/* Floating elements */}
-            <div 
+            <div
               className="absolute -top-8 -left-8 w-24 h-24 rounded-full bg-[#b7603d]/10 animate-float"
               style={{ animationDelay: "0.5s" }}
             ></div>
-            <div 
+            <div
               className="absolute -bottom-8 -right-8 w-20 h-20 rounded-full bg-[#b7603d]/10 animate-float"
               style={{ animationDelay: "1s" }}
             ></div>
-            
+
             {/* Main image with floating animation */}
-            <div className="relative animate-float" style={{ animationDelay: "0.2s" }}>
+            <div
+              className="relative animate-float"
+              style={{ animationDelay: "0.2s" }}
+            >
               <img
                 src="/img/4.png"
                 alt="Hero visual with businesswoman and VOIP"
@@ -143,26 +158,26 @@ export default function HomeHero() {
             </div>
 
             {/* Floating vector elements */}
-            <svg 
-              className="absolute top-1/4 -left-10 w-20 h-20 text-[#b7603d]/20 animate-spin-slow" 
+            <svg
+              className="absolute top-1/4 -left-10 w-20 h-20 text-[#b7603d]/20 animate-spin-slow"
               viewBox="0 0 100 100"
               style={{ animationDirection: "reverse" }}
             >
-              <path 
-                d="M50,10 Q70,20 90,50 Q70,80 50,90 Q30,80 10,50 Q30,20 50,10" 
-                fill="none" 
-                stroke="currentColor" 
+              <path
+                d="M50,10 Q70,20 90,50 Q70,80 50,90 Q30,80 10,50 Q30,20 50,10"
+                fill="none"
+                stroke="currentColor"
                 strokeWidth="2"
               />
             </svg>
-            <svg 
-              className="absolute bottom-1/4 -right-10 w-24 h-24 text-[#b7603d]/20 animate-spin-slow" 
+            <svg
+              className="absolute bottom-1/4 -right-10 w-24 h-24 text-[#b7603d]/20 animate-spin-slow"
               viewBox="0 0 100 100"
             >
-              <path 
-                d="M20,50 Q35,20 50,20 Q65,20 80,50 Q65,80 50,80 Q35,80 20,50" 
-                fill="none" 
-                stroke="currentColor" 
+              <path
+                d="M20,50 Q35,20 50,20 Q65,20 80,50 Q65,80 50,80 Q35,80 20,50"
+                fill="none"
+                stroke="currentColor"
                 strokeWidth="2"
               />
             </svg>
@@ -228,7 +243,7 @@ export default function HomeHero() {
                     src="/img/logo/finunique-rummy-logo.png"
                   />
                   <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    Finunique Rummy 
+                    Finunique Rummy
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 flex-shrink-0">
