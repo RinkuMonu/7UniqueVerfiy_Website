@@ -18,7 +18,7 @@ export const LuckyTransaction = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-white to-gray-50 shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100"
+      className="flex flex-col md:flex-row items-center justify-between shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100"
     >
       {/* Left Side Image */}
       <motion.div
@@ -27,7 +27,8 @@ export const LuckyTransaction = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10 rounded-xl"></div>
         <img
-          src={heroimg}
+          // src={heroimg}
+          src="https://www.geckoboard.com/uploads/customer-service-dashboard-example-geckoboard.png"
           alt="Transaction Dashboard"
           className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500"
         />
@@ -73,7 +74,7 @@ export const LuckyTransaction = () => {
           ))}
         </ul>
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        {/* <div className="flex flex-col sm:flex-row gap-4">
           <Link to={"/contact-us"}>
             <motion.button
               whileHover={{ scale: 1.03 }}
@@ -83,7 +84,7 @@ export const LuckyTransaction = () => {
               Get Started <FiArrowRight />
             </motion.button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );
