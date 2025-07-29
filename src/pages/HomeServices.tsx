@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { useEffect } from 'react';
-import AOS from 'aos';
+import { useEffect } from "react";
+import AOS from "aos";
 import {
   FaMoneyCheckAlt,
   FaPhoneAlt,
@@ -8,8 +8,8 @@ import {
   FaFax,
   FaPhone,
   FaChartLine,
-  FaChevronRight
-} from 'react-icons/fa';
+  FaChevronRight,
+} from "react-icons/fa";
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -22,19 +22,19 @@ export default function HomeServices() {
   const services = [
     {
       icon: <FaMoneyCheckAlt className="text-lg" />,
-      label: "Hosted VOIP Solutions",
+      label: "KYC & Identity Verification",
     },
     {
       icon: <FaPhoneAlt className="text-lg" />,
-      label: "Unified Communications",
+      label: "Banking & Financial Verification",
     },
     {
       icon: <FaServer className="text-lg" />,
-      label: "SIP Trunking Services",
+      label: " Business & GST Checks",
     },
     {
       icon: <FaFax className="text-lg" />,
-      label: "Virtual Phone Numbers",
+      label: "Document & Face Match",
     },
   ];
 
@@ -49,13 +49,16 @@ export default function HomeServices() {
     <section className="relative mx-auto px-6 py-20 lg:py-28 overflow-hidden bg-white">
       {/* Subtle background texture */}
       <div className="absolute inset-0 overflow-hidden z-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `
             radial-gradient(circle at 25% 25%, rgba(183, 96, 61, 0.2) 0%, transparent 20%),
             radial-gradient(circle at 75% 75%, rgba(214, 144, 95, 0.2) 0%, transparent 20%)
           `,
-          backgroundSize: '60px 60px'
-        }} />
+            backgroundSize: "60px 60px",
+          }}
+        />
       </div>
 
       {/* Floating decorative elements */}
@@ -72,7 +75,12 @@ export default function HomeServices() {
 
         <motion.div
           animate={{ y: [0, 30, 0], rotate: [0, 10, 0] }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 3 }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3,
+          }}
           className="absolute bottom-1/4 right-1/5 opacity-5"
         >
           <svg width="80" height="80" viewBox="0 0 80 80">
@@ -103,16 +111,28 @@ export default function HomeServices() {
               </p>
 
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                <span className="text-gray-900">Innovative </span>
-                <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(90deg, #b7603d, #d6905f)" }}>
-                  with Tailored Service
+                <span className="text-gray-900">Powerful APIs </span>
+                <span
+                  className="text-transparent bg-clip-text"
+                  style={{
+                    backgroundImage: "linear-gradient(90deg, #b7603d, #d6905f)",
+                  }}
+                >
+                  to Simplify Verification and Compliance
                 </span>
               </h2>
 
               <div className="relative pl-6 mb-10">
-                <div className="absolute left-0 top-0 h-full w-1 rounded-full" style={{ background: "linear-gradient(to bottom, #b7603d, #d6905f)" }} />
+                <div
+                  className="absolute left-0 top-0 h-full w-1 rounded-full"
+                  style={{
+                    background: "linear-gradient(to bottom, #b7603d, #d6905f)",
+                  }}
+                />
                 <p className="text-gray-600 text-lg">
-                  We specialize in delivering innovative VOIP, telecom, and cloud solutions designed to enhance the way businesses connect and communicate.
+                  Explore how our API solutions help businesses automate KYC,
+                  onboarding, and compliance across multiple sectors with speed
+                  and accuracy.
                 </p>
               </div>
             </motion.div>
@@ -140,27 +160,45 @@ export default function HomeServices() {
               {/* Floating indicators */}
               <motion.div
                 animate={{ y: [0, -15, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="absolute -top-6 -right-6 z-20"
               >
-                <div className="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-xl" style={{ background: "linear-gradient(135deg, #b7603d, #d6905f)" }}>
+                <div
+                  className="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-xl"
+                  style={{
+                    background: "linear-gradient(135deg, #b7603d, #d6905f)",
+                  }}
+                >
                   <FaPhone className="text-xl" />
                 </div>
               </motion.div>
 
               <motion.div
                 animate={{ y: [0, 15, 0] }}
-                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                transition={{
+                  duration: 7,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 2,
+                }}
                 className="absolute -bottom-6 -left-6 z-20"
               >
-                <div className="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-xl" style={{ background: "linear-gradient(135deg, #b7603d, #d6905f)" }}>
+                <div
+                  className="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-xl"
+                  style={{
+                    background: "linear-gradient(135deg, #b7603d, #d6905f)",
+                  }}
+                >
                   <FaChartLine className="text-xl" />
                 </div>
               </motion.div>
 
               {/* Main image container */}
               <div className="relative rounded-2xl overflow-hidden shadow-md  border border-gray-100">
-                
                 <img
                   alt="Business communication dashboard"
                   className="w-full h-auto md:h-96 lg:h-[700px] xl:h-[700px] object-fill transition-transform duration-500 hover:scale-105"
@@ -168,15 +206,20 @@ export default function HomeServices() {
                   width="800"
                   height="500"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = "https://via.placeholder.com/800x500?text=Business+Dashboard";
+                    (e.target as HTMLImageElement).src =
+                      "https://via.placeholder.com/800x500?text=Business+Dashboard";
                   }}
                 />
 
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                   <div>
-                    <h3 className="text-white font-bold text-xl mb-2">Advanced Dashboard</h3>
-                    <p className="text-white/90">Real-time analytics and call management</p>
+                    <h3 className="text-white font-bold text-xl mb-2">
+                      Advanced Dashboard
+                    </h3>
+                    <p className="text-white/90">
+                      Real-time analytics and call management
+                    </p>
                   </div>
                 </div>
               </div>
@@ -188,7 +231,12 @@ export default function HomeServices() {
   );
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ icon, label, description, delay }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  icon,
+  label,
+  description,
+  delay,
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -201,7 +249,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, label, description, del
       }}
       whileHover={{
         y: -5,
-        boxShadow: "0 10px 25px -5px rgba(183, 96, 61, 0.1)"
+        boxShadow: "0 10px 25px -5px rgba(183, 96, 61, 0.1)",
       }}
       className="group relative bg-white rounded-xl p-6 shadow-sm border border-gray-100 transition-all duration-300 overflow-hidden"
     >
@@ -217,7 +265,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, label, description, del
             animate={{ rotate: [0, 360] }}
             transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
           />
-          <div className="relative w-12 h-12 rounded-lg flex items-center justify-center text-white" style={{ background: "linear-gradient(135deg, #b7603d, #d6905f)" }}>
+          <div
+            className="relative w-12 h-12 rounded-lg flex items-center justify-center text-white"
+            style={{ background: "linear-gradient(135deg, #b7603d, #d6905f)" }}
+          >
             {icon}
           </div>
         </div>
