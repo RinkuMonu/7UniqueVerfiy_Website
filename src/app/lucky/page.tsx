@@ -53,12 +53,12 @@ export const Lucky = () => {
           </div>
         </div>
       </section>
-      <div
+      {/* <div
         className="bg-no-repeat bg-contain bg-center "
         style={{ backgroundImage: `url(${bgcImg})` }}
-      >
+      > */}
       <LuckyHeroSection />
-      </div>
+      {/* </div> */}
       <LuckySteps />
       <KnowMore />
     </>
