@@ -89,10 +89,10 @@ import CardValidatorPageAPI from "../pages/card-validator-page-api";
 import CurrencyExchangePageAPI from "../pages/currency-exchange-page-api";
 import TelecomOperatorFetchPageAPI from "../pages/telecom-operator-fetch-page-api";
 import { ContextProvider } from "../config/context";
-
+import { Lucky } from "./lucky/page";
+import { DigilockerApi } from "./Digilocker/page";
 
 function Placeholder({ name }: { name: string }) {
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold mb-4">{name} Page</h1>
@@ -126,6 +126,7 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/candy" element={<CandyPage />} />
+          <Route path="/Ai_Dasboard" element={<Lucky />} />
           <Route path="/kyc" element={<KycPage />} />
           <Route path="/kyb" element={<KybPage />} />
           <Route path="/fraud-detection" element={<FraudDetection />} />
@@ -236,6 +237,10 @@ export default function App() {
           <Route
             path="/whatsapp-verification"
             element={<WhatsappVerificationPage />}
+          />
+          <Route
+            path="/digilocker-api"
+            element={<DigilockerApi />}
           />
           <Route path="/face-match-api" element={<FaceMatchAPIPage />} />
 

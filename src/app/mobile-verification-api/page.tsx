@@ -23,6 +23,7 @@ import {
 import SEO from "../Helmet/helment";
 import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
+import KnowMore from "../../components/KnowMore";
 
 const MobileVerificationAPIPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -65,13 +66,20 @@ const MobileVerificationAPIPage: React.FC = () => {
                 Instant & Reliable Mobile Number Authentication
               </h2>
               <p className="text-lg mb-4 text-white">
-                Secure your platforms with real-time mobile number verification through our robust API. Whether you're onboarding users or implementing 2FA, our system ensures legitimate mobile access with minimal friction.
+                Secure your platforms with real-time mobile number verification
+                through our robust API. Whether you're onboarding users or
+                implementing 2FA, our system ensures legitimate mobile access
+                with minimal friction.
               </p>
               <p className="mb-4 text-white">
-                Gain access to accurate telecom data, carrier detection, OTP generation & verification, and fraud prevention tools—all in one unified mobile verification service.
+                Gain access to accurate telecom data, carrier detection, OTP
+                generation & verification, and fraud prevention tools—all in one
+                unified mobile verification service.
               </p>
               <p className="mb-6 text-white">
-                Ideal for financial apps, eCommerce platforms, KYC processes, and login verifications. Power your trust layer with <strong>7Unique Verify</strong>.
+                Ideal for financial apps, eCommerce platforms, KYC processes,
+                and login verifications. Power your trust layer with{" "}
+                <strong>7Unique Verify</strong>.
               </p>
               <Link
                 to="/mobile-verification-page-api"
@@ -145,9 +153,7 @@ const MobileVerificationAPIPage: React.FC = () => {
                       <motion.div className="space-y-8" variants={container}>
                         {[
                           {
-                            icon: (
-                              <FaSms className="text-[#b7603d] text-2xl" />
-                            ),
+                            icon: <FaSms className="text-[#b7603d] text-2xl" />,
                             title: "OTP Generation & Verification",
                             description:
                               "Generate and validate secure OTPs for mobile number verification. Ensure user authenticity with seamless integration and real-time response.",
@@ -161,7 +167,9 @@ const MobileVerificationAPIPage: React.FC = () => {
                               "Instantly fetch telecom insights such as operator name, network circle, SIM type, and connectivity status to aid in verification and fraud analysis.",
                           },
                           {
-                            icon: <FaLock className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaLock className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Fraud Prevention & Risk Assessment",
                             description:
                               "Identify suspicious activity and prevent fake registrations using advanced mobile validation and telecom-level risk scoring techniques.",
@@ -213,7 +221,6 @@ const MobileVerificationAPIPage: React.FC = () => {
               >
                 <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
                   <h2 className="flex items-center gap-3 text-2xl font-semibold">
-
                     How 7UniqueVerify Mobile Verification Works
                   </h2>
                 </div>
@@ -272,7 +279,11 @@ const MobileVerificationAPIPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {item.icon}
                     </motion.div>
@@ -291,6 +302,152 @@ const MobileVerificationAPIPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <section
+          className="bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ py-16 px-4 md:px-8 lg:px-20"
+        >
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Choose Your{" "}
+              <span className="text-[#b7603d]">Verification Method</span>
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">✓</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Basic Number Check
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Number Validation
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Verify if a mobile number is valid, active, and its basic
+                  carrier information.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">1-2 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">
+                      ₹0.50-1 per verification
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Quick validation</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+   rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">🔍</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Detailed Carrier Lookup
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Comprehensive Check
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Provides complete carrier details including circle, operator,
+                  and number type.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">
+                      ₹1-1.50 per verification
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Detailed analysis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Basic Check:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Number validity and format</li>
+                    <li>✓ Carrier/operator name</li>
+                    <li>✓ Active status check</li>
+                    <li>✓ Number type (mobile/landline)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Detailed Report:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Full carrier details</li>
+                    <li>✓ Telecom circle information</li>
+                    <li>✓ Ported number history</li>
+                    <li>✓ Do Not Disturb (DND) status</li>
+                    <li>✓ Number age estimation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <KnowMore/>
 
         {/* Benefits Section */}
         <section className="container mx-auto px-4 py-12">
@@ -402,7 +559,9 @@ const MobileVerificationAPIPage: React.FC = () => {
                 {[
                   {
                     name: "E-commerce & Retail",
-                    icon: <FaShoppingCart className="text-[#b7603d] text-4xl" />,
+                    icon: (
+                      <FaShoppingCart className="text-[#b7603d] text-4xl" />
+                    ),
                     description:
                       "Secure customer registration, order confirmations, and account recovery for online shopping platforms.",
                   },
@@ -455,7 +614,11 @@ const MobileVerificationAPIPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {service.icon}
                     </motion.div>
@@ -495,7 +658,9 @@ const MobileVerificationAPIPage: React.FC = () => {
                       Simple Integration
                     </h3>
                     <p className="text-gray-600">
-                      Get started with our mobile verification API in minutes. Simple REST endpoints, comprehensive documentation, and multiple SDK options.
+                      Get started with our mobile verification API in minutes.
+                      Simple REST endpoints, comprehensive documentation, and
+                      multiple SDK options.
                     </p>
                     <div className="mt-4 space-y-2">
                       {[
@@ -537,10 +702,11 @@ const MobileVerificationAPIPage: React.FC = () => {
                         </div>
                         <div className="p-6 font-mono text-sm text-green-400 overflow-x-auto">
                           <div className="text-gray-500">
-                          // Sample API Request
+                            // Sample API Request
                           </div>
                           <div className="mb-2">
-                            fetch('https://api.7uniqueverify.com/mobile/send-otp', {"{"}
+                            fetch('https://api.7uniqueverify.com/mobile/send-otp',{" "}
+                            {"{"}
                           </div>
                           <div className="ml-4">method: 'POST',</div>
                           <div className="ml-4">headers: {"{"}</div>
@@ -552,14 +718,17 @@ const MobileVerificationAPIPage: React.FC = () => {
                           </div>
                           <div className="ml-4">{"}"},</div>
                           <div className="ml-4">body: JSON.stringify({"{"}</div>
-                          <div className="ml-8">mobile_number: '+1234567890',</div>
+                          <div className="ml-8">
+                            mobile_number: '+1234567890',
+                          </div>
                           <div className="ml-8">country_code: 'US'</div>
                           <div className="ml-4">{"}"})</div>
                           <div className="mt-4 text-gray-500">
-                          // Sample Verify Request
+                            // Sample Verify Request
                           </div>
                           <div className="mb-2">
-                            fetch('https://api.7uniqueverify.com/mobile/verify-otp', {"{"}
+                            fetch('https://api.7uniqueverify.com/mobile/verify-otp',{" "}
+                            {"{"}
                           </div>
                           <div className="ml-4">method: 'POST',</div>
                           <div className="ml-4">headers: {"{"}</div>
@@ -571,7 +740,9 @@ const MobileVerificationAPIPage: React.FC = () => {
                           </div>
                           <div className="ml-4">{"}"},</div>
                           <div className="ml-4">body: JSON.stringify({"{"}</div>
-                          <div className="ml-8">mobile_number: '+1234567890',</div>
+                          <div className="ml-8">
+                            mobile_number: '+1234567890',
+                          </div>
                           <div className="ml-8">otp: '123456'</div>
                           <div className="ml-4">{"}"})</div>
                         </div>

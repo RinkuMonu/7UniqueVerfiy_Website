@@ -27,8 +27,9 @@ import {
   FaSearch,
   FaFileAlt,
   FaTruck,
-  FaBuilding
+  FaBuilding,
 } from "react-icons/fa";
+import KnowMore from "../../components/KnowMore";
 
 const RCVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -64,21 +65,28 @@ const RCVerificationPage: React.FC = () => {
         >
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">RC Verification API – by 7Unique Verify</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                RC Verification API – by 7Unique Verify
+              </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-Time Vehicle Registration Certificate Validation
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly verify vehicle registration details with 7Unique Verify's RC Verification API. Get access to
-                real-time data directly from RTO databases for reliable and official vehicle authentication.
+                Instantly verify vehicle registration details with 7Unique
+                Verify's RC Verification API. Get access to real-time data
+                directly from RTO databases for reliable and official vehicle
+                authentication.
               </p>
               <p className="mb-4 text-white">
-                This API delivers accurate vehicle information including owner name, registration status, fuel type,
-                vehicle class, insurance validity, and more — directly sourced from regional transport offices.
+                This API delivers accurate vehicle information including owner
+                name, registration status, fuel type, vehicle class, insurance
+                validity, and more — directly sourced from regional transport
+                offices.
               </p>
               <p className="mb-6 text-white">
-                Trusted by insurance providers, used car platforms, banks, and fleet operators for fraud prevention,
-                compliance checks, and transparent transactions.
+                Trusted by insurance providers, used car platforms, banks, and
+                fleet operators for fraud prevention, compliance checks, and
+                transparent transactions.
               </p>
               <Link
                 to="/rc-verification-page-api"
@@ -108,7 +116,6 @@ const RCVerificationPage: React.FC = () => {
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
                     RC Verification Features
-
                   </h2>
                 </div>
                 <div className="p-8">
@@ -159,13 +166,17 @@ const RCVerificationPage: React.FC = () => {
                               "Access comprehensive vehicle details including registration number, chassis number, engine number, and vehicle specifications from official RTO records.",
                           },
                           {
-                            icon: <FaUserTie className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaUserTie className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Owner & Registration Details",
                             description:
                               "Verify owner information, registration date, validity period, and tax payment status for comprehensive vehicle due diligence.",
                           },
                           {
-                            icon: <FaShieldAlt className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaShieldAlt className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Compliance & Status Check",
                             description:
                               "Monitor vehicle compliance status, insurance validity, pollution certificate status, and current standing with regulatory authorities.",
@@ -186,7 +197,9 @@ const RCVerificationPage: React.FC = () => {
                               </div>
                             </div>
                             <div>
-                              <h3 className="font-semibold mb-1">{feature.title}</h3>
+                              <h3 className="font-semibold mb-1">
+                                {feature.title}
+                              </h3>
                               <p className="text-gray-600 leading-relaxed">
                                 {feature.description}
                               </p>
@@ -201,6 +214,148 @@ const RCVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <section
+          className="bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ py-16 px-4 md:px-8 lg:px-20"
+        >
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Choose Your{" "}
+              <span className="text-[#b7603d]">Verification Method</span>
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">📄</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Basic RC Check
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Registration Validation
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Verify basic vehicle registration details like make, model,
+                  and registration date.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹5-7 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Quick validations</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+   rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">📋</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Comprehensive RC Check
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Full Vehicle History
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Provides complete vehicle details including ownership history,
+                  PUC status, and insurance validity.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">3-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹8-12 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Thorough vehicle checks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Basic Check:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Vehicle make and model</li>
+                    <li>✓ Registration date</li>
+                    <li>✓ Registration number validity</li>
+                    <li>✓ Vehicle class and type</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Comprehensive Check:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Ownership history</li>
+                    <li>✓ PUC status and expiry</li>
+                    <li>✓ Insurance validity</li>
+                    <li>✓ Hypothecation details</li>
+                    <li>✓ Vehicle fitness status</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <KnowMore />
 
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12">
@@ -273,7 +428,11 @@ const RCVerificationPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {item.icon}
                     </motion.div>
@@ -415,7 +574,9 @@ const RCVerificationPage: React.FC = () => {
                   },
                   {
                     name: "Insurance Companies",
-                    icon: <FaBriefcaseMedical className="text-[#b7603d] text-4xl" />,
+                    icon: (
+                      <FaBriefcaseMedical className="text-[#b7603d] text-4xl" />
+                    ),
                     description:
                       "Verify vehicle details for policy issuance and claim processing.",
                   },
@@ -454,7 +615,11 @@ const RCVerificationPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {service.icon}
                     </motion.div>
@@ -489,10 +654,10 @@ const RCVerificationPage: React.FC = () => {
               <div className="p-8">
                 <div className="grid gap-10 grid-cols-1 md:grid-cols-2 text-left">
                   <div className="bg-white p-6 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl border border-gray-100 hover:border-[#b7603d]/30">
-
-
                     <p className="text-gray-600">
-                      Integrate our RC Verification API seamlessly into your applications with comprehensive documentation and developer-friendly tools.
+                      Integrate our RC Verification API seamlessly into your
+                      applications with comprehensive documentation and
+                      developer-friendly tools.
                     </p>
                     <div className="mt-5 space-y-2">
                       {[
@@ -533,22 +698,30 @@ const RCVerificationPage: React.FC = () => {
                           </div>
                         </div>
                         <div className="p-6 font-mono text-sm text-green-400 overflow-x-auto">
-                          <div className="text-gray-500">// Sample API Request</div>
+                          <div className="text-gray-500">
+                            // Sample API Request
+                          </div>
                           <div>POST /api/v1/rc-verification</div>
                           <div className="text-yellow-400 mt-2">{"{"}</div>
-                          <div className="ml-4">"registration_number": "MH01AB1234"</div>
+                          <div className="ml-4">
+                            "registration_number": "MH01AB1234"
+                          </div>
                           <div className="text-yellow-400">{"}"}</div>
                           <div className="mt-4 text-gray-400">// Response</div>
                           <div className="text-yellow-400">{"{"}</div>
                           <div className="ml-4">"status": "verified",</div>
                           <div className="ml-4">"vehicle_details": {"{"}</div>
                           <div className="ml-8">"owner_name": "John Doe",</div>
-                          <div className="ml-8">"registration_date": "2020-01-15",</div>
+                          <div className="ml-8">
+                            "registration_date": "2020-01-15",
+                          </div>
                           <div className="ml-8">"vehicle_class": "LMV",</div>
                           <div className="ml-8">"fuel_type": "Petrol"</div>
                           <div className="ml-4">{"}"},</div>
                           <div className="ml-4">"validity": {"{"}</div>
-                          <div className="ml-8">"registration": "2035-01-14",</div>
+                          <div className="ml-8">
+                            "registration": "2035-01-14",
+                          </div>
                           <div className="ml-8">"fitness": "2025-01-14",</div>
                           <div className="ml-8">"insurance": "2023-12-31"</div>
                           <div className="ml-4">{"}"}</div>

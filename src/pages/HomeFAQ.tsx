@@ -53,9 +53,11 @@ export default function HomeFAQ() {
                 Frequently Asked <br className="hidden lg:block" /> Questions
               </h1>
               <p className="text-lg text-gray-600">
-                We've answered some common doubts to help you understand how 7Unique Verify's VOIP & telecom services can simplify communication for your business.
+                We've answered some common doubts to help you understand how
+                7Unique Verify's VOIP & telecom services can simplify
+                communication for your business.
               </p>
-              <Link to={'/about-us'}>
+              <Link to={"/about-us"}>
                 <motion.button
                   whileHover={{ y: -3 }}
                   whileTap={{ scale: 0.98 }}
@@ -92,18 +94,24 @@ export default function HomeFAQ() {
 
                   {/* Question Card */}
                   <motion.button
-                    className={`w-full flex justify-between items-center p-6 text-left font-medium text-lg cursor-pointer rounded-xl transition-all ${openIndex === idx
-                      ? 'bg-[#f1e2dc] shadow-lg'
-                      : 'bg-white border border-gray-200/80 hover:border-[#b7603d]/50 shadow-md hover:shadow-lg'
-                      }`}
+                    className={`w-full flex justify-between items-center p-6 text-left font-medium text-lg cursor-pointer rounded-xl transition-all ${
+                      openIndex === idx
+                        ? "bg-[#f1e2dc] shadow-lg"
+                        : "bg-white border border-gray-200/80 hover:border-[#b7603d]/50 shadow-md hover:shadow-lg"
+                    }`}
                     onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                     whileHover={{ scale: 1.01 }}
                   >
-                    <span className="text-gray-900 pr-4 font-semibold">{faq.q}</span>
-                    <div className={`flex-shrink-0 ml-4 p-2 rounded-full transition-colors ${openIndex === idx
-                      ? 'bg-[#f1f1f1] text-[#b7603d]'
-                      : 'bg-[#f3e8e3] text-gray-600 group-hover:bg-[#fae7de] group-hover:text-[#b7603d]'
-                      }`}>
+                    <span className="text-gray-900 pr-4 font-semibold">
+                      {faq.q}
+                    </span>
+                    <div
+                      className={`flex-shrink-0 ml-4 p-2 rounded-full transition-colors ${
+                        openIndex === idx
+                          ? "bg-[#f1f1f1] text-[#b7603d]"
+                          : "bg-[#f3e8e3] text-gray-600 group-hover:bg-[#fae7de] group-hover:text-[#b7603d]"
+                      }`}
+                    >
                       {openIndex === idx ? (
                         <FiMinus className="text-xl" />
                       ) : (
@@ -117,7 +125,7 @@ export default function HomeFAQ() {
                     {openIndex === idx && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
+                        animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"

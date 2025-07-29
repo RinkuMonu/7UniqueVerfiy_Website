@@ -7,7 +7,6 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({ seo }) => {
-
   const {
     meta_title,
     meta_description,
@@ -24,20 +23,20 @@ const SEO: React.FC<SEOProps> = ({ seo }) => {
   return (
     <Helmet>
       <title>
-        {meta_title || "Finunique Real Cash Games | 100% Legal & Secure"}
+        {meta_title ||
+          "Top API Provider in Jaipur | Reliable API Integration Services"}
       </title>
       <meta
         name="description"
         content={
           meta_description ||
-          "Read more about Finunique – A 100% legal & certified real money gaming app."
+          "Read more about SevenVerify."
         }
       />
       <meta
         name="keywords"
         content={
-          meta_keywords ||
-          "play rummy, play poker, play pool, play & win cash"
+          meta_keywords || "aadhar verify, pen verify, bank verify"
         }
       />
       <meta property="og:title" content={og_title || meta_title} />
@@ -48,7 +47,7 @@ const SEO: React.FC<SEOProps> = ({ seo }) => {
       <meta property="og:type" content={og_type || "website"} />
       <meta property="og:url" content={og_url || ""} />
       <meta property="og:image" content={og_image || ""} />
-      <meta property="og:site_name" content={og_site_name || "Finunique"} />
+      <meta property="og:site_name" content={og_site_name || "SevenVerify"} />
       <link rel="canonical" href={canonical_tag || og_url} />
     </Helmet>
   );

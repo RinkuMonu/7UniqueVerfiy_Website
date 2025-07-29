@@ -1,63 +1,228 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import {
+  FaFingerprint,
+  FaUniversity,
+  FaIdCard,
+  FaIdBadge,
+  FaDownload,
+  FaPassport,
+  FaCar,
+  FaUserCheck,
+  FaMobileAlt,
+} from "react-icons/fa";
+import { FaUserLock } from "react-icons/fa6";
+import { MdHowToVote, MdBusinessCenter } from "react-icons/md";
+import { FaUser, FaWhatsapp, FaRegFileAlt, FaMailBulk } from "react-icons/fa";
+import { MdFace, MdTextFields } from "react-icons/md";
+import { BsPersonBoundingBox } from "react-icons/bs";
+interface DropdownItem {
+  title: string;
+  icon?: string | JSX.Element;
+  to?: string;
+  href?: string;
+}
 
-const navLinks = [
+interface NavItem {
+  to: string;
+  label: string;
+  dropdown?: boolean;
+  items?: DropdownItem[];
+}
+
+const productItems: DropdownItem[] = [
+  { icon: "bi bi-bar-chart-line", title: "AI_Dashboard", to: "/Ai_Dashboard" },
+  { icon: "bi bi-person-bounding-box", title: "CANDY", to: "/candy" },
+  { icon: "bi bi-person-vcard-fill", title: "KYC", to: "/kyc" },
+  { icon: "bi bi-person-rolodex", title: "KYB", to: "/kyb" },
+  {
+    icon: "bi bi-person-fill-slash",
+    title: "Fraud Detection",
+    to: "/fraud-detection",
+  },
+  {
+    icon: "bi bi-check2-circle",
+    title: "Phone Number Lookup",
+    to: "/phone-number-lookup",
+  },
+  {
+    icon: "bi bi-check2-all",
+    title: "Financial Checks",
+    to: "/financial-checks",
+  },
+  {
+    icon: "bi bi-person-check",
+    title: "Employee Background Verification",
+    to: "/employee-verification",
+  },
+  { icon: "bi bi-person-lock", title: "AI Driven OCR Software", to: "/ocr" },
+  { icon: "bi bi-bezier", title: "Utilities", to: "/utilities" },
+];
+
+const verificationServices: DropdownItem[] = [
+  // {
+  //   title: "Crime Check API",
+  //   icon: <FaFingerprint />,
+  //   href: "/crime-check-api",
+  // },
+  {
+    title: "Bank Account Verification",
+    icon: <FaUniversity />,
+    href: "/bank-account-verification",
+  },
+  {
+    title: "Aadhaar Verification",
+    icon: <FaIdCard />,
+    href: "/aadhaar-verification",
+  },
+  {
+    title: "PAN Verification",
+    icon: <FaIdBadge />,
+    href: "/pan-verification",
+  },
+  {
+    title: "Digilocker",
+    icon: <FaUserLock />,
+    href: "/digilocker-api",
+  },
+  // {
+  //   title: "CKYC Search & Download",
+  //   icon: <FaDownload />,
+  //   href: "/ckyc-search-&-download",
+  // },
+  // {
+  //   title: "Passport Verification",
+  //   icon: <FaPassport />,
+  //   href: "/passport-verification",
+  // },
+  // {
+  //   title: "Driving License Verification",
+  //   icon: <FaCar />,
+  //   href: "/driving-license-verification",
+  // },
+  // {
+  //   title: "RC Verification",
+  //   icon: <FaUserCheck />,
+  //   href: "/rc-verification",
+  // },
+  // {
+  //   title: "Voter ID Verification",
+  //   icon: <MdHowToVote />,
+  //   href: "/voter-id-verification",
+  // },
+  // {
+  //   title: "MCA Verification",
+  //   icon: <MdBusinessCenter />,
+  //   href: "/mca-verification",
+  // },
+  {
+    title: "Mobile Verification API",
+    icon: <FaMobileAlt />,
+    href: "/mobile-verification-api",
+  },
+  {
+    title: "CKYC Search & download",
+    icon: <FaRegFileAlt />,
+    href: "/ckyc-search-&-download",
+  },
+  // {
+  //   title: "User",
+  //   icon: <FaUser />,
+  //   href: "/user",
+  // },
+  {
+    title: "Email Authentication",
+    icon: <FaMailBulk />,
+    href: "/email-authentication",
+  },
+  {
+    title: "Liveness Check API",
+    icon: <MdFace />,
+    href: "/liveness-check-api",
+  },
+  // {
+  //   title: "OCR Validation",
+  //   icon: <MdTextFields />,
+  //   href: "/ocr-validation",
+  // },
+  // {
+  //   title: "Whatsapp Verification",
+  //   icon: <FaWhatsapp />,
+  //   href: "/whatsapp-verification",
+  // },
+  {
+    title: "Face Match API",
+    icon: <BsPersonBoundingBox />,
+    href: "/face-match-api",
+  },
+  {
+    title: "Name Match API",
+    icon: <FaIdCard />,
+    href: "/name-match-api",
+  },
+];
+
+const navLinks: NavItem[] = [
   {
     to: "/product",
     label: "Product",
     dropdown: true,
+    items: productItems,
   },
   { to: "/", label: "Home" },
-  // { to: "/blog", label: "Blog" },
   { to: "/media-articles", label: "Media & Article" },
   { to: "/contact-us", label: "Contact Us" },
+  {
+    to: "/verification-services",
+    label: "API's",
+    dropdown: true,
+    items: verificationServices,
+  },
 ];
 
 export default function Navbar() {
   const location = useLocation();
   const [hovered, setHovered] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
-  const isActive = (path: string) => location.pathname.startsWith(path);
 
-  const productItems = [
-    { icon: "bi bi-person-bounding-box", title: "CANDY", to: "/candy" },
-    { icon: "bi bi-person-vcard-fill", title: "KYC", to: "/kyc" },
-    { icon: "bi bi-person-rolodex", title: "KYB", to: "/kyb" },
-    { icon: "bi bi-person-fill-slash", title: "Fraud Detection", to: "/fraud-detection" },
-    { icon: "bi bi-check2-circle", title: "Phone Number Lookup", to: "/phone-number-lookup" },
-    { icon: "bi bi-check2-all", title: "Financial Checks", to: "/financial-checks" },
-    { icon: "bi bi-person-check", title: "Employee Background Verification", to: "/employee-verification" },
-    { icon: "bi bi-person-lock", title: "AI Driven OCR Software", to: "/ocr" },
-    { icon: "bi bi-bezier", title: "Utilities", to: "/utilities" },
-  ];
+  const isActive = (path: string) => location.pathname.startsWith(path);
 
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-16 py-6 flex items-center justify-between relative">
         {/* Logo */}
         <Link
-          to="/home"
+          to="/"
           className="flex items-center gap-2 font-bold text-xl text-[#373533]"
         >
-          <img src="/img/7unique_verify-removebg-preview.png" alt="7unique Logo" className="w-50 h-10" />
+          <img
+            src="/img/7unique_verify-removebg-preview.png"
+            alt="7unique Logo"
+            className="w-50 h-10"
+          />
         </Link>
 
         {/* Hamburger for Mobile */}
         <button
-          className={`md:hidden text-2xl text-[#373533] transition duration-200 ${menuOpen ? "text-[#b7603d] rotate-90" : ""
-            }`}
+          className={`md:hidden text-2xl text-[#373533] transition duration-200 ${
+            menuOpen ? "text-[#b7603d] rotate-90" : ""
+          }`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <i
-            className={`fas ${menuOpen ? "bi bi-chevron-bar-right" : "bi bi-layout-sidebar-inset"
-              }`}
+            className={`fas ${
+              menuOpen
+                ? "bi bi-chevron-bar-right"
+                : "bi bi-layout-sidebar-inset"
+            }`}
           ></i>
         </button>
 
         {/* Navigation Links */}
         <ul
-          className={`${menuOpen ? "block hamburgerMenu active" : "hidden"
-            } md:flex gap-8 items-start md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:shadow-none shadow-md transition-all duration-300 p-4 md:p-0 z-50`}
+          className={`${
+            menuOpen ? "block hamburgerMenu active" : "hidden"
+          } md:flex gap-8 items-start md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:shadow-none shadow-md transition-all duration-300 p-4 md:p-0 z-50`}
         >
           {navLinks.map((link) => (
             <li
@@ -69,8 +234,9 @@ export default function Navbar() {
               {link.dropdown ? (
                 <>
                   <div
-                    className={`font-medium text-base flex items-center gap-1 cursor-pointer hover:text-[#b3765e] transition-colors ${isActive(link.to) ? "text-[#b7603d]" : "text-[#373533]"
-                      }`}
+                    className={`font-medium text-base flex items-center gap-1 cursor-pointer hover:text-[#b3765e] transition-colors ${
+                      isActive(link.to) ? "text-[#b7603d]" : "text-[#373533]"
+                    }`}
                     onClick={() => {
                       if (menuOpen) {
                         setHovered(hovered === link.to ? null : link.to);
@@ -79,27 +245,36 @@ export default function Navbar() {
                   >
                     {link.label}
                     <i
-                      className={`fa-solid ${hovered === link.to ? "bi bi-chevron-up" : "bi bi-chevron-down"
-                        } text-xs`}
+                      className={`fa-solid ${
+                        hovered === link.to
+                          ? "bi bi-chevron-up"
+                          : "bi bi-chevron-down"
+                      } text-xs`}
                     ></i>
                   </div>
 
-                  {/* Mega Menu - Now simplified vertical layout */}
+                  {/* Dropdown Menu */}
                   <div
-                    className={`${hovered === link.to ? "block" : "hidden"
-                      } absolute md:left-0 bg-white rounded-md shadow-lg z-40 transition-all duration-200 ${menuOpen ? "relative w-full mt-3" : "w-[250px]"
-                      }`}
+                    className={`${
+                      hovered === link.to ? "block" : "hidden"
+                    } absolute md:left-0 bg-white rounded-md shadow-lg z-40 transition-all duration-200 flex ${
+                      menuOpen ? "relative w-full mt-3" : "w-[250px]"
+                    }`}
                   >
                     <div className="p-4 space-y-3">
-                      {productItems.map((item, idx) => (
+                      {link.items?.map((item, idx) => (
                         <Link
                           key={idx}
-                          to={item.to}
-                          className="flex items-center gap-3 cursor-pointer no-underline hover:bg-gray-100 p-2 rounded"
+                          to={item.to || item.href || "#"}
+                          className=" flex items-center gap-3 cursor-pointer no-underline hover:bg-gray-100 p-2 rounded"
                           onClick={() => setMenuOpen(false)}
                         >
                           <div className="bg-[#fffcfb] text-[#b7603d] text-lg flex justify-center items-center w-7 h-7 rounded-sm border border-[#b35530]">
-                            <i className={item.icon}></i>
+                            {typeof item.icon === "string" ? (
+                              <i className={item.icon}></i>
+                            ) : (
+                              item.icon
+                            )}
                           </div>
                           <span className="text-sm font-medium text-black">
                             {item.title}
@@ -112,8 +287,11 @@ export default function Navbar() {
               ) : (
                 <Link
                   to={link.to}
-                  className={`block py-2 font-medium text-base hover:text-[#b3765e] transition-colors ${location.pathname === link.to ? "text-[#b7603d]" : "text-[#373533]"
-                    }`}
+                  className={`block py-2 font-medium text-base hover:text-[#b3765e] transition-colors ${
+                    location.pathname === link.to
+                      ? "text-[#b7603d]"
+                      : "text-[#373533]"
+                  }`}
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

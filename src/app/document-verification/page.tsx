@@ -1,9 +1,10 @@
-import type React from "react"
-import { Link } from "react-router-dom"
-import SEO from "../Helmet/helment"
+import type React from "react";
+import { Link } from "react-router-dom";
+import SEO from "../Helmet/helment";
 import { useContext } from "react";
 import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
+import KnowMore from "../../components/KnowMore";
 
 const DocumentVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -18,18 +19,25 @@ const DocumentVerificationPage: React.FC = () => {
         >
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">CKYC Search & Download API</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                CKYC Search & Download API
+              </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Central KYC Registry with 7Unique Verify
               </h2>
               <p className="text-lg mb-4 text-white">
-                Access and retrieve CKYC records in real-time using 7Unique Verify’s secure API. Streamline KYC operations by integrating verified data from India’s centralized KYC registry.
+                Access and retrieve CKYC records in real-time using 7Unique
+                Verify’s secure API. Streamline KYC operations by integrating
+                verified data from India’s centralized KYC registry.
               </p>
               <p className="mb-4 text-white">
-                Built for speed and compliance, our CKYC API empowers banks, NBFCs, and fintechs to verify, download, and store customer KYC records efficiently—minimizing duplication and fraud.
+                Built for speed and compliance, our CKYC API empowers banks,
+                NBFCs, and fintechs to verify, download, and store customer KYC
+                records efficiently—minimizing duplication and fraud.
               </p>
               <p className="mb-6 text-white">
-                Join 7Unique Verify in modernizing onboarding and compliance with scalable, RBI-compliant solutions.
+                Join 7Unique Verify in modernizing onboarding and compliance
+                with scalable, RBI-compliant solutions.
               </p>
               <Link
                 to="/document-verification-page-api"
@@ -50,7 +58,8 @@ const DocumentVerificationPage: React.FC = () => {
 
         {/* Features Section */}
         <section className="py-16 px-1 md:px-8 lg:px-15">
-          <div className="max-w-full bg-[#f7f1ef]
+          <div
+            className="max-w-full bg-[#f7f1ef]
 
 
 
@@ -59,9 +68,11 @@ const DocumentVerificationPage: React.FC = () => {
 
 
 
- rounded-3xl py-6 px-4 sm:px-6x md:py-12 md:px-20 lg:mx-30 xl:mx-20 text-center">
+ rounded-3xl py-6 px-4 sm:px-6x md:py-12 md:px-20 lg:mx-30 xl:mx-20 text-center"
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
-              <span className="text-[#b7603d]">7Unique Verify CKYC</span> API Features
+              <span className="text-[#b7603d]">7Unique Verify CKYC</span> API
+              Features
             </h2>
             <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-left">
               <div className="bg-white p-6 rounded-lg shadow-xl text-center transition duration-300 hover:shadow-2xl">
@@ -70,9 +81,13 @@ const DocumentVerificationPage: React.FC = () => {
                   alt="CKYC Search"
                   className="w-full h-48 object-contain mb-4"
                 />
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Smart CKYC Search</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Smart CKYC Search
+                </h3>
                 <p className="text-gray-600">
-                  Query CKYC data using Aadhaar, PAN, or mobile number. Find verified records instantly from the central registry for seamless customer onboarding.
+                  Query CKYC data using Aadhaar, PAN, or mobile number. Find
+                  verified records instantly from the central registry for
+                  seamless customer onboarding.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-xl text-center transition duration-300 hover:shadow-2xl">
@@ -81,9 +96,13 @@ const DocumentVerificationPage: React.FC = () => {
                   alt="Record Download"
                   className="w-full h-48 object-contain mb-4"
                 />
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Instant Record Download</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Instant Record Download
+                </h3>
                 <p className="text-gray-600">
-                  Download complete CKYC documents and metadata, including customer details, photograph, and KYC verification status—ready for backend use.
+                  Download complete CKYC documents and metadata, including
+                  customer details, photograph, and KYC verification
+                  status—ready for backend use.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-xl text-center transition duration-300 hover:shadow-2xl md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0">
@@ -92,18 +111,164 @@ const DocumentVerificationPage: React.FC = () => {
                   alt="RBI Compliance"
                   className="w-full h-48 object-contain mb-4"
                 />
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">RBI Compliant Architecture</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  RBI Compliant Architecture
+                </h3>
                 <p className="text-gray-600">
-                  Fully aligned with RBI and CKYC norms. Enjoy secure, encrypted access with full audit logging to ensure transparency and compliance.
+                  Fully aligned with RBI and CKYC norms. Enjoy secure, encrypted
+                  access with full audit logging to ensure transparency and
+                  compliance.
                 </p>
               </div>
             </div>
           </div>
         </section>
+        <section
+          className="bg-[#f7f1ef]
 
+
+
+
+
+
+
+
+ py-16 px-4 md:px-8 lg:px-20"
+        >
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Choose Your{" "}
+              <span className="text-[#b7603d]">Verification Method</span>
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">✓</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Basic Document Check
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Format Validation
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Verify if a document follows the correct format and contains
+                  required fields.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹1-2 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Initial screening</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+   rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">🔍</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Advanced Authentication
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Comprehensive Check
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Provides complete document verification including security
+                  feature checks and database validation.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">5-10 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹3-5 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Compliance & KYC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Basic Check:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Document format validation</li>
+                    <li>✓ Required field verification</li>
+                    <li>✓ Basic OCR data extraction</li>
+                    <li>✓ Expiry date check</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Advanced Report:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Security feature verification</li>
+                    <li>✓ Government database cross-check</li>
+                    <li>✓ Fraud detection analysis</li>
+                    <li>✓ Face match verification</li>
+                    <li>✓ Liveness detection</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <KnowMore/>
 
         {/* How It Works Section */}
-        <section className="py-16 bg-[#f7f1ef]
+        <section
+          className="py-16 bg-[#f7f1ef]
 
 
 
@@ -112,12 +277,14 @@ const DocumentVerificationPage: React.FC = () => {
 
 
 
-">
+"
+        >
           <div className="container mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">How It Works</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Our document verification process is simple, secure, and efficient
+                Our document verification process is simple, secure, and
+                efficient
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -126,28 +293,37 @@ const DocumentVerificationPage: React.FC = () => {
                   1
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Document Upload</h3>
-                <p className="text-gray-600">User uploads document image through your application</p>
+                <p className="text-gray-600">
+                  User uploads document image through your application
+                </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
                   2
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Data Extraction</h3>
-                <p className="text-gray-600">Our API extracts relevant information from the document</p>
+                <p className="text-gray-600">
+                  Our API extracts relevant information from the document
+                </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
                   3
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Verification</h3>
-                <p className="text-gray-600">Multiple checks validate document authenticity and data accuracy</p>
+                <p className="text-gray-600">
+                  Multiple checks validate document authenticity and data
+                  accuracy
+                </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
                   4
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Results</h3>
-                <p className="text-gray-600">Detailed verification results returned to your application</p>
+                <p className="text-gray-600">
+                  Detailed verification results returned to your application
+                </p>
               </div>
             </div>
           </div>
@@ -158,7 +334,9 @@ const DocumentVerificationPage: React.FC = () => {
           <div className="container mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="w-full md:w-1/2">
-                <h2 className="text-3xl font-bold mb-6">Benefits of Document Verification</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  Benefits of Document Verification
+                </h2>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <svg
@@ -168,11 +346,17 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>
-                      <span className="font-semibold">Reduced Fraud:</span> Detect forged or tampered documents to prevent
-                      fraud and financial losses.
+                      <span className="font-semibold">Reduced Fraud:</span>{" "}
+                      Detect forged or tampered documents to prevent fraud and
+                      financial losses.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -183,11 +367,19 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>
-                      <span className="font-semibold">Regulatory Compliance:</span> Meet KYC, AML, and other regulatory
-                      requirements with comprehensive verification.
+                      <span className="font-semibold">
+                        Regulatory Compliance:
+                      </span>{" "}
+                      Meet KYC, AML, and other regulatory requirements with
+                      comprehensive verification.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -198,11 +390,19 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>
-                      <span className="font-semibold">Improved Customer Experience:</span> Streamline onboarding with
-                      fast, frictionless verification processes.
+                      <span className="font-semibold">
+                        Improved Customer Experience:
+                      </span>{" "}
+                      Streamline onboarding with fast, frictionless verification
+                      processes.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -213,11 +413,17 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>
-                      <span className="font-semibold">Cost Reduction:</span> Eliminate manual verification processes and
-                      reduce operational costs.
+                      <span className="font-semibold">Cost Reduction:</span>{" "}
+                      Eliminate manual verification processes and reduce
+                      operational costs.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -228,11 +434,17 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>
-                      <span className="font-semibold">Scalability:</span> Handle high volumes of verification requests
-                      without compromising speed or accuracy.
+                      <span className="font-semibold">Scalability:</span> Handle
+                      high volumes of verification requests without compromising
+                      speed or accuracy.
                     </span>
                   </li>
                 </ul>
@@ -249,7 +461,8 @@ const DocumentVerificationPage: React.FC = () => {
         </section>
 
         {/* Use Cases Section */}
-        <section className="py-16 bg-[#f7f1ef]
+        <section
+          className="py-16 bg-[#f7f1ef]
 
 
 
@@ -258,12 +471,14 @@ const DocumentVerificationPage: React.FC = () => {
 
 
 
-">
+"
+        >
           <div className="container mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Industry Use Cases</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Our Document Verification API serves diverse industries with tailored solutions
+                Our Document Verification API serves diverse industries with
+                tailored solutions
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -284,10 +499,13 @@ const DocumentVerificationPage: React.FC = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Financial Services</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Financial Services
+                </h3>
                 <p className="text-gray-600">
-                  Verify customer identities during account opening, loan applications, and financial transactions to
-                  prevent fraud and ensure compliance.
+                  Verify customer identities during account opening, loan
+                  applications, and financial transactions to prevent fraud and
+                  ensure compliance.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -309,8 +527,8 @@ const DocumentVerificationPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Real Estate</h3>
                 <p className="text-gray-600">
-                  Authenticate property documents, verify tenant identities, and validate ownership records for secure
-                  transactions.
+                  Authenticate property documents, verify tenant identities, and
+                  validate ownership records for secure transactions.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -332,8 +550,8 @@ const DocumentVerificationPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Healthcare</h3>
                 <p className="text-gray-600">
-                  Verify medical credentials, insurance documents, and patient identities to ensure proper care and
-                  prevent insurance fraud.
+                  Verify medical credentials, insurance documents, and patient
+                  identities to ensure proper care and prevent insurance fraud.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -355,8 +573,8 @@ const DocumentVerificationPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Employment</h3>
                 <p className="text-gray-600">
-                  Validate candidate credentials, educational certificates, and employment history during hiring
-                  processes.
+                  Validate candidate credentials, educational certificates, and
+                  employment history during hiring processes.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -378,7 +596,8 @@ const DocumentVerificationPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Government</h3>
                 <p className="text-gray-600">
-                  Authenticate citizen documents for public services, benefits distribution, and regulatory compliance.
+                  Authenticate citizen documents for public services, benefits
+                  distribution, and regulatory compliance.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -400,7 +619,8 @@ const DocumentVerificationPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Education</h3>
                 <p className="text-gray-600">
-                  Verify student identities, academic credentials, and scholarship eligibility documents.
+                  Verify student identities, academic credentials, and
+                  scholarship eligibility documents.
                 </p>
               </div>
             </div>
@@ -412,10 +632,13 @@ const DocumentVerificationPage: React.FC = () => {
           <div className="container mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="w-full md:w-1/2">
-                <h2 className="text-3xl font-bold mb-6">Simple API Integration</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  Simple API Integration
+                </h2>
                 <p className="text-gray-600 mb-6">
-                  Our Document Verification API is designed for easy integration with your existing systems. With
-                  comprehensive documentation and developer support, you can be up and running in no time.
+                  Our Document Verification API is designed for easy integration
+                  with your existing systems. With comprehensive documentation
+                  and developer support, you can be up and running in no time.
                 </p>
                 <ul className="space-y-4 mb-6">
                   <li className="flex items-start">
@@ -426,7 +649,12 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>RESTful API with JSON responses</span>
                   </li>
@@ -438,9 +666,16 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
-                    <span>SDKs available for multiple programming languages</span>
+                    <span>
+                      SDKs available for multiple programming languages
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -450,7 +685,12 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>Comprehensive documentation and code examples</span>
                   </li>
@@ -462,7 +702,12 @@ const DocumentVerificationPage: React.FC = () => {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>Dedicated developer support</span>
                   </li>
@@ -519,8 +764,6 @@ console.log(result);
           </div>
         </section>
 
-
-
         {/* CTA Section */}
         {/* <section className="py-16">
         <div className="container mx-auto">
@@ -549,7 +792,7 @@ console.log(result);
       </section> */}
       </main>
     </>
-  )
-}
+  );
+};
 
-export default DocumentVerificationPage
+export default DocumentVerificationPage;

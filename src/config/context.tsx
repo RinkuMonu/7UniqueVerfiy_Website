@@ -2,10 +2,9 @@ import React, { createContext, useEffect, useState, ReactNode } from "react";
 import { useLocation } from "react-router-dom";
 import { SEOData } from "../type";
 
-// Define the SEO data structure
 interface SeoData {
   page_slug: string;
-  [key: string]: any; // add more specific keys if known
+  [key: string]: any;
 }
 
 interface SEOContext {
@@ -47,16 +46,19 @@ export const ContextProvider: React.FC<ContextProviderProps> = ({
 
   useEffect(() => {
     const normalizeUrl = (url: string) =>
-      url.replace(/(https?:\/\/)?(www\.)?/, "")
+      url
+        .replace(/(https?:\/\/)?(www\.)?/, "")
         .replace(/\\\//g, "/")
         .replace(/\/+$/, "")
         .toLowerCase();
     const fullUrl = normalizeUrl(
-      'https://7uniqueverfiy.com' + pathname
       // window.location.origin + window.location.pathname
+      "https://7uniqueverfiy.com" + pathname
     );
 
-    const matched = allSeoData.find((item) => normalizeUrl(item?.page_slug) === fullUrl);
+    const matched = allSeoData.find(
+      (item) => normalizeUrl(item?.page_slug) === fullUrl
+    );
 
     if (matched) {
       setSeo(matched);

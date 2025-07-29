@@ -117,7 +117,7 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2">
             {[
-              "Document Verification",
+              // "Document Verification",
               "User",
               "Email Authentication",
               "Liveness check API",
