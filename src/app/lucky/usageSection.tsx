@@ -11,7 +11,7 @@ export const UsageSection = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col-reverse md:flex-row items-center justify-between  shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100"
+      className="flex flex-col-reverse md:flex-row items-center justify-between   rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-50"
     >
       {/* Text Content - Now on the left side */}
       <div className="md:w-1/2 w-full md:pr-12 mt-8 md:mt-0">
@@ -62,13 +62,13 @@ export const UsageSection = () => {
       {/* Image - Now on the right side */}
       <motion.div
         whileHover={{ scale: 1.02 }}
-        className="md:w-1/2 w-full relative overflow-hidden rounded-xl shadow-lg mb-8 md:mb-0"
+        className="md:w-1/2 w-full relative overflow-hidden rounded-xl  mb-8 md:mb-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10 rounded-xl"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10 rounded-xl"></div> */}
         <img
           src={heroimg}
           alt="Usage Dashboard"
-          className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500  shadow-lg"
+          className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500 "
         />
         <div className="absolute bottom-4 right-4 z-20">
           <span className="bg-white/90 text-gray-800 px-3 py-1 rounded-full text-sm font-medium shadow-sm flex items-center gap-1">

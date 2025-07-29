@@ -14,19 +14,19 @@ export const LuckyHeroSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex  flex-col md:flex-row items-center justify-between  shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100 "
+        className="flex  flex-col md:flex-row items-center justify-between  rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-50 "
       >
         {/* bg-gradient-to-br from-white to-gray-50 */}
         {/* Left Side Image */}
         <motion.div
           whileHover={{ scale: 1.02 }}
-          className="md:w-1/2 w-full relative overflow-hidden rounded-xl shadow-md"
+          className="md:w-1/2 w-full relative overflow-hidden rounded-xl "
         >
-          <div className="absolute  z-10 rounded-xl"></div>
+          {/* <div className="absolute  z-10 rounded-xl"></div> */}
           <img
             src={heroimg}
             alt="Dashboard"
-            className="w-full h-auto  rounded-xl transfor hover:scale-101 transition shadow-lg "
+            className="w-full h-auto  rounded-xl transfor hover:scale-101 transition  "
           />
         </motion.div>
 
