@@ -6,7 +6,6 @@ import { LuckySteps } from "./stepes";
 import { LuckyWallet } from "./wallet";
 import { LuckyTransaction } from "./luckyTransation";
 import KnowMore from "../../components/KnowMore";
-import HomeTestimonials from "../../pages/HomeTestimonials";
 
 export const Lucky = () => {
   return (
@@ -59,7 +58,6 @@ export const Lucky = () => {
       <LuckyWallet />
       <LuckySteps />
       <KnowMore />
-      <HomeTestimonials />
     </>
   );
 };

@@ -126,7 +126,7 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/candy" element={<CandyPage />} />
-          <Route path="/Ai_Dasboard" element={<Lucky />} />
+          <Route path="/Ai_Dashboard" element={<Lucky />} />
           <Route path="/kyc" element={<KycPage />} />
           <Route path="/kyb" element={<KybPage />} />
           <Route path="/fraud-detection" element={<FraudDetection />} />
