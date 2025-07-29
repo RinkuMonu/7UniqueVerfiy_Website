@@ -86,7 +86,7 @@ export const DigilockerApi = () => {
               apps needing verified digital documents with user consent.
             </p>
             <Link
-              to="/api-catalog"
+              to="/contact-us"
               className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
             >
               Get Started
