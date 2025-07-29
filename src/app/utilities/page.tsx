@@ -4,13 +4,13 @@ import UtilitiesAPISection from "../../pages/UtilitiesAPIs";
 import UtilitiesOverview from "../../pages/UtilitesFeatures";
 import HomeFAQ from "../../pages/HomeFAQ";
 export default function UtilitiesPage() {
-    return (
-        <>
-            <UtilitiesHero></UtilitiesHero>
-            <UtilitiesCards></UtilitiesCards>
-            <UtilitiesOverview></UtilitiesOverview>
-            <UtilitiesAPISection></UtilitiesAPISection>
-             <HomeFAQ></HomeFAQ>
-        </>
-    );
+  return (
+    <>
+      <UtilitiesHero></UtilitiesHero>
+      <UtilitiesCards></UtilitiesCards>
+      <UtilitiesOverview></UtilitiesOverview>
+      <UtilitiesAPISection></UtilitiesAPISection>
+      <HomeFAQ></HomeFAQ>
+    </>
+  );
 }

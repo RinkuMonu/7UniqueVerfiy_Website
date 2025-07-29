@@ -27,6 +27,7 @@ import { FaFileAlt } from "react-icons/fa";
 import { ContextData } from "../../config/context";
 import SEO from "../Helmet/helment";
 import { SEOData } from "../../type";
+import KnowMore from "../../components/KnowMore";
 
 // Define types for your data structures
 interface FeatureItem {
@@ -52,8 +53,6 @@ interface ServiceItem {
   icon: React.ReactNode;
   description: string;
 }
-
-
 
 const DrivingLicenseVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -332,6 +331,149 @@ const DrivingLicenseVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
+        {/* Verification Types Section */}
+        <section
+          className="bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ py-16 px-4 md:px-8 lg:px-20"
+        >
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Choose Your{" "}
+              <span className="text-[#b7603d]">Verification Method</span>
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">🚗</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Basic License Verification
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      License Validation
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Validates driving license number format and checks if the
+                  license exists in the RTO database.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹2-3 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Basic license checks</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+   rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">📊</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Detailed License Verification
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Comprehensive Check
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Provides complete license details including driver
+                  information, vehicle classes, and validity dates.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">3-4 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹4-6 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">
+                      Complete driver verification
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Basic Verification:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ License validity status</li>
+                    <li>✓ Basic format validation</li>
+                    <li>✓ Active/Suspended status</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Detailed Verification:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Complete driver name</li>
+                    <li>✓ License class and validity</li>
+                    <li>✓ Issue and expiry dates</li>
+                    <li>✓ RTO office details</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <KnowMore />
 
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12">

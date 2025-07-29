@@ -26,6 +26,7 @@ import { FaFileAlt } from "react-icons/fa";
 import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
 import SEO from "../Helmet/helment";
+import KnowMore from "../../components/KnowMore";
 
 const PANVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -56,8 +57,6 @@ const PANVerificationPage: React.FC = () => {
       <main className="w-full pb-24">
         {/* Hero Section */}
 
-
-
         <section
           className="w-full bg-cover bg-center min-h-screen flex items-center px-16"
           style={{ backgroundImage: "url('/img/bg (2).png')" }}
@@ -71,14 +70,19 @@ const PANVerificationPage: React.FC = () => {
                 Real-time PAN Card Authentication & Status Check
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly validate PAN card numbers, match names, and verify status with 7Unique Verify's secure and accurate API integration.
+                Instantly validate PAN card numbers, match names, and verify
+                status with 7Unique Verify's secure and accurate API
+                integration.
               </p>
               <p className="mb-4 text-white">
-                Our PAN Verification API fetches real-time details from the Income Tax database, ensuring error-free KYC,
-                fraud detection, and regulatory compliance across industries.
+                Our PAN Verification API fetches real-time details from the
+                Income Tax database, ensuring error-free KYC, fraud detection,
+                and regulatory compliance across industries.
               </p>
               <p className="mb-6 text-white">
-                Ideal for fintech platforms, NBFCs, e-commerce apps, loan providers, and any business requiring valid tax identification and customer onboarding.
+                Ideal for fintech platforms, NBFCs, e-commerce apps, loan
+                providers, and any business requiring valid tax identification
+                and customer onboarding.
               </p>
               <Link
                 to="/pan-verification-api"
@@ -109,9 +113,11 @@ const PANVerificationPage: React.FC = () => {
                     </div>
                     Advanced Verification Capabilities
                   </h2>
-
                 </div>
-                <p className="p-4">Comprehensive PAN verification solutions tailored for your business needs</p>
+                <p className="p-4">
+                  Comprehensive PAN verification solutions tailored for your
+                  business needs
+                </p>
                 <div className="p-8">
                   <motion.div
                     initial="hidden"
@@ -170,7 +176,9 @@ const PANVerificationPage: React.FC = () => {
                               "Verify the name associated with PAN numbers to ensure accurate identity matching and prevent fraudulent activities.",
                           },
                           {
-                            icon: <FaLock className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaLock className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Tax Compliance Check",
                             description:
                               "Ensure tax compliance by verifying PAN status and validity, helping businesses maintain regulatory compliance and avoid penalties.",
@@ -208,6 +216,146 @@ const PANVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <section
+          className="bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ py-16 px-4 md:px-8 lg:px-20"
+        >
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Choose Your{" "}
+              <span className="text-[#b7603d]">Verification Method</span>
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">📋</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      PAN Verification
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Basic Validation
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Validates PAN number format and checks if the PAN exists in
+                  the Income Tax database.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">1-2 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹1-2 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Basic compliance checks</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+   rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">📊</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Detailed PAN Verification
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Comprehensive Check
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Provides complete PAN details including name, date of birth,
+                  and additional cardholder information.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹3-5 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Complete KYC processes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Normal Verification:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ PAN validity status</li>
+                    <li>✓ Basic format validation</li>
+                    <li>✓ Active/Inactive status</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Detailed Verification:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Complete cardholder name</li>
+                    <li>✓ Date of birth</li>
+                    <li>✓ Father's name</li>
+                    <li>✓ PAN status and category</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <KnowMore/>
 
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12 ">
@@ -295,7 +443,11 @@ const PANVerificationPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {item.icon}
                     </motion.div>
@@ -412,7 +564,10 @@ const PANVerificationPage: React.FC = () => {
                     PAN Verification Across Industries
                   </h2>
                 </div>
-                <p className="p-4 text-start">Trusted by businesses across sectors for secure identity verification</p>
+                <p className="p-4 text-start">
+                  Trusted by businesses across sectors for secure identity
+                  verification
+                </p>
                 <div className="w-24 h-1.5 bg-gradient-to-r from-[#b7603d] to-[#d88a6e] mx-auto rounded-full" />
               </motion.div>
 
@@ -458,7 +613,9 @@ const PANVerificationPage: React.FC = () => {
                   },
                   {
                     name: "Government",
-                    icon: <FaBalanceScale className="text-[#b7603d] text-4xl" />,
+                    icon: (
+                      <FaBalanceScale className="text-[#b7603d] text-4xl" />
+                    ),
                     description:
                       "Citizen service delivery and subsidy distribution verification.",
                   },
@@ -479,7 +636,11 @@ const PANVerificationPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {service.icon}
                     </motion.div>
@@ -535,9 +696,10 @@ const PANVerificationPage: React.FC = () => {
                       Simple Integration
                     </h3>
                     <p className="text-gray-600">
-                      Seamlessly integrate the 7Unique Verify PAN Verification API into
-                      your platform with clear documentation and developer-first
-                      tools. Designed for scalability and ease of use.
+                      Seamlessly integrate the 7Unique Verify PAN Verification
+                      API into your platform with clear documentation and
+                      developer-first tools. Designed for scalability and ease
+                      of use.
                     </p>
                     <div className="mt-4 space-y-2">
                       {[
@@ -573,7 +735,7 @@ const PANVerificationPage: React.FC = () => {
                         </div>
                         <div className="p-6 font-mono text-sm text-green-400 overflow-x-auto">
                           <div className="text-gray-500">
-                          // Sample API Request
+                            // Sample API Request
                           </div>
                           <div className="mb-2">
                             fetch('https://api.7uniqueverify.com/pan-verify',{" "}
@@ -607,12 +769,3 @@ const PANVerificationPage: React.FC = () => {
 };
 
 export default PANVerificationPage;
-
-
-
-
-
-
-
-
-

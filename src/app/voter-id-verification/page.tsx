@@ -26,9 +26,10 @@ import {
   FaLandmark,
   FaHospital,
   FaSchool,
-  FaSearch
+  FaSearch,
 } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
+import KnowMore from "../../components/KnowMore";
 
 const VoterIDVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -64,18 +65,26 @@ const VoterIDVerificationPage: React.FC = () => {
         >
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">7Unique Verify – Voter ID Verification API</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                7Unique Verify – Voter ID Verification API
+              </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-time Electoral Identity Check & Address Proof Validation
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly verify voter identity details using 7Unique Verify's powerful Voter ID Verification API. Ensure trusted onboarding with secure, real-time access to Election Commission records.
+                Instantly verify voter identity details using 7Unique Verify's
+                powerful Voter ID Verification API. Ensure trusted onboarding
+                with secure, real-time access to Election Commission records.
               </p>
               <p className="mb-4 text-white">
-                The API matches voter IDs, cross-checks personal details, and fetches electoral roll information, helping your platform remain compliant and fraud-free.
+                The API matches voter IDs, cross-checks personal details, and
+                fetches electoral roll information, helping your platform remain
+                compliant and fraud-free.
               </p>
               <p className="mb-6 text-white">
-                Ideal for financial services, digital platforms, KYC processes, and any application needing validated voter identity and residence data.
+                Ideal for financial services, digital platforms, KYC processes,
+                and any application needing validated voter identity and
+                residence data.
               </p>
               <Link
                 to="/voter-id-verification-api"
@@ -149,19 +158,25 @@ const VoterIDVerificationPage: React.FC = () => {
                       <motion.div className="space-y-8" variants={container}>
                         {[
                           {
-                            icon: <FaIdCard className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaIdCard className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Electoral Database Verification",
                             description:
                               "Verify Voter ID details against official Election Commission databases to ensure authentic electoral identity and voter registration status.",
                           },
                           {
-                            icon: <FaMapMarkerAlt className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaMapMarkerAlt className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Address Proof Validation",
                             description:
                               "Validate address information from Voter ID cards to provide reliable address proof verification for various compliance requirements.",
                           },
                           {
-                            icon: <FaShieldAlt className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaShieldAlt className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Comprehensive Identity Check",
                             description:
                               "Perform comprehensive identity verification using Voter ID information including name, father's name, age, and constituency details.",
@@ -182,7 +197,9 @@ const VoterIDVerificationPage: React.FC = () => {
                               </div>
                             </div>
                             <div>
-                              <h3 className="font-semibold mb-1">{feature.title}</h3>
+                              <h3 className="font-semibold mb-1">
+                                {feature.title}
+                              </h3>
                               <p className="text-gray-600 leading-relaxed">
                                 {feature.description}
                               </p>
@@ -197,7 +214,384 @@ const VoterIDVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <section
+          className="py-20 bg-[#f7f1ef]
+  
+  
+  
+  
+  
+  
+  
+  
+  "
+        >
+          <div className="w-full mx-auto px-6 sm:px-10 md:px-16 lg:px-20 xl:px-24">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Voter ID Verification Plans
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Choose the perfect plan for your electoral identity verification
+                needs
+              </p>
+            </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Basic Plan */}
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+                <div className="text-center mb-8">
+                  <div
+                    className="w-16 h-16 bg-[#f7f1ef]
+  
+  
+  
+  
+  
+  
+  
+  
+    rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <svg
+                      className="w-8 h-8 text-[#b7603d]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Basic
+                  </h3>
+                  <div className="text-4xl font-bold text-[#b7603d] mb-4">
+                    ₹2
+                    <span className="text-lg text-gray-500">/verification</span>
+                  </div>
+                </div>
+
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Up to 1,000 verifications/month</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Basic voter information</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Email support</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Standard response time</span>
+                  </li>
+                </ul>
+                <Link to={"/contact-us"}>
+                  <button className="w-full bg-[#b7603d] text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+                    Get Started
+                  </button>
+                </Link>
+              </div>
+
+              {/* Professional Plan */}
+              <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-purple-500 relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                    Most Popular
+                  </span>
+                </div>
+                <div className="text-center mb-8">
+                  <div
+                    className="w-16 h-16 bg-[#f7f1ef]
+  
+  
+  
+  
+  
+  
+  
+  
+    rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <svg
+                      className="w-8 h-8 text-[#b7603d]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Professional
+                  </h3>
+                  <div className="text-4xl font-bold text-[#b7603d] mb-4">
+                    ₹1.5
+                    <span className="text-lg text-gray-500">/verification</span>
+                  </div>
+                </div>
+
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Up to 10,000 verifications/month</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Detailed voter information</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Priority support</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Fast response time</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Analytics dashboard</span>
+                  </li>
+                </ul>
+
+                <button className="w-full bg-[#b7603d] text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+                  <Link to={"/contact-us"}>Start Free Trial</Link>
+                </button>
+              </div>
+
+              {/* Enterprise Plan */}
+              <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+                <div className="text-center mb-8">
+                  <div
+                    className="w-16 h-16 bg-[#f7f1ef]
+  
+  
+  
+  
+  
+  
+  
+  
+    rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <svg
+                      className="w-8 h-8 text-[#b7603d]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Enterprise
+                  </h3>
+                  <div className="text-4xl font-bold text-[#b7603d] mb-4">
+                    Custom
+                  </div>
+                </div>
+
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Unlimited verifications</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Complete voter database</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>24/7 dedicated support</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-[#b7603d]   mr-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>Custom integrations</span>
+                  </li>
+                </ul>
+
+                <button className="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-900 transition-colors">
+                  <Link to={"/contact-us"}>Contact Sales</Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <KnowMore />
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12">
           <div className="mx-auto max-w-6xl space-y-8">
@@ -269,7 +663,11 @@ const VoterIDVerificationPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {item.icon}
                     </motion.div>
@@ -450,7 +848,11 @@ const VoterIDVerificationPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {service.icon}
                     </motion.div>
@@ -506,7 +908,9 @@ const VoterIDVerificationPage: React.FC = () => {
                       Simple Integration
                     </h3>
                     <p className="text-gray-600">
-                      Integrate our Voter ID Verification API seamlessly into your applications with comprehensive documentation and developer-friendly tools.
+                      Integrate our Voter ID Verification API seamlessly into
+                      your applications with comprehensive documentation and
+                      developer-friendly tools.
                     </p>
                     <div className="mt-4 space-y-2">
                       {[
@@ -547,7 +951,9 @@ const VoterIDVerificationPage: React.FC = () => {
                           </div>
                         </div>
                         <div className="p-6 font-mono text-sm text-green-400 overflow-x-auto">
-                          <div className="text-gray-500">// Sample API Request</div>
+                          <div className="text-gray-500">
+                            // Sample API Request
+                          </div>
                           <div>POST /api/v1/voter-id-verification</div>
                           <div className="text-yellow-400 mt-2">{"{"}</div>
                           <div className="ml-4">"voter_id": "ABC1234567"</div>
@@ -557,7 +963,9 @@ const VoterIDVerificationPage: React.FC = () => {
                           <div className="ml-4">"status": "verified",</div>
                           <div className="ml-4">"voter_details": {"{"}</div>
                           <div className="ml-8">"name": "John Doe",</div>
-                          <div className="ml-8">"father_name": "Robert Doe",</div>
+                          <div className="ml-8">
+                            "father_name": "Robert Doe",
+                          </div>
                           <div className="ml-8">"age": 35,</div>
                           <div className="ml-8">"gender": "Male"</div>
                           <div className="ml-4">{"}"},</div>

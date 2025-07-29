@@ -26,6 +26,7 @@ import { FaFileAlt } from "react-icons/fa";
 import SEO from "../Helmet/helment";
 import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
+import KnowMore from "../../components/KnowMore";
 
 const CrimeCheckAPIPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -73,13 +74,14 @@ const CrimeCheckAPIPage: React.FC = () => {
                 verification engine.
               </p>
               <p className="mb-4 text-white">
-                Our system confirms account number validity, verifies IFSC codes,
-                and cross-checks account holder names across all major Indian
-                banks, offering seamless API integration for your business.
+                Our system confirms account number validity, verifies IFSC
+                codes, and cross-checks account holder names across all major
+                Indian banks, offering seamless API integration for your
+                business.
               </p>
               <p className="mb-6 text-white">
-                Ideal for payment gateways, lending platforms, e-commerce stores,
-                salary disbursals, and any process where reliable bank
+                Ideal for payment gateways, lending platforms, e-commerce
+                stores, salary disbursals, and any process where reliable bank
                 verification is crucial.
               </p>
               <Link
@@ -170,7 +172,9 @@ const CrimeCheckAPIPage: React.FC = () => {
                               "Get unmatched coverage across police FIRs, court judgments, charge sheets, and public legal notices with our expansive database network.",
                           },
                           {
-                            icon: <FaLock className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaLock className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Compliant & Secure Verification",
                             description:
                               "Stay aligned with legal mandates and ensure privacy standards. Built with strong data protection layers and audit-ready reporting for compliance-driven sectors.",
@@ -208,6 +212,220 @@ const CrimeCheckAPIPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <section className="bg-[#f7f1ef] py-16 px-4 md:px-8 lg:px-20">
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Choose Your{" "}
+              <span className="text-[#b7603d]">Verification Method</span>
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">🕵️‍♂️</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Crime Check Individual
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Background verification
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Performs a detailed background verification of an individual
+                  by checking for any criminal records using government and law
+                  enforcement databases.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹5-7 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Basic identity checks</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">🏢</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Crime check Company
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Organization Background check
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Verifies the criminal history of a registered business entity,
+                  identifying any legal or fraudulent activities linked to the
+                  organization.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">3-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹8-10 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                     <span className="font-medium">Basic identity checks</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">📂</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Crime Report Download (JSON)
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Download (JSON)
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Allows users to download the structured crime report of an
+                  individual or company in JSON format, suitable for API
+                  integrations and automated systems.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">3-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹8-10 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Basic identity checks</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">📄</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Crime Report Download (PDF)
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Download (PDF)
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Generates a formatted PDF report of the crime background
+                  check, ideal for printing, documentation, or sharing with
+                  clients or authorities.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">3-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹8-10 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                     <span className="font-medium">Basic identity checks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    🕵️‍♂️ Crime Check (Individual):
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>
+                      ✓ Verification against global criminal and fraud databases
+                    </li>
+                    <li>✓ Identity match and criminal history screening</li>
+                    <li>
+                      ✓ Ideal for personal KYC and background verification
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    🏢 Crime Check (Company):
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>
+                      ✓ Checks for fraudulent activity, blacklists, and
+                      sanctions
+                    </li>
+                    <li>✓ Scans linked directors and company structure</li>
+                    <li>
+                      ✓ Ideal for vendor onboarding and business due diligence
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    📂 Crime Report Download (JSON):
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>
+                      ✓ Structured crime report in machine-readable JSON format
+                    </li>
+                    <li>✓ Suitable for API use and automated workflows</li>
+                    <li>✓ Issuing country information</li>
+                    <li>
+                      ✓ Ideal for platforms requiring fast, integrated checks
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    📄 Crime Report Download (PDF):
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Professionally formatted crime report in PDF</li>
+                    <li>
+                      ✓ Suitable for sharing with clients, documentation, or
+                      printing
+                    </li>
+                    <li>✓ Issuing country information</li>
+                    <li>✓ Ideal for audits, legal use, or manual review</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <KnowMore />
 
         <section className="container mx-auto px-4 py-12 ">
           <div className="mx-auto max-w-6xl space-y-8">
@@ -302,7 +520,11 @@ const CrimeCheckAPIPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {item.icon}
                     </motion.div>
@@ -335,8 +557,6 @@ const CrimeCheckAPIPage: React.FC = () => {
                 </h2>
               </div>
               <div className="flex items-center gap-3 text-2xl font-semibold p-8">
-
-
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -344,8 +564,6 @@ const CrimeCheckAPIPage: React.FC = () => {
                   viewport={{ once: true }}
                   className="w-full lg:w-1/2 space-y-8"
                 >
-
-
                   <div className="space-y-8">
                     {[
                       {
@@ -489,7 +707,11 @@ const CrimeCheckAPIPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {service.icon}
                     </motion.div>
@@ -545,9 +767,10 @@ const CrimeCheckAPIPage: React.FC = () => {
                       Simple Integration
                     </h3>
                     <p className="text-gray-600">
-                      Seamlessly integrate the 7Unique Verify Crime Check API into
-                      your platform with clear documentation and developer-first
-                      tools. Designed for scalability and ease of use.
+                      Seamlessly integrate the 7Unique Verify Crime Check API
+                      into your platform with clear documentation and
+                      developer-first tools. Designed for scalability and ease
+                      of use.
                     </p>
                     <div className="mt-4 space-y-2">
                       {[
@@ -589,7 +812,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                         </div>
                         <div className="p-6 font-mono text-sm text-green-400 overflow-x-auto">
                           <div className="text-gray-500">
-                          // Sample API Request
+                            // Sample API Request
                           </div>
                           <div className="mb-2">
                             fetch('https://api.7uniqueverify.com/crime-check',{" "}
