@@ -2,61 +2,65 @@ import React from "react";
 import heroimg from "../../../public/img/aiDashboard/7V1-01 (1).png";
 import { motion } from "framer-motion";
 import { FiArrowRight, FiCheckCircle } from "react-icons/fi";
+import { UsageSection } from "./usageSection";
+import { LuckyTransaction } from "./luckyTransation";
+import { LuckyWallet } from "./wallet";
+import { LuckySteps } from "./stepes";
 
 export const LuckyHeroSection = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="flex flex-col md:flex-row items-center justify-between  shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100 "
-    >
-      {/* bg-gradient-to-br from-white to-gray-50 */}
-      {/* Left Side Image */}
+    <>
       <motion.div
-        whileHover={{ scale: 1.02 }}
-        className="md:w-1/2 w-full relative overflow-hidden rounded-xl shadow-md"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="flex  flex-col md:flex-row items-center justify-between  shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100 "
       >
-        <div className="absolute  z-10 rounded-xl"></div>
-        <img
-          // src="https://www.geckoboard.com/uploads/customer-service-dashboard-example-geckoboard.png"
-          src={heroimg}
-          alt="Dashboard"
-          className="w-full h-auto  rounded-xl transfor hover:scale-101 transition "
-        />
-      </motion.div>
+        {/* bg-gradient-to-br from-white to-gray-50 */}
+        {/* Left Side Image */}
+        <motion.div
+          whileHover={{ scale: 1.02 }}
+          className="md:w-1/2 w-full relative overflow-hidden rounded-xl shadow-md"
+        >
+          <div className="absolute  z-10 rounded-xl"></div>
+          <img
+            src={heroimg}
+            alt="Dashboard"
+            className="w-full h-auto  rounded-xl transfor hover:scale-101 transition shadow-lg "
+          />
+        </motion.div>
 
-      {/* Right Side Text */}
-      <div className="md:w-1/2 w-full md:pl-12 mt-8 md:mt-0 " >
-        <span className="inline-block bg-[#b7603d]/30 text-[#b7603d] px-3 py-1 rounded-full text-sm font-medium mb-4">
-          Premium Features
-        </span>
+        {/* Right Side Text */}
+        <div className="md:w-1/2 w-full md:pl-12 mt-8 md:mt-0 ">
+          <span className="inline-block bg-[#b7603d]/30 text-[#b7603d] px-3 py-1 rounded-full text-sm font-medium mb-4">
+            Premium Features
+          </span>
 
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight bg-white">
-          <span className="text-[#b7603d]">Powerful</span> Dashboard Insights
-        </h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight bg-white">
+            <span className="text-[#b7603d]">Powerful</span> Dashboard Insights
+          </h2>
 
-        <p className="text-gray-600 text-lg leading-relaxed mb-8">
-          Our dashboard provides real-time insights into your activities,
-          performance stats, and business growth. Stay informed with beautifully
-          visualized data and easy-to-use navigation.
-        </p>
+          <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            Our dashboard provides real-time insights into your activities,
+            performance stats, and business growth. Stay informed with
+            beautifully visualized data and easy-to-use navigation.
+          </p>
 
-        <ul className="space-y-4 mb-10">
-          {[
-            "Real-time analytics and updates",
-            "Seamless user experience",
-            "Mobile & desktop responsive layout",
-            "Customizable widgets and reports",
-          ].map((item, index) => (
-            <li key={index} className="flex items-start">
-              <FiCheckCircle className="text-[#b7603d] mt-1 mr-3 flex-shrink-0" />
-              <span className="text-gray-700">{item}</span>
-            </li>
-          ))}
-        </ul>
+          <ul className="space-y-4 mb-10">
+            {[
+              "Real-time analytics and updates",
+              "Seamless user experience",
+              "Mobile & desktop responsive layout",
+              "Customizable widgets and reports",
+            ].map((item, index) => (
+              <li key={index} className="flex items-start">
+                <FiCheckCircle className="text-[#b7603d] mt-1 mr-3 flex-shrink-0" />
+                <span className="text-gray-700">{item}</span>
+              </li>
+            ))}
+          </ul>
 
-        {/* <div className="flex flex-col sm:flex-row gap-4">
+          {/* <div className="flex flex-col sm:flex-row gap-4">
           <Link to={"/contact-us"}>
             <motion.button
               whileHover={{ scale: 1.03 }}
@@ -76,7 +80,12 @@ export const LuckyHeroSection = () => {
             </motion.button>
           </Link>
         </div> */}
-      </div>
-    </motion.div>
+        </div>
+      </motion.div>
+      <UsageSection />
+      <LuckyTransaction />
+      <LuckyWallet />
+      {/* <LuckySteps/> */}
+    </>
   );
 };

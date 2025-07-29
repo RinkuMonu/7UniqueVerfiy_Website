@@ -1,5 +1,6 @@
 import React from "react";
-import heroimg from "../../../public/ddddddd.png";
+import heroimg from "../../../public/img/aiDashboard/7V4-01 (1).png";
+
 import { motion } from "framer-motion";
 import {
   FiDollarSign,
@@ -18,7 +19,7 @@ export const LuckyWallet = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col-reverse md:flex-row items-center justify-between shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100"
+      className="flex flex-col-reverse md:flex-row items-center justify-between shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100 "
     >
       {/* Text Content - Left Side */}
       <div className="md:w-1/2 w-full md:pr-12 mt-8 md:mt-0">
@@ -30,7 +31,7 @@ export const LuckyWallet = () => {
         </div>
 
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-          <span className="text-[#b7603d]">View All</span> Wallet Transactions
+          <span className="text-[#b7603d]">View All</span> API's Credential
         </h2>
 
         <p className="text-gray-600 text-lg leading-relaxed mb-8">
@@ -70,18 +71,19 @@ export const LuckyWallet = () => {
       <motion.div
         whileHover={{ scale: 1.02 }}
         className="md:w-1/2 w-full relative overflow-hidden rounded-xl shadow-lg mb-8 md:mb-0"
+        
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10 rounded-xl"></div>
         <img
-          // src={heroimg}
-          src="https://www.geckoboard.com/uploads/customer-service-dashboard-example-geckoboard.png"
+          src={heroimg}
+          // src="https://www.geckoboard.com/uploads/customer-service-dashboard-example-geckoboard.png"
           alt="Wallet Dashboard"
-          className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500"
+          className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500 shadow-lg"
         />
         <div className="absolute bottom-4 left-4 z-20">
           <span className="bg-white/90 text-gray-800 px-3 py-1 rounded-full text-sm font-medium shadow-sm flex items-center gap-1">
             <FiDollarSign className="text-[#b7603d]" />
-            Live Balances
+            Live Update
           </span>
         </div>
       </motion.div>

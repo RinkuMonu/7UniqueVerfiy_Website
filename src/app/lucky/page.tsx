@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LuckyHeroSection } from "./hero";
-import { UsageSection } from "./usageSection";
 import { LuckySteps } from "./stepes";
+import { UsageSection } from "./usageSection";
 import { LuckyWallet } from "./wallet";
 import { LuckyTransaction } from "./luckyTransation";
 import KnowMore from "../../components/KnowMore";
@@ -54,13 +54,10 @@ export const Lucky = () => {
         </div>
       </section>
       <div
-        className="bg-no-repeat bg-cover bg-center "
+        className="bg-no-repeat bg-contain bg-center "
         style={{ backgroundImage: `url(${bgcImg})` }}
       >
       <LuckyHeroSection />
-      <UsageSection />
-      <LuckyTransaction />
-      <LuckyWallet />
       </div>
       <LuckySteps />
       <KnowMore />
