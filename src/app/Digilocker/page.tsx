@@ -787,15 +787,14 @@ export const DigilockerApi = () => {
             <div className="p-8">
               <div className="grid gap-10 grid-cols-1 md:grid-cols-2 text-left">
                 <div className="bg-white p-6 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl border border-gray-100 hover:border-[#b7603d]/30">
-              
                   <h3 className="text-xl font-semibold text-gray-800 mb-2 flex items-center gap-2">
                     <FaServer className="h-5 w-5 text-[#b7603d]" />
                     Simple Integration
                   </h3>
                   <p className="text-gray-600">
-                    Get started with our Digilocker API in
-                    minutes. Our comprehensive documentation and SDKs make
-                    integration seamless across all platforms.
+                    Get started with our Digilocker API in minutes. Our
+                    comprehensive documentation and SDKs make integration
+                    seamless across all platforms.
                   </p>
                   <div className="mt-4 space-y-2">
                     {[
@@ -834,22 +833,20 @@ export const DigilockerApi = () => {
                           // Sample API Request
                         </div>
                         <div className="mb-2">
-                          POST /api/v1/bank-verification {"{"}
+                          POST /api/v1/digilocker/initiate_session {"{"}
                         </div>
+                        <div className="ml-4">"refid": "1234567890",</div>
                         <div className="ml-4">
-                          "account_number": "1234567890",
+                          "redirect_url": "exmaple.com",
                         </div>
-                        <div className="ml-4">"ifsc_code": "SBIN0001234",</div>
-                        <div className="ml-4">
-                          "account_holder_name": "John Doe"
-                        </div>
+
                         <div className="mb-2">{"}"}</div>
-                        <div className="mt-4 text-gray-500">// Response</div>
-                        <div>{"{"}</div>
-                        <div className="ml-4">"status": "verified",</div>
-                        <div className="ml-4">"account_exists": true,</div>
-                        <div className="ml-4">"name_match": "exact"</div>
-                        <div>{"}"}</div>
+                        {/* <div className="mt-4 text-gray-500">// Response</div>
+                          <div>{"{"}</div>
+                          <div className="ml-4">"status": "verified",</div>
+                          <div className="ml-4">"account_exists": true,</div>
+                          <div className="ml-4">"name_match": "exact"</div>
+                          <div>{"}"}</div> */}
                       </div>
                     </div>
                   </div>
