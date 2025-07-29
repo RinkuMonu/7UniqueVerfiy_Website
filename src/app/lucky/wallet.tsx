@@ -18,7 +18,7 @@ export const LuckyWallet = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col-reverse md:flex-row items-center justify-between bg-gradient-to-br from-white to-gray-50 shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100"
+      className="flex flex-col-reverse md:flex-row items-center justify-between shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100"
     >
       {/* Text Content - Left Side */}
       <div className="md:w-1/2 w-full md:pr-12 mt-8 md:mt-0">
@@ -53,7 +53,7 @@ export const LuckyWallet = () => {
           ))}
         </ul>
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        {/* <div className="flex flex-col sm:flex-row gap-4">
           <Link to={"/contact-us"}>
             <motion.button
               whileHover={{ scale: 1.03 }}
@@ -63,7 +63,7 @@ export const LuckyWallet = () => {
               Get Started <FiArrowRight />
             </motion.button>
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* Image - Right Side */}
@@ -73,7 +73,8 @@ export const LuckyWallet = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10 rounded-xl"></div>
         <img
-          src={heroimg}
+          // src={heroimg}
+          src="https://www.geckoboard.com/uploads/customer-service-dashboard-example-geckoboard.png"
           alt="Wallet Dashboard"
           className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500"
         />

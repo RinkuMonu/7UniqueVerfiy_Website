@@ -11,13 +11,13 @@ export const UsageSection = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col-reverse md:flex-row items-center justify-between bg-gradient-to-br from-white to-gray-50 shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100"
+      className="flex flex-col-reverse md:flex-row items-center justify-between  shadow-xl rounded-2xl overflow-hidden p-6 md:p-12 max-w-7xl mx-auto my-16 border border-gray-100"
     >
       {/* Text Content - Now on the left side */}
       <div className="md:w-1/2 w-full md:pr-12 mt-8 md:mt-0">
-        <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center gap-2 mb-4 ">
           <FiBarChart2 className="text-[#b7603d] text-xl" />
-          <span className="text-sm font-medium text-gray-500">
+          <span className="text-sm font-medium text-gray-500 /20   ">
             DATA ANALYTICS
           </span>
         </div>
@@ -46,7 +46,7 @@ export const UsageSection = () => {
           ))}
         </ul>
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        {/* <div className="flex flex-col sm:flex-row gap-4">
           <Link to={"/contact-us"}>
             <motion.button
               whileHover={{ scale: 1.03 }}
@@ -56,7 +56,7 @@ export const UsageSection = () => {
               Get Started <FiArrowRight />
             </motion.button>
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* Image - Now on the right side */}
@@ -66,7 +66,8 @@ export const UsageSection = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10 rounded-xl"></div>
         <img
-          src={heroimg}
+          // src={heroimg}
+          src="https://www.geckoboard.com/uploads/customer-service-dashboard-example-geckoboard.png"
           alt="Usage Dashboard"
           className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500"
         />

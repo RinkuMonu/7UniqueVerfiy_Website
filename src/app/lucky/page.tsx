@@ -6,12 +6,13 @@ import { LuckySteps } from "./stepes";
 import { LuckyWallet } from "./wallet";
 import { LuckyTransaction } from "./luckyTransation";
 import KnowMore from "../../components/KnowMore";
+import bgcImg from "../../../public/img/aiDashboard/Group 71.png";
 
 export const Lucky = () => {
   return (
     <>
       <section
-        className="w-full bg-cover bg-center min-h-screen flex items-center px-4 py-10"
+        className="w-full bg-cover bg-center min-h-screen flex items-center px-4 py-10 z-[99]"
         style={{ backgroundImage: "url('/img/bg (2).png')" }}
       >
         <div className="container mx-auto  flex flex-col md:flex-row items-center justify-between gap-12">
@@ -52,10 +53,15 @@ export const Lucky = () => {
           </div>
         </div>
       </section>
+      <div
+        className="bg-no-repeat bg-cover bg-center "
+        style={{ backgroundImage: `url(${bgcImg})` }}
+      >
       <LuckyHeroSection />
       <UsageSection />
       <LuckyTransaction />
       <LuckyWallet />
+      </div>
       <LuckySteps />
       <KnowMore />
     </>
