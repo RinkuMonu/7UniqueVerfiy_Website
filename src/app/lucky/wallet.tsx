@@ -70,7 +70,7 @@ export const LuckyWallet = () => {
       {/* Image - Right Side */}
       <motion.div
         whileHover={{ scale: 1.02 }}
-        className="md:w-1/2 w-full relative overflow-hidden rounded-xl mb-8 md:mb-0"
+        className="md:w-1/2 w-full relative overflow-hidden rounded-xl mb-8 md:mb-0 transition-shadow duration-300 hover:shadow-[0_10px_15px_-3px_rgba(59,130,246,0.5)]"
         
       >
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10 rounded-xl"></div> */}
@@ -78,7 +78,7 @@ export const LuckyWallet = () => {
           src={heroimg}
           // src="https://www.geckoboard.com/uploads/customer-service-dashboard-example-geckoboard.png"
           alt="Wallet Dashboard"
-          className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500"
+          className="w-full h-auto object-cover rounded-xl transform hover:scale-101 transition duration-500"
         />
         <div className="absolute bottom-4 left-4 z-20">
           <span className="bg-white/90 text-gray-800 px-3 py-1 rounded-full text-sm font-medium  flex items-center gap-1">

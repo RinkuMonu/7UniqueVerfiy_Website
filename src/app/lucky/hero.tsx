@@ -21,6 +21,7 @@ export const LuckyHeroSection = () => {
         <motion.div
           whileHover={{ scale: 1.02 }}
           className="md:w-1/2 w-full relative overflow-hidden rounded-xl transition-shadow duration-300 hover:shadow-[0_10px_15px_-3px_rgba(59,130,246,0.5)]"
+         
         >
           {/* <div className="absolute  z-10 rounded-xl"></div> */}
           <img
