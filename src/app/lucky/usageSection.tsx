@@ -1,5 +1,5 @@
 import React from "react";
-import heroimg from "../../../public/ddddddd.png";
+import heroimg from "../../../public/img/aiDashboard/7V3-01 (1).png";
 import { motion } from "framer-motion";
 import { FiCheckCircle, FiDownload, FiBarChart2, FiArrowRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -66,10 +66,9 @@ export const UsageSection = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10 rounded-xl"></div>
         <img
-          // src={heroimg}
-          src="https://www.geckoboard.com/uploads/customer-service-dashboard-example-geckoboard.png"
+          src={heroimg}
           alt="Usage Dashboard"
-          className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500"
+          className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition duration-500  shadow-lg"
         />
         <div className="absolute bottom-4 right-4 z-20">
           <span className="bg-white/90 text-gray-800 px-3 py-1 rounded-full text-sm font-medium shadow-sm flex items-center gap-1">
