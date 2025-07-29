@@ -10,27 +10,27 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Chandan Richards",
-    location: "Pune, India",
+    name: " Ravi Mehta",
+    location: "Pune, Maharashtra",
     role: "Compliance Officer",
     quote:
-      "7Unique Verify has simplified our KYC process completely. Real-time PAN and Aadhaar validation helps us onboard customers faster without compromising compliance.",
+      "7UniqueVerify has made our KYC process smooth and easy. PAN and Aadhaar verification now happens in real-time, which saves us time and helps us stay compliant.",
     rating: 5,
   },
   {
-    name: "Deepak Sharma",
-    location: "Gurgaon, India",
-    role: "Risk Analyst",
+    name: " Anita Sharma",
+    location: "Gurgaon, Haryana",
+    role: " Risk Analyst",
     quote:
-      "We've integrated multiple APIs from 7Unique Verify—CKYC, Voter ID, and DL checks. Their platform is reliable, fast, and easy to plug into our existing systems.",
+      "We are using many APIs from 7UniqueVerify like CKYC, Voter ID, and Driving Licence. Their system is fast, easy to use, and works well with our internal tools.",
     rating: 5,
   },
   {
-    name: "Sonu Wilson",
-    location: "Jaipur, India",
+    name: "Sandeep Verma",
+    location: "Jaipur, Rajasthan",
     role: "Operations Manager",
     quote:
-      "Using 7Unique Verify, our employee background checks are now automated and verifiable within seconds. The support team is also very responsive and helpful.",
+      "Background checks that earlier took days now happen in seconds with 7UniqueVerify. Their support team is helpful and always ready to solve issues quickly.",
     rating: 5,
   },
 ];
@@ -67,7 +67,7 @@ const HomeTestimonials: React.FC = () => {
       <div className="relative w-full mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#3a2a22] mb-4 relative inline-block">
-            Real Stories from Satisfied Customers
+            Real Stories from Our Happy Clients
             <svg
               className="absolute -bottom-2 left-0 w-full h-2 text-[#b7603d]"
               viewBox="0 0 200 10"
@@ -81,8 +81,9 @@ const HomeTestimonials: React.FC = () => {
             </svg>
           </h2>
           <p className="text-lg text-[#6e5c53] max-w-2xl mx-auto">
-            Our clients' satisfaction is at the heart of everything we do. We
-            take pride in delivering exceptional communication.
+            Our clients’ success is our biggest achievement. We are proud to
+            offer trusted API services that help businesses work faster, safer,
+            and smarter.
           </p>
         </div>
 
@@ -97,7 +98,9 @@ const HomeTestimonials: React.FC = () => {
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
             <span className="text-white font-bold text-lg mr-2">4.8/5</span>
-            <span className="text-white text-sm">Based on 14K+ reviews</span>
+            <span className="text-white text-sm">
+              Based on 14K+ real customer reviews
+            </span>
           </div>
         </div>
 

@@ -1,4 +1,9 @@
-import { FaFileAlt, FaCheckCircle, FaSearch, FaClipboardCheck } from 'react-icons/fa';
+import {
+  FaFileAlt,
+  FaCheckCircle,
+  FaSearch,
+  FaClipboardCheck,
+} from "react-icons/fa";
 
 export default function HomeProcess() {
   return (
@@ -9,12 +14,14 @@ export default function HomeProcess() {
             OUR PROCESS
           </p>
           <h2 className="text-3xl sm:text-4xl font-semibold text-[#0f172a] leading-tight mb-4">
-            Verification Process That's Fast,
+            Fast, Reliable & Easy-to-Use
             <br className="hidden sm:block" />
-            Reliable & Fully Digital
+            Verification from One Dashboard
           </h2>
           <p className="text-sm text-[#475569] max-w-xl mx-auto">
-            From document collection to real-time validation, we simplify the entire journey using powerful APIs like Aadhaar, PAN, DL, and CKYC—designed for Indian businesses.
+            No complex integration needed. Clients get access to a secure
+            dashboard where they can use 84+ verification APIs like Aadhaar,
+            PAN, DL, CKYC, and more—without writing any code.
           </p>
         </div>
 
@@ -44,16 +51,20 @@ export default function HomeProcess() {
           </div>
         </nav>
 
-        <div className="mt-10 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="zoom-out">
+        <div
+          className="mt-10 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          data-aos="zoom-out"
+        >
           <article className="bg-white rounded-xl p-8 flex flex-col items-center text-center">
             <div className="bg-[#b7603d] rounded-full w-16 h-16 flex items-center justify-center mb-6">
               <FaFileAlt className="w-6 h-6 text-white" />
             </div>
             <h3 className="font-semibold text-[#0f172a] mb-2 text-lg">
-              Submit Basic Details
+              Sign Up & Get Dashboard Access
             </h3>
             <p className="text-[#475569] text-sm leading-relaxed">
-              Start with user or entity information like Aadhaar number, PAN, or mobile number via API or form.
+              Clients register with us and receive login access to our powerful
+              API dashboard—developed and managed in Jaipur, India.
             </p>
           </article>
 
@@ -62,10 +73,11 @@ export default function HomeProcess() {
               <FaCheckCircle className="w-6 h-6 text-white" />
             </div>
             <h3 className="font-semibold text-[#0f172a] mb-2 text-lg">
-              Instant Data Validation
+              Submit User Details in the Panel
             </h3>
             <p className="text-[#475569] text-sm leading-relaxed">
-              Real-time validation using 7Unique Verify's APIs with OTP or consent-based authentication.
+              From the dashboard, enter basic user or customer info like Aadhaar
+              number, PAN, mobile number, or other ID details.
             </p>
           </article>
 
@@ -74,10 +86,11 @@ export default function HomeProcess() {
               <FaSearch className="w-6 h-6 text-white" />
             </div>
             <h3 className="font-semibold text-[#0f172a] mb-2 text-lg">
-              Data Cross-Check
+              Real-Time Verification with Government Sources
             </h3>
             <p className="text-[#475569] text-sm leading-relaxed">
-              Verified data is matched against official databases (UIDAI, NSDL, MoRTH, etc.) for fraud prevention.
+              Our system verifies the data instantly using trusted APIs
+              connected with UIDAI, NSDL, MoRTH, CKYC, etc.
             </p>
           </article>
 
@@ -86,10 +99,11 @@ export default function HomeProcess() {
               <FaClipboardCheck className="w-6 h-6 text-white" />
             </div>
             <h3 className="font-semibold text-[#0f172a] mb-2 text-lg">
-              Verification Complete
+              Get Instant Results & Download Reports
             </h3>
             <p className="text-[#475569] text-sm leading-relaxed">
-              Receive success or failure response instantly with detailed verification report and reference ID.
+              Clients get success or failure results within seconds, along with
+              downloadable reports and reference IDs for records or audits.
             </p>
           </article>
         </div>

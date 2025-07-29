@@ -5,24 +5,28 @@ import { Link } from "react-router-dom";
 
 const faqs = [
   {
-    q: "What is VOIP and how can it benefit my business?",
-    a: "VOIP (Voice over Internet Protocol) lets you make calls using the internet instead of traditional phone lines. It's cost-effective, offers better call quality, and works perfectly with 7Unique Verify's cloud telephony solutions.",
+    q: "What does 7UniqueVerify offer?",
+    a: "We provide over 84+ APIs for identity verification, KYC, and document checks like PAN, Aadhaar, Bank Account, UPI, GST, and EPFO.",
   },
   {
-    q: "Can VOIP integrate with 7Unique Verify's APIs and dashboards?",
-    a: "Yes, 7Unique Verify's systems are designed to support seamless VOIP integration — whether it's for lead verification, number masking, or CRM syncing.",
+    q: " Can I integrate your APIs into my own website or app?",
+    a: " Yes. If you have a development team or tech setup, you can directly integrate our APIs into your system. We provide full documentation and support.",
   },
   {
-    q: "Can I port my existing number while switching to VOIP with 7Unique Verify?",
-    a: "Bilkul. Aap apna purana mobile ya landline number easily 7Unique Verify ke VOIP solution mein port kara sakte ho bina kisi rukawat ke.",
+    q: "What if I don’t have a tech team or developer?",
+    a: " No problem. We’ll give you access to our ready-to-use dashboard, where you can do verifications directly—without any coding or setup.",
   },
   {
-    q: "Is communication secure on VOIP networks?",
-    a: "Yes, 7Unique Verify uses encrypted connections and secure infrastructure to protect your business calls and client data from any unauthorized access.",
+    q: "Is the verification process real-time and accurate?",
+    a: " Yes. All verifications happen instantly using trusted sources like UIDAI, NSDL, CKYC, and others. You get results within seconds.",
   },
   {
-    q: "What kind of support do I get with 7Unique Verify VOIP services?",
-    a: "You get 24x7 support via chat, email, and call from our dedicated technical team. We also help you with setup, integration, and usage training.",
+    q: " Will I get reports and records after each verification?",
+    a: " Yes. You get a full verification report with a reference ID after every check. You can also download it anytime from the dashboard.",
+  },
+  {
+    q: "What kind of support do you provide?",
+    a: "We provide full technical support for integration, training for dashboard users, and ongoing help whenever you need it.",
   },
 ];
 
@@ -53,9 +57,8 @@ export default function HomeFAQ() {
                 Frequently Asked <br className="hidden lg:block" /> Questions
               </h1>
               <p className="text-lg text-gray-600">
-                We've answered some common doubts to help you understand how
-                7Unique Verify's VOIP & telecom services can simplify
-                communication for your business.
+                Here are some common questions to help you understand how
+                7UniqueVerify works for different types of businesses.
               </p>
               <Link to={"/about-us"}>
                 <motion.button

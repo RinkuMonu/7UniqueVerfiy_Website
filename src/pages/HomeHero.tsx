@@ -28,11 +28,11 @@ export default function HomeHero() {
         {/* Left: Headline and CTA */}
         <div className="w-full lg:w-1/2 flex flex-col text-left space-y-8">
           <div className="space-y-6" data-aos="fade-right" data-aos-delay="100">
-            <h1 className="font-extrabold text-[#2a2a2a] text-4xl sm:text-5xl md:text-[56px] lg:text-[64px] leading-tight">
-              <span className="text-[#b7603d]">Empowering</span> Your Business
-              with{" "}
+            <h1 className="font-extrabold text-[#2a2a2a] text-4xl sm:text-5xl md:text-[45px] lg:text-[55px] leading-tight">
+              <span className="text-[#b7603d]">India's</span> reliable API hub
+              for all your KYC &{" "}
               <span className="relative inline-block">
-                <span className="relative z-10">Reliable Solutions</span>
+                <span className="relative z-10">verification requirements</span>
                 <svg
                   className="absolute -bottom-2 left-0 w-full h-3 text-[#b7603d]/30"
                   viewBox="0 0 200 20"
@@ -47,8 +47,9 @@ export default function HomeHero() {
               </span>
             </h1>
             <p className="text-[#6b6b6b] text-lg md:text-xl leading-relaxed tracking-wide max-w-lg">
-              The power of VOIP, telecom, and cloud technologies to deliver
-              seamless communication solutions for businesses.
+              Easily verify more with PAN, Aadhaar, bank, GST, EPFO, and our
+              safe and sharp API suits. A user-friendly dashboard, real-time
+              results, and simple integration are available from one place.
             </p>
           </div>
 

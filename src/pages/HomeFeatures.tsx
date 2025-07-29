@@ -38,9 +38,10 @@ const HomeFeatures: React.FC = () => {
             ABOUT US
           </motion.span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-            We at <span className="text-[#b7603d]">7Unique Verify</span> specialize in{" "}
+            At <span className="text-[#b7603d]">7uniqueverify</span> we focus on
+            doing{" "}
             <span className="relative inline-block">
-              <span className="relative z-10">innovative solutions</span>
+              <span className="relative z-10">one thing very well</span>
               <motion.span
                 className="absolute bottom-0 left-0 w-full h-3 bg-[#b7603d]/20 -rotate-1"
                 initial={{ scaleX: 0 }}
@@ -57,8 +58,17 @@ const HomeFeatures: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            Delivering cutting-edge <strong className="text-gray-800">VOIP, telecom, and cloud</strong> solutions designed to transform business communications.
-            Our focus on <strong className="text-gray-800">reliability</strong> and <strong className="text-gray-800">scalability</strong> ensures seamless connectivity for your team.
+            Providing fast, safe, and scalable API-based checking for truth
+            solutions.{" "}
+            <strong className="text-gray-800">
+              PAN, Aadhaar, bank, GST, EPFO, and UPI from matches and documents
+              to face OCR, our APIs power very smooth onboarding, compliance,
+            </strong>{" "}
+            <strong className="text-gray-800">
+              and identification verification
+            </strong>{" "}
+            for{" "}
+            <strong className="text-gray-800">businesses across India.</strong>
           </motion.p>
         </motion.div>
 
@@ -89,13 +99,14 @@ const HomeFeatures: React.FC = () => {
                   variants={fadeIn}
                   className="text-4xl md:text-5xl font-bold leading-tight mb-6"
                 >
-                  Elevate Your Communication Experience
+                  Make Verification Easy for Every Business
                 </motion.h2>
                 <motion.p
                   variants={fadeIn}
                   className="text-lg  opacity-90 mb-8"
                 >
-                  Discover how our tailored solutions can transform your business operations.
+                  See how our ready-to-use API solutions help different
+                  industries work faster, safer, and smarter.
                 </motion.p>
                 <motion.button
                   variants={fadeIn}
@@ -103,8 +114,12 @@ const HomeFeatures: React.FC = () => {
                   whileTap={{ scale: 0.95 }}
                   className="mt-2 bg-white text-[#b7603d] font-semibold text-lg rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
                 >
-                  <Link to={'/about-us'} className="flex items-center gap-2 px-8 py-3">
-                    Explore More <FiArrowRight className="transition-transform group-hover:translate-x-1" />
+                  <Link
+                    to={"/about-us"}
+                    className="flex items-center gap-2 px-8 py-3"
+                  >
+                    Explore More{" "}
+                    <FiArrowRight className="transition-transform group-hover:translate-x-1" />
                   </Link>
                 </motion.button>
               </motion.div>
@@ -127,45 +142,33 @@ const HomeFeatures: React.FC = () => {
                   {
                     icon: "bi bi-cash-coin",
                     title: "Lending",
-                    desc: "Facilitate fast and secure loan approvals using identity verification and financial data APIs.",
-
-
+                    desc: " Speed up loan approvals with fast and secure APIs for PAN, Aadhaar, bank account, and income verification",
                   },
                   {
                     icon: "bi bi-bank",
                     title: "Banking",
-                    desc: "Enhance compliance and prevent fraud with KYC, account validation, and document checks.",
-
-
+                    desc: " Stay compliant and reduce fraud using KYC APIs, bank account checks, face match, and document verification.",
                   },
                   {
                     icon: "bi bi-emoji-laughing",
                     title: "Staffing & Recruitment",
-                    desc: "Improve hiring decisions with Employment BGV verification APIs and faster onboarding.",
-
-
+                    desc: " Make hiring smooth and reliable with employee background verification (BGV), UAN, EPFO, and ID checks.",
                   },
                   {
                     icon: "bi bi-bounding-box",
                     title: "Logistics",
-                    desc: "Ensure package safety and agent accountability with real-time ID and location verification.",
-
-
+                    desc: " Verify delivery agents or field staff using real-time ID and location APIs to keep your operations safe and trusted.",
                   },
                   {
                     icon: "bi bi-cart-check",
                     title: "FMCG / FMCD",
-                    desc: "Mitigate risks by verifying delivery agents, field staff, and onboarding contractors easily.",
-
-
+                    desc: " Onboard contractors, sales teams, and field workers are quickly using mobile, PAN, Aadhaar, and face match APIs.",
                   },
                   {
                     icon: "bi bi-shield-check",
                     title: "Security",
-                    desc: "Advanced fraud prevention and secure authentication for all your communication channels.",
-
-
-                  }
+                    desc: "Use smart verification tools like face match, liveness detection, and IP check to protect your platform from fraud.",
+                  },
                 ].map((feature, idx) => (
                   <motion.div
                     key={idx}
@@ -174,8 +177,12 @@ const HomeFeatures: React.FC = () => {
                     whileHover={{ y: -5 }}
                   >
                     <div className="p-8">
-                      <div className={`text-4xl mb-6  text-[#b7603d] group-hover:text-[#b7603d] transition-colors duration-300`}>
-                        <i className={`${feature.icon} bg-[#f1dad0] p-2 rounded-full`}></i>
+                      <div
+                        className={`text-4xl mb-6  text-[#b7603d] group-hover:text-[#b7603d] transition-colors duration-300`}
+                      >
+                        <i
+                          className={`${feature.icon} bg-[#f1dad0] p-2 rounded-full`}
+                        ></i>
                       </div>
                       <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#b7603d] transition-colors duration-300">
                         {feature.title}
@@ -183,9 +190,7 @@ const HomeFeatures: React.FC = () => {
                       <p className="text-gray-600 leading-relaxed mb-4">
                         {feature.desc}
                       </p>
-                      <ul className="space-y-2">
-
-                      </ul>
+                      <ul className="space-y-2"></ul>
                     </div>
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#b7603d] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </motion.div>
