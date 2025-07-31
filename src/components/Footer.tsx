@@ -83,7 +83,7 @@ export default function Footer() {
               "Bank Account Verification",
               "Aadhaar Verification",
               "PAN Verification",
-              "CKYC Search & download",
+              // "CKYC Search & download",
               "Passport Verification",
               "Driving License Verification",
               "RC Verification",
