@@ -138,11 +138,11 @@ const verificationServices: DropdownItem[] = [
     icon: <FaMobileAlt />,
     href: "/mobile-verification-api",
   },
-  {
-    title: "CKYC Search & download",
-    icon: <FaRegFileAlt />,
-    href: "/ckyc-search-&-download",
-  },
+  // {
+  //   title: "CKYC Search & download",
+  //   icon: <FaRegFileAlt />,
+  //   href: "/ckyc-search-&-download",
+  // },
   // {
   //   title: "User",
   //   icon: <FaUser />,
