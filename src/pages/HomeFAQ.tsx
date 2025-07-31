@@ -30,12 +30,55 @@ const faqs = [
   },
 ];
 
+const keywordLinks: { [key: string]: string } = {
+  PAN: "/pan-verification",
+  Aadhaar: "/aadhaar-verification",
+  Bank: "/bank-account-verification",
+  UPI: "/kyc",
+  GST: "/kyb",
+  EPFO: "/financial-checks",
+  CKYC: "/kyc",
+  UIDAI: "/kyb",
+};
+
+function linkifyText(text: string) {
+  const regex = new RegExp(
+    `\\b(${Object.keys(keywordLinks).join("|")})\\b`,
+    "g"
+  );
+
+  return text.split(regex).map((part, i) => {
+    if (keywordLinks[part]) {
+      const isExternal = keywordLinks[part].startsWith("http");
+      return isExternal ? (
+        <a
+          key={i}
+          href={keywordLinks[part]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#b7603d] underline hover:text-[#9a4f32]"
+        >
+          {part}
+        </a>
+      ) : (
+        <Link
+          key={i}
+          to={keywordLinks[part]}
+          className="text-[#b7603d] underline hover:text-[#9a4f32]"
+        >
+          {part}
+        </Link>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
+
 export default function HomeFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8  sm:py-28 bg-gradient-to-b from-[#f9f9f9] to-white relative overflow-hidden ">
-      {/* Decorative elements */}
+    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 sm:py-28 bg-gradient-to-b from-[#f9f9f9] to-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-r from-[#f9f0eb]/20 to-[#f3f8fb]/20 -z-10"></div>
       <div className="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-[#b7603d]/10 blur-3xl -z-10"></div>
 
@@ -134,7 +177,7 @@ export default function HomeFAQ() {
                         className="overflow-hidden"
                       >
                         <div className="p-6 mt-1 text-gray-600 bg-white rounded-b-xl shadow-lg border-t-0">
-                          {faq.a}
+                          {linkifyText(faq.a)}
                         </div>
                       </motion.div>
                     )}
