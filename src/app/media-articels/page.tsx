@@ -31,7 +31,9 @@ interface Category {
   name: string;
   created_at: string;
 }
+// Article/BlogPost type
 interface Article {
+  id: number;
   title: string;
   content: string;
   created_at: string;
@@ -43,6 +45,7 @@ interface Article {
   date: string;
   premium: boolean;
   slug: string;
+  category_id: string | number;
 }
 
 // interface Category {
@@ -53,7 +56,6 @@ interface CategoryButton {
   name: string;
   icon: React.ReactNode;
 }
-
 interface ArticleCardProps {
   article: Article;
   index: number;
@@ -365,9 +367,13 @@ const MediaArticles: React.FC = () => {
   }, [selectedCategoryId]);
 
   useEffect(() => {
+    interface CategoryMap {
+      [key: string | number]: Category;
+    }
+
     const fetchCategories = async () => {
       try {
-        const categoryPromises = articleData?.map((blog: BlogPost) =>
+        const categoryPromises = articleData.map((blog: Article) =>
           fetch(
             `https://cms.sevenunique.com/apis/category/get_category_by_id.php?category_id=${blog.category_id}`,
             {
@@ -380,11 +386,12 @@ const MediaArticles: React.FC = () => {
         );
 
         const categoriesResults = await Promise.all(categoryPromises);
+        const categoriesMap: CategoryMap = {};
 
-        const categoriesMap: Record<number, Category> = {};
         categoriesResults.forEach((catRes, idx) => {
-          if (catRes.data) {
-            categoriesMap[articleData[idx].category_id] = catRes.data;
+          const categoryId = articleData[idx]?.category_id;
+          if (catRes.data && categoryId !== undefined) {
+            categoriesMap[categoryId] = catRes.data;
           }
         });
 
