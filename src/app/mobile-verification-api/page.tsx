@@ -320,19 +320,10 @@ const MobileVerificationAPIPage: React.FC = () => {
               <span className="text-[#b7603d]">Verification Method</span>
             </h2>
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
-              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+              {/* <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
                 <div className="flex items-center mb-4">
                   <div
-                    className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
- rounded-full flex items-center justify-center mr-4"
+                    className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4"
                   >
                     <span className="text-[#b7603d]   font-bold">✓</span>
                   </div>
@@ -365,27 +356,51 @@ const MobileVerificationAPIPage: React.FC = () => {
                     <span className="font-medium">Quick validation</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
-                  <div
-                    className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
-   rounded-full flex items-center justify-center mr-4"
-                  >
-                    <span className="text-[#b7603d]   font-bold">🔍</span>
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">📱</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">
-                      Detailed Carrier Lookup
+                      Mobile Verification Without OTP{" "}
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Comprehensive Check
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Provides complete carrier details including circle, operator,
+                  and number type.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">
+                      ₹1-1.50 per verification
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Detailed analysis</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">📱</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Mobile Verification With OTP{" "}
                     </h3>
                     <span className="text-sm text-[#b7603d]   font-medium">
                       Comprehensive Check
@@ -447,7 +462,7 @@ const MobileVerificationAPIPage: React.FC = () => {
             </div>
           </div>
         </section>
-        <KnowMore/>
+        <KnowMore />
 
         {/* Benefits Section */}
         <section className="container mx-auto px-4 py-12">
@@ -680,7 +695,7 @@ const MobileVerificationAPIPage: React.FC = () => {
                       ))}
                     </div>
                     <Link
-                      to="/mobile-verification-page-api"
+                      to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                       className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors mt-5"
                     >
                       View API Documentation

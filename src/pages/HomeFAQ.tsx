@@ -53,9 +53,9 @@ export default function HomeFAQ() {
               <span className="inline-block bg-[#f3e8e3] text-[#b7603d] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
                 FAQ
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                 Frequently Asked <br className="hidden lg:block" /> Questions
-              </h1>
+              </h2>
               <p className="text-lg text-gray-600">
                 Here are some common questions to help you understand how
                 7UniqueVerify works for different types of businesses.

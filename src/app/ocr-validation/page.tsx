@@ -46,7 +46,7 @@ const OCRValidationPage: React.FC = () => {
                   Get Started
                 </a>
                 <a
-                  href="#"
+                  href="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                   className="inline-block border border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
                 >
                   View Documentation
@@ -209,9 +209,11 @@ const OCRValidationPage: React.FC = () => {
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <h5 className="font-medium text-gray-700 mb-2">Advance OCR:</h5>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Advance OCR:
+                  </h5>
                   <ul className="text-sm text-gray-600 space-y-1">
-                  <li>✓ Handwriting recognition</li>
+                    <li>✓ Handwriting recognition</li>
                     <li>✓ Document structure analysis</li>
                     <li>✓ Table and form extraction</li>
                     <li>✓ Data validation</li>

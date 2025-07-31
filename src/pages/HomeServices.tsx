@@ -10,6 +10,7 @@ import {
   FaChartLine,
   FaChevronRight,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -23,18 +24,22 @@ export default function HomeServices() {
     {
       icon: <FaMoneyCheckAlt className="text-lg" />,
       label: "KYC & Identity Verification",
+      herf: "/kyc",
     },
     {
       icon: <FaPhoneAlt className="text-lg" />,
       label: "Banking & Financial Verification",
+      herf: "/financial-checks",
     },
     {
       icon: <FaServer className="text-lg" />,
       label: " Business & GST Checks",
+      herf: "/kyb",
     },
     {
       icon: <FaFax className="text-lg" />,
       label: "Document & Face Match",
+      herf: "/Fraud_Detection",
     },
   ];
 
@@ -136,15 +141,15 @@ export default function HomeServices() {
                 </p>
               </div>
             </motion.div>
-
-            <div className="grid gap-4 ">
+            <div className="grid gap-4">
               {services.map((service, index) => (
-                <ServiceCard
-                  key={index}
-                  icon={service.icon}
-                  label={service.label}
-                  delay={index * 0.1}
-                />
+                <Link to={service.herf} key={index}>
+                  <ServiceCard
+                    icon={service.icon}
+                    label={service.label}
+                    delay={index * 0.1}
+                  />
+                </Link>
               ))}
             </div>
           </div>

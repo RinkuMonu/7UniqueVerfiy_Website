@@ -199,8 +199,8 @@ const RefundCancellationPage: React.FC = () => {
                 </p>
                 <div className="mt-6 p-4 bg-[#b7603d]/5 rounded-lg border border-[#b7603d]/20">
                   <h3 className="font-medium text-[#b7603d] mb-2">Support Contact:</h3>
-                  <p className="text-gray-700">Email: <a href="mailto:support@7uniqueverify.com" className="text-[#b7603d] hover:underline">support@7uniqueverify.com</a></p>
-                  <p className="text-gray-700">Phone: +91 XXXX XXX XXX</p>
+                  <p className="text-gray-700">Email: <a href="mailto:info@7uniqueverfiy.com" className="text-[#b7603d] hover:underline">info@7uniqueverfiy.com</a></p>
+                  <p className="text-gray-700">Phone: 0141-4511098</p>
                 </div>
               </motion.section>
             </div>

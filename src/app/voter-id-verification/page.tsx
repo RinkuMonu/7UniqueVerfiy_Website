@@ -357,18 +357,7 @@ const VoterIDVerificationPage: React.FC = () => {
                   </span>
                 </div>
                 <div className="text-center mb-8">
-                  <div
-                    className="w-16 h-16 bg-[#f7f1ef]
-  
-  
-  
-  
-  
-  
-  
-  
-    rounded-full flex items-center justify-center mx-auto mb-4"
-                  >
+                  <div className="w-16 h-16 bg-[#f7f1ef]  rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg
                       className="w-8 h-8 text-[#b7603d]"
                       fill="none"
@@ -384,7 +373,7 @@ const VoterIDVerificationPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    Professional
+                    Advance
                   </h3>
                   <div className="text-4xl font-bold text-[#b7603d] mb-4">
                     ₹1.5
@@ -930,7 +919,7 @@ const VoterIDVerificationPage: React.FC = () => {
                       ))}
                     </div>
                     <Link
-                      to="/driving-license-verification-api"
+                      to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                       className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors mt-5"
                     >
                       View API Documentation

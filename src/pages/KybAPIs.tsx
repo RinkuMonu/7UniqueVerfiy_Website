@@ -9,51 +9,106 @@ import {
   FaRegIdCard,
   FaClipboardCheck,
   FaUtensils,
+  FaShieldAlt,
+  FaUserTie,
+  FaStore,
+  FaGlobe,
+  FaPhoneAlt,
+  FaIdCard,
+  FaFingerprint,
+  FaSearchLocation,
 } from "react-icons/fa";
+import { MdDomainVerification } from "react-icons/md";
 
 const APIsUnderKyb: React.FC = () => {
   const apiServices = [
-    {
-      name: "GST Verification",
-      icon: <FaFileInvoiceDollar />,
-      description: "Instantly verify business GST registration and compliance status.",
-    },
-    {
-      name: "Company Name to CIN",
-      icon: <FaBuilding />,
-      description: "Retrieve Company Identification Number (CIN) using registered business name.",
-    },
-    {
-      name: "TAN to Company Search",
-      icon: <FaSearch />,
-      description: "Find detailed company records via TAN for due diligence or onboarding.",
-    },
-    {
-      name: "TAN Lookup API",
-      icon: <FaIdBadge />,
-      description: "Get verified TAN details to meet tax-related regulatory requirements.",
-    },
-    {
-      name: "PAN to GST Mapping",
-      icon: <FaBarcode />,
-      description: "Fetch GST data mapped to PAN numbers to prevent identity misuse.",
-    },
-    {
-      name: "LEI Verification",
-      icon: <FaRegIdCard />,
-      description: "Validate Legal Entity Identifiers for financial or investment institutions.",
-    },
-    {
-      name: "Udhyam Aadhaar Check",
-      icon: <FaClipboardCheck />,
-      description: "Verify MSME businesses through their official Udhyam Aadhaar registration.",
-    },
-    {
-      name: "FSSAI License Validation",
-      icon: <FaUtensils />,
-      description: "Check authenticity of FSSAI registration for food-related enterprises.",
-    },
-  ];
+  {
+    name: "GST Verification",
+    icon: <FaFileInvoiceDollar />,
+    description: "Instantly verify GST registration and compliance details."
+  },
+  {
+    name: "Company Name to CIN",
+    icon: <FaBuilding />,
+    description: "Get CIN by providing a registered company name."
+  },
+  {
+    name: "TAN to Company Search",
+    icon: <FaSearch />,
+    description: "Search for companies using their TAN for compliance checks."
+  },
+  {
+    name: "TAN Lookup API",
+    icon: <FaIdBadge />,
+    description: "Fetch verified TAN details for regulatory use."
+  },
+  {
+    name: "PAN to GST Mapping",
+    icon: <FaBarcode />,
+    description: "Link GST registrations mapped to a PAN number."
+  },
+  {
+    name: "LEI Verification",
+    icon: <FaRegIdCard />,
+    description: "Verify Legal Entity Identifiers for financial validation."
+  },
+  {
+    name: "Udhyam Aadhaar Check",
+    icon: <FaClipboardCheck />,
+    description: "Confirm MSME status via Udhyam Aadhaar registration."
+  },
+  {
+    name: "FSSAI License Validation",
+    icon: <FaUtensils />,
+    description: "Verify the FSSAI license of food businesses."
+  },
+  {
+    name: "MCA Verification",
+    icon: <FaShieldAlt />,
+    description: "Access MCA records to validate business details."
+  },
+  {
+    name: "DIN Verification",
+    icon: <FaUserTie />,
+    description: "Validate Director Identification Number (DIN) records."
+  },
+  {
+    name: "Shop and Establishment Act",
+    icon: <FaStore />,
+    description: "Verify shop registration under the S&E Act."
+  },
+  {
+    name: "Importer -Exporter Code Verification",
+    icon: <FaGlobe />,
+    description: "Validate Importer Exporter Code (IEC) of a business."
+  },
+  {
+    name: "DIN to Mobile Number",
+    icon: <FaPhoneAlt/>,
+    description: "Fetch linked mobile number using DIN."
+  },
+  {
+    name: "DIN to PAN fetch",
+    icon: <FaIdCard />,
+    description: "Retrieve PAN linked to a specific DIN."
+  },
+  {
+    name: "TAN Verification",
+    icon: <FaFingerprint />,
+    description: "Verify the authenticity of a TAN number."
+  },
+  {
+    name: "Company Name to CIN Fetch",
+    icon: <FaSearchLocation />,
+    description: "Fetch CIN by querying the registered company name."
+  },
+  {
+    name: "Company Name to TAN Fetch",
+    icon: <FaBuilding/>,
+    description: "Get TAN by providing the official company name."
+  }
+];
+
 
   const container = {
     hidden: { opacity: 0 },

@@ -355,7 +355,7 @@ const PANVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
-        <KnowMore/>
+        <KnowMore />
 
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12 ">

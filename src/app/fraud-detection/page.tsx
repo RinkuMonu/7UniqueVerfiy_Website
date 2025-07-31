@@ -7,13 +7,13 @@ import HomeFAQ from "../../pages/HomeFAQ";
 
 export default function FraudDetection() {
   return (
- <>
- <FraudDetectionHero></FraudDetectionHero>
- <FraudCards></FraudCards>
- <FraudFeatures></FraudFeatures>
- <FraudPrevention></FraudPrevention>
- <FraudIndicatorsAPIs></FraudIndicatorsAPIs>
-  <HomeFAQ></HomeFAQ>
- </>
+    <>
+      <FraudDetectionHero></FraudDetectionHero>
+      <FraudCards></FraudCards>
+      <FraudFeatures></FraudFeatures>
+      <FraudPrevention></FraudPrevention>
+      <FraudIndicatorsAPIs></FraudIndicatorsAPIs>
+      <HomeFAQ></HomeFAQ>
+    </>
   );
 }

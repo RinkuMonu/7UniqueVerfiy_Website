@@ -5,33 +5,142 @@ import {
   FaMobileAlt,
   FaGlobeAmericas,
   FaCheckDouble,
+  FaMapMarkedAlt,
+  FaMapPin,
+  FaGasPump,
+  FaCar,
+  FaRoad,
+  FaMapMarkerAlt,
+  FaChartLine,
+  FaCreditCard,
+  FaUniversity,
+  FaEnvelope,
+  FaUpload,
+  FaIdCard,
+  FaTruckMoving,
+  FaFileInvoiceDollar,
 } from "react-icons/fa";
-
 const UtilitiesAPISection: React.FC = () => {
   const utilitiesAPIs = [
     {
       name: "Currency Exchange API",
       icon: <FaMoneyCheckAlt />,
       description:
-        "Fetch real-time currency conversion rates to enable global pricing, financial reporting, and forex transactions with precision.",
+        "Fetch real-time currency conversion rates for global pricing and forex operations.",
     },
     {
       name: "IMEI Validator API",
       icon: <FaMobileAlt />,
       description:
-        "Verify the authenticity of mobile devices by checking their IMEI numbers — essential for telecom, security, and inventory systems.",
+        "Check mobile device authenticity by validating IMEI numbers.",
     },
     {
       name: "IEC Verification API",
       icon: <FaGlobeAmericas />,
       description:
-        "Instantly validate Importer Exporter Codes (IEC) to ensure regulatory compliance and trust in cross-border business operations.",
+        "Verify Importer Exporter Codes (IEC) for cross-border business legitimacy.",
     },
     {
       name: "LEI Verification API",
       icon: <FaCheckDouble />,
       description:
-        "Authenticate Legal Entity Identifiers (LEIs) to ensure business legitimacy and enhance due diligence across financial networks.",
+        "Authenticate Legal Entity Identifiers (LEIs) for business due diligence.",
+    },
+    {
+      name: "IP LookUp",
+      icon: <FaMapMarkedAlt />,
+      description:
+        "Retrieve geographical and network details for a given IP address.",
+    },
+    {
+      name: "Reverse Geo Code Verification",
+      icon: <FaMapPin />,
+      description:
+        "Convert geographic coordinates into human-readable location information.",
+    },
+    {
+      name: "Fuel Price API",
+      icon: <FaGasPump />,
+      description:
+        "Get daily fuel prices across cities for petrol, diesel, and LPG.",
+    },
+    {
+      name: "RTO Information API",
+      icon: <FaCar />,
+      description:
+        "Access detailed information for any Regional Transport Office (RTO).",
+    },
+    {
+      name: "Fastag Information API",
+      icon: <FaRoad />,
+      description:
+        "Check vehicle Fastag registration and wallet status using vehicle number.",
+    },
+    {
+      name: "Pincode Info API",
+      icon: <FaMapMarkerAlt />,
+      description:
+        "Get city, state, and area details from Indian postal pin codes.",
+    },
+    {
+      name: "Stock Price API",
+      icon: <FaChartLine />,
+      description:
+        "Fetch live stock market prices, trends, and summaries for listed companies.",
+    },
+    {
+      name: "Card Validator API",
+      icon: <FaCreditCard />,
+      description:
+        "Validate debit/credit card details and issuing bank information.",
+    },
+    {
+      name: "IFSC Code Lookup API",
+      icon: <FaUniversity />,
+      description:
+        "Find bank details such as branch, address, and MICR using IFSC codes.",
+    },
+    {
+      name: "Email Authentication",
+      icon: <FaEnvelope />,
+      description:
+        "Verify email address validity and detect temporary/disposable domains.",
+    },
+    {
+      name: "Email Bulk Upload Verification",
+      icon: <FaUpload />,
+      description:
+        "Validate large lists of email addresses with bulk upload support.",
+    },
+    {
+      name: "Pan Verification - Normal - Bulk Upload",
+      icon: <FaIdCard />,
+      description:
+        "Quickly validate multiple PAN numbers using bulk CSV/XLS upload.",
+    },
+    {
+      name: "Pan Verification - Detailed - Bulk Upload",
+      icon: <FaIdCard />,
+      description:
+        "Get detailed PAN info (name, DOB, status) in batch using document upload.",
+    },
+    {
+      name: "PAN Verification - Comprehensive - Bulk Upload",
+      icon: <FaIdCard />,
+      description:
+        "Perform comprehensive PAN checks across departments via bulk upload.",
+    },
+    {
+      name: "RC Verification - Detailed - Bulk Upload",
+      icon: <FaTruckMoving />,
+      description:
+        "Extract full vehicle registration certificate details in batch mode.",
+    },
+    {
+      name: "Bank Account Verification - Penny Drop - Bulk Upload",
+      icon: <FaFileInvoiceDollar />,
+      description:
+        "Verify bank accounts via penny drop method at scale using file upload.",
     },
   ];
 
@@ -69,20 +178,20 @@ const UtilitiesAPISection: React.FC = () => {
           <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
             <h2 className="flex items-center gap-3 text-2xl font-semibold">
               <div className="rounded-full bg-[#b7603d]/10 p-2">
-                  <svg
-                    className="h-6 w-6 text-[#b7603d]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                </div>
+                <svg
+                  className="h-6 w-6 text-[#b7603d]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
               Empower Your Business with Next-Gen Utilities APIs
             </h2>
           </div>

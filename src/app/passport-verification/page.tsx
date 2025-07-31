@@ -225,7 +225,7 @@ const PassportVerificationPage: React.FC = () => {
               <span className="text-[#b7603d]">Verification Method</span>
             </h2>
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
-              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+              {/* <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
                     <span className="text-[#b7603d]   font-bold">🛂</span>
@@ -257,7 +257,7 @@ const PassportVerificationPage: React.FC = () => {
                     <span className="font-medium">Basic identity checks</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
@@ -303,7 +303,7 @@ const PassportVerificationPage: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <h5 className="font-medium text-gray-700 mb-2">
-                    Basic Verification:
+                    Passport Verification:
                   </h5>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>✓ Passport validity status</li>
@@ -312,9 +312,6 @@ const PassportVerificationPage: React.FC = () => {
                   </ul>
                 </div>
                 <div>
-                  <h5 className="font-medium text-gray-700 mb-2">
-                    Detailed Verification:
-                  </h5>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>✓ Complete passport holder name</li>
                     <li>✓ Issue and expiry dates</li>

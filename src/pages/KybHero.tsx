@@ -12,7 +12,7 @@ const KybHero: React.FC = () => {
         {/* Left: Text content */}
         <div className="w-full md:w-2/3 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            KYB Verification API
+           Business_Identity Verification API
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
             Business Verification Made Seamless with 7Unique Verify

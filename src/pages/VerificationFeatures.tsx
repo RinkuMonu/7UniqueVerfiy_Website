@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUserCheck, FaChartLine, FaShieldAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const VerificationFeatures: React.FC = () => {
   const features = [
@@ -50,15 +51,13 @@ const VerificationFeatures: React.FC = () => {
                 </div>
                 Transform Your Hiring With Our Verification API
               </h2>
-
             </div>
-             <p className="text-xl text-gray-600 max-w-3xl p-4">
-                Advanced technology for smarter, safer, and faster employment
-                verification.
-              </p>
+            <p className="text-xl text-gray-600 max-w-3xl p-4">
+              Advanced technology for smarter, safer, and faster employment
+              verification.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-5">
-
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -95,9 +94,11 @@ const VerificationFeatures: React.FC = () => {
                     Integrate our verification API in minutes and start making
                     better hiring decisions today.
                   </p>
-                  <button className="bg-gradient-to-r from-[#b7603d] to-[#e8915e] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
-                    Request a Demo
-                  </button>
+                  <Link to={"/contact-us"}>
+                    <button className="bg-gradient-to-r from-[#b7603d] to-[#e8915e] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                      Request a Demo
+                    </button>
+                  </Link>
                 </div>
                 <div className="md:w-1/2">
                   <img

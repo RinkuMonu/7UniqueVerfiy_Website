@@ -77,7 +77,7 @@ const MCAVerificationPage: React.FC = () => {
                 to="/mca-verification-api"
                 className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
               >
-                Start Verifying with 7Unique
+                View Document
               </Link>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
@@ -624,7 +624,7 @@ const MCAVerificationPage: React.FC = () => {
                       ))}
                     </div>
                     <Link
-                      to="/mca-verification-api"
+                      to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                       className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors mt-5"
                     >
                       View API Documentation

@@ -225,7 +225,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
                 verification.
               </p>
               <Link
-                to="/driving-license-verification-api"
+                to="/contact-us"
                 className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
               >
                 Get Started

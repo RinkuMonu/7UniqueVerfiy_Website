@@ -106,9 +106,9 @@ const OCRCards: React.FC = () => {
           </div>
 
           <div className="mt-16 text-center mb-5">
-            <button className="bg-gradient-to-r from-[#b7603d] to-[#d88c6b] text-white font-medium py-3 px-8 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+            {/* <button className="bg-gradient-to-r from-[#b7603d] to-[#d88c6b] text-white font-medium py-3 px-8 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               Explore All Features
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

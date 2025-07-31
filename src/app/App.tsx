@@ -91,6 +91,9 @@ import TelecomOperatorFetchPageAPI from "../pages/telecom-operator-fetch-page-ap
 import { ContextProvider } from "../config/context";
 import { Lucky } from "./lucky/page";
 import { DigilockerApi } from "./Digilocker/page";
+import ChallanVerificationPage from "./Challan-verification/page";
+import { CreditScoreAPI } from "./Credit Score API/page";
+import { ITRProfileSummary } from "./ITR Profile Summary/page";
 
 function Placeholder({ name }: { name: string }) {
   return (
@@ -129,7 +132,7 @@ export default function App() {
           <Route path="/Ai_Dashboard" element={<Lucky />} />
           <Route path="/kyc" element={<KycPage />} />
           <Route path="/kyb" element={<KybPage />} />
-          <Route path="/fraud-detection" element={<FraudDetection />} />
+          <Route path="/Fraud_Detection" element={<FraudDetection />} />
           <Route path="/phone-number-lookup" element={<PhoneLookUpPage />} />
           <Route path="/financial-checks" element={<FinancialCheckPage />} />
           <Route
@@ -218,6 +221,14 @@ export default function App() {
             path="/mobile-verification-api"
             element={<MobileVerificationAPIPage />}
           />
+          <Route
+            path="/credit-score-api"
+            element={<CreditScoreAPI />}
+          />
+          <Route
+            path="/itr-profile-summary"
+            element={<ITRProfileSummary />}
+          />
 
           {/* Additional Services */}
           <Route
@@ -239,7 +250,7 @@ export default function App() {
             element={<WhatsappVerificationPage />}
           />
           <Route
-            path="/digilocker-api"
+            path="/digilocker"
             element={<DigilockerApi />}
           />
           <Route path="/face-match-api" element={<FaceMatchAPIPage />} />
@@ -321,6 +332,10 @@ export default function App() {
           <Route
             path="/rc-verification-page-api"
             element={<RCVerificationPageAPI />}
+          />
+          <Route
+            path="/challan-verification"
+            element={<ChallanVerificationPage />}
           />
           <Route
             path="/vpa-upi-id-verification-page-api"

@@ -10,9 +10,15 @@ import {
   FaCar,
   FaUserCheck,
   FaMobileAlt,
+  FaSourcetree,
 } from "react-icons/fa";
+import { TbTax } from "react-icons/tb";
 import { FaUserLock } from "react-icons/fa6";
-import { MdHowToVote, MdBusinessCenter } from "react-icons/md";
+import {
+  MdHowToVote,
+  MdBusinessCenter,
+  MdOutlineScoreboard,
+} from "react-icons/md";
 import { FaUser, FaWhatsapp, FaRegFileAlt, FaMailBulk } from "react-icons/fa";
 import { MdFace, MdTextFields } from "react-icons/md";
 import { BsPersonBoundingBox } from "react-icons/bs";
@@ -33,13 +39,15 @@ interface NavItem {
 const productItems: DropdownItem[] = [
   { icon: "bi bi-bar-chart-line", title: "AI_Dashboard", to: "/Ai_Dashboard" },
   { icon: "bi bi-person-bounding-box", title: "CANDY", to: "/candy" },
-  { icon: "bi bi-person-vcard-fill", title: "KYC", to: "/kyc" },
-  { icon: "bi bi-person-rolodex", title: "KYB", to: "/kyb" },
   {
     icon: "bi bi-person-fill-slash",
-    title: "Fraud Detection",
-    to: "/fraud-detection",
+    title: "Fraud_Detection",
+    to: "/Fraud_Detection",
   },
+
+  { icon: "bi bi-person-vcard-fill", title: "KYC", to: "/kyc" },
+  { icon: "bi bi-person-rolodex", title: "KYB", to: "/kyb" },
+
   {
     icon: "bi bi-check2-circle",
     title: "Phone Number Lookup",
@@ -83,7 +91,17 @@ const verificationServices: DropdownItem[] = [
   {
     title: "Digilocker",
     icon: <FaUserLock />,
-    href: "/digilocker-api",
+    href: "/digilocker",
+  },
+  {
+    title: "Credit Score API",
+    icon: <MdOutlineScoreboard />,
+    href: "/credit-score-api",
+  },
+  {
+    title: "ITR Profile Summary",
+    icon: <TbTax />,
+    href: "/itr-profile-summary",
   },
   // {
   //   title: "CKYC Search & Download",
@@ -135,11 +153,11 @@ const verificationServices: DropdownItem[] = [
     icon: <FaMailBulk />,
     href: "/email-authentication",
   },
-  {
-    title: "Liveness Check API",
-    icon: <MdFace />,
-    href: "/liveness-check-api",
-  },
+  // {
+  //   title: "Liveness Check API",
+  //   icon: <MdFace />,
+  //   href: "/liveness-check-api",
+  // },
   // {
   //   title: "OCR Validation",
   //   icon: <MdTextFields />,
