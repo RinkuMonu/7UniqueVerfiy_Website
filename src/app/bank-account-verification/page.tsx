@@ -67,14 +67,14 @@ const BankAccountVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                7Unique Verify – Bank Account Verification API
+                7UniqueVerify – Bank Account Verification API
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Secure & Instant Bank Account Validation
               </h2>
               <p className="text-lg mb-4 text-white">
                 Validate bank account details in real time using the trusted
-                7Unique Verify Bank Account Verification API. Ensure error-free
+                7UniqueVerify Bank Account Verification API. Ensure error-free
                 transactions, compliance, and fraud prevention with our advanced
                 verification engine.
               </p>
@@ -99,7 +99,7 @@ const BankAccountVerificationPage: React.FC = () => {
             <div className="w-full md:w-1/2 flex justify-center">
               <img
                 src="../img/Bank1.png"
-                alt="7Unique Verify – Bank Account Verification"
+                alt="7UniqueVerify – Bank Account Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
             </div>
@@ -115,7 +115,7 @@ const BankAccountVerificationPage: React.FC = () => {
                   <div className="rounded-full bg-[#b7603d]/10 p-2">
                     <FaMoneyBillWave className="h-6 w-6 text-[#b7603d]" />
                   </div>
-                  7Unique Verify – Bank Account Verification API
+                  7UniqueVerify – Bank Account Verification API
                 </h2>
               </div>
               <div className="p-8">

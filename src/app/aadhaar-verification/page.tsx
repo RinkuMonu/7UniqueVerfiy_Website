@@ -70,11 +70,11 @@ const AadhaarVerificationPage: React.FC = () => {
                 Aadhaar Verification API
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-                Real-time Aadhaar Validation by 7Unique Verify
+                Real-time Aadhaar Validation by 7UniqueVerify
               </h2>
               <p className="text-lg mb-4 text-white">
                 Instantly verify Aadhaar details with our UIDAI-compliant API.
-                7Unique Verify ensures secure, fast, and accurate identity
+                7UniqueVerify ensures secure, fast, and accurate identity
                 verification trusted by leading fintechs and telecom brands.
               </p>
               <p className="mb-4 text-white">
