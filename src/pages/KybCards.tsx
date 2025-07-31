@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const KybCards: React.FC = () => {
   return (
@@ -7,30 +8,32 @@ const KybCards: React.FC = () => {
         {/* Header with decorative elements */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
-
-          <h2 className="flex items-center gap-3 text-2xl font-semibold">
+            <h2 className="flex items-center gap-3 text-2xl font-semibold">
               <div className="rounded-full bg-[#b7603d]/10 p-2">
-                  <svg className="h-6 w-6 text-[#b7603d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.25-4.5a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 7.5v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H12"
-                    />
-                  </svg>
-                </div>
-            <span className="relative z-10">
-
-              Unlocking the Benefits of{' '}
-              <span className="relative whitespace-nowrap">
-                <span className="relative z-10">7Unique Verify's</span>
-                <span className="absolute bottom-0 left-0 w-full h-3 bg-[#f0d9d0] -z-1"></span>
-              </span>{' '}
-              KYB API
-            </span>
-          </h2>
-
-        </div>
+                <svg
+                  className="h-6 w-6 text-[#b7603d]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m5.25-4.5a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 7.5v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H12"
+                  />
+                </svg>
+              </div>
+              <span className="relative z-10">
+                Unlocking the Benefits of{" "}
+                <span className="relative whitespace-nowrap">
+                  <span className="relative z-10">7Unique Verify's</span>
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#f0d9d0] -z-1"></span>
+                </span>{" "}
+                Business Identity API
+              </span>
+            </h2>
+          </div>
         </div>
 
         {/* Cards with modern layout */}
@@ -50,12 +53,13 @@ const KybCards: React.FC = () => {
               Streamlined Onboarding
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Our KYB API simplifies business verification with smooth integration and frictionless onboarding. 
-              Ensures high accuracy with minimal manual input, reducing delays and improving trust.
+              Our KYB API simplifies business verification with smooth
+              integration and frictionless onboarding. Ensures high accuracy
+              with minimal manual input, reducing delays and improving trust.
             </p>
-            <div className="mt-4 pt-4 border-t border-gray-100 flex justify-end">
+            {/* <div className="mt-4 pt-4 border-t border-gray-100 flex justify-end">
               <span className="text-sm font-medium text-[#b7603d]">Learn more →</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Card 2 - With floating label */}
@@ -71,15 +75,20 @@ const KybCards: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-3">Proactive Fraud Prevention</h3>
+            <h3 className="text-xl font-bold text-gray-800 mb-3">
+              Proactive Fraud Prevention
+            </h3>
             <p className="text-gray-600 leading-relaxed">
-              Detect shell entities and fake registrations before onboarding. Flags inconsistencies using 
-              real-time government data to reduce risk with minimal effort.
+              Detect shell entities and fake registrations before onboarding.
+              Flags inconsistencies using real-time government data to reduce
+              risk with minimal effort.
             </p>
             <div className="mt-6">
-              <button className="w-full py-2 bg-[#b7603d]/10 text-[#b7603d] font-medium rounded-lg hover:bg-[#b7603d]/20 transition-colors">
-                See case study
-              </button>
+              <Link to={"/contact-us"}>
+                <button className="w-full py-2 bg-[#b7603d]/10 text-[#b7603d] font-medium rounded-lg hover:bg-[#b7603d]/20 transition-colors">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -93,29 +102,64 @@ const KybCards: React.FC = () => {
               />
             </div>
             <div className="flex justify-between items-start mb-4">
-              <h3 className="text-xl font-bold text-gray-800">Verified Accuracy</h3>
-              <span className="bg-[#b7603d] text-white text-sm px-2 py-1 rounded">99.8%</span>
+              <h3 className="text-xl font-bold text-gray-800">
+                Verified Accuracy
+              </h3>
+              <span className="bg-[#b7603d] text-white text-sm px-2 py-1 rounded">
+                99.8%
+              </span>
             </div>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Matched against official government sources (GST, MCA, Udyam) for validated, 
-              error-free results you can trust for confident decision-making.
+              Matched against official government sources (GST, MCA, Udyam) for
+              validated, error-free results you can trust for confident
+              decision-making.
             </p>
             <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center">
-                <svg className="w-4 h-4 mr-2 text-[#b7603d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                <svg
+                  className="w-4 h-4 mr-2 text-[#b7603d]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
                 </svg>
                 Real-time verification
               </li>
               <li className="flex items-center">
-                <svg className="w-4 h-4 mr-2 text-[#b7603d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                <svg
+                  className="w-4 h-4 mr-2 text-[#b7603d]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
                 </svg>
                 Legal compliance
               </li>
               <li className="flex items-center">
-                <svg className="w-4 h-4 mr-2 text-[#b7603d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                <svg
+                  className="w-4 h-4 mr-2 text-[#b7603d]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
                 </svg>
                 Audit-ready documentation
               </li>

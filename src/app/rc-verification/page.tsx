@@ -89,7 +89,7 @@ const RCVerificationPage: React.FC = () => {
                 transparent transactions.
               </p>
               <Link
-                to="/rc-verification-page-api"
+                to="/contact-us"
                 className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
               >
                 Get Started
@@ -279,23 +279,12 @@ const RCVerificationPage: React.FC = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
-                  <div
-                    className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
-   rounded-full flex items-center justify-center mr-4"
-                  >
+                  <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">
                     <span className="text-[#b7603d]   font-bold">📋</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">
-                      Comprehensive RC Check
+                      Advance RC Check
                     </h3>
                     <span className="text-sm text-[#b7603d]   font-medium">
                       Full Vehicle History
@@ -306,6 +295,43 @@ const RCVerificationPage: React.FC = () => {
                   Provides complete vehicle details including ownership history,
                   PUC status, and insurance validity.
                 </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">3-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹8-12 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Thorough vehicle checks</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">📋</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Chassis Number verification
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Vehicle history using its Chassis Number
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Get complete vehicle details including{" "}
+                  <span className="font-medium text-gray-800">
+                    ownership history
+                  </span>
+                  , PUC status, and insurance validity.
+                </p>
+
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="text-gray-500">Response Time:</span>
@@ -677,7 +703,7 @@ const RCVerificationPage: React.FC = () => {
                       ))}
                     </div>
                     <Link
-                      to="/driving-license-verification-api"
+                      to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                       className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors mt-5"
                     >
                       View API Documentation

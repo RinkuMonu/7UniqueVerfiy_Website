@@ -165,7 +165,7 @@ const PrivacyPolicyPage: React.FC = () => {
                 </h2>
                 <p>
                   If you have any questions, concerns, or requests regarding this privacy policy, you can reach out to our
-                  support team via email at <a href="mailto:support@7uniqueverify.com" className="text-[#b7603d] font-medium hover:underline">support@7uniqueverify.com</a> or through the contact page on our website.
+                  support team via email at <a href="mailto:info@7uniqueverfiy.com" className="text-[#b7603d] font-medium hover:underline">info@7uniqueverfiy.com</a> or through the contact page on our website.
                 </p>
               </motion.section>
             </div>

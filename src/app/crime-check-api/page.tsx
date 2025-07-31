@@ -84,12 +84,20 @@ const CrimeCheckAPIPage: React.FC = () => {
                 stores, salary disbursals, and any process where reliable bank
                 verification is crucial.
               </p>
-              <Link
-                to="/api-catalog"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex gap-3">
+                <Link
+                  to="/contact-us"
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-gray-100/30 text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
+                >
+                  View Document
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -257,11 +265,11 @@ const CrimeCheckAPIPage: React.FC = () => {
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
-                    <span className="text-[#b7603d]   font-bold">🏢</span>
+                    <span className="text-[#b7603d]   font-bold">🕵️‍♂️</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">
-                      Crime check Company
+                      Crime check Corporate
                     </h3>
                     <span className="text-sm text-[#b7603d]   font-medium">
                       Organization Background check
@@ -284,7 +292,40 @@ const CrimeCheckAPIPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
-                     <span className="font-medium">Basic identity checks</span>
+                    <span className="font-medium">Basic identity checks</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">🕵️‍♂️</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Crime check Through Mobile Number
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Organization Background check
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Crime check through a mobile number refers to the process of
+                  verifying if a mobile number is linked to any suspicious.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">3-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹8-10 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Basic identity checks</span>
                   </div>
                 </div>
               </div>
@@ -352,7 +393,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
-                     <span className="font-medium">Basic identity checks</span>
+                    <span className="font-medium">Basic identity checks</span>
                   </div>
                 </div>
               </div>
@@ -379,12 +420,26 @@ const CrimeCheckAPIPage: React.FC = () => {
                 </div>
                 <div>
                   <h5 className="font-medium text-gray-700 mb-2">
-                    🏢 Crime Check (Company):
+                    🕵️‍♂️ Crime Check (Corporate):
                   </h5>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>
                       ✓ Checks for fraudulent activity, blacklists, and
                       sanctions
+                    </li>
+                    <li>✓ Scans linked directors and company structure</li>
+                    <li>
+                      ✓ Ideal for vendor onboarding and business due diligence
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    🕵️‍♂️ Crime Check Through Mobile Number:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>
+                      ✓ Checks for Crime Through mobile number with details
                     </li>
                     <li>✓ Scans linked directors and company structure</li>
                     <li>
@@ -790,7 +845,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                       ))}
                     </div>
                     <Link
-                      to="/driving-license-verification-api"
+                      to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                       className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors mt-5"
                     >
                       View API Documentation

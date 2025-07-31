@@ -204,9 +204,11 @@ const FaceMatchPageAPI: React.FC = () => {
                 <div className="text-2xl font-bold text-[#b7603d] mb-4">
                   ₹2 per verification
                 </div>
-                <button className="w-full bg-[#b7603d] text-white py-3 rounded-lg font-semibold hover:bg-[#d19983] transition-colors">
-                  Choose Basic
-                </button>
+                <Link to={"/contact-us"}>
+                  <button className="w-full bg-[#b7603d] text-white py-3 rounded-lg font-semibold hover:bg-[#d19983] transition-colors">
+                    Get API's
+                  </button>
+                </Link>
               </div>
 
               {/* Advanced Face Match */}
@@ -258,9 +260,11 @@ const FaceMatchPageAPI: React.FC = () => {
                 <div className="text-2xl font-bold mb-4">
                   ₹5 per verification
                 </div>
-                <button className="w-full bg-white text-[#b7603d] py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                  Choose Advanced
-                </button>
+                <Link to={"/contact-us"}>
+                  <button className="w-full bg-white text-[#b7603d] py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Choose Advanced
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -502,7 +506,7 @@ const FaceMatchPageAPI: React.FC = () => {
                 </div>
 
                 <a
-                  href="#"
+                  href="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                   className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
                 >
                   View API Documentation

@@ -1,50 +1,144 @@
 import React from "react";
-import {
-  FaFileInvoiceDollar,
-  FaRegFileAlt,
-  FaUserCheck,
-  FaChartLine,
-  FaQuestionCircle,
-} from "react-icons/fa";
-import { MdOutlineAnalytics } from "react-icons/md";
 import { motion } from "framer-motion";
 import SEO from "../app/Helmet/helment";
 import { useContext } from "react";
 import { ContextData } from "../config/context";
 import { SEOData } from "../type";
 
+import {
+  FaUserCheck,
+  FaRegFileAlt,
+  FaChartLine,
+  FaFileInvoiceDollar,
+  FaQuestionCircle,
+  FaGavel,
+  FaBalanceScale,
+  FaUserSecret,
+  FaIdCard,
+  FaAddressCard,
+  FaFingerprint,
+  FaWallet,
+  FaKey,
+  FaUserTie,
+} from "react-icons/fa";
+import { MdOutlineAnalytics, MdOutlineContacts } from "react-icons/md";
 const FinancialChecksAPIs: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
+
   const financialAPIs = [
     {
       name: "ITR Compliance Check",
       icon: <FaUserCheck className="text-3xl" />,
-      description: "Verify ITR filing compliance for individuals or businesses via PAN-based lookups.",
+      description:
+        "Verify ITR filing compliance for individuals or businesses via PAN-based lookups.",
     },
     {
       name: "ITR Details Retrieval",
       icon: <FaRegFileAlt className="text-3xl" />,
-      description: "Fetch complete ITR documents to assess income trends and historical filings.",
+      description:
+        "Fetch complete ITR documents to assess income trends and historical filings.",
     },
     {
       name: "ITR Profile Summary",
       icon: <MdOutlineAnalytics className="text-3xl" />,
-      description: "Access structured financial summaries from ITR data to support credit decisions.",
+      description:
+        "Access structured financial summaries from ITR data to support credit decisions.",
     },
     {
       name: "Credit Report (Equifax)",
       icon: <FaFileInvoiceDollar className="text-3xl" />,
-      description: "Get detailed credit bureau reports from Equifax for lending and underwriting workflows.",
+      description:
+        "Get detailed credit bureau reports from Equifax for lending and underwriting workflows.",
     },
     {
       name: "Credit Score API",
       icon: <FaChartLine className="text-3xl" />,
-      description: "Retrieve real-time credit scores to evaluate financial reliability and eligibility.",
+      description:
+        "Retrieve real-time credit scores to evaluate financial reliability and eligibility.",
+    },
+    {
+      name: "Credit Report - CIBIL TRANSUNION",
+      icon: <FaFileInvoiceDollar className="text-3xl" />,
+      description:
+        "Access detailed CIBIL credit reports to assess borrower creditworthiness.",
+    },
+    {
+      name: "Court Case Check",
+      icon: <FaGavel className="text-3xl" />,
+      description:
+        "Check for any court cases against an individual or entity using PAN or other identifiers.",
+    },
+    {
+      name: "Crime Check - Individual",
+      icon: <FaUserSecret className="text-3xl" />,
+      description:
+        "Screen individuals against crime databases for background verification.",
+    },
+    {
+      name: "Crime Check - Corporate",
+      icon: <FaBalanceScale className="text-3xl" />,
+      description:
+        "Perform criminal background checks on corporate entities for compliance and risk.",
+    },
+    {
+      name: "Crime Check through mobile number",
+      icon: <FaFingerprint className="text-3xl" />,
+      description:
+        "Verify criminal background using registered mobile numbers.",
+    },
+    {
+      name: "PAN to UAN Fetch",
+      icon: <FaIdCard className="text-3xl" />,
+      description:
+        "Fetch Universal Account Number (UAN) linked to a given PAN for employment verification.",
+    },
+    {
+      name: "Mobile to UAN Fetch - Recent Employment",
+      icon: <FaAddressCard className="text-3xl" />,
+      description:
+        "Get UAN linked with a mobile number and check the latest employment details.",
+    },
+    {
+      name: "EPFO Details Get - Without OTP",
+      icon: <FaWallet className="text-3xl" />,
+      description:
+        "Fetch Employee Provident Fund details using UAN without OTP for employment history checks.",
+    },
+    {
+      name: "EPFO Details Get Passbook - Consented",
+      icon: <FaWallet className="text-3xl" />,
+      description:
+        "Retrieve EPFO passbook details with user consent to analyze provident fund transactions.",
+    },
+    {
+      name: "ITR Details Get - Consented",
+      icon: <FaRegFileAlt className="text-3xl" />,
+      description:
+        "Access ITR document data with user consent for accurate financial assessments.",
+    },
+    {
+      name: "ITR Profile Get",
+      icon: <MdOutlineContacts className="text-3xl" />,
+      description:
+        "Get summarized tax profile from ITR data to support loan underwriting.",
+    },
+    {
+      name: "26AS Detail Fetch - Consented",
+      icon: <FaFileInvoiceDollar className="text-3xl" />,
+      description:
+        "Retrieve 26AS statement with consent to view TDS, advance tax, and refund data.",
+    },
+    {
+      name: "Mobile to PAN Fetch",
+      icon: <FaKey className="text-3xl" />,
+      description:
+        "Link mobile numbers to PAN records for identity validation and KYC processes.",
     },
     {
       name: "FAQs & API Guidance",
       icon: <FaQuestionCircle className="text-3xl" />,
-      description: "Browse frequently asked questions and integration support for all financial APIs.",
+      description:
+        "Browse frequently asked questions and integration support for all financial APIs.",
     },
   ];
 
@@ -106,8 +200,6 @@ const FinancialChecksAPIs: React.FC = () => {
                 </h2>
               </div>
 
-
-
               <div className="mx-auto mt-4 h-1 w-24 bg-[#b7603d] rounded-full"></div>
             </motion.div>
 
@@ -138,9 +230,7 @@ const FinancialChecksAPIs: React.FC = () => {
                     <p className="text-gray-600 text-center leading-relaxed">
                       {api.description}
                     </p>
-                    <div className="mt-6 flex justify-center">
-
-                    </div>
+                    <div className="mt-6 flex justify-center"></div>
                   </div>
                 </motion.div>
               ))}

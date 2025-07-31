@@ -90,6 +90,7 @@ export default function Footer() {
               "Voter ID Verification",
               "MCA Verification",
               "Mobile Verification API",
+              "Challan verification",
             ].map((item, index) => {
               const path = `/${item.toLowerCase().replace(/ /g, "-")}`;
               return (
@@ -125,6 +126,9 @@ export default function Footer() {
               "Whatsapp Verification",
               "Face Match API",
               "Name Match API",
+              "ITR Profile Summary",
+              "Credit Score API",
+              "Digilocker",
             ].map((item, index) => {
               const path = `/${item.toLowerCase().replace(/ /g, "-")}`;
               return (
@@ -156,7 +160,7 @@ export default function Footer() {
               { name: "Terms and Conditions", path: "/terms-and-conditions" },
               { name: "Privacy Policy", path: "/privacy-policy" },
               { name: "Refund and Cancellation", path: "/refund-cancellation" },
-              { name: "Documentation", path: "/documentation" },
+              { name: "Documentation", path: "https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/" },
               { name: "Blog", path: "/blog" },
               { name: "Buzzing for भारत", path: "/buzzing-for-bharat" },
             ].map((item, index) => (
@@ -295,7 +299,10 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 border-t border-[#eaeaea] pt-6 text-center text-[#080808] text-sm">
-        <span>©️ 2025 7UniqueVerify. A brand of Sevenunique Tech Solutions Pvt. Ltd.. All rights reserved.</span>
+        <span>
+          ©️ 2025 7UniqueVerify. A brand of Sevenunique Tech Solutions Pvt.
+          Ltd.. All rights reserved.
+        </span>
       </div>
     </footer>
   );

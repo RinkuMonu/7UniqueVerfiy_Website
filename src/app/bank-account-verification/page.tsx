@@ -271,18 +271,40 @@ const BankAccountVerificationPage: React.FC = () => {
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
                 <div className="flex items-center mb-4">
-                  <div
-                    className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
- rounded-full flex items-center justify-center mr-4"
-                  >
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">🏛️</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Bank Verification
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Traditional Method
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Sends ₹1 to the account and fetches the account holder name
+                  from bank statement.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹2-3 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">High-value transactions</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
                     <span className="text-[#b7603d]   font-bold">₹</span>
                   </div>
                   <div>
@@ -316,18 +338,7 @@ const BankAccountVerificationPage: React.FC = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
-                  <div
-                    className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
-   rounded-full flex items-center justify-center mr-4"
-                  >
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
                     <span className="text-[#b7603d]   font-bold">⚡</span>
                   </div>
                   <div>
@@ -363,18 +374,39 @@ const BankAccountVerificationPage: React.FC = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
                 <div className="flex items-center mb-4">
-                  <div
-                    className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
-  rounded-full flex items-center justify-center mr-4"
-                  >
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d] font-bold">📥</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Bank Statement Analysis / Download
+                    </h3>
+                    <span className="text-sm text-[#b7603d] font-medium">
+                      Digital Payment
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Analysis bank statement and Download with all details
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">1-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹1-2 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">UPI-based platforms</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
                     <span className="text-[#b7603d] font-bold">UPI</span>
                   </div>
                   <div>
@@ -437,6 +469,37 @@ const BankAccountVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">User onboarding</span>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  {/* <h5 className="font-medium text-gray-700 mb-2">
+                    Bank Verification:
+                  </h5> */}
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Complete Bank details</li>
+                    <li>✓ Address information</li>
+                    <li>✓ Date of birth</li>
+                    <li>✓ Gender information</li>
+                    <li>✓ Download bank Statement In PDF</li>
+                  </ul>
+                </div>
+                <div>
+                  {/* <h5 className="font-medium text-gray-700 mb-2">
+                    Penny Drop Verification:
+                  </h5> */}
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Analysis bank statement </li>
+                    <li>✓ With validation</li>
+                    <li>✓ Basic demographic match</li>
+                    <li>✓ Faster processing</li>
+                    <li>✓ Cost-effective solution</li>
+                  </ul>
                 </div>
               </div>
             </div>

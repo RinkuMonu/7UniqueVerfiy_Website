@@ -60,27 +60,7 @@ export const LuckyHeroSection = () => {
               </li>
             ))}
           </ul>
-
-          {/* <div className="flex flex-col sm:flex-row gap-4">
-          <Link to={"/contact-us"}>
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              className="bg-[#b7603d] hover:bg-[#9c4f30] text-white font-medium py-3 px-8 rounded-lg transition-all flex items-center justify-center gap-2 shadow-md"
-            >
-              Get Started <FiArrowRight />
-            </motion.button>
-          </Link>
-          <Link to={"/contact-us"}>
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              className="bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-3 px-8 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm"
-            >
-              Know More
-            </motion.button>
-          </Link>
-        </div> */}
+          
         </div>
       </motion.div>
       <UsageSection />

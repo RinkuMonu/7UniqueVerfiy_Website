@@ -157,18 +157,7 @@ const AadhaarVerificationPageAPI: React.FC = () => {
         </section>
 
         {/* Verification Types Section */}
-        <section
-          className="bg-[#f7f1ef]
-
-
-
-
-
-
-
-
- py-16 px-4 md:px-8 lg:px-20"
-        >
+          <section className="bg-[#f7f1ef] py-16 px-4 md:px-8 lg:px-20">
           <div className="w-full mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
               Choose Your{" "}
@@ -177,23 +166,12 @@ const AadhaarVerificationPageAPI: React.FC = () => {
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
                 <div className="flex items-center mb-4">
-                  <div
-                    className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
- rounded-full flex items-center justify-center mr-4"
-                  >
-                    <span className="text-[#b7603d]   font-bold">📱</span>
+                  <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">⚡</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">
-                      Aadhaar with OTP
+                      Aadhaar Verification - Consented
                     </h3>
                     <span className="text-sm text-[#b7603d]   font-medium">
                       UIDAI Authorized
@@ -207,7 +185,7 @@ const AadhaarVerificationPageAPI: React.FC = () => {
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="text-gray-500">Response Time:</span>
-                    <span className="font-medium">30-60 seconds</span>
+                    <span className="font-medium">3-5 seconds</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
@@ -224,23 +202,83 @@ const AadhaarVerificationPageAPI: React.FC = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
-                  <div
-                    className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
-   rounded-full flex items-center justify-center mr-4"
-                  >
+                  <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">
                     <span className="text-[#b7603d]   font-bold">⚡</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">
-                      Aadhaar without OTP
+                      Aadhaar Verification without OTP
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Demographic Verification
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Quick demographic verification without OTP for faster
+                  processing and better user experience.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹1-2 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">
+                      Quick verification needs
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">⚡</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Aadhaar Masking
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Demographic Verification
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Aadhaar Masking refers to the process of hiding the first 8
+                  digits of an Aadhaar number and showing only the last 4 digits
+                  for privacy and security purposes.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹1-2 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">
+                      Quick verification needs
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">
+                    <span className="text-[#b7603d]   font-bold">⚡</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Aadhaar QR Search
                     </h3>
                     <span className="text-sm text-[#b7603d]   font-medium">
                       Demographic Verification
@@ -303,7 +341,6 @@ const AadhaarVerificationPageAPI: React.FC = () => {
             </div>
           </div>
         </section>
-
         {/* How It Works Section */}
         <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
           <div className="w-full mx-auto">

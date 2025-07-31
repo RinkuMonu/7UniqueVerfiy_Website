@@ -48,7 +48,7 @@ const EmailAuthenticationPage: React.FC = () => {
                   Get Started
                 </Link>
                 <a
-                  href="#"
+                  href="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                   className="inline-block border border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
                 >
                   View Documentation

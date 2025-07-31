@@ -6,8 +6,7 @@ import { UsageSection } from "./usageSection";
 import { LuckyWallet } from "./wallet";
 import { LuckyTransaction } from "./luckyTransation";
 import KnowMore from "../../components/KnowMore";
-import bgcImg from "../../../public/img/aiDashboard/Group 71.png";
-
+import banner from "../../../public/img/aiDashboard/banner.png"
 export const Lucky = () => {
   return (
     <>
@@ -46,7 +45,8 @@ export const Lucky = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="/img/image/rendering-blender-3d-icon-logo-faciel-recognition-illustration.png"
+              // src="/img/image/rendering-blender-3d-icon-logo-faciel-recognition-illustration.png"
+              src={banner}
               alt="7Unique Verify Face Match API"
               className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
             />

@@ -22,12 +22,20 @@ const VoterIDVerificationPageAPI: React.FC = () => {
               validation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-purple-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
-                Start Free Trial
-              </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors">
-                View Documentation
-              </button>
+              <Link to={"/contact-us"}>
+                <button className="bg-white text-purple-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                  Start Free Trial
+                </button>
+              </Link>
+              <Link
+                to={
+                  "https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                }
+              >
+                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors">
+                  View Documentation
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -292,9 +300,11 @@ const VoterIDVerificationPageAPI: React.FC = () => {
                 </li>
               </ul>
 
-              <button className="w-full bg-[#b7603d] text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
-                Start Free Trial
-              </button>
+              <Link to={"/contact-us"}>
+                <button className="w-full bg-[#b7603d] text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+                  Start Free Trial
+                </button>
+              </Link>
             </div>
 
             {/* Enterprise Plan */}
@@ -302,14 +312,6 @@ const VoterIDVerificationPageAPI: React.FC = () => {
               <div className="text-center mb-8">
                 <div
                   className="w-16 h-16 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
   rounded-full flex items-center justify-center mx-auto mb-4"
                 >
                   <svg
@@ -400,10 +402,11 @@ const VoterIDVerificationPageAPI: React.FC = () => {
                   <span>Custom integrations</span>
                 </li>
               </ul>
-
-              <button className="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-900 transition-colors">
-                Contact Sales
-              </button>
+              <Link to={"/contact-us"}>
+                <button className="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-900 transition-colors">
+                  Contact Sales
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -663,10 +666,15 @@ const VoterIDVerificationPageAPI: React.FC = () => {
                   </span>
                 </div>
               </div>
-
-              <button className="bg-[#b7603d] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-purple-700 transition-colors">
-                View Documentation
-              </button>
+              <Link
+                to={
+                  "https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                }
+              >
+                <button className="bg-[#b7603d] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-purple-700 transition-colors">
+                  View Documentation
+                </button>
+              </Link>
             </div>
 
             <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -719,12 +727,16 @@ const VoterIDVerificationPageAPI: React.FC = () => {
             streamline their identity verification process.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-purple-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
-              Start Free Trial
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors">
-              Contact Sales
-            </button>
+            <Link to={"/contact-us"}>
+              <button className="bg-white text-purple-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                Start Free Trial
+              </button>
+            </Link>
+            <Link to={"/contact-us"}>
+              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors">
+                Contact Sales
+              </button>
+            </Link>
           </div>
         </div>
       </section>

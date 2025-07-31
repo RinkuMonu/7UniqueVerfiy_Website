@@ -32,18 +32,20 @@ const LivenessCheckAPIPages: React.FC = () => {
               verification, and any application requiring anti-spoofing
               biometric security measures.
             </p>
-            <Link
-              to={"/contact-us"}
-              className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
-            >
-              Get Started
-            </Link>
-            <Link
-              to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
-              className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
-            >
-              View API Docs
-            </Link>
+            <div className="flex gap-3">
+              <Link
+                to={"/contact-us"}
+                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+              >
+                Get Started
+              </Link>
+              <Link
+                to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+              >
+                View API Docs
+              </Link>
+            </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img

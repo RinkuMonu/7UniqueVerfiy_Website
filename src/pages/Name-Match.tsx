@@ -536,7 +536,7 @@ const NameMatchPageAPI: React.FC = () => {
                 </div>
               </div>
               <a
-                href="#"
+                href="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
                 className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
               >
                 Read Full API Docs

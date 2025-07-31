@@ -28,16 +28,11 @@ const SEO: React.FC<SEOProps> = ({ seo }) => {
       </title>
       <meta
         name="description"
-        content={
-          meta_description ||
-          "Read more about SevenVerify."
-        }
+        content={meta_description || "Read more about SevenVerify."}
       />
       <meta
         name="keywords"
-        content={
-          meta_keywords || "aadhar verify, pen verify, bank verify"
-        }
+        content={meta_keywords || "aadhar verify, pen verify, bank verify"}
       />
       <meta property="og:title" content={og_title || meta_title} />
       <meta

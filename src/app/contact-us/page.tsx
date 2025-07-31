@@ -31,6 +31,12 @@ interface ContactInfoItem {
 
 export default function ContactUsPage() {
   const { seo } = useContext(ContextData) as { seo: SEOData };
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", 
+  });
+};
 
 
 
@@ -414,8 +420,9 @@ export default function ContactUsPage() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#b7603d] hover:bg-[#8c4a2e] text-white font-semibold text-sm rounded-full px-8 py-3 transition-all duration-300 shadow-md hover:shadow-lg"
+                  onClick={scrollToTop}
                 >
-                  Get Started
+                  Get Started ⬆
                 </motion.button>
               </Link>
             </div>

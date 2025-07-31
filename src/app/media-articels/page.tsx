@@ -45,10 +45,10 @@ interface Article {
   slug: string;
 }
 
-interface Category {
-  name: string;
-
-}
+// interface Category {
+//   id: number;
+//   name: string;
+// }
 interface CategoryButton {
   name: string;
   icon: React.ReactNode;
@@ -57,6 +57,7 @@ interface CategoryButton {
 interface ArticleCardProps {
   article: Article;
   index: number;
+  category: Category[];
 }
 
 interface CornerVectorProps {
@@ -205,11 +206,6 @@ interface BlogPost {
   slug: string;
 }
 
-
-
-
-
-
 // Category buttons data
 // const categoryButtons: CategoryButton[] = [
 //   { name: "All Collections", icon: <RiHomeHeartLine /> },
@@ -220,7 +216,11 @@ interface BlogPost {
 // ];
 
 // ArticleCard component
-const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
+const ArticleCard: React.FC<ArticleCardProps> = ({
+  article,
+  index,
+  category,
+}) => {
   const controls = useAnimation();
 
   return (
@@ -237,7 +237,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
         onHoverStart={() => controls.start("hover")}
         onHoverEnd={() => controls.start("initial")}
         className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group relative"
-        style={{ height: "420px" }}
+        style={{ height: "440px" }}
       >
         <motion.div
           className="relative h-56 overflow-hidden"
@@ -257,7 +257,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
         </motion.div>
 
-        <div className="p-6 flex flex-col h-44">
+        <div className="p-6  flex flex-col h-44">
           <div className="flex justify-between items-start mb-3">
             <span
               className="text-xs font-medium px-3 py-1 rounded-full"
@@ -266,11 +266,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
                 color: colors.primaryDark,
               }}
             >
-              {article?.category}
+              {category.find((c) => c.id === article.category_id)?.name ||
+                "Unknown"}
             </span>
-            {/* <span className="text-xs" style={{ color: colors.lightText }}>
-              {article?.readTime}
-            </span> */}
           </div>
 
           <Link to={`/articles/${article.slug}`}>
@@ -278,7 +276,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
               className="text-xl font-semibold mb-3 leading-tight group-hover:underline"
               style={{ color: colors.text }}
             >
-              {article?.title}
+              {article?.title?.split(" ").slice(0, 7).join(" ")}...
             </h3>
           </Link>
 
@@ -286,23 +284,25 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
             className="text-sm mb-4 flex-grow"
             style={{ color: colors.lightText }}
           >
-            {article?.summary?.split(' ').slice(0, 15).join(' ') + '…'}
+            {article?.summary?.split(" ").slice(0, 12).join(" ") + "…"}
           </p>
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between ">
             <div
-              className="flex items-center text-xs"
+              className="flex items-center text-xs "
               style={{ color: colors.lightText }}
             >
               <FaCalendarAlt
                 className="mr-2"
                 style={{ color: colors.primary }}
               />
-              <span>{new Date(article?.created_at).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}</span>
+              <span>
+                {new Date(article?.created_at).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
             </div>
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -331,16 +331,19 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
 
 // Main page component
 const MediaArticles: React.FC = () => {
-
   const [articleData, setBlogs] = useState<BlogPost[]>([]);
   const [category, setCategory] = useState<Category[]>([]);
-
+  const [selectedCategoryId, setSelectedCategoryId] = useState<number | null>(
+    null
+  );
   const [loading, setLoading] = useState(false);
+  const [categoriesFetched, setCategoriesFetched] = useState(false);
+
   const fetchBlogs = async (newPage = 1) => {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://cms.sevenunique.com/apis/blogs/get-blogs.php?website_id=7&status=2&page=${newPage}`,
+        `https://cms.sevenunique.com/apis/blogs/get-blogs.php?website_id=7&status=2&page=${newPage}&category_id=${selectedCategoryId}`,
         {
           method: "GET",
           headers: {
@@ -349,39 +352,8 @@ const MediaArticles: React.FC = () => {
           },
         }
       );
-
       const data = await res.json();
-
-      if (data?.data) {
-        setBlogs(data.data);
-        const categoryPromises = data.data.map((blog: BlogPost) =>
-          fetch(`https://cms.sevenunique.com/apis/category/get_category_by_id.php?category_id=${blog.category_id}`, {
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
-            },
-          }).then(res => res.json())
-        );
-
-        const categoriesResults = await Promise.all(categoryPromises);
-
-        const categoriesMap: Record<number, Category> = {};
-        categoriesResults.forEach((catRes, idx) => {
-          if (catRes.data) {
-            categoriesMap[data.data[idx].category_id] = catRes.data;
-          }
-        });
-        setCategory(Object.values(categoriesMap));
-
-        const pagination = data.pagination || {};
-        if (pagination.total_pages) {
-          // setTotalPages(pagination.total_pages);
-        }
-
-        if (newPage >= pagination.total_pages) {
-          // setHasMore(false);
-        }
-      }
+      setBlogs(data.data);
     } catch (error) {
       console.error("Error fetching blogs:", error);
     }
@@ -390,10 +362,43 @@ const MediaArticles: React.FC = () => {
 
   useEffect(() => {
     fetchBlogs(1);
-  }, []);
+  }, [selectedCategoryId]);
 
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const categoryPromises = articleData?.map((blog: BlogPost) =>
+          fetch(
+            `https://cms.sevenunique.com/apis/category/get_category_by_id.php?category_id=${blog.category_id}`,
+            {
+              headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer jibhfiugh84t3324fefei#*fef",
+              },
+            }
+          ).then((res) => res.json())
+        );
 
+        const categoriesResults = await Promise.all(categoryPromises);
 
+        const categoriesMap: Record<number, Category> = {};
+        categoriesResults.forEach((catRes, idx) => {
+          if (catRes.data) {
+            categoriesMap[articleData[idx].category_id] = catRes.data;
+          }
+        });
+
+        setCategory(Object.values(categoriesMap));
+        setCategoriesFetched(true);
+      } catch (err) {
+        console.error("Failed to fetch categories:", err);
+      }
+    };
+
+    if (articleData?.length && !categoriesFetched) {
+      fetchCategories();
+    }
+  }, [articleData]);
 
   return (
     <div
@@ -557,47 +562,40 @@ const MediaArticles: React.FC = () => {
               </motion.h3>
 
               {Array.isArray(category) &&
-                category?.map((cat, i) => (
-                  <motion.button
-                    key={i}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.5 + i * 0.1 }}
-                    whileHover={{
-                      x: 8,
-                      backgroundColor:
-                        i === 0 ? colors.primaryDark : colors.primaryLight,
-                    }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`flex items-center px-6 py-4 rounded-xl text-left transition-all ${i === 0
-                      ? `text-white shadow-lg`
-                      : `bg-white hover:shadow-md`
+                category.map((cat, i) => {
+                  const isSelected = selectedCategoryId === cat.id;
+
+                  return (
+                    <motion.button
+                      key={i}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.5 + i * 0.1 }}
+                      // whileHover={{
+                      //   x: 8,
+                      //   backgroundColor: isSelected
+                      //     ? colors.primaryDark
+                      //     : colors.primaryLight,
+                      // }}
+                      whileTap={{ scale: 0.98 }}
+                      className={`flex items-center px-6 py-4 rounded-xl text-left transition-all ${
+                        isSelected
+                          ? `text-white shadow-lg`
+                          : `bg-white hover:shadow-md`
                       }`}
-                    style={{
-                      backgroundColor: i === 0 ? colors.primary : "white",
-                      color: i === 0 ? "white" : colors.text,
-                      border:
-                        i === 0 ? "none" : `1px solid ${colors.primaryLight}`,
-                    }}
-                  >
-                    {/* <span
-                      className="mr-4 text-lg"
-                      style={{ color: i === 0 ? "white" : colors.primary }}
+                      style={{
+                        backgroundColor: isSelected ? colors.primary : "white",
+                        color: isSelected ? "white" : colors.text,
+                        border: isSelected
+                          ? "none"
+                          : `1px solid ${colors.primaryLight}`,
+                      }}
+                      onClick={() => setSelectedCategoryId(cat.id)}
                     >
-                      {cat.icon}
-                    </span> */}
-                    <span>{cat?.name}</span>
-                    {/* {i === 0 && (
-                      <motion.span
-                        className="ml-auto text-xs px-2 py-1 rounded-full"
-                        style={{ backgroundColor: "rgba(255,255,255,0.2)" }}
-                        whileHover={{ scale: 1.05 }}
-                      >
-                        24 articles
-                      </motion.span>
-                    )} */}
-                  </motion.button>
-                ))}
+                      <span>{cat?.name}</span>
+                    </motion.button>
+                  );
+                })}
             </motion.div>
           </div>
         </section>
@@ -606,7 +604,12 @@ const MediaArticles: React.FC = () => {
         <section className="mb-10 sm:mb-16 md:mb-24">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articleData.map((article, i) => (
-              <ArticleCard key={i} article={article} index={i} />
+              <ArticleCard
+                key={i}
+                article={article}
+                index={i}
+                category={category}
+              />
             ))}
           </div>
         </section>
@@ -722,7 +725,7 @@ const MediaArticles: React.FC = () => {
               viewport={{ once: true }}
               className="flex flex-row justify-center gap-3"
             >
-              <Link to={'/contact-us'}>
+              <Link to={"/contact-us"}>
                 <motion.button
                   whileHover={{
                     scale: 1.03,
@@ -747,7 +750,7 @@ const MediaArticles: React.FC = () => {
                   Join Now
                 </motion.button>
               </Link>
-              <Link to={'/about-us'}>
+              <Link to={"/about-us"}>
                 <motion.button
                   whileHover={{
                     scale: 1.03,
@@ -764,7 +767,6 @@ const MediaArticles: React.FC = () => {
                   See Features
                 </motion.button>
               </Link>
-
             </motion.div>
 
             {/* Decorative Bottom Vector */}

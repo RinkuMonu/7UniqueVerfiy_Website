@@ -32,7 +32,8 @@ import { SEOData } from "../../type";
 import { ContextData } from "../../config/context";
 import SEO from "../Helmet/helment";
 import KnowMore from "../../components/KnowMore";
-
+import banner from "../../../public/img/digi/banner.png"
+import feature from "../../../public/img/digi/feature.png"
 export const DigilockerApi = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
   const container = {
@@ -94,9 +95,9 @@ export const DigilockerApi = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="../img/Bank1.png"
+              src={banner}
               alt="7Unique Verify – Bank Account Verification"
-              className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
+              className="w-full h-auto object-contain max-w-[450px] md:max-w-[650px] lg:max-w-[650px]"
             />
           </div>
         </div>
@@ -127,7 +128,7 @@ export const DigilockerApi = () => {
                   >
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                       <motion.img
-                        src="../img/Bank2.png"
+                        src={feature}
                         alt="Digilocker Illustration"
                         className="w-full h-auto object-contain"
                         whileHover={{ scale: 1.03 }}
@@ -297,6 +298,81 @@ export const DigilockerApi = () => {
               </div>
             </div>
 
+            {/* Aadhaar eKYC (XML) */}
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
+                  <FaIdCard className="text-[#1f6f63] text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    Get e-Aadhaar Document (XML)
+                  </h3>
+                  <span className="text-sm text-teal-600 font-medium ">
+                    UIDAI-based Verification
+                  </span>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Instantly access Aadhaar KYC details in secure XML format using
+                Digilocker APIs.
+              </p>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Response Time:</span>
+                  <span className="font-medium text-gray-600">2-4 seconds</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Cost:</span>
+                  <span className="font-medium text-gray-600">
+                    ₹1.20 - 2.00
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Best For:</span>
+                  <span className="font-medium text-gray-600">
+                    Digital eKYC checks
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
+                  <FaFile className="text-[#1f6f63] text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    Get Issued files
+                  </h3>
+                  <span className="text-sm text-teal-600 font-medium">
+                    UIDAI-based Verification
+                  </span>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Instantly access Aadhaar KYC details in secure XML format using
+                Digilocker APIs.
+              </p>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Response Time:</span>
+                  <span className="font-medium text-gray-600">2-4 seconds</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Cost:</span>
+                  <span className="font-medium text-gray-600">
+                    ₹1.20 - 2.00
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Best For:</span>
+                  <span className="font-medium text-gray-600">
+                    Digital eKYC checks
+                  </span>
+                </div>
+              </div>
+            </div>
             {/* Download PDF */}
             <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-purple-500">
               <div className="flex items-center mb-4">
@@ -374,80 +450,33 @@ export const DigilockerApi = () => {
                 </div>
               </div>
             </div>
-
-            {/* Aadhaar eKYC (XML) */}
-            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
-                  <FaIdCard className="text-[#1f6f63] text-xl" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    Get e-Aadhaar Document (XML)
-                  </h3>
-                  <span className="text-sm text-teal-600 font-medium ">
-                    UIDAI-based Verification
-                  </span>
-                </div>
+          </div>
+          <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <h4 className="text-lg font-semibold mb-4 text-gray-800">
+              What You Get:
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                {/* <h5 className="font-medium text-gray-700 mb-2">
+                    Bank Verification:
+                  </h5> */}
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>✓ Secure Digilocker</li>
+                  <li>✓ Download in PDF</li>
+                  <li>✓ Download in XML</li>
+                  <li>✓ Get Issued files</li>
+                </ul>
               </div>
-              <p className="text-gray-600 mb-4">
-                Instantly access Aadhaar KYC details in secure XML format using
-                Digilocker APIs.
-              </p>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Response Time:</span>
-                  <span className="font-medium text-gray-600">2-4 seconds</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium text-gray-600">
-                    ₹1.20 - 2.00
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Best For:</span>
-                  <span className="font-medium text-gray-600">
-                    Digital eKYC checks
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-teal-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
-                  <FaFile className="text-[#1f6f63] text-xl" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    Get Issued files
-                  </h3>
-                  <span className="text-sm text-teal-600 font-medium">
-                    UIDAI-based Verification
-                  </span>
-                </div>
-              </div>
-              <p className="text-gray-600 mb-4">
-                Instantly access Aadhaar KYC details in secure XML format using
-                Digilocker APIs.
-              </p>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Response Time:</span>
-                  <span className="font-medium text-gray-600">2-4 seconds</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium text-gray-600">
-                    ₹1.20 - 2.00
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Best For:</span>
-                  <span className="font-medium text-gray-600">
-                    Digital eKYC checks
-                  </span>
-                </div>
+              <div>
+                {/* <h5 className="font-medium text-gray-700 mb-2">
+                    Penny Drop Verification:
+                  </h5> */}
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>✓ Analysis Document </li>
+                  <li>✓ With validation</li>
+                  <li>✓ Faster processing</li>
+                  <li>✓ Cost-effective solution</li>
+                </ul>
               </div>
             </div>
           </div>

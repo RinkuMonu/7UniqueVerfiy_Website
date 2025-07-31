@@ -1,17 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SEO from "../app/Helmet/helment";
+import { useContext } from "react";
+import { ContextData } from "../config/context";
+import { SEOData } from "../type";
 import {
   FaUserSecret,
   FaMobileAlt,
   FaBalanceScale,
   FaTicketAlt,
+  FaUserCheck,
+  FaUserTag,
+  FaEye,
+  FaFileInvoice,
 } from "react-icons/fa";
-import SEO from "../app/Helmet/helment";
-import { useContext } from "react";
-import { ContextData } from "../config/context";
-import { SEOData } from "../type";
 const FraudIndicatorsAPIs: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
+
   const apiServices = [
     {
       name: "Crime Check – Individual (Real-Time)",
@@ -36,6 +41,30 @@ const FraudIndicatorsAPIs: React.FC = () => {
       icon: <FaTicketAlt />,
       description:
         "Detect unpaid challans or traffic violations tied to users or vehicles—used by insurers, NBFCs, and background check platforms.",
+    },
+    {
+      name: "Face Match Verification",
+      icon: <FaUserCheck />,
+      description:
+        "Authenticate user identity by matching uploaded selfies with official ID photos using AI-powered facial recognition.",
+    },
+    {
+      name: "Name Match",
+      icon: <FaUserTag />,
+      description:
+        "Verify exact or fuzzy matches of names across documents or databases—helpful in KYC or onboarding validation.",
+    },
+    {
+      name: "Liveness Check",
+      icon: <FaEye />,
+      description:
+        "Ensure the user is physically present and not using spoofing methods like photo/video during verification.",
+    },
+    {
+      name: "Bank Statement Analyse",
+      icon: <FaFileInvoice />,
+      description:
+        "Extract insights from bank statements like income, expenses, and risk markers for credit, lending, or onboarding decisions.",
     },
   ];
 
@@ -74,11 +103,20 @@ const FraudIndicatorsAPIs: React.FC = () => {
               className="text-center mb-16"
             >
               <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
-
                 <h2 className="flex items-center gap-3 text-2xl font-semibold">
                   <div className="rounded-full bg-[#b7603d]/10 p-2">
-                    <svg className="h-6 w-6 text-[#b7603d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <svg
+                      className="h-6 w-6 text-[#b7603d]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
                     </svg>
                   </div>
                   APIs Under Fraud Indicators
@@ -100,7 +138,8 @@ const FraudIndicatorsAPIs: React.FC = () => {
                   variants={item}
                   whileHover={{
                     y: -10,
-                    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
+                    boxShadow:
+                      "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                   }}
                   transition={{ duration: 0.3 }}
                   className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"

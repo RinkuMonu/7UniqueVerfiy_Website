@@ -75,7 +75,7 @@ const ProductsPage: React.FC = () => {
     {
       title: "Fraud Detection",
       description: "Advanced fraud detection and prevention using AI-powered risk assessment.",
-      link: "/fraud-detection",
+      link: "/Fraud_Detection",
     },
     {
       title: "Phone Number Lookup",
