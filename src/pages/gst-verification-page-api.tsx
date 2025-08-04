@@ -1,4 +1,4 @@
-import type React from "react"
+import type React from "react";
 import SEO from "../app/Helmet/helment";
 import { useContext } from "react";
 import { ContextData } from "../config/context";
@@ -22,19 +22,24 @@ const GSTVerificationPageAPI: React.FC = () => {
                 Instant GST Verification with Complete Accuracy
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-                Validate GSTIN details, business authenticity, and tax compliance with our comprehensive GST Verification API.
+                Validate GSTIN details, business authenticity, and tax
+                compliance with our comprehensive GST Verification API.
               </h2>
               <p className="text-lg mb-4 text-white">
-                Our GST Check API provides instant validation against official GST databases across India.
+                Our GST Check API provides instant validation against official
+                GST databases across India.
               </p>
               <p className="mb-4 text-white">
-                From basic business details to comprehensive tax history, we offer multiple verification methods to meet your needs.
+                From basic business details to comprehensive tax history, we
+                offer multiple verification methods to meet your needs.
               </p>
               <p className="mb-6 text-white">
-                Trusted by financial institutions, e-commerce platforms, and enterprises across India.
+                Trusted by financial institutions, e-commerce platforms, and
+                enterprises across India.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-               <Link to={'/contact-us'}
+                <Link
+                  to={"/contact-us"}
                   className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
                 >
                   Get Started
@@ -61,63 +66,89 @@ const GSTVerificationPageAPI: React.FC = () => {
         <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
           <div className="w-full mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-              Where Can You Use <span className="text-[#b7603d]">GST Verification</span>?
+              Where Can You Use{" "}
+              <span className="text-[#b7603d]">GST Verification</span>?
             </h2>
             <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🏪</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-800">E-commerce Platforms</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  E-commerce Platforms
+                </h3>
                 <p className="text-gray-600 text-sm mb-3">
                   Verify seller GSTIN authenticity before onboarding.
                 </p>
-                <div className="text-xs text-[#b7603d]   font-medium">"Trusted sellers!"</div>
+                <div className="text-xs text-[#b7603d]   font-medium">
+                  "Trusted sellers!"
+                </div>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🏦</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-800">Bank Loan Processing</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Bank Loan Processing
+                </h3>
                 <p className="text-gray-600 text-sm mb-3">
                   Validate business details for loan approvals.
                 </p>
-                <div className="text-xs text-[#b7603d]   font-medium">"Secure lending!"</div>
+                <div className="text-xs text-[#b7603d]   font-medium">
+                  "Secure lending!"
+                </div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">📊</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-800">Accounting Software</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Accounting Software
+                </h3>
                 <p className="text-gray-600 text-sm mb-3">
                   Auto-validate vendor GST details in invoices.
                 </p>
-                <div className="text-xs text-[#b7603d] font-medium">"Accurate records!"</div>
+                <div className="text-xs text-[#b7603d] font-medium">
+                  "Accurate records!"
+                </div>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🔍</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-800">Tax Authorities</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Tax Authorities
+                </h3>
                 <p className="text-gray-600 text-sm mb-3">
                   Verify business compliance during audits.
                 </p>
-                <div className="text-xs text-orange-600 font-medium">"Quick verification!"</div>
+                <div className="text-xs text-orange-600 font-medium">
+                  "Quick verification!"
+                </div>
               </div>
               <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🤝</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-800">B2B Marketplaces</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  B2B Marketplaces
+                </h3>
                 <p className="text-gray-600 text-sm mb-3">
                   Validate business partners' GST credentials.
                 </p>
-                <div className="text-xs text-red-600 font-medium">"Verified partners!"</div>
+                <div className="text-xs text-red-600 font-medium">
+                  "Verified partners!"
+                </div>
               </div>
               <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">📱</div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-800">ERP Systems</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  ERP Systems
+                </h3>
                 <p className="text-gray-600 text-sm mb-3">
                   Automate GST validation in procurement workflows.
                 </p>
-                <div className="text-xs text-teal-600 font-medium">"Efficient processes!"</div>
+                <div className="text-xs text-teal-600 font-medium">
+                  "Efficient processes!"
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Verification Types Section */}
-        <section className="bg-[#f7f1ef]
+        <section
+          className="bg-[#f7f1ef]
 
 
 
@@ -126,15 +157,18 @@ const GSTVerificationPageAPI: React.FC = () => {
 
 
 
- py-16 px-4 md:px-8 lg:px-20">
+ py-16 px-4 md:px-8 lg:px-20"
+        >
           <div className="w-full mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-              Choose Your <span className="text-[#b7603d]">Verification Method</span>
+              Choose Your{" "}
+              <span className="text-[#b7603d]">Verification Method</span>
             </h2>
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#f7f1ef]
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
 
 
 
@@ -143,16 +177,22 @@ const GSTVerificationPageAPI: React.FC = () => {
 
 
 
- rounded-full flex items-center justify-center mr-4">
+ rounded-full flex items-center justify-center mr-4"
+                  >
                     <span className="text-[#b7603d]   font-bold">📄</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-800">Basic GST Check</h3>
-                    <span className="text-sm text-[#b7603d]   font-medium">Registration Validation</span>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Basic GST Check
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Registration Validation
+                    </span>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  Verify basic business registration details like legal name, status, and registration date.
+                  Verify basic business registration details like legal name,
+                  status, and registration date.
                 </p>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
@@ -172,7 +212,8 @@ const GSTVerificationPageAPI: React.FC = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#f7f1ef]
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
 
 
 
@@ -181,16 +222,22 @@ const GSTVerificationPageAPI: React.FC = () => {
 
 
 
-   rounded-full flex items-center justify-center mr-4">
+   rounded-full flex items-center justify-center mr-4"
+                  >
                     <span className="text-[#b7603d]   font-bold">📋</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-800">Comprehensive GST Check</h3>
-                    <span className="text-sm text-[#b7603d]   font-medium">Full Business History</span>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Comprehensive GST Check
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Full Business History
+                    </span>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  Provides complete business details including tax filing history, compliance status, and authorized signatories.
+                  Provides complete business details including tax filing
+                  history, compliance status, and authorized signatories.
                 </p>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
@@ -203,17 +250,23 @@ const GSTVerificationPageAPI: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
-                    <span className="font-medium">Thorough business checks</span>
+                    <span className="font-medium">
+                      Thorough business checks
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
-              <h4 className="text-lg font-semibold mb-4 text-gray-800">What You Get:</h4>
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <h5 className="font-medium text-gray-700 mb-2">Basic Check:</h5>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Basic Check:
+                  </h5>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>✓ Business legal name</li>
                     <li>✓ GSTIN validity</li>
@@ -223,7 +276,9 @@ const GSTVerificationPageAPI: React.FC = () => {
                   </ul>
                 </div>
                 <div>
-                  <h5 className="font-medium text-gray-700 mb-2">Comprehensive Check:</h5>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Comprehensive Check:
+                  </h5>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>✓ Principal place of business</li>
                     <li>✓ Additional business locations</li>
@@ -245,8 +300,10 @@ const GSTVerificationPageAPI: React.FC = () => {
             </h2>
             <div className="relative">
               <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gray-200"></div>
-              <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gradient-to-r from-[#b7603d]
- to-transparent"></div>
+              <div
+                className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gradient-to-r from-[#b7603d]
+ to-transparent"
+              ></div>
 
               <div className="grid gap-8 grid-cols-1 md:grid-cols-5">
                 <div className="text-center relative">
@@ -254,40 +311,57 @@ const GSTVerificationPageAPI: React.FC = () => {
                     1
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Input GSTIN</h3>
-                  <p className="text-gray-600 text-sm">Enter 15-digit GSTIN number</p>
+                  <p className="text-gray-600 text-sm">
+                    Enter 15-digit GSTIN number
+                  </p>
                 </div>
                 <div className="text-center relative">
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     2
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Data Validation</h3>
-                  <p className="text-gray-600 text-sm">System validates GSTIN format</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Data Validation
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    System validates GSTIN format
+                  </p>
                 </div>
                 <div className="text-center relative">
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     3
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">GST Database Check</h3>
-                  <p className="text-gray-600 text-sm">API queries national GST databases</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    GST Database Check
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    API queries national GST databases
+                  </p>
                 </div>
                 <div className="text-center relative">
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     4
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Record Matching</h3>
-                  <p className="text-gray-600 text-sm">Cross-reference with GST records</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Record Matching
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Cross-reference with GST records
+                  </p>
                 </div>
                 <div className="text-center relative">
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     5
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Secure Results</h3>
-                  <p className="text-gray-600 text-sm">Receive verification status and details</p>
+                  <p className="text-gray-600 text-sm">
+                    Receive verification status and details
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-12 bg-[#f7f1ef]
+            <div
+              className="mt-12 bg-[#f7f1ef]
 
 
 
@@ -296,7 +370,8 @@ const GSTVerificationPageAPI: React.FC = () => {
 
 
 
- p-6 rounded-lg">
+ p-6 rounded-lg"
+            >
               <div className="flex flex-wrap justify-center gap-6 text-sm">
                 <div className="flex items-center space-x-2">
                   <span className="w-3 h-3 bg-[#d38769] rounded-full"></span>
@@ -324,7 +399,8 @@ const GSTVerificationPageAPI: React.FC = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="bg-[#f7f1ef]
+        <section
+          className="bg-[#f7f1ef]
 
 
 
@@ -333,15 +409,18 @@ const GSTVerificationPageAPI: React.FC = () => {
 
 
 
- py-16 px-4 md:px-8 lg:px-20">
+ py-16 px-4 md:px-8 lg:px-20"
+        >
           <div className="w-full mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-              Why Use Our <span className="text-[#b7603d]">GST Verification API</span>?
+              Why Use Our{" "}
+              <span className="text-[#b7603d]">GST Verification API</span>?
             </h2>
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#f7f1ef]
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
 
 
 
@@ -350,19 +429,24 @@ const GSTVerificationPageAPI: React.FC = () => {
 
 
 
-   rounded-full flex items-center justify-center mr-4">
+   rounded-full flex items-center justify-center mr-4"
+                  >
                     <span className="text-[#b7603d]   text-xl">⚡</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-800">Instant Results</h3>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Instant Results
+                  </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Get GST verification in 2-5 seconds with direct GSTN database access.
+                  Get GST verification in 2-5 seconds with direct GSTN database
+                  access.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#f7f1ef]
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
 
 
 
@@ -371,10 +455,13 @@ const GSTVerificationPageAPI: React.FC = () => {
 
 
 
- rounded-full flex items-center justify-center mr-4">
+ rounded-full flex items-center justify-center mr-4"
+                  >
                     <span className="text-[#b7603d]   text-xl">🏢</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-800">Fraud Prevention</h3>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Fraud Prevention
+                  </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
                   Detect fake or inactive GST numbers and shell companies.
@@ -383,7 +470,8 @@ const GSTVerificationPageAPI: React.FC = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#f7f1ef]
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
 
 
 
@@ -392,10 +480,13 @@ const GSTVerificationPageAPI: React.FC = () => {
 
 
 
-  rounded-full flex items-center justify-center mr-4">
+  rounded-full flex items-center justify-center mr-4"
+                  >
                     <span className="text-[#b7603d] text-xl">📋</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-800">Compliance Ready</h3>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Compliance Ready
+                  </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
                   Meet KYC and AML requirements for business transactions.
@@ -407,7 +498,9 @@ const GSTVerificationPageAPI: React.FC = () => {
                   <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
                     <span className="text-orange-600 text-xl">🔍</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-800">Detailed History</h3>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Detailed History
+                  </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
                   Access complete business registration and tax filing history.
@@ -419,7 +512,9 @@ const GSTVerificationPageAPI: React.FC = () => {
                   <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
                     <span className="text-red-600 text-xl">📊</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-800">Business Analytics</h3>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Business Analytics
+                  </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
                   Get insights into business age, compliance, and tax history.
@@ -431,10 +526,13 @@ const GSTVerificationPageAPI: React.FC = () => {
                   <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
                     <span className="text-teal-600 text-xl">⚙️</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-800">Easy Integration</h3>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Easy Integration
+                  </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Simple REST API with comprehensive documentation and SDK support.
+                  Simple REST API with comprehensive documentation and SDK
+                  support.
                 </p>
               </div>
             </div>
@@ -450,7 +548,9 @@ const GSTVerificationPageAPI: React.FC = () => {
                   Simple <span className="text-[#b7603d]">API Integration</span>
                 </h2>
                 <p className="text-gray-600">
-                  Integrate GST verification seamlessly into your applications with our developer-friendly API and comprehensive documentation.
+                  Integrate GST verification seamlessly into your applications
+                  with our developer-friendly API and comprehensive
+                  documentation.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
@@ -474,7 +574,10 @@ const GSTVerificationPageAPI: React.FC = () => {
                     <span>Sandbox environment for testing</span>
                   </div>
                 </div>
-                 <Link to={'https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/'}
+                <Link
+                  to={
+                    "https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  }
                   className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
                 >
                   Read Full API Docs
@@ -482,34 +585,69 @@ const GSTVerificationPageAPI: React.FC = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <div className="bg-gray-900 rounded-lg p-6 text-green-400 font-mono text-sm overflow-x-auto">
-                  <div className="mb-2 text-gray-400">// Sample API Request</div>
-                  <div className="text-blue-400">POST</div> <span className="text-white">/api/v1/gst-verification</span>
+                  <div className="mb-2 text-gray-400">
+                    // Sample API Request
+                  </div>
+                  <div className="text-blue-400">POST</div>{" "}
+                  <span className="text-white">/api/v1/gst-verification</span>
                   <div className="text-gray-400 mt-2">Headers:</div>
-                  <div className="ml-2 text-yellow-400">Authorization: Bearer YOUR_API_KEY</div>
-                  <div className="ml-2 text-yellow-400">Content-Type: application/json</div>
+                  <div className="ml-2 text-yellow-400">
+                    Authorization: Bearer YOUR_API_KEY
+                  </div>
+                  <div className="ml-2 text-yellow-400">
+                    Content-Type: application/json
+                  </div>
                   <div className="text-yellow-400 mt-3">{"{"}</div>
-                  <div className="ml-4 text-white">"gstin": "22AAAAA0000A1Z5",</div>
-                  <div className="ml-4 text-white">"verification_type": "comprehensive"</div>
+                  <div className="ml-4 text-white">
+                    "gstin": "22AAAAA0000A1Z5",
+                  </div>
+                  <div className="ml-4 text-white">
+                    "verification_type": "comprehensive"
+                  </div>
                   <div className="text-yellow-400">{"}"}</div>
                   <div className="mt-4 text-gray-400">// Sample Response</div>
                   <div className="text-yellow-400">{"{"}</div>
                   <div className="ml-4 text-white">"status": "valid",</div>
-                  <div className="ml-4 text-white">"business_details": {"{"}</div>
-                  <div className="ml-8 text-white">"legal_name": "ABC Enterprises Pvt Ltd",</div>
-                  <div className="ml-8 text-white">"trade_name": "ABC Electronics",</div>
-                  <div className="ml-8 text-white">"registration_date": "2017-07-01",</div>
-                  <div className="ml-8 text-white">"business_status": "Active",</div>
-                  <div className="ml-8 text-white">"taxpayer_type": "Regular"</div>
+                  <div className="ml-4 text-white">
+                    "business_details": {"{"}
+                  </div>
+                  <div className="ml-8 text-white">
+                    "legal_name": "ABC Enterprises Pvt Ltd",
+                  </div>
+                  <div className="ml-8 text-white">
+                    "trade_name": "ABC Electronics",
+                  </div>
+                  <div className="ml-8 text-white">
+                    "registration_date": "2017-07-01",
+                  </div>
+                  <div className="ml-8 text-white">
+                    "business_status": "Active",
+                  </div>
+                  <div className="ml-8 text-white">
+                    "taxpayer_type": "Regular"
+                  </div>
                   <div className="ml-4 text-white">{"}"},</div>
-                  <div className="ml-4 text-white">"principal_place": {"{"}</div>
-                  <div className="ml-8 text-white">"address": "123 Business Park, Mumbai",</div>
+                  <div className="ml-4 text-white">
+                    "principal_place": {"{"}
+                  </div>
+                  <div className="ml-8 text-white">
+                    "address": "123 Business Park, Mumbai",
+                  </div>
                   <div className="ml-8 text-white">"state_code": "27",</div>
                   <div className="ml-8 text-white">"pincode": "400001"</div>
                   <div className="ml-4 text-white">{"}"},</div>
-                  <div className="ml-4 text-white">"compliance_status": {"{"}</div>
-                  <div className="ml-8 text-white">"last_return_filed": "GSTR-3B",</div>
-                  <div className="ml-8 text-white">"filing_frequency": "Monthly",</div>
-                  <div className="ml-8 text-white">"last_filing_date": "2023-05-20"</div>
+                  <div className="ml-4 text-white">
+                    "compliance_status": {"{"}
+                  </div>
+                  <div className="ml-8 text-white">
+                    "last_return_filed": "GSTR-3B",
+                  </div>
+                  <div className="ml-8 text-white">
+                    "filing_frequency": "Monthly",
+                  </div>
+                  <div className="ml-8 text-white">
+                    "last_filing_date": "2023-05-20"
+                  </div>
                   <div className="ml-4 text-white">{"}"}</div>
                   <div className="text-yellow-400">{"}"}</div>
                 </div>
@@ -519,7 +657,7 @@ const GSTVerificationPageAPI: React.FC = () => {
         </section>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default GSTVerificationPageAPI
+export default GSTVerificationPageAPI;

@@ -258,7 +258,7 @@ const EmailAuthenticationPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹0.5-1 per verification</span>
+                    <span className="font-medium">₹2.8 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
@@ -303,7 +303,7 @@ const EmailAuthenticationPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1.5-3 per verification</span>
+                    <span className="font-medium">₹3.8 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>

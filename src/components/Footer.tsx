@@ -89,7 +89,7 @@ export default function Footer() {
               "RC Verification",
               "Voter ID Verification",
               "MCA Verification",
-              "Mobile Verification API",
+              // "Mobile Verification API",
               "Challan verification",
             ].map((item, index) => {
               const path = `/${item.toLowerCase().replace(/ /g, "-")}`;
@@ -122,13 +122,13 @@ export default function Footer() {
               "User",
               "Email Authentication",
               "Liveness check API",
-              "OCR Validation",
-              "Whatsapp Verification",
+              // "OCR Validation",
+              // "Whatsapp Verification",
               "Face Match API",
               "Name Match API",
-              "ITR Profile Summary",
-              "Credit Score API",
-              "Digilocker",
+              // "ITR Profile Summary",
+              // "Credit Score API",
+              // "Digilocker",
             ].map((item, index) => {
               const path = `/${item.toLowerCase().replace(/ /g, "-")}`;
               return (

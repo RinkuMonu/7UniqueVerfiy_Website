@@ -264,7 +264,7 @@ const FaceMatchAPIPage: React.FC = () => {
                           </li>
                         </ul>
                         <div className="text-2xl font-bold text-[#b7603d] mb-4">
-                          ₹2 per verification
+                          ₹3 per verification
                         </div>
                         <Link to={"/contact-us"}>
                           <button className="w-full bg-[#b7603d] text-white py-3 rounded-lg font-semibold hover:bg-[#d19983] transition-colors">

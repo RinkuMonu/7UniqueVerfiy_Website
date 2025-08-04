@@ -271,7 +271,7 @@ const VoterIDVerificationPage: React.FC = () => {
                     Basic
                   </h3>
                   <div className="text-4xl font-bold text-[#b7603d] mb-4">
-                    ₹2
+                    ₹3.5
                     <span className="text-lg text-gray-500">/verification</span>
                   </div>
                 </div>
@@ -376,7 +376,7 @@ const VoterIDVerificationPage: React.FC = () => {
                     Advance
                   </h3>
                   <div className="text-4xl font-bold text-[#b7603d] mb-4">
-                    ₹1.5
+                    ₹4.5
                     <span className="text-lg text-gray-500">/verification</span>
                   </div>
                 </div>

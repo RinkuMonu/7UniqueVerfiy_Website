@@ -59,36 +59,36 @@ const APIsUnderKyc: React.FC = () => {
       description:
         "Enable biometric or offline Aadhaar verification without user OTP.",
     },
-    {
-      name: "EKYC Search",
-      icon: <FaSearch />,
-      description:
-        "Fetch electronic KYC data using Digilocker consent and secure APIs.",
-    },
+    // {
+    //   name: "EKYC Search",
+    //   icon: <FaSearch />,
+    //   description:
+    //     "Fetch electronic KYC data using Digilocker consent and secure APIs.",
+    // },
     {
       name: "UPI / VPA Verification",
       icon: <FaRegCreditCard />,
       description:
         "Validate UPI IDs and VPA handles to ensure ownership and accuracy.",
     },
-    {
-      name: "CKYC Download",
-      icon: <FaDownload />,
-      description:
-        "Download Central KYC (CKYC) data from the registry for due diligence.",
-    },
+    // {
+    //   name: "CKYC Download",
+    //   icon: <FaDownload />,
+    //   description:
+    //     "Download Central KYC (CKYC) data from the registry for due diligence.",
+    // },
     {
       name: "RC Verification",
       icon: <FaMapSigns />,
       description:
         "Check vehicle ownership and RC status with RTO-integrated APIs.",
     },
-    {
-      name: "UPI Info API",
-      icon: <FaInfoCircle />,
-      description:
-        "Access UPI-linked details including bank names and VPA meta info.",
-    },
+    // {
+    //   name: "UPI Info API",
+    //   icon: <FaInfoCircle />,
+    //   description:
+    //     "Access UPI-linked details including bank names and VPA meta info.",
+    // },
   ];
 
   const container = {
