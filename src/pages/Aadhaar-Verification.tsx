@@ -189,7 +189,7 @@ const AadhaarVerificationPageAPI: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹3-5 per verification</span>
+                    <span className="font-medium">₹3.5 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
@@ -225,7 +225,7 @@ const AadhaarVerificationPageAPI: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1-2 per verification</span>
+                    <span className="font-medium">₹4.5 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
@@ -235,7 +235,7 @@ const AadhaarVerificationPageAPI: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+              {/* <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">
                     <span className="text-[#b7603d]   font-bold">⚡</span>
@@ -270,7 +270,7 @@ const AadhaarVerificationPageAPI: React.FC = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">
@@ -296,7 +296,7 @@ const AadhaarVerificationPageAPI: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1-2 per verification</span>
+                    <span className="font-medium">₹4 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>

@@ -20,48 +20,49 @@ import {
   FaWallet,
   FaKey,
   FaUserTie,
+  FaUser,
 } from "react-icons/fa";
 import { MdOutlineAnalytics, MdOutlineContacts } from "react-icons/md";
 const FinancialChecksAPIs: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
 
   const financialAPIs = [
+    // {
+    //   name: "ITR Compliance Check",
+    //   icon: <FaUserCheck className="text-3xl" />,
+    //   description:
+    //     "Verify ITR filing compliance for individuals or businesses via PAN-based lookups.",
+    // },
     {
-      name: "ITR Compliance Check",
-      icon: <FaUserCheck className="text-3xl" />,
+      name: "ITR Create Client",
+      icon: <FaUser className="text-3xl" />,
       description:
-        "Verify ITR filing compliance for individuals or businesses via PAN-based lookups.",
+        "Create a client profile on the ITR system to initiate and manage income tax return data fetch.",
     },
-    {
-      name: "ITR Details Retrieval",
-      icon: <FaRegFileAlt className="text-3xl" />,
-      description:
-        "Fetch complete ITR documents to assess income trends and historical filings.",
-    },
-    {
-      name: "ITR Profile Summary",
-      icon: <MdOutlineAnalytics className="text-3xl" />,
-      description:
-        "Access structured financial summaries from ITR data to support credit decisions.",
-    },
+    // {
+    //   name: "ITR Profile Summary",
+    //   icon: <MdOutlineAnalytics className="text-3xl" />,
+    //   description:
+    //     "Access structured financial summaries from ITR data to support credit decisions.",
+    // },
     {
       name: "Credit Report (Equifax)",
       icon: <FaFileInvoiceDollar className="text-3xl" />,
       description:
         "Get detailed credit bureau reports from Equifax for lending and underwriting workflows.",
     },
-    {
-      name: "Credit Score API",
-      icon: <FaChartLine className="text-3xl" />,
-      description:
-        "Retrieve real-time credit scores to evaluate financial reliability and eligibility.",
-    },
-    {
-      name: "Credit Report - CIBIL TRANSUNION",
-      icon: <FaFileInvoiceDollar className="text-3xl" />,
-      description:
-        "Access detailed CIBIL credit reports to assess borrower creditworthiness.",
-    },
+    // {
+    //   name: "Credit Score API",
+    //   icon: <FaChartLine className="text-3xl" />,
+    //   description:
+    //     "Retrieve real-time credit scores to evaluate financial reliability and eligibility.",
+    // },
+    // {
+    //   name: "Credit Report - CIBIL TRANSUNION",
+    //   icon: <FaFileInvoiceDollar className="text-3xl" />,
+    //   description:
+    //     "Access detailed CIBIL credit reports to assess borrower creditworthiness.",
+    // },
     {
       name: "Court Case Check",
       icon: <FaGavel className="text-3xl" />,
@@ -80,32 +81,32 @@ const FinancialChecksAPIs: React.FC = () => {
       description:
         "Perform criminal background checks on corporate entities for compliance and risk.",
     },
+    // {
+    //   name: "Crime Check through mobile number",
+    //   icon: <FaFingerprint className="text-3xl" />,
+    //   description:
+    //     "Verify criminal background using registered mobile numbers.",
+    // },
+    // {
+    //   name: "PAN to UAN Fetch",
+    //   icon: <FaIdCard className="text-3xl" />,
+    //   description:
+    //     "Fetch Universal Account Number (UAN) linked to a given PAN for employment verification.",
+    // },
+    // {
+    //   name: "Mobile to UAN Fetch - Recent Employment",
+    //   icon: <FaAddressCard className="text-3xl" />,
+    //   description:
+    //     "Get UAN linked with a mobile number and check the latest employment details.",
+    // },
+    // {
+    //   name: "EPFO Details Get - Without OTP",
+    //   icon: <FaWallet className="text-3xl" />,
+    //   description:
+    //     "Fetch Employee Provident Fund details using UAN without OTP for employment history checks.",
+    // },
     {
-      name: "Crime Check through mobile number",
-      icon: <FaFingerprint className="text-3xl" />,
-      description:
-        "Verify criminal background using registered mobile numbers.",
-    },
-    {
-      name: "PAN to UAN Fetch",
-      icon: <FaIdCard className="text-3xl" />,
-      description:
-        "Fetch Universal Account Number (UAN) linked to a given PAN for employment verification.",
-    },
-    {
-      name: "Mobile to UAN Fetch - Recent Employment",
-      icon: <FaAddressCard className="text-3xl" />,
-      description:
-        "Get UAN linked with a mobile number and check the latest employment details.",
-    },
-    {
-      name: "EPFO Details Get - Without OTP",
-      icon: <FaWallet className="text-3xl" />,
-      description:
-        "Fetch Employee Provident Fund details using UAN without OTP for employment history checks.",
-    },
-    {
-      name: "EPFO Details Get Passbook - Consented",
+      name: "EPFO Details Get",
       icon: <FaWallet className="text-3xl" />,
       description:
         "Retrieve EPFO passbook details with user consent to analyze provident fund transactions.",
@@ -134,12 +135,12 @@ const FinancialChecksAPIs: React.FC = () => {
       description:
         "Link mobile numbers to PAN records for identity validation and KYC processes.",
     },
-    {
-      name: "FAQs & API Guidance",
-      icon: <FaQuestionCircle className="text-3xl" />,
-      description:
-        "Browse frequently asked questions and integration support for all financial APIs.",
-    },
+    // {
+    //   name: "FAQs & API Guidance",
+    //   icon: <FaQuestionCircle className="text-3xl" />,
+    //   description:
+    //     "Browse frequently asked questions and integration support for all financial APIs.",
+    // },
   ];
 
   const container = {

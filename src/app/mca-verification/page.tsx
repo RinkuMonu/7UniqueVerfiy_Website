@@ -237,7 +237,7 @@ const MCAVerificationPage: React.FC = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹5-7 per verification</span>
+                  <span className="font-medium">₹3.25 per verification</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
@@ -275,7 +275,7 @@ const MCAVerificationPage: React.FC = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹8-12 per verification</span>
+                  <span className="font-medium">₹4.25 per verification</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>

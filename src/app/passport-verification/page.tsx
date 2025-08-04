@@ -284,7 +284,7 @@ const PassportVerificationPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹8-10 per verification</span>
+                    <span className="font-medium">₹4 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>

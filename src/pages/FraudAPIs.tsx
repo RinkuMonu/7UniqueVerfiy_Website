@@ -24,12 +24,12 @@ const FraudIndicatorsAPIs: React.FC = () => {
       description:
         "Instantly verify if a person has any criminal history by scanning official databases—ideal for onboarding, finance, or hiring processes.",
     },
-    {
-      name: "Mobile Number Crime Check",
-      icon: <FaMobileAlt />,
-      description:
-        "Identify fraud risks linked to a mobile number, including SIM misuse or suspicious registrations—perfect for fintech and telecom checks.",
-    },
+    // {
+    //   name: "Mobile Number Crime Check",
+    //   icon: <FaMobileAlt />,
+    //   description:
+    //     "Identify fraud risks linked to a mobile number, including SIM misuse or suspicious registrations—perfect for fintech and telecom checks.",
+    // },
     {
       name: "Court Case Lookup",
       icon: <FaBalanceScale />,

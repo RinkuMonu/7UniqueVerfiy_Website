@@ -270,7 +270,7 @@ const PANVerificationPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1-2 per verification</span>
+                    <span className="font-medium">₹3 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
@@ -315,7 +315,7 @@ const PANVerificationPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹3-5 per verification</span>
+                    <span className="font-medium">₹5 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>

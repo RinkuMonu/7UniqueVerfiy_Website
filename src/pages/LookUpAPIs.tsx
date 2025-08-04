@@ -27,12 +27,12 @@ const LookupAPIs: React.FC = () => {
       description:
         "Fetch the UPI ID (VPA) tied to a mobile number—perfect for verifying transaction identities.",
     },
-    {
-      name: "Mobile to UAN",
-      icon: <FaUserCircle className="w-8 h-8" />,
-      description:
-        "Identify the Universal Account Number (UAN) mapped with a mobile—useful in employee and PF-related verifications.",
-    },
+    // {
+    //   name: "Mobile to UAN",
+    //   icon: <FaUserCircle className="w-8 h-8" />,
+    //   description:
+    //     "Identify the Universal Account Number (UAN) mapped with a mobile—useful in employee and PF-related verifications.",
+    // },
   ];
 
   const containerVariants = {

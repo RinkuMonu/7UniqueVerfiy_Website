@@ -88,36 +88,36 @@ const verificationServices: DropdownItem[] = [
     icon: <FaIdBadge />,
     href: "/pan-verification",
   },
-  {
-    title: "Digilocker",
-    icon: <FaUserLock />,
-    href: "/digilocker",
-  },
-  {
-    title: "Credit Score API",
-    icon: <MdOutlineScoreboard />,
-    href: "/credit-score-api",
-  },
-  {
-    title: "ITR Profile Summary",
-    icon: <TbTax />,
-    href: "/itr-profile-summary",
-  },
+  // {
+  //   title: "Digilocker",
+  //   icon: <FaUserLock />,
+  //   href: "/digilocker",
+  // },
+  // {
+  //   title: "Credit Score API",
+  //   icon: <MdOutlineScoreboard />,
+  //   href: "/credit-score-api",
+  // },
+  // {
+  //   title: "ITR Profile Summary",
+  //   icon: <TbTax />,
+  //   href: "/itr-profile-summary",
+  // },
   // {
   //   title: "CKYC Search & Download",
   //   icon: <FaDownload />,
   //   href: "/ckyc-search-&-download",
   // },
-  // {
-  //   title: "Passport Verification",
-  //   icon: <FaPassport />,
-  //   href: "/passport-verification",
-  // },
-  // {
-  //   title: "Driving License Verification",
-  //   icon: <FaCar />,
-  //   href: "/driving-license-verification",
-  // },
+  {
+    title: "Passport Verification",
+    icon: <FaPassport />,
+    href: "/passport-verification",
+  },
+  {
+    title: "Driving License Verification",
+    icon: <FaCar />,
+    href: "/driving-license-verification",
+  },
   // {
   //   title: "RC Verification",
   //   icon: <FaUserCheck />,
@@ -128,16 +128,16 @@ const verificationServices: DropdownItem[] = [
   //   icon: <MdHowToVote />,
   //   href: "/voter-id-verification",
   // },
-  // {
-  //   title: "MCA Verification",
-  //   icon: <MdBusinessCenter />,
-  //   href: "/mca-verification",
-  // },
   {
-    title: "Mobile Verification API",
-    icon: <FaMobileAlt />,
-    href: "/mobile-verification-api",
+    title: "MCA Verification",
+    icon: <MdBusinessCenter />,
+    href: "/mca-verification",
   },
+  // {
+  //   title: "Mobile Verification API",
+  //   icon: <FaMobileAlt />,
+  //   href: "/mobile-verification-api",
+  // },
   // {
   //   title: "CKYC Search & download",
   //   icon: <FaRegFileAlt />,

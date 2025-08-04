@@ -29,18 +29,18 @@ const OCRAPIs: React.FC = () => {
       description:
         "Digitize and extract key information from PAN card scans for streamlined KYC.",
     },
-    {
-      name: "Driving License OCR",
-      icon: <MdOutlineDriveEta />,
-      description:
-        "Capture license number, name, and validity from driving license images.",
-    },
-    {
-      name: "Bank Statement OCR",
-      icon: <FaUniversity />,
-      description:
-        "Convert unstructured bank statement PDFs into structured, usable financial data.",
-    },
+    // {
+    //   name: "Driving License OCR",
+    //   icon: <MdOutlineDriveEta />,
+    //   description:
+    //     "Capture license number, name, and validity from driving license images.",
+    // },
+    // {
+    //   name: "Bank Statement OCR",
+    //   icon: <FaUniversity />,
+    //   description:
+    //     "Convert unstructured bank statement PDFs into structured, usable financial data.",
+    // },
     {
       name: "Cheque OCR",
       icon: <FaMoneyCheckAlt />,
@@ -53,42 +53,42 @@ const OCRAPIs: React.FC = () => {
       description:
         "Extract UIDAI Aadhaar details including name, DOB, and Aadhaar number with high accuracy.",
     },
-    {
-      name: "Bulk Aadhaar Masking",
-      icon: <MdOutlineMarkEmailRead />,
-      description:
-        "Automatically redact Aadhaar numbers in bulk documents for compliance and privacy.",
-    },
-    {
-      name: "Bulk Account Verification",
-      icon: <MdOutlineAccountBalanceWallet />,
-      description:
-        "OCR-powered bulk account verification using scanned or uploaded documents.",
-    },
-    {
-      name: "Bulk PAN Verification",
-      icon: <AiOutlineCheckCircle />,
-      description:
-        "Validate multiple PAN cards simultaneously using intelligent OCR processing.",
-    },
-    {
-      name: "Voter ID OCR",
-      icon: <BsCardChecklist />,
-      description:
-        "Extract voter ID number, name, gender, and address from Election Commission-issued Voter ID cards.",
-    },
-    {
-      name: "GSTIN OCR",
-      icon: <AiOutlineFileSearch />,
-      description:
-        "Read and validate GSTIN numbers from invoices and documents for tax compliance and automation.",
-    },
-    {
-      name: "CIN OCR",
-      icon: <BsBuilding />,
-      description:
-        "Capture Corporate Identification Number (CIN) from ROC documents for business verification.",
-    },
+    // {
+    //   name: "Bulk Aadhaar Masking",
+    //   icon: <MdOutlineMarkEmailRead />,
+    //   description:
+    //     "Automatically redact Aadhaar numbers in bulk documents for compliance and privacy.",
+    // },
+    // {
+    //   name: "Bulk Account Verification",
+    //   icon: <MdOutlineAccountBalanceWallet />,
+    //   description:
+    //     "OCR-powered bulk account verification using scanned or uploaded documents.",
+    // },
+    // {
+    //   name: "Bulk PAN Verification",
+    //   icon: <AiOutlineCheckCircle />,
+    //   description:
+    //     "Validate multiple PAN cards simultaneously using intelligent OCR processing.",
+    // },
+    // {
+    //   name: "Voter ID OCR",
+    //   icon: <BsCardChecklist />,
+    //   description:
+    //     "Extract voter ID number, name, gender, and address from Election Commission-issued Voter ID cards.",
+    // },
+    // {
+    //   name: "GSTIN OCR",
+    //   icon: <AiOutlineFileSearch />,
+    //   description:
+    //     "Read and validate GSTIN numbers from invoices and documents for tax compliance and automation.",
+    // },
+    // {
+    //   name: "CIN OCR",
+    //   icon: <BsBuilding />,
+    //   description:
+    //     "Capture Corporate Identification Number (CIN) from ROC documents for business verification.",
+    // },
   ];
 
   const container = {

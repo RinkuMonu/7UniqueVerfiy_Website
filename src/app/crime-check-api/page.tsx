@@ -262,7 +262,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+              {/* <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
                     <span className="text-[#b7603d]   font-bold">🕵️‍♂️</span>
@@ -396,7 +396,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                     <span className="font-medium">Basic identity checks</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
@@ -418,7 +418,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                     </li>
                   </ul>
                 </div>
-                <div>
+                {/* <div>
                   <h5 className="font-medium text-gray-700 mb-2">
                     🕵️‍♂️ Crime Check (Corporate):
                   </h5>
@@ -475,7 +475,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                     <li>✓ Issuing country information</li>
                     <li>✓ Ideal for audits, legal use, or manual review</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

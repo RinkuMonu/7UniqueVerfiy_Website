@@ -22,12 +22,12 @@ import {
 } from "react-icons/fa";
 const UtilitiesAPISection: React.FC = () => {
   const utilitiesAPIs = [
-    {
-      name: "Currency Exchange API",
-      icon: <FaMoneyCheckAlt />,
-      description:
-        "Fetch real-time currency conversion rates for global pricing and forex operations.",
-    },
+    // {
+    //   name: "Currency Exchange API",
+    //   icon: <FaMoneyCheckAlt />,
+    //   description:
+    //     "Fetch real-time currency conversion rates for global pricing and forex operations.",
+    // },
     {
       name: "IMEI Validator API",
       icon: <FaMobileAlt />,
@@ -40,12 +40,12 @@ const UtilitiesAPISection: React.FC = () => {
       description:
         "Verify Importer Exporter Codes (IEC) for cross-border business legitimacy.",
     },
-    {
-      name: "LEI Verification API",
-      icon: <FaCheckDouble />,
-      description:
-        "Authenticate Legal Entity Identifiers (LEIs) for business due diligence.",
-    },
+    // {
+    //   name: "LEI Verification API",
+    //   icon: <FaCheckDouble />,
+    //   description:
+    //     "Authenticate Legal Entity Identifiers (LEIs) for business due diligence.",
+    // },
     {
       name: "IP LookUp",
       icon: <FaMapMarkedAlt />,
@@ -70,24 +70,24 @@ const UtilitiesAPISection: React.FC = () => {
       description:
         "Access detailed information for any Regional Transport Office (RTO).",
     },
-    {
-      name: "Fastag Information API",
-      icon: <FaRoad />,
-      description:
-        "Check vehicle Fastag registration and wallet status using vehicle number.",
-    },
+    // {
+    //   name: "Fastag Information API",
+    //   icon: <FaRoad />,
+    //   description:
+    //     "Check vehicle Fastag registration and wallet status using vehicle number.",
+    // },
     {
       name: "Pincode Info API",
       icon: <FaMapMarkerAlt />,
       description:
         "Get city, state, and area details from Indian postal pin codes.",
     },
-    {
-      name: "Stock Price API",
-      icon: <FaChartLine />,
-      description:
-        "Fetch live stock market prices, trends, and summaries for listed companies.",
-    },
+    // {
+    //   name: "Stock Price API",
+    //   icon: <FaChartLine />,
+    //   description:
+    //     "Fetch live stock market prices, trends, and summaries for listed companies.",
+    // },
     {
       name: "Card Validator API",
       icon: <FaCreditCard />,
@@ -106,42 +106,42 @@ const UtilitiesAPISection: React.FC = () => {
       description:
         "Verify email address validity and detect temporary/disposable domains.",
     },
-    {
-      name: "Email Bulk Upload Verification",
-      icon: <FaUpload />,
-      description:
-        "Validate large lists of email addresses with bulk upload support.",
-    },
-    {
-      name: "Pan Verification - Normal - Bulk Upload",
-      icon: <FaIdCard />,
-      description:
-        "Quickly validate multiple PAN numbers using bulk CSV/XLS upload.",
-    },
-    {
-      name: "Pan Verification - Detailed - Bulk Upload",
-      icon: <FaIdCard />,
-      description:
-        "Get detailed PAN info (name, DOB, status) in batch using document upload.",
-    },
-    {
-      name: "PAN Verification - Comprehensive - Bulk Upload",
-      icon: <FaIdCard />,
-      description:
-        "Perform comprehensive PAN checks across departments via bulk upload.",
-    },
-    {
-      name: "RC Verification - Detailed - Bulk Upload",
-      icon: <FaTruckMoving />,
-      description:
-        "Extract full vehicle registration certificate details in batch mode.",
-    },
-    {
-      name: "Bank Account Verification - Penny Drop - Bulk Upload",
-      icon: <FaFileInvoiceDollar />,
-      description:
-        "Verify bank accounts via penny drop method at scale using file upload.",
-    },
+    // {
+    //   name: "Email Bulk Upload Verification",
+    //   icon: <FaUpload />,
+    //   description:
+    //     "Validate large lists of email addresses with bulk upload support.",
+    // },
+    // {
+    //   name: "Pan Verification - Normal - Bulk Upload",
+    //   icon: <FaIdCard />,
+    //   description:
+    //     "Quickly validate multiple PAN numbers using bulk CSV/XLS upload.",
+    // },
+    // {
+    //   name: "Pan Verification - Detailed - Bulk Upload",
+    //   icon: <FaIdCard />,
+    //   description:
+    //     "Get detailed PAN info (name, DOB, status) in batch using document upload.",
+    // },
+    // {
+    //   name: "PAN Verification - Comprehensive - Bulk Upload",
+    //   icon: <FaIdCard />,
+    //   description:
+    //     "Perform comprehensive PAN checks across departments via bulk upload.",
+    // },
+    // {
+    //   name: "RC Verification - Detailed - Bulk Upload",
+    //   icon: <FaTruckMoving />,
+    //   description:
+    //     "Extract full vehicle registration certificate details in batch mode.",
+    // },
+    // {
+    //   name: "Bank Account Verification - Penny Drop - Bulk Upload",
+    //   icon: <FaFileInvoiceDollar />,
+    //   description:
+    //     "Verify bank accounts via penny drop method at scale using file upload.",
+    // },
   ];
 
   const container = {

@@ -25,21 +25,21 @@ const EmployeeBGVAPIs: React.FC = () => {
       icon: <FaIdBadge />,
       description: "Retrieve EPFO details directly without OTP for faster background validation.",
     },
-    {
-      name: "Mobile to UAN",
-      icon: <FaPhoneAlt />,
-      description: "Map mobile numbers to UAN records to validate employee work history securely.",
-    },
+    // {
+    //   name: "Mobile to UAN",
+    //   icon: <FaPhoneAlt />,
+    //   description: "Map mobile numbers to UAN records to validate employee work history securely.",
+    // },
     {
       name: "ITR Details Get",
       icon: <FaFileInvoiceDollar />,
       description: "Fetch Income Tax Return insights to assess candidate's financial stability.",
     },
-    {
-      name: "PAN to UAN",
-      icon: <FaAddressCard />,
-      description: "Connect PAN with UAN to ensure consistent identity mapping across systems.",
-    },
+    // {
+    //   name: "PAN to UAN",
+    //   icon: <FaAddressCard />,
+    //   description: "Connect PAN with UAN to ensure consistent identity mapping across systems.",
+    // },
   ];
 
   return (

@@ -386,7 +386,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹2-3 per verification</span>
+                    <span className="font-medium">₹3 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
@@ -431,7 +431,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹4-6 per verification</span>
+                    <span className="font-medium">₹5 per verification</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
