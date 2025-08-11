@@ -6,7 +6,7 @@ import { UsageSection } from "./usageSection";
 import { LuckyWallet } from "./wallet";
 import { LuckyTransaction } from "./luckyTransation";
 import KnowMore from "../../components/KnowMore";
-import banner from "../../../public/img/aiDashboard/banner.png"
+import banner from "../../../public/img/aiDashboard/banner.png";
 export const Lucky = () => {
   return (
     <>
@@ -17,10 +17,10 @@ export const Lucky = () => {
         <div className="container mx-auto  flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="w-full md:w-2/3 text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              7Unique Verify – Face Match API
+              7Unique Verify – AI Dashboard
             </h1>
             <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-              Real-time Facial Recognition & Identity Match
+              Get Real time Daily API Usage Report
             </h2>
             <p className="text-lg mb-4 text-white">
               Verify identities with precision using 7Unique Verify’s Face Match

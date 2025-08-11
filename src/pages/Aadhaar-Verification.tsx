@@ -235,42 +235,7 @@ const AadhaarVerificationPageAPI: React.FC = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">
-                    <span className="text-[#b7603d]   font-bold">⚡</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800">
-                      Aadhaar Masking
-                    </h3>
-                    <span className="text-sm text-[#b7603d]   font-medium">
-                      Demographic Verification
-                    </span>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">
-                  Aadhaar Masking refers to the process of hiding the first 8
-                  digits of an Aadhaar number and showing only the last 4 digits
-                  for privacy and security purposes.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Response Time:</span>
-                    <span className="font-medium">2-5 seconds</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1-2 per verification</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Best For:</span>
-                    <span className="font-medium">
-                      Quick verification needs
-                    </span>
-                  </div>
-                </div>
-              </div> */}
+            
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-[#f7f1ef]  rounded-full flex items-center justify-center mr-4">

@@ -89,12 +89,20 @@ const PassportVerificationPage: React.FC = () => {
                 platforms, and any system that needs verified government-issued
                 identity documentation.
               </p>
-              <Link
-                to="/passport-verification-page-api"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -324,6 +332,150 @@ const PassportVerificationPage: React.FC = () => {
           </div>
         </section>
         <KnowMore />
+        {/* Benefits Section */}
+        <section
+          className="bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ py-16 px-4 md:px-8 lg:px-20"
+        >
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Why Use Our{" "}
+              <span className="text-[#b7603d]">Passport Verification API</span>?
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+   rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   text-xl">⚡</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Instant Verification
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Get passport verification results in 2-5 seconds with direct
+                  access to international databases.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+ rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   text-xl">🛡️</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Fraud Prevention
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Detect fake or invalid passports to prevent identity fraud and
+                  ensure authentic verification.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+  rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d] text-xl">📋</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Global Compliance
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Meet international KYC requirements and compliance standards
+                  for cross-border transactions.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-orange-600 text-xl">🔒</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Secure & Encrypted
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Bank-grade security with end-to-end encryption for all
+                  passport verification requests.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-red-600 text-xl">📊</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Detailed Information
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Access comprehensive passport details including validity,
+                  issuing country, and holder information.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-teal-600 text-xl">⚙️</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Easy Integration
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Simple REST API with comprehensive documentation and multiple
+                  SDK options.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12 ">

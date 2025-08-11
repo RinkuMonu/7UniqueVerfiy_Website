@@ -87,12 +87,20 @@ const AadhaarVerificationPage: React.FC = () => {
                 requiring secure identity verification with India's most trusted
                 identity system.
               </p>
-              <Link
-                to="/aadhaar-verification-api"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -402,116 +410,102 @@ const AadhaarVerificationPage: React.FC = () => {
         <KnowMore />
 
         {/* How It Works Section */}
-        <section className="container mx-auto px-4 py-12 ">
-          <div className="mx-auto max-w-6xl space-y-8">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-16"
-              >
-                <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
-                  <h2 className="flex items-center gap-3 text-2xl font-semibold">
-                    <div className="rounded-full bg-[#b7603d]/10 p-2">
-                      <svg
-                        className="h-6 w-6 text-[#b7603d]"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M13 10V3L4 14h7v7l9-11h-7z"
-                        />
-                      </svg>
-                    </div>
-                    How Aadhaar Verification Works
-                  </h2>
+        <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              How <span className="text-[#b7603d]">Aadhaar Verification</span>{" "}
+              Works
+            </h2>
+            <div className="relative">
+              <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gray-200"></div>
+              <div
+                className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gradient-to-r from-[#b7603d]
+ to-transparent"
+              ></div>
+
+              <div className="grid gap-8 grid-cols-1 md:grid-cols-5">
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    1
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">Aadhaar Input</h3>
+                  <p className="text-gray-600 text-sm">
+                    User enters 12-digit Aadhaar number for verification
+                  </p>
                 </div>
-                <div className="w-24 h-1.5 bg-gradient-to-r from-[#b7603d] to-[#d88a6e] mx-auto rounded-full" />
-              </motion.div>
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    2
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">OTP Generation</h3>
+                  <p className="text-gray-600 text-sm">
+                    System generates OTP and sends to registered mobile
+                  </p>
+                </div>
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    3
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">
+                    UIDAI Verification
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Details verified against UIDAI database securely
+                  </p>
+                </div>
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    4
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Data Validation
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Demographic information validated and processed
+                  </p>
+                </div>
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    5
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">Secure Results</h3>
+                  <p className="text-gray-600 text-sm">
+                    Verified information returned with privacy compliance
+                  </p>
+                </div>
+              </div>
+            </div>
 
-              <motion.div
-                variants={container}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-5"
-              >
-                {[
-                  {
-                    step: "1",
-                    title: "Enter Aadhaar Number",
-                    description:
-                      "Provide the 12-digit Aadhaar number for verification through our secure API.",
-                    icon: <FaIdCard className="text-[#b7603d] text-4xl" />,
-                  },
-                  {
-                    step: "2",
-                    title: "OTP Generation",
-                    description:
-                      "System generates and sends OTP to the registered mobile number for authentication.",
-                    icon: <FaMobileAlt className="text-[#b7603d] text-4xl" />,
-                  },
-                  {
-                    step: "3",
-                    title: "UIDAI Verification",
-                    description:
-                      "Details are verified against UIDAI database with complete privacy compliance.",
-                    icon: <FaDatabase className="text-[#b7603d] text-4xl" />,
-                  },
-                  {
-                    step: "4",
-                    title: "Instant Results",
-                    description:
-                      "Receive verified demographic information and authentication status instantly.",
-                    icon: <FaCheckCircle className="text-[#b7603d] text-4xl" />,
-                  },
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    // variants={item}
-                    whileHover={{
-                      y: -10,
-                      boxShadow:
-                        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                    }}
-                    transition={{ duration: 0.3 }}
-                    className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#f7f1ef] to-[#f0e4df] opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+            <div
+              className="mt-12 bg-[#f7f1ef]
 
-                    <div className="absolute top-4 left-4 bg-[#b7603d] text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">
-                      {item.step}
-                    </div>
 
-                    <motion.div
-                      className="flex justify-center mb-6 text-[#b7603d] text-4xl"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
-                    >
-                      {item.icon}
-                    </motion.div>
 
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-[#b7603d] transition-colors duration-300">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-                      {item.description}
-                    </p>
 
-                    <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-[#b7603d]/10 group-hover:bg-[#b7603d]/20 transition-all duration-500" />
-                  </motion.div>
-                ))}
-              </motion.div>
+
+
+
+
+ p-6 rounded-lg"
+            >
+              <div className="flex flex-wrap justify-center gap-6 text-sm">
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 bg-[#d38769] rounded-full"></span>
+                  <span>UIDAI Authorized</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                  <span>Privacy Compliant</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
+                  <span>Encrypted Data</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 bg-orange-500 rounded-full"></span>
+                  <span>No Data Storage</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -33,27 +33,27 @@ const LivenessCheckAPIPage: React.FC = () => {
               <p className="mb-4 text-white">
                 This API prevents spoofing attacks, detects deepfakes, and
                 verifies live user presence in real time, making it ideal for
-                sensitive verifications like financial onboarding, KYC, and secure
-                logins.
+                sensitive verifications like financial onboarding, KYC, and
+                secure logins.
               </p>
               <p className="mb-6 text-white">
                 Power up your applications with robust anti-spoofing technology
-                trusted by fintechs, telecoms, healthcare, and remote verification
-                platforms across India.
+                trusted by fintechs, telecoms, healthcare, and remote
+                verification platforms across India.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  to="/liveness-check-api-pages"
+                  to={"/contact-us"}
                   className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
                 >
                   Get Started
                 </Link>
-                <a
-                  href="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
-                  className="inline-block border border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
                 >
-                  View Documentation
-                </a>
+                  View API Docs
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
@@ -67,7 +67,8 @@ const LivenessCheckAPIPage: React.FC = () => {
         </section>
 
         {/* Features Section */}
-        <section className="p-16 bg-[#f7f1ef]
+        <section
+          className="p-16 bg-[#f7f1ef]
 
 
 
@@ -76,7 +77,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-">
+"
+        >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -90,7 +92,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -99,7 +102,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+  p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-[#b7603d]"
@@ -131,7 +135,8 @@ const LivenessCheckAPIPage: React.FC = () => {
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -140,7 +145,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+  p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-[#b7603d]"
@@ -166,7 +172,8 @@ const LivenessCheckAPIPage: React.FC = () => {
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -175,7 +182,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+  p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-[#b7603d]"
@@ -221,8 +229,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Face Detection</h3>
                 <p className="text-gray-600">
-                  Detect and locate human faces in the image or video stream using
-                  advanced facial recognition algorithms.
+                  Detect and locate human faces in the image or video stream
+                  using advanced facial recognition algorithms.
                 </p>
               </div>
 
@@ -230,7 +238,9 @@ const LivenessCheckAPIPage: React.FC = () => {
                 <div className="bg-[#b7603d] text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Liveness Analysis</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  Liveness Analysis
+                </h3>
                 <p className="text-gray-600">
                   Analyze facial movements, micro-expressions, and physiological
                   indicators to determine liveness.
@@ -241,10 +251,12 @@ const LivenessCheckAPIPage: React.FC = () => {
                 <div className="bg-[#b7603d] text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Spoofing Detection</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  Spoofing Detection
+                </h3>
                 <p className="text-gray-600">
-                  Identify and prevent various spoofing attempts including photos,
-                  videos, and 3D masks.
+                  Identify and prevent various spoofing attempts including
+                  photos, videos, and 3D masks.
                 </p>
               </div>
 
@@ -256,8 +268,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Verification Result
                 </h3>
                 <p className="text-gray-600">
-                  Provide instant verification results with confidence scores and
-                  detailed analysis reports.
+                  Provide instant verification results with confidence scores
+                  and detailed analysis reports.
                 </p>
               </div>
             </div>
@@ -265,7 +277,8 @@ const LivenessCheckAPIPage: React.FC = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="p-16 bg-[#f7f1ef]
+        <section
+          className="p-16 bg-[#f7f1ef]
 
 
 
@@ -274,7 +287,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-">
+"
+        >
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
@@ -325,7 +339,9 @@ const LivenessCheckAPIPage: React.FC = () => {
                       />
                     </svg>
                     <span>
-                      <strong className="font-medium">Enhanced Security:</strong>{" "}
+                      <strong className="font-medium">
+                        Enhanced Security:
+                      </strong>{" "}
                       Add an extra layer of security to your authentication
                       process.
                     </span>
@@ -349,7 +365,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                       <strong className="font-medium">
                         Regulatory Compliance:
                       </strong>{" "}
-                      Meet KYC and AML requirements with verified identity checks.
+                      Meet KYC and AML requirements with verified identity
+                      checks.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -369,7 +386,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                     </svg>
                     <span>
                       <strong className="font-medium">User Experience:</strong>{" "}
-                      Seamless verification process without compromising security.
+                      Seamless verification process without compromising
+                      security.
                     </span>
                   </li>
                 </ul>
@@ -400,7 +418,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -409,7 +428,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-7 w-7 text-[#b7603d]"
@@ -425,7 +445,9 @@ const LivenessCheckAPIPage: React.FC = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Banking & Finance</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Banking & Finance
+                </h3>
                 <p className="text-gray-600">
                   Secure account opening, loan applications, and high-value
                   transactions with verified identity.
@@ -433,7 +455,8 @@ const LivenessCheckAPIPage: React.FC = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -442,7 +465,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-7 w-7 text-[#b7603d]"
@@ -458,15 +482,18 @@ const LivenessCheckAPIPage: React.FC = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Digital Onboarding</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Digital Onboarding
+                </h3>
                 <p className="text-gray-600">
-                  Verify new users during registration and account setup processes
-                  for various platforms.
+                  Verify new users during registration and account setup
+                  processes for various platforms.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -475,7 +502,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-7 w-7 text-[#b7603d]"
@@ -499,7 +527,8 @@ const LivenessCheckAPIPage: React.FC = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -508,7 +537,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-7 w-7 text-[#b7603d]"
@@ -532,7 +562,8 @@ const LivenessCheckAPIPage: React.FC = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -541,7 +572,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-7 w-7 text-[#b7603d]"
@@ -559,13 +591,14 @@ const LivenessCheckAPIPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Education</h3>
                 <p className="text-gray-600">
-                  Prevent cheating in online exams and verify student identity for
-                  remote learning.
+                  Prevent cheating in online exams and verify student identity
+                  for remote learning.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                <div className="bg-[#f7f1ef]
+                <div
+                  className="bg-[#f7f1ef]
 
 
 
@@ -574,7 +607,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+  p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-7 w-7 text-[#b7603d]"
@@ -594,8 +628,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Government Services
                 </h3>
                 <p className="text-gray-600">
-                  Secure citizen verification for digital government services and
-                  benefit applications.
+                  Secure citizen verification for digital government services
+                  and benefit applications.
                 </p>
               </div>
             </div>
@@ -603,7 +637,8 @@ const LivenessCheckAPIPage: React.FC = () => {
         </section>
 
         {/* API Integration Section */}
-        <section className="p-16 bg-[#f7f1ef]
+        <section
+          className="p-16 bg-[#f7f1ef]
 
 
 
@@ -612,7 +647,8 @@ const LivenessCheckAPIPage: React.FC = () => {
 
 
 
-">
+"
+        >
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
@@ -681,7 +717,7 @@ const LivenessCheckAPIPage: React.FC = () => {
               <div className="md:w-1/2">
                 <div className="bg-gray-900 text-green-400 p-6 rounded-lg font-mono text-sm overflow-x-auto">
                   <div className="text-gray-500 mb-2">
-                  // Liveness Check API Example
+                    // Liveness Check API Example
                   </div>
                   <div className="text-blue-400">curl</div>{" "}
                   <span className="text-yellow-300">-X POST</span> \<br />

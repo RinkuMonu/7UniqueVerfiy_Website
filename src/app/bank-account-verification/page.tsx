@@ -89,12 +89,20 @@ const BankAccountVerificationPage: React.FC = () => {
                 stores, salary disbursals, and any process where reliable bank
                 verification is crucial.
               </p>
-              <Link
-                to="/api-catalog"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -508,116 +516,101 @@ const BankAccountVerificationPage: React.FC = () => {
         <KnowMore />
 
         {/* How It Works Section */}
-        <section className="container mx-auto px-4 py-12">
-          <div className="mx-auto max-w-6xl space-y-8">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-16"
-              >
-                <div className="bg-gradient-to-r from-orange-50 to-red-50 px-4 py-4">
-                  <h2 className="flex items-center gap-3 text-2xl font-semibold">
-                    <div className="rounded-full bg-[#b7603d]/10 p-2">
-                      <svg
-                        className="h-6 w-6 text-[#b7603d]"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M13 10V3L4 14h7v7l9-11h-7z"
-                        />
-                      </svg>
-                    </div>
-                    How Bank Verification Works
-                  </h2>
+        <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              How <span className="text-[#b7603d]">Bank Verification</span>{" "}
+              Works
+            </h2>
+            <div className="relative">
+              {/* Timeline line */}
+              <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gray-200"></div>
+              <div
+                className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gradient-to-r from-[#b7603d]
+ to-transparent"
+              ></div>
+
+              <div className="grid gap-8 grid-cols-1 md:grid-cols-5">
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    1
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">User Input</h3>
+                  <p className="text-gray-600 text-sm">
+                    User enters account info (A/C No + IFSC or UPI ID)
+                  </p>
                 </div>
-                <div className="w-24 h-1.5 bg-gradient-to-r from-[#b7603d] to-[#d88a6e] mx-auto rounded-full" />
-              </motion.div>
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    2
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">API Request</h3>
+                  <p className="text-gray-600 text-sm">
+                    API sends secure request to banking partner network
+                  </p>
+                </div>
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    3
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">Bank Response</h3>
+                  <p className="text-gray-600 text-sm">
+                    Bank returns account holder name and status
+                  </p>
+                </div>
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    4
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">Name Matching</h3>
+                  <p className="text-gray-600 text-sm">
+                    System checks for name match and validates data
+                  </p>
+                </div>
+                <div className="text-center relative">
+                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
+                    5
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Instant Results
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Response is delivered to user/client in real-time
+                  </p>
+                </div>
+              </div>
+            </div>
 
-              <motion.div
-                variants={container}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-5"
-              >
-                {[
-                  {
-                    step: "1",
-                    title: "Submit Details",
-                    description:
-                      "Provide bank account number, IFSC code, and account holder name for verification.",
-                    icon: <FaFileAlt className="text-[#b7603d] text-4xl" />,
-                  },
-                  {
-                    step: "2",
-                    title: "Real-time Processing",
-                    description:
-                      "Our system connects to bank databases and processes verification in real-time.",
-                    icon: <FaClock className="text-[#b7603d] text-4xl" />,
-                  },
-                  {
-                    step: "3",
-                    title: "Validation Check",
-                    description:
-                      "Account details are validated against official bank records for accuracy.",
-                    icon: <FaCheckCircle className="text-[#b7603d] text-4xl" />,
-                  },
-                  {
-                    step: "4",
-                    title: "Instant Results",
-                    description:
-                      "Receive comprehensive verification results with account status and holder information.",
-                    icon: <FaDatabase className="text-[#b7603d] text-4xl" />,
-                  },
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    // variants={item}
-                    whileHover={{
-                      y: -10,
-                      boxShadow:
-                        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                    }}
-                    transition={{ duration: 0.3 }}
-                    className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#f7f1ef] to-[#f0e4df] opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+            <div
+              className="mt-12 bg-[#f7f1ef]
 
-                    <div className="absolute top-4 left-4 bg-[#b7603d] text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">
-                      {item.step}
-                    </div>
 
-                    <motion.div
-                      className="flex justify-center mb-6 text-[#b7603d] text-4xl"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
-                    >
-                      {item.icon}
-                    </motion.div>
 
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-[#b7603d] transition-colors duration-300">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-                      {item.description}
-                    </p>
 
-                    <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-[#b7603d]/10 group-hover:bg-[#b7603d]/20 transition-all duration-500" />
-                  </motion.div>
-                ))}
-              </motion.div>
+
+
+
+
+ p-6 rounded-lg"
+            >
+              <div className="flex flex-wrap justify-center gap-6 text-sm">
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 bg-[#d38769] rounded-full"></span>
+                  <span>Supports Webhooks</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                  <span>RESTful API</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
+                  <span>JSON Response Format</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="w-3 h-3 bg-orange-500 rounded-full"></span>
+                  <span>PCI-DSS Compliant</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -701,128 +694,234 @@ const BankAccountVerificationPage: React.FC = () => {
         </section>
 
         {/* Industry Applications Section */}
-        <section className="container mx-auto px-4 py-12">
-          <div className="mx-auto max-w-6xl space-y-8">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-16"
-              >
-                <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
-                  <h2 className="flex items-center gap-3 text-2xl font-semibold">
-                    <div className="rounded-full bg-[#b7603d]/10 p-2">
-                      <svg
-                        className="h-6 w-6 text-[#b7603d]"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M13 10V3L4 14h7v7l9-11h-7z"
-                        />
-                      </svg>
-                    </div>
-                    Industry Applications
-                  </h2>
+        <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Where Can You Use{" "}
+              <span className="text-[#b7603d]">Bank Account Verification</span>?
+            </h2>
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🏦</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Fintech / Lending
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Verify borrower accounts before loan disbursal to ensure
+                  accurate fund transfers.
+                </p>
+                <div className="text-xs text-[#b7603d]   font-medium">
+                  "Avoid failed loan disbursals!"
                 </div>
-                <div className="w-24 h-1.5 bg-gradient-to-r from-[#b7603d] to-[#d88a6e] mx-auto rounded-full" />
-              </motion.div>
+              </div>
+              <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🛒</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  E-commerce
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Validate seller and customer accounts for refunds,
+                  settlements, and marketplace payments.
+                </p>
+                <div className="text-xs text-[#b7603d]   font-medium">
+                  "Streamline seller settlements!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">💼</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Payroll Systems
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Verify employee bank accounts to ensure accurate salary
+                  payments and avoid bounced transfers.
+                </p>
+                <div className="text-xs text-[#b7603d] font-medium">
+                  "Avoid failed payouts in payrolls!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🎮</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Gaming / Fantasy Apps
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Verify user accounts for prize money withdrawals and ensure
+                  legitimate winners.
+                </p>
+                <div className="text-xs text-orange-600 font-medium">
+                  "Secure gaming withdrawals!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🏥</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Insurance
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Validate policyholder accounts for claim settlements and
+                  premium refunds.
+                </p>
+                <div className="text-xs text-red-600 font-medium">
+                  "Faster claim settlements!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">💳</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Digital Wallets
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Verify linked bank accounts for wallet top-ups and money
+                  transfers.
+                </p>
+                <div className="text-xs text-teal-600 font-medium">
+                  "Secure wallet transactions!"
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          className="bg-[#f7f1ef]
 
-              <motion.div
-                variants={container}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-5"
-              >
-                {[
-                  {
-                    name: "Banking & Finance",
-                    icon: <FaUniversity className="text-[#b7603d] text-4xl" />,
-                    description:
-                      "Verify customer bank accounts for loan processing, account opening, and financial services.",
-                  },
-                  {
-                    name: "E-commerce",
-                    icon: (
-                      <FaShoppingCart className="text-[#b7603d] text-4xl" />
-                    ),
-                    description:
-                      "Validate seller and buyer bank accounts for secure marketplace transactions.",
-                  },
-                  {
-                    name: "Fintech",
-                    icon: (
-                      <FaMoneyBillWave className="text-[#b7603d] text-4xl" />
-                    ),
-                    description:
-                      "Integrate bank verification into digital wallets, payment apps, and financial platforms.",
-                  },
-                  {
-                    name: "Corporate",
-                    icon: <FaBuilding className="text-[#b7603d] text-4xl" />,
-                    description:
-                      "Verify vendor and employee bank accounts for payroll and payment processing.",
-                  },
-                  {
-                    name: "Insurance",
-                    icon: (
-                      <FaBriefcaseMedical className="text-[#b7603d] text-4xl" />
-                    ),
-                    description:
-                      "Validate policyholder bank accounts for premium collection and claim settlements.",
-                  },
-                  {
-                    name: "Education",
-                    icon: (
-                      <FaGraduationCap className="text-[#b7603d] text-4xl" />
-                    ),
-                    description:
-                      "Verify student and parent bank accounts for fee collection and scholarship disbursements.",
-                  },
-                ].map((service, index) => (
-                  <motion.div
-                    key={index}
-                    variants={item}
-                    whileHover={{
-                      y: -10,
-                      boxShadow:
-                        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                    }}
-                    transition={{ duration: 0.3 }}
-                    className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+
+
+
+
+
+
+
+ py-16 px-4 md:px-8 lg:px-20"
+        >
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Why Use Our{" "}
+              <span className="text-[#b7603d]">Bank Verification API</span>?
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+   rounded-full flex items-center justify-center mr-4"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#f7f1ef] to-[#f0e4df] opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+                    <span className="text-[#b7603d]   text-xl">⚡</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Fast & Real-Time Results
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Get verification results in 1-5 seconds with our optimized API
+                  infrastructure and direct bank connections.
+                </p>
+              </div>
 
-                    <motion.div
-                      className="flex justify-center mb-6 text-[#b7603d] text-4xl"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
-                    >
-                      {service.icon}
-                    </motion.div>
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
 
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-[#b7603d] transition-colors duration-300">
-                      {service.name}
-                    </h3>
-                    <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-                      {service.description}
-                    </p>
 
-                    <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-[#b7603d]/10 group-hover:bg-[#b7603d]/20 transition-all duration-500" />
-                  </motion.div>
-                ))}
-              </motion.div>
+
+
+
+
+
+
+ rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   text-xl">🔒</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    PCI-DSS Compliant & Secure
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Bank-grade security with end-to-end encryption, ensuring your
+                  data and transactions are always protected.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+  rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d] text-xl">💰</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Cost-Effective Penny-less Option
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Save up to 70% on verification costs with our penny-less
+                  verification method without compromising accuracy.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-orange-600 text-xl">👨‍💻</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Developer Friendly API Docs
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Comprehensive documentation, SDKs, and sandbox environment for
+                  quick and easy integration.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-red-600 text-xl">🚫</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Reduces Failed Payouts
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Eliminate failed transactions and reduce operational costs by
+                  verifying accounts before processing payments.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-teal-600 text-xl">✅</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Increases User Trust & KYC Accuracy
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm">
+                  Build customer confidence and ensure regulatory compliance
+                  with accurate account verification.
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -86,12 +86,20 @@ const VoterIDVerificationPage: React.FC = () => {
                 and any application needing validated voter identity and
                 residence data.
               </p>
-              <Link
-                to="/voter-id-verification-api"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -214,18 +222,7 @@ const VoterIDVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
-        <section
-          className="py-20 bg-[#f7f1ef]
-  
-  
-  
-  
-  
-  
-  
-  
-  "
-        >
+        <section className="py-20 bg-[#f7f1ef] ">
           <div className="w-full mx-auto px-6 sm:px-10 md:px-16 lg:px-20 xl:px-24">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -241,18 +238,7 @@ const VoterIDVerificationPage: React.FC = () => {
               {/* Basic Plan */}
               <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
                 <div className="text-center mb-8">
-                  <div
-                    className="w-16 h-16 bg-[#f7f1ef]
-  
-  
-  
-  
-  
-  
-  
-  
-    rounded-full flex items-center justify-center mx-auto mb-4"
-                  >
+                  <div className="w-16 h-16 bg-[#f7f1ef]  rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg
                       className="w-8 h-8 text-[#b7603d]"
                       fill="none"

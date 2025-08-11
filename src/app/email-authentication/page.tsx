@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
 import KnowMore from "../../components/KnowMore";
+import benefitImg from "../../../public/img/Email Authentication/Email2.png"
 const EmailAuthenticationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
   return (
@@ -42,17 +43,17 @@ const EmailAuthenticationPage: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  to="/email-authentication-page-api"
+                  to={"/contact-us"}
                   className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
                 >
                   Get Started
                 </Link>
-                <a
-                  href="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
-                  className="inline-block border border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
                 >
-                  View Documentation
-                </a>
+                  View API Docs
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
@@ -412,19 +413,9 @@ const EmailAuthenticationPage: React.FC = () => {
           </div>
         </section>
 
+
         {/* Benefits Section */}
-        <section
-          className="py-16 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
-"
-        >
+        <section className="py-16 bg-[#f7f1ef]">
           <div className="container mx-auto px-16">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
@@ -526,7 +517,7 @@ const EmailAuthenticationPage: React.FC = () => {
               </div>
               <div className="md:w-1/2">
                 <img
-                  src="/img/image/email-benefits-secure.png"
+                  src={benefitImg}
                   alt="Email Verification Benefits - 7Unique Verify"
                   className="rounded-lg shadow-xl"
                 />
