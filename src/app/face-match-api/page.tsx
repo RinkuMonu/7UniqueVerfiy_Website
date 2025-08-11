@@ -39,12 +39,20 @@ const FaceMatchAPIPage: React.FC = () => {
                 Perfect for KYC, user onboarding, attendance systems, fintech
                 apps, and access control where facial biometrics are critical.
               </p>
-              <Link
-                to="/face-match-page-api"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -195,24 +203,24 @@ const FaceMatchAPIPage: React.FC = () => {
           </div>
         </section>
         <section className="py-16 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-24">
-                  <div className="w-full mx-auto">
-                    <div className="text-center mb-16">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                        Choose Your <span className="text-[#b7603d]">Face Match</span>{" "}
-                        Verification Type
-                      </h2>
-                      <p className="text-gray-600 max-w-3xl mx-auto">
-                        Select the verification method that best fits your security
-                        requirements and user experience needs.
-                      </p>
-                    </div>
-        
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                      {/* Basic Face Match */}
-                      <div className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
-                        <div className="flex items-center mb-6">
-                          <div
-                            className="w-12 h-12 bg-[#f7f1ef]
+          <div className="w-full mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Choose Your <span className="text-[#b7603d]">Face Match</span>{" "}
+                Verification Type
+              </h2>
+              <p className="text-gray-600 max-w-3xl mx-auto">
+                Select the verification method that best fits your security
+                requirements and user experience needs.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Basic Face Match */}
+              <div className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-6">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
         
         
         
@@ -222,115 +230,115 @@ const FaceMatchAPIPage: React.FC = () => {
         
         
          rounded-lg flex items-center justify-center mr-4"
-                          >
-                            <svg
-                              className="w-6 h-6 text-[#b7603d]  "
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                              />
-                            </svg>
-                          </div>
-                          <h3 className="text-2xl font-bold text-gray-800">
-                            Basic Face Match
-                          </h3>
-                        </div>
-                        <p className="text-gray-600 mb-6">
-                          Quick facial comparison for standard verification needs with
-                          essential security features.
-                        </p>
-                        <ul className="space-y-3 mb-8">
-                          <li className="flex items-center">
-                            <span className="text-[#b7603d]   mr-3">✓</span>
-                            <span>1:1 Face Comparison</span>
-                          </li>
-                          <li className="flex items-center">
-                            <span className="text-[#b7603d]   mr-3">✓</span>
-                            <span>Similarity Score</span>
-                          </li>
-                          <li className="flex items-center">
-                            <span className="text-[#b7603d]   mr-3">✓</span>
-                            <span>Basic Quality Checks</span>
-                          </li>
-                          <li className="flex items-center">
-                            <span className="text-[#b7603d]   mr-3">✓</span>
-                            <span>Fast Processing</span>
-                          </li>
-                        </ul>
-                        <div className="text-2xl font-bold text-[#b7603d] mb-4">
-                          ₹3 per verification
-                        </div>
-                        <Link to={"/contact-us"}>
-                          <button className="w-full bg-[#b7603d] text-white py-3 rounded-lg font-semibold hover:bg-[#d19983] transition-colors">
-                            Get API's
-                          </button>
-                        </Link>
-                      </div>
-        
-                      {/* Advanced Face Match */}
-                      <div className="bg-gradient-to-br from-[#b7603d] to-[#79d9ef] text-white rounded-lg p-8 transform hover:scale-105 transition-transform">
-                        <div className="flex items-center mb-6">
-                          <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
-                            <svg
-                              className="w-6 h-6 text-white"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                              />
-                            </svg>
-                          </div>
-                          <h3 className="text-2xl font-bold">Advanced Face Match</h3>
-                        </div>
-                        <p className="text-blue-100 mb-6">
-                          Comprehensive facial verification with advanced security
-                          features and detailed analysis.
-                        </p>
-                        <ul className="space-y-3 mb-8">
-                          <li className="flex items-center">
-                            <span className="text-green-300 mr-3">✓</span>
-                            <span>1:1 Face Comparison</span>
-                          </li>
-                          <li className="flex items-center">
-                            <span className="text-green-300 mr-3">✓</span>
-                            <span>Liveness Detection</span>
-                          </li>
-                          <li className="flex items-center">
-                            <span className="text-green-300 mr-3">✓</span>
-                            <span>Anti-Spoofing Protection</span>
-                          </li>
-                          <li className="flex items-center">
-                            <span className="text-green-300 mr-3">✓</span>
-                            <span>Detailed Quality Analysis</span>
-                          </li>
-                          <li className="flex items-center">
-                            <span className="text-green-300 mr-3">✓</span>
-                            <span>Fraud Risk Assessment</span>
-                          </li>
-                        </ul>
-                        <div className="text-2xl font-bold mb-4">
-                          ₹5 per verification
-                        </div>
-                        <Link to={"/contact-us"}>
-                          <button className="w-full bg-white text-[#b7603d] py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                            Choose Advanced
-                          </button>
-                        </Link>
-                      </div>
-                    </div>
+                  >
+                    <svg
+                      className="w-6 h-6 text-[#b7603d]  "
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
                   </div>
-                </section>
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    Basic Face Match
+                  </h3>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Quick facial comparison for standard verification needs with
+                  essential security features.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center">
+                    <span className="text-[#b7603d]   mr-3">✓</span>
+                    <span>1:1 Face Comparison</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#b7603d]   mr-3">✓</span>
+                    <span>Similarity Score</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#b7603d]   mr-3">✓</span>
+                    <span>Basic Quality Checks</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#b7603d]   mr-3">✓</span>
+                    <span>Fast Processing</span>
+                  </li>
+                </ul>
+                <div className="text-2xl font-bold text-[#b7603d] mb-4">
+                  ₹3 per verification
+                </div>
+                <Link to={"/contact-us"}>
+                  <button className="w-full bg-[#b7603d] text-white py-3 rounded-lg font-semibold hover:bg-[#d19983] transition-colors">
+                    Get API's
+                  </button>
+                </Link>
+              </div>
+
+              {/* Advanced Face Match */}
+              <div className="bg-gradient-to-br from-[#b7603d] to-[#79d9ef] text-white rounded-lg p-8 transform hover:scale-105 transition-transform">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold">Advanced Face Match</h3>
+                </div>
+                <p className="text-blue-100 mb-6">
+                  Comprehensive facial verification with advanced security
+                  features and detailed analysis.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center">
+                    <span className="text-green-300 mr-3">✓</span>
+                    <span>1:1 Face Comparison</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-300 mr-3">✓</span>
+                    <span>Liveness Detection</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-300 mr-3">✓</span>
+                    <span>Anti-Spoofing Protection</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-300 mr-3">✓</span>
+                    <span>Detailed Quality Analysis</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-300 mr-3">✓</span>
+                    <span>Fraud Risk Assessment</span>
+                  </li>
+                </ul>
+                <div className="text-2xl font-bold mb-4">
+                  ₹5 per verification
+                </div>
+                <Link to={"/contact-us"}>
+                  <button className="w-full bg-white text-[#b7603d] py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Choose Advanced
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
         <KnowMore />
 
         {/* How It Works Section */}
@@ -394,7 +402,7 @@ const FaceMatchAPIPage: React.FC = () => {
                   real-time
                 </p>
               </div>
-            </div>                                            
+            </div>
           </div>
         </section>
 

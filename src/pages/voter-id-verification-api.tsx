@@ -97,7 +97,8 @@ const VoterIDVerificationPageAPI: React.FC = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Basic</h3>
                 <div className="text-4xl font-bold text-[#b7603d] mb-4">
-                  ₹3.5<span className="text-lg text-gray-500">/verification</span>
+                  ₹3.5
+                  <span className="text-lg text-gray-500">/verification</span>
                 </div>
               </div>
 

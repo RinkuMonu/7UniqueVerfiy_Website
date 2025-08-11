@@ -19,7 +19,7 @@ import {
   FaSearch,
   FaLandmark,
   FaFileContract,
-  FaChartBar
+  FaChartBar,
 } from "react-icons/fa";
 import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
@@ -60,25 +60,41 @@ const MCAVerificationPage: React.FC = () => {
         >
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">MCA Verification API by 7Unique Verify</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                MCA Verification API by 7Unique Verify
+              </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Ministry of Corporate Affairs Verification – Instantly Reliable
               </h2>
               <p className="text-lg mb-4 text-white">
-                Seamlessly verify company credentials with our MCA Verification API, powered by 7Unique Verify. Gain real-time access to official corporate data from the Ministry of Corporate Affairs (MCA) database.
+                Seamlessly verify company credentials with our MCA Verification
+                API, powered by 7Unique Verify. Gain real-time access to
+                official corporate data from the Ministry of Corporate Affairs
+                (MCA) database.
               </p>
               <p className="mb-4 text-white">
-                Instantly retrieve verified company CIN numbers, director and ROC details, incorporation status, and key compliance insights—all in one secure API.
+                Instantly retrieve verified company CIN numbers, director and
+                ROC details, incorporation status, and key compliance
+                insights—all in one secure API.
               </p>
               <p className="mb-6 text-white">
-                Ideal for B2B onboarding, vendor validation, KYC automation, fintech applications, and legal due diligence.
+                Ideal for B2B onboarding, vendor validation, KYC automation,
+                fintech applications, and legal due diligence.
               </p>
-              <Link
-                to="/mca-verification-api"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                View Document
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -145,19 +161,25 @@ const MCAVerificationPage: React.FC = () => {
                       <motion.div className="space-y-8" variants={container}>
                         {[
                           {
-                            icon: <FaBuilding className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaBuilding className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Complete Company Information",
                             description:
                               "Access CIN, incorporation date, capital structure, business classification, and more directly from MCA records.",
                           },
                           {
-                            icon: <FaUserTie className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaUserTie className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Director & Management Insights",
                             description:
                               "Get verified director identities, shareholder structure, and key personnel data for business clarity and compliance.",
                           },
                           {
-                            icon: <FaShieldAlt className="text-[#b7603d] text-2xl" />,
+                            icon: (
+                              <FaShieldAlt className="text-[#b7603d] text-2xl" />
+                            ),
                             title: "Compliance & Legal Standing",
                             description:
                               "Instantly check compliance history, annual filing status, and active/inactive status for accurate decision-making.",
@@ -178,7 +200,9 @@ const MCAVerificationPage: React.FC = () => {
                               </div>
                             </div>
                             <div>
-                              <h3 className="font-semibold mb-1">{feature.title}</h3>
+                              <h3 className="font-semibold mb-1">
+                                {feature.title}
+                              </h3>
                               <p className="text-gray-600 leading-relaxed">
                                 {feature.description}
                               </p>
@@ -193,7 +217,8 @@ const MCAVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
-  <section className="bg-[#f7f1ef]
+        <section
+          className="bg-[#f7f1ef]
 
 
 
@@ -202,15 +227,18 @@ const MCAVerificationPage: React.FC = () => {
 
 
 
- py-16 px-4 md:px-8 lg:px-20">
-        <div className="w-full mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-            Choose Your <span className="text-[#b7603d]">Verification Method</span>
-          </h2>
-          <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
-            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-[#f7f1ef]
+ py-16 px-4 md:px-8 lg:px-20"
+        >
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Choose Your{" "}
+              <span className="text-[#b7603d]">Verification Method</span>
+            </h2>
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
 
 
 
@@ -219,99 +247,118 @@ const MCAVerificationPage: React.FC = () => {
 
 
 
- rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#b7603d]   font-bold">🏢</span>
+ rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">🏢</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Basic Company Check
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Registration Validation
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Basic Company Check</h3>
-                  <span className="text-sm text-[#b7603d]   font-medium">Registration Validation</span>
+                <p className="text-gray-600 mb-4">
+                  Verify company registration status, CIN, and basic details
+                  from MCA records.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">2-3 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹3.25 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Quick validation</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">
-                Verify company registration status, CIN, and basic details from MCA records.
-              </p>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Response Time:</span>
-                  <span className="font-medium">2-3 seconds</span>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center mb-4">
+                  <div
+                    className="w-12 h-12 bg-[#f7f1ef]
+
+
+
+
+
+
+
+
+   rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span className="text-[#b7603d]   font-bold">👔</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      Detailed Company Report
+                    </h3>
+                    <span className="text-sm text-[#b7603d]   font-medium">
+                      Comprehensive Check
+                    </span>
+                  </div>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹3.25 per verification</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Best For:</span>
-                  <span className="font-medium">Quick validation</span>
+                <p className="text-gray-600 mb-4">
+                  Provides complete company details including directors,
+                  charges, and filings.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Response Time:</span>
+                    <span className="font-medium">3-5 seconds</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Cost:</span>
+                    <span className="font-medium">₹4.25 per verification</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-500">Best For:</span>
+                    <span className="font-medium">Due diligence</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
-   rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#b7603d]   font-bold">👔</span>
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
+              <h4 className="text-lg font-semibold mb-4 text-gray-800">
+                What You Get:
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Basic Check:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ Company registration status</li>
+                    <li>✓ CIN and incorporation date</li>
+                    <li>✓ Registered office address</li>
+                    <li>✓ Company category/class</li>
+                  </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Detailed Company Report</h3>
-                  <span className="text-sm text-[#b7603d]   font-medium">Comprehensive Check</span>
-                </div>
-              </div>
-              <p className="text-gray-600 mb-4">
-                Provides complete company details including directors, charges, and filings.
-              </p>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Response Time:</span>
-                  <span className="font-medium">3-5 seconds</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹4.25 per verification</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Best For:</span>
-                  <span className="font-medium">Due diligence</span>
+                  <h5 className="font-medium text-gray-700 mb-2">
+                    Detailed Report:
+                  </h5>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>✓ List of directors and DINs</li>
+                    <li>✓ Charges and mortgages</li>
+                    <li>✓ Financial filings history</li>
+                    <li>✓ Compliance status</li>
+                    <li>✓ ROC details</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
-            <h4 className="text-lg font-semibold mb-4 text-gray-800">What You Get:</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <h5 className="font-medium text-gray-700 mb-2">Basic Check:</h5>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>✓ Company registration status</li>
-                  <li>✓ CIN and incorporation date</li>
-                  <li>✓ Registered office address</li>
-                  <li>✓ Company category/class</li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="font-medium text-gray-700 mb-2">Detailed Report:</h5>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>✓ List of directors and DINs</li>
-                  <li>✓ Charges and mortgages</li>
-                  <li>✓ Financial filings history</li>
-                  <li>✓ Compliance status</li>
-                  <li>✓ ROC details</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <KnowMore/>
+        </section>
+        <KnowMore />
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12">
           <div className="mx-auto max-w-6xl space-y-8">
@@ -344,7 +391,9 @@ const MCAVerificationPage: React.FC = () => {
                     title: "Input Company Identifiers",
                     description:
                       "Submit company CIN, name, or registration number securely through our API.",
-                    icon: <FaFileContract className="text-[#b7603d] text-4xl" />,
+                    icon: (
+                      <FaFileContract className="text-[#b7603d] text-4xl" />
+                    ),
                   },
                   {
                     step: "2",
@@ -383,7 +432,11 @@ const MCAVerificationPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {item.icon}
                     </motion.div>
@@ -564,7 +617,11 @@ const MCAVerificationPage: React.FC = () => {
                     <motion.div
                       className="flex justify-center mb-6 text-[#b7603d] text-4xl"
                       whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       {service.icon}
                     </motion.div>
@@ -604,7 +661,9 @@ const MCAVerificationPage: React.FC = () => {
                       Simple Integration
                     </h3>
                     <p className="text-gray-600">
-                      Integrate our MCA Verification API seamlessly into your applications with comprehensive documentation and developer-friendly tools.
+                      Integrate our MCA Verification API seamlessly into your
+                      applications with comprehensive documentation and
+                      developer-friendly tools.
                     </p>
                     <div className="mt-4 space-y-2">
                       {[
@@ -623,12 +682,20 @@ const MCAVerificationPage: React.FC = () => {
                         </div>
                       ))}
                     </div>
-                    <Link
-                      to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
-                      className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors mt-5"
-                    >
-                      View API Documentation
-                    </Link>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <Link
+                        to={"/contact-us"}
+                        className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                      >
+                        Get Started
+                      </Link>
+                      <Link
+                        to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                        className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                      >
+                        View API Docs
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="bg-white p-6 rounded-lg shadow-xl transition duration-300 hover:shadow-2xl border border-gray-100 hover:border-[#b7603d]/30">
@@ -645,21 +712,35 @@ const MCAVerificationPage: React.FC = () => {
                           </div>
                         </div>
                         <div className="p-6 font-mono text-sm text-green-400 overflow-x-auto">
-                          <div className="text-gray-500">// Sample API Request</div>
+                          <div className="text-gray-500">
+                            // Sample API Request
+                          </div>
                           <div>POST /api/v1/mca-verification</div>
                           <div className="text-yellow-400 mt-2">{"{"}</div>
-                          <div className="ml-4">"cin": "U72200MH2010PTC123456"</div>
+                          <div className="ml-4">
+                            "cin": "U72200MH2010PTC123456"
+                          </div>
                           <div className="text-yellow-400">{"}"}</div>
                           <div className="mt-4 text-gray-400">// Response</div>
                           <div className="text-yellow-400">{"{"}</div>
                           <div className="ml-4">"status": "verified",</div>
                           <div className="ml-4">"company_details": {"{"}</div>
-                          <div className="ml-8">"name": "ABC Technologies Private Limited",</div>
-                          <div className="ml-8">"registration_date": "2010-05-15",</div>
+                          <div className="ml-8">
+                            "name": "ABC Technologies Private Limited",
+                          </div>
+                          <div className="ml-8">
+                            "registration_date": "2010-05-15",
+                          </div>
                           <div className="ml-8">"status": "Active",</div>
-                          <div className="ml-8">"company_type": "Private Limited Company",</div>
-                          <div className="ml-8">"authorized_capital": "10000000",</div>
-                          <div className="ml-8">"paid_up_capital": "1000000"</div>
+                          <div className="ml-8">
+                            "company_type": "Private Limited Company",
+                          </div>
+                          <div className="ml-8">
+                            "authorized_capital": "10000000",
+                          </div>
+                          <div className="ml-8">
+                            "paid_up_capital": "1000000"
+                          </div>
                           <div className="ml-4">{"}"},</div>
                           <div className="ml-4">"directors": [</div>
                           <div className="ml-8">{"{"}</div>

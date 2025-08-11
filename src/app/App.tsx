@@ -221,14 +221,8 @@ export default function App() {
             path="/mobile-verification-api"
             element={<MobileVerificationAPIPage />}
           />
-          <Route
-            path="/credit-score-api"
-            element={<CreditScoreAPI />}
-          />
-          <Route
-            path="/itr-profile-summary"
-            element={<ITRProfileSummary />}
-          />
+          <Route path="/credit-score-api" element={<CreditScoreAPI />} />
+          <Route path="/itr-profile-summary" element={<ITRProfileSummary />} />
 
           {/* Additional Services */}
           <Route
@@ -249,10 +243,7 @@ export default function App() {
             path="/whatsapp-verification"
             element={<WhatsappVerificationPage />}
           />
-          <Route
-            path="/digilocker"
-            element={<DigilockerApi />}
-          />
+          <Route path="/digilocker" element={<DigilockerApi />} />
           <Route path="/face-match-api" element={<FaceMatchAPIPage />} />
 
           {/* Company Pages */}

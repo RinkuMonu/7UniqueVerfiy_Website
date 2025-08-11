@@ -84,12 +84,20 @@ const PANVerificationPage: React.FC = () => {
                 providers, and any business requiring valid tax identification
                 and customer onboarding.
               </p>
-              <Link
-                to="/pan-verification-api"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -356,6 +364,7 @@ const PANVerificationPage: React.FC = () => {
           </div>
         </section>
         <KnowMore />
+        
 
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12 ">
@@ -546,119 +555,95 @@ const PANVerificationPage: React.FC = () => {
         </section>
 
         {/* Industry Applications Section */}
-        <section className="container mx-auto px-4 py-12">
-          <div className="mx-auto max-w-6xl space-y-8">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-16"
-              >
-                <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
-                  <h2 className="flex items-center gap-3 text-2xl font-semibold">
-                    <div className="rounded-full bg-[#b7603d]/10 p-2">
-                      <FaUsers className="h-6 w-6 text-[#b7603d]" />
-                    </div>
-                    PAN Verification Across Industries
-                  </h2>
-                </div>
-                <p className="p-4 text-start">
-                  Trusted by businesses across sectors for secure identity
-                  verification
+         <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
+          <div className="w-full mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+              Where Can You Use{" "}
+              <span className="text-[#b7603d]">PAN Verification</span>?
+            </h2>
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🏦</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Banking & Finance
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Verify customer PAN for account opening, loan processing, and
+                  KYC compliance.
                 </p>
-                <div className="w-24 h-1.5 bg-gradient-to-r from-[#b7603d] to-[#d88a6e] mx-auto rounded-full" />
-              </motion.div>
-
-              <motion.div
-                variants={container}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5"
-              >
-                {[
-                  {
-                    name: "Banking & Finance",
-                    icon: <FaUniversity className="text-[#b7603d] text-4xl" />,
-                    description:
-                      "Account opening, loan processing, and KYC compliance for financial institutions.",
-                  },
-                  {
-                    name: "E-commerce",
-                    icon: <FaHandshake className="text-[#b7603d] text-4xl" />,
-                    description:
-                      "Seller verification and customer onboarding for online marketplaces.",
-                  },
-                  {
-                    name: "Insurance",
-                    icon: (
-                      <FaBriefcaseMedical className="text-[#b7603d] text-4xl" />
-                    ),
-                    description:
-                      "Policy holder verification and claims processing automation.",
-                  },
-                  {
-                    name: "Fintech",
-                    icon: <FaChartLine className="text-[#b7603d] text-4xl" />,
-                    description:
-                      "Digital wallet setup and peer-to-peer payment verification.",
-                  },
-                  {
-                    name: "Real Estate",
-                    icon: <FaHome className="text-[#b7603d] text-4xl" />,
-                    description:
-                      "Property buyer verification and transaction compliance.",
-                  },
-                  {
-                    name: "Government",
-                    icon: (
-                      <FaBalanceScale className="text-[#b7603d] text-4xl" />
-                    ),
-                    description:
-                      "Citizen service delivery and subsidy distribution verification.",
-                  },
-                ].map((service, index) => (
-                  <motion.div
-                    key={index}
-                    variants={item}
-                    whileHover={{
-                      y: -10,
-                      boxShadow:
-                        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                    }}
-                    transition={{ duration: 0.3 }}
-                    className="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#f7f1ef] to-[#f0e4df] opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
-
-                    <motion.div
-                      className="flex justify-center mb-6 text-[#b7603d] text-4xl"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
-                    >
-                      {service.icon}
-                    </motion.div>
-
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-[#b7603d] transition-colors duration-300">
-                      {service.name}
-                    </h3>
-                    <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-                      {service.description}
-                    </p>
-
-                    <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-[#b7603d]/10 group-hover:bg-[#b7603d]/20 transition-all duration-500" />
-                  </motion.div>
-                ))}
-              </motion.div>
+                <div className="text-xs text-[#b7603d]   font-medium">
+                  "Ensure tax compliance!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">💳</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Credit & Lending
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Validate PAN for credit card applications and loan eligibility
+                  assessments.
+                </p>
+                <div className="text-xs text-[#b7603d]   font-medium">
+                  "Prevent identity fraud!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">📊</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Investment Platforms
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Verify investor PAN for mutual funds, stocks, and trading
+                  platforms.
+                </p>
+                <div className="text-xs text-[#b7603d] font-medium">
+                  "Regulatory compliance!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🛒</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  E-commerce
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Verify seller and high-value customer PAN for marketplace
+                  compliance.
+                </p>
+                <div className="text-xs text-orange-600 font-medium">
+                  "Secure transactions!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🏥</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Insurance
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Validate policyholder PAN for insurance applications and claim
+                  processing.
+                </p>
+                <div className="text-xs text-red-600 font-medium">
+                  "Faster claim processing!"
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🏢</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Corporate HR
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Verify employee PAN for payroll processing and tax compliance.
+                </p>
+                <div className="text-xs text-teal-600 font-medium">
+                  "Streamline payroll!"
+                </div>
+              </div>
             </div>
           </div>
         </section>
+
+        
 
         {/* API Integration Section */}
         <section className="container mx-auto px-4 py-12">
