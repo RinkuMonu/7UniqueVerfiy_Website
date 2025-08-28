@@ -266,7 +266,7 @@ const CKYCSearchPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹7-10 per search</span>
+                    <span className="font-medium">₹5-15 per search</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
@@ -311,7 +311,7 @@ const CKYCSearchPage: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹12-15 per download</span>
+                    <span className="font-medium">₹6-16 per download</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>

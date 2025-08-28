@@ -66,26 +66,25 @@ const VoterIDVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                7Unique Verify – Voter ID Verification API
+               Real-Time Voter ID Verification API – Trusted Across India
+
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-time Electoral Identity Check & Address Proof Validation
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly verify voter identity details using 7Unique Verify's
-                powerful Voter ID Verification API. Ensure trusted onboarding
-                with secure, real-time access to Election Commission records.
+               Authenticate Voter ID details instantly with 7UniqueVerify’s secure, ECI-compliant API.
+ Verify identity, address, and electoral data in real-time — perfect for KYC, fraud prevention, and compliant onboarding.
+
               </p>
               <p className="mb-4 text-white">
-                The API matches voter IDs, cross-checks personal details, and
-                fetches electoral roll information, helping your platform remain
-                compliant and fraud-free.
+              Used by fintechs, NBFCs, insurers & digital platforms across India.
               </p>
-              <p className="mb-6 text-white">
+              {/* <p className="mb-6 text-white">
                 Ideal for financial services, digital platforms, KYC processes,
                 and any application needing validated voter identity and
                 residence data.
-              </p>
+              </p> */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to={"/contact-us"}

@@ -69,26 +69,26 @@ const PassportVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Passport Verification API – by 7Unique Verify
+                Instant Passport Verification API for India
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-time Passport Validation for Identity Authentication
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly verify passport details using 7Unique Verify's secure
-                API. Authenticate identity and confirm document legitimacy
-                within seconds.
+                Verify Indian passport details in real-time with 7UniqueVerify’s
+                secure and compliant API. Check passport number, holder name,
+                nationality, and expiry instantly — perfect for KYC, AML, and
+                identity validation.
               </p>
               <p className="mb-4 text-white">
-                Our API checks passport number validity, verifies holder data,
-                and cross-checks authenticity with official sources—helping
-                prevent fraud and ensuring compliance.
+                Trusted by fintechs, travel firms, NBFCs & immigration platforms
+                across India.
               </p>
-              <p className="mb-6 text-white">
+              {/* <p className="mb-6 text-white">
                 Ideal for immigration services, travel agencies, NBFCs, KYC
                 platforms, and any system that needs verified government-issued
                 identity documentation.
-              </p>
+              </p> */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to={"/contact-us"}
@@ -124,7 +124,8 @@ const PassportVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    Passport Verification Features
+                    Features – Passport Verification API
+
                   </h2>
                 </div>
                 <div className="p-8">
@@ -174,7 +175,7 @@ const PassportVerificationPage: React.FC = () => {
                             ),
                             title: "Document Authentication",
                             description:
-                              "Verify passport authenticity and validate document security features to prevent fraud and ensure genuine travel documents.",
+                              " Instantly verify Indian passport authenticity to detect forged or invalid documents. Ensure secure identity verification using government-issued credentials.",
                           },
                           {
                             icon: (
@@ -182,15 +183,15 @@ const PassportVerificationPage: React.FC = () => {
                             ),
                             title: "Identity Verification",
                             description:
-                              "Validate passport holder information including name, date of birth, nationality, and other personal details against official records.",
+                              " Cross-check passport holder data such as full name, date of birth, gender, and nationality with official government records for accurate KYC.",
                           },
                           {
                             icon: (
                               <FaGlobe className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "International Coverage",
+                            title: "International Passport Support",
                             description:
-                              "Support for multiple countries and passport formats with comprehensive international database coverage for global verification.",
+                              " Supports multiple countries and passport formats with access to global databases—ideal for cross-border KYC, AML checks, and international compliance.",
                           },
                         ].map((feature, index) => (
                           <motion.div

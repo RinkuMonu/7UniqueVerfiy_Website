@@ -93,21 +93,21 @@ const verificationServices: DropdownItem[] = [
   //   icon: <FaUserLock />,
   //   href: "/digilocker",
   // },
-  // {
-  //   title: "Credit Score API",
-  //   icon: <MdOutlineScoreboard />,
-  //   href: "/credit-score-api",
-  // },
+  {
+    title: "Credit Score API",
+    icon: <MdOutlineScoreboard />,
+    href: "/credit-score-api",
+  },
   // {
   //   title: "ITR Profile Summary",
   //   icon: <TbTax />,
   //   href: "/itr-profile-summary",
   // },
-  // {
-  //   title: "CKYC Search & Download",
-  //   icon: <FaDownload />,
-  //   href: "/ckyc-search-&-download",
-  // },
+  {
+    title: "CKYC Search & Download",
+    icon: <FaDownload />,
+    href: "/ckyc-search-&-download",
+  },
   {
     title: "Passport Verification",
     icon: <FaPassport />,

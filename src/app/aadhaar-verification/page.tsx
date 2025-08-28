@@ -67,25 +67,20 @@ const AadhaarVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Aadhaar Verification API
+                Instant Aadhaar Verification Made Easy
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-time Aadhaar Validation by 7UniqueVerify
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly verify Aadhaar details with our UIDAI-compliant API.
-                7UniqueVerify ensures secure, fast, and accurate identity
-                verification trusted by leading fintechs and telecom brands.
+                Verify Aadhaar numbers in real-time using 7UniqueVerify’s
+                secure, UIDAI-compliant API. Enable fast eKYC with OTP-based
+                authentication, masked Aadhaar access, and demographic detail
+                checks — all without manual effort.
               </p>
               <p className="mb-4 text-white">
-                Our solution supports OTP-based Aadhaar eKYC, demographic
-                checks, and biometric validations—tailored to meet your
-                onboarding, KYC, and fraud prevention needs.
-              </p>
-              <p className="mb-6 text-white">
-                Perfect for banking, fintech, telecom, and any industry
-                requiring secure identity verification with India's most trusted
-                identity system.
+                Perfect for banks, fintech apps, telecom providers, and
+                platforms that need reliable identity verification at scale.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -122,7 +117,7 @@ const AadhaarVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaCheckCircle className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    Aadhaar Verification Features
+                    Features of Aadhaar Verification API
                   </h2>
                 </div>
                 <div className="p-8">
@@ -172,7 +167,7 @@ const AadhaarVerificationPage: React.FC = () => {
                             ),
                             title: "OTP-based Verification",
                             description:
-                              "Secure OTP-based Aadhaar verification ensuring authentic identity validation with UIDAI-compliant processes and real-time verification.",
+                              " Verify Aadhaar numbers instantly using secure OTP authentication. Backed by UIDAI infrastructure, this method ensures fast and trusted identity validation in real time.",
                           },
                           {
                             icon: (
@@ -180,7 +175,7 @@ const AadhaarVerificationPage: React.FC = () => {
                             ),
                             title: "Demographic Verification",
                             description:
-                              "Verify demographic details including name, date of birth, gender, and address information against Aadhaar database records.",
+                              " Authenticate personal Aadhaar data—name, date of birth, gender, and address—against official UIDAI records to ensure accurate and fraud-free verification.",
                           },
                           {
                             icon: (
@@ -188,7 +183,7 @@ const AadhaarVerificationPage: React.FC = () => {
                             ),
                             title: "Privacy & Compliance",
                             description:
-                              "Fully compliant with UIDAI guidelines and data protection regulations, ensuring secure handling of sensitive identity information.",
+                              " The API strictly follows UIDAI and data protection regulations. All Aadhaar data is encrypted, securely processed, and audit-ready for regulatory compliance.",
                           },
                         ].map((feature, index) => (
                           <motion.div
@@ -428,9 +423,12 @@ const AadhaarVerificationPage: React.FC = () => {
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     1
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Aadhaar Input</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Enter Aadhaar Number
+                  </h3>
                   <p className="text-gray-600 text-sm">
-                    User enters 12-digit Aadhaar number for verification
+                    User submits the 12-digit Aadhaar number via our secure
+                    Aadhaar Verification API for identity validation.
                   </p>
                 </div>
                 <div className="text-center relative">
@@ -439,7 +437,8 @@ const AadhaarVerificationPage: React.FC = () => {
                   </div>
                   <h3 className="text-lg font-semibold mb-2">OTP Generation</h3>
                   <p className="text-gray-600 text-sm">
-                    System generates OTP and sends to registered mobile
+                    An OTP is instantly sent to the Aadhaar-linked mobile number
+                    to initiate UIDAI-based authentication.
                   </p>
                 </div>
                 <div className="text-center relative">
@@ -450,7 +449,9 @@ const AadhaarVerificationPage: React.FC = () => {
                     UIDAI Verification
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Details verified against UIDAI database securely
+                    The submitted details are securely verified in real-time
+                    against the UIDAI database, ensuring full privacy and
+                    regulatory compliance.
                   </p>
                 </div>
                 <div className="text-center relative">
@@ -468,9 +469,12 @@ const AadhaarVerificationPage: React.FC = () => {
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     5
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Secure Results</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Instant Results
+                  </h3>
                   <p className="text-gray-600 text-sm">
-                    Verified information returned with privacy compliance
+                    Get immediate results with verified demographic data like
+                    name, DOB, gender, and Aadhaar authentication status.
                   </p>
                 </div>
               </div>
@@ -540,22 +544,22 @@ const AadhaarVerificationPage: React.FC = () => {
                       {
                         title: "UIDAI Authorized",
                         description:
-                          "Authorized Authentication User Agency (AUA) with official UIDAI approval.",
+                          " We are a certified Authentication User Agency (AUA) approved by UIDAI for Aadhaar-based verifications.",
                       },
                       {
                         title: "Data Privacy",
                         description:
-                          "No storage of Aadhaar data, ensuring complete privacy and compliance.",
+                          " We do not store Aadhaar numbers or personal data, ensuring complete user privacy and compliance with Indian data laws.",
                       },
                       {
                         title: "Encrypted Transmission",
                         description:
-                          "All data transmission is encrypted using industry-standard protocols.",
+                          " All Aadhaar data is transmitted securely using industry-standard encryption protocols.",
                       },
                       {
                         title: "Audit Trail",
                         description:
-                          "Complete audit trail and logging for compliance and monitoring purposes.",
+                          " Maintain full audit logs and tracking for every verification—ideal for enterprise-level compliance and security monitoring.",
                       },
                     ].map((benefit, index) => (
                       <div key={index} className="flex items-start space-x-4">
@@ -639,37 +643,37 @@ const AadhaarVerificationPage: React.FC = () => {
                     name: "Banking & Finance",
                     icon: <FaUniversity className="text-[#b7603d] text-4xl" />,
                     description:
-                      "KYC compliance for account opening, loan processing, and financial services.",
+                      " Ensure RBI-compliant KYC for account opening, loan disbursal, and secure financial operations.",
                   },
                   {
                     name: "Telecom",
                     icon: <FaMobileAlt className="text-[#b7603d] text-4xl" />,
                     description:
-                      "SIM card activation and mobile number verification for telecom operators.",
+                      " Enable real-time Aadhaar-based mobile SIM activation and reduce identity fraud in telecom services.",
                   },
                   {
                     name: "Healthcare",
                     icon: <FaHospital className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Patient registration and identity verification for healthcare services.",
+                      "  Streamline patient onboarding and verify identities for insurance claims and medical records.",
                   },
                   {
                     name: "Government",
                     icon: <FaBuilding className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Citizen verification for government schemes and digital services.",
+                      "  Authenticate citizens for government welfare schemes, subsidies, and digital governance services.",
                   },
                   {
                     name: "Corporate",
                     icon: <FaUserTie className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Employee onboarding and identity verification for corporate services.",
+                      " Simplify employee verification, background checks, and HR onboarding using Aadhaar authentication.",
                   },
                   {
                     name: "Education",
                     icon: <FaSchool className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Student verification and admission processes for educational institutions.",
+                      " Verify student identity for secure admissions, scholarships, and academic record validation.",
                   },
                 ].map((service, index) => (
                   <motion.div

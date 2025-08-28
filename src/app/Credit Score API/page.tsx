@@ -391,7 +391,7 @@ export const CreditScoreAPI: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">
-                     Credit report check 
+                      Credit report check
                     </h3>
                     <span className="text-sm text-[#b7603d]   font-medium">
                       Comprehensive Check

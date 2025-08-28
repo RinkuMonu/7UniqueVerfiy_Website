@@ -62,27 +62,16 @@ const CrimeCheckAPIPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                7Unique Verify – Bank Account Verification API
+                Instant Criminal Background Check API for Smarter Onboarding
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-                Secure & Instant Bank Account Validation
+                Secure & Instant Criminal Background Verification
               </h2>
               <p className="text-lg mb-4 text-white">
-                Validate bank account details in real time using the trusted
-                7Unique Verify Bank Account Verification API. Ensure error-free
-                transactions, compliance, and fraud prevention with our advanced
-                verification engine.
-              </p>
-              <p className="mb-4 text-white">
-                Our system confirms account number validity, verifies IFSC
-                codes, and cross-checks account holder names across all major
-                Indian banks, offering seamless API integration for your
-                business.
-              </p>
-              <p className="mb-6 text-white">
-                Ideal for payment gateways, lending platforms, e-commerce
-                stores, salary disbursals, and any process where reliable bank
-                verification is crucial.
+                Verify criminal history in real time with our trusted Crime
+                Check API. Reduce onboarding risk, prevent fraud, and ensure
+                compliance with fast, reliable checks against national crime
+                databases and official records.
               </p>
               <div className="flex gap-3">
                 <Link
@@ -119,7 +108,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    Why Choose 7Unique Verify's Crime Check API
+                    Features of Crime Check Verification API
                   </h2>
                 </div>
                 <div className="p-8">
@@ -167,25 +156,25 @@ const CrimeCheckAPIPage: React.FC = () => {
                             icon: (
                               <FaSearch className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Real-time Criminal Record Verification",
+                            title: "Real-Time Criminal Record Verification",
                             description:
-                              "Instantly verify individuals using live access to national and regional criminal databases. Reduce risk and ensure safe onboarding with actionable results in seconds.",
+                              " Verify individuals instantly through live access to national and state-level criminal databases. Get actionable insights within seconds to reduce risk and enable safe onboarding.",
                           },
                           {
                             icon: (
                               <FaDatabase className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Pan-India Court & Police Record Access",
+                            title: "Nationwide Court & Police Data Coverage",
                             description:
-                              "Get unmatched coverage across police FIRs, court judgments, charge sheets, and public legal notices with our expansive database network.",
+                              " Access records from FIRs, police databases, charge sheets, court proceedings, and public legal notices — all in one comprehensive verification system.",
                           },
                           {
                             icon: (
                               <FaLock className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Compliant & Secure Verification",
+                            title: "Compliant, Secure & Audit-Ready",
                             description:
-                              "Stay aligned with legal mandates and ensure privacy standards. Built with strong data protection layers and audit-ready reporting for compliance-driven sectors.",
+                              "Built to meet legal standards with strong encryption and privacy controls. Ideal for businesses needing compliance-ready, tamper-proof criminal background checks.",
                           },
                         ].map((feature, index) => (
                           <motion.div
@@ -527,28 +516,28 @@ const CrimeCheckAPIPage: React.FC = () => {
                     step: "1",
                     title: "Submit Details",
                     description:
-                      "Provide personal information including name, date of birth, and identification details for verification.",
+                      "Enter personal information like full name, date of birth, and identification details (such as Aadhaar or PAN) for background verification.",
                     icon: <FaUserTie className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "2",
                     title: "Database Search",
                     description:
-                      "Our system searches multiple criminal databases and official records for any matching information.",
+                      " The system runs a real-time search across national and regional criminal databases, police records, and court filings.",
                     icon: <FaSearch className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "3",
                     title: "Record Analysis",
                     description:
-                      "Advanced algorithms analyze and cross-reference data to ensure accuracy and completeness.",
+                      " Smart algorithms cross-check and validate results to eliminate false positives and ensure accurate, trustworthy matches.",
                     icon: <FaDatabase className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "4",
                     title: "Detailed Report",
                     description:
-                      "Receive comprehensive background report with criminal history and risk assessment details.",
+                      " Get a structured report containing criminal history (if any), record summaries, and risk-level indicators for informed decision-making.",
                     icon: <FaFileAlt className="text-[#b7603d] text-4xl" />,
                   },
                 ].map((item, index) => (
@@ -608,7 +597,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                   <div className="rounded-full bg-[#b7603d]/10 p-2">
                     <FaServer className="h-6 w-6 text-[#b7603d]" />
                   </div>
-                  Why Trust 7Unique Verify?
+                  Benefits of Crime Check Verification API
                 </h2>
               </div>
               <div className="flex items-center gap-3 text-2xl font-semibold p-8">
@@ -622,24 +611,24 @@ const CrimeCheckAPIPage: React.FC = () => {
                   <div className="space-y-8">
                     {[
                       {
-                        title: "Accurate & Reliable Results",
+                        title: "Accurate & Trusted Results",
                         description:
-                          "Backed by verified sources, 7Unique Verify delivers high-accuracy criminal background data to help you make informed decisions confidently.",
+                          " 7uniqueverify uses verified law enforcement and legal data sources to deliver high-accuracy criminal background checks for confident, risk-free decisions.",
                       },
                       {
-                        title: "Blazing-Fast Response Time",
+                        title: "Fast, Real-Time Insights",
                         description:
-                          "Our Crime Check API is optimized for speed—get actionable insights within seconds, ideal for real-time verifications.",
+                          " Designed for instant verifications — get complete crime check results within seconds, ideal for hiring, lending, and user onboarding.",
                       },
                       {
-                        title: "Compliant & Audit-Ready",
+                        title: "Compliance-First Architecture",
                         description:
-                          "Fully aligned with legal norms, including DPDP and GDPR principles, making it safe for HR, NBFCs, and onboarding processes.",
+                          " Built to meet DPDP, GDPR, and regulatory standards — fully audit-ready for sectors like HR, NBFCs, and digital platforms.",
                       },
                       {
-                        title: "Bank-Grade Data Security",
+                        title: "Enterprise-Grade Data Security",
                         description:
-                          "All communication is secured with enterprise-grade encryption, ensuring complete confidentiality of sensitive data.",
+                          " All data is encrypted end-to-end, ensuring your criminal verification process remains private, safe, and legally protected.",
                       },
                     ].map((benefit, index) => (
                       <div key={index} className="flex items-start space-x-4">
@@ -693,7 +682,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaServer className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    Crime Check API Features
+                    Where Crime Check Verification API Is Used
                   </h2>
                 </div>
                 <div className="w-24 h-1.5 bg-gradient-to-r from-[#b7603d] to-[#d88a6e] mx-auto rounded-full" />
@@ -711,25 +700,25 @@ const CrimeCheckAPIPage: React.FC = () => {
                     name: "Employee Screening",
                     icon: <FaUserTie className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Verify potential employees' criminal backgrounds to ensure workplace safety and security.",
+                      "Conduct background checks on job applicants to ensure workplace safety and reduce hiring risks.",
                   },
                   {
                     name: "Tenant Verification",
                     icon: <FaHome className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Screen potential tenants to protect property and ensure safe rental environments.",
+                      " Screen tenants before lease agreements to avoid risky occupants and protect property.",
                   },
                   {
                     name: "Financial Services",
                     icon: <FaUniversity className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Conduct due diligence for loan approvals and financial service applications.",
+                      " Perform due diligence for loan applicants, investors, and customers to reduce fraud and non-compliance.",
                   },
                   {
                     name: "Educational Institutions",
                     icon: <FaUsers className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Verify staff and volunteers to maintain safe educational environments.",
+                      " Verify teachers, staff, and volunteers to maintain a secure and trustworthy learning environment.",
                   },
                   {
                     name: "Healthcare Screening",
@@ -737,13 +726,13 @@ const CrimeCheckAPIPage: React.FC = () => {
                       <FaBriefcaseMedical className="text-[#b7603d] text-4xl" />
                     ),
                     description:
-                      "Screen healthcare workers and volunteers for patient safety and compliance.",
+                      "Ensure the credibility of healthcare professionals and support staff to meet compliance and patient safety standards.",
                   },
                   {
                     name: "Transportation Checks",
                     icon: <FaCar className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Verify drivers and transportation workers for passenger safety and security.",
+                      " Check criminal records of drivers, delivery personnel, and field staff to ensure passenger and goods safety.",
                   },
                 ].map((service, index) => (
                   <motion.div
