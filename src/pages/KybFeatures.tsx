@@ -7,21 +7,21 @@ const KybFeatures: React.FC = () => {
     {
       title: "Safeguard Your Business from Risk",
       description:
-        "7Unique Verify's KYB service helps verify the authenticity and legal standing of businesses—preventing fraud, financial risk, and regulatory issues before they occur. With our robust business verification process, your organization can onboard only trustworthy entities.",
+        "Verify the legal standing and authenticity of any business before onboarding. 7uniqueverify’s KYB API flags fraudulent registrations early—protecting you from financial loss and regulatory violations.",
       icon: <FaShieldAlt className="text-white text-2xl" />,
       bgColor: "bg-[#b7603d]",
     },
     {
-      title: "Compliance and Transparency Guaranteed",
+      title: "Compliance & Transparency, Built-In",
       description:
-        "Our KYB Check API enables seamless validation of ownership structures, registration numbers, and compliance histories. It helps ensure that your partners meet local laws and global compliance standards, reducing your legal exposure and enhancing business credibility.",
+        "Seamlessly validate GST, MCA, and Udyam data, ownership details, and legal records. Ensure every partner or vendor meets both Indian and global compliance standards—with audit-ready results.",
       icon: <FaCheckCircle className="text-white text-2xl" />,
       bgColor: "bg-[#b3755c]",
     },
     {
-      title: "Digital-First KYB for Faster Onboarding",
+      title: "Digital-First KYB for Instant Onboarding",
       description:
-        "As a trusted eKYB provider, 7Unique Verify offers an API-first approach that integrates smoothly with your systems. From automated business document checks to real-time risk scoring, our platform simplifies KYB processes and accelerates business onboarding securely.",
+        "Our API-first platform integrates easily with your workflows. Automate document checks, run real-time risk scoring, and onboard credible businesses faster—without manual delays or friction.",
       icon: <FaLaptop className="text-white text-2xl" />,
       bgColor: "bg-[#d69074]",
     },
@@ -70,12 +70,11 @@ const KybFeatures: React.FC = () => {
                     />
                   </svg>
                 </div>
-                Choose Excellence: 7UniqueVerify's Business Identity API Suite
+                Choose Excellence: Business Identity API Suite
               </h2>
             </div>
-            <p className="text-xl text-gray-600 max-w-2xl mt-5">
-              Trusted by businesses worldwide to streamline compliance and
-              reduce risk
+            <p className="text-xl text-gray-600 mt-5">
+              Trusted by growing startups and global enterprises to streamline KYB compliance, prevent risk, and accelerate verified onboarding in India and beyond.
             </p>
           </motion.div>
 

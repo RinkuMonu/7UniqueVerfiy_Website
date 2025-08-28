@@ -5,23 +5,23 @@ import { Link } from "react-router-dom";
 const VerificationFeatures: React.FC = () => {
   const features = [
     {
-      title: "Elevate Verification Accuracy",
+      title: "Enhance Accuracy with Verified Data",
       description:
-        "Our Employment Background Screening API provides accurate and current data on employment history, credentials, and education—helping you steer clear of candidates who misrepresent qualifications or experience.",
-      icon: <FaUserCheck className="text-white text-2xl" />,
+        "Get real-time insights into employment history, education, and credentials. Our API helps you avoid misrepresented qualifications and make confident hiring decisions.",
+      icon: < FaUserCheck className="text-white text-2xl" />,
       bgColor: "bg-gradient-to-br from-[#b7603d] to-[#d47a4a]",
     },
     {
-      title: "Boost Efficiency and Cut Costs",
+      title: "Automate Screening & Cut Hiring Costs",
       description:
-        "Automate your background screening process to save time and resources. Speed up hiring and onboard qualified candidates quickly with a streamlined pre-employment verification workflow.",
+        "Streamline your background check process with automated workflows. Save time, reduce manual effort, and accelerate onboarding of trusted, verified candidates.",
       icon: <FaChartLine className="text-white text-2xl" />,
       bgColor: "bg-gradient-to-br from-[#9c4d2f] to-[#b7603d]",
     },
     {
-      title: "Minimize Risk & Strengthen Verification",
+      title: "Reduce Risk & Prevent Employment Fraud",
       description:
-        "Avoid costly mistakes and reduce fraud by leveraging our BGV API. Ensure trustworthy, compliant hiring by mitigating legal and reputational risks.",
+        "Protect your business from legal, financial, and reputational damage. 7uniqueverify’s BGV API flags inconsistencies early—supporting compliant, risk-free hiring.",
       icon: <FaShieldAlt className="text-white text-2xl" />,
       bgColor: "bg-gradient-to-br from-[#d47a4a] to-[#e8915e]",
     },
@@ -49,12 +49,11 @@ const VerificationFeatures: React.FC = () => {
                     />
                   </svg>
                 </div>
-                Transform Your Hiring With Our Verification API
+                Transform Your Hiring with Employment Verification API
               </h2>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl p-4">
-              Advanced technology for smarter, safer, and faster employment
-              verification.
+              Advanced API technology for faster, smarter, and more secure background checks in India’s evolving hiring landscape.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-5">
@@ -88,11 +87,10 @@ const VerificationFeatures: React.FC = () => {
               <div className="bg-white rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                    Ready to streamline your hiring process?
+                    Ready to Simplify Hiring Across India?
                   </h3>
                   <p className="text-lg text-gray-600 mb-6">
-                    Integrate our verification API in minutes and start making
-                    better hiring decisions today.
+                    Integrate the best employment verification API in India with 7uniqueverify. Start making faster, safer, and smarter hiring decisions — trusted by top HR teams nationwide.
                   </p>
                   <Link to={"/contact-us"}>
                     <button className="bg-gradient-to-r from-[#b7603d] to-[#e8915e] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">

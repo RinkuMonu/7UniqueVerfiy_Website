@@ -8,19 +8,19 @@ const UtilitiesCards: React.FC = () => {
       image: "/img/Utilities/Utilities2.png",
       alt: "Currency Exchange API",
       title: "Currency Exchange API",
-      description: "Access real-time and historical foreign exchange rates with 7Unique Verify's Currency Exchange API. Ideal for global pricing, invoicing, and accounting — fast, secure, and accurate.",
+      description: " Get real-time and historical currency data with 7uniqueverify’s API. Perfect for pricing, invoicing, and financial apps across Jaipur and other parts of India.",
     },
     {
       image: "/img/Utilities/Utilities3.png",
-      alt: "Comprehensive Risk Assessment",
-      title: "Comprehensive Risk Assessment",
-      description: "Make smarter, safer decisions with our integrated Risk Assessment module. Evaluate the credibility and compliance of customers, vendors, or partners before onboarding — reducing fraud and enhancing trust in every transaction.",
+      alt: "Risk Assessment API",
+      title: "Risk Assessment API",
+      description: " Evaluate users, vendors, or partners before onboarding. 7uniqueverify helps Indian businesses reduce fraud and improve trust with powerful risk scoring tools.",
     },
     {
       image: "/img/Utilities/Utilities4.png",
       alt: "Smart Data Validation",
       title: "Smart Data Validation",
-      description: "Instantly verify critical data such as IMEI numbers, user identities, or transaction details. 7Unique Verify's validation tools help reduce fraud and improve compliance across systems.",
+      description: " Quickly validate IMEI numbers, IDs, or transaction data. Used by Jaipur startups and India’s top platforms to improve compliance and reduce fraudulent activity.",
     },
   ]
 
@@ -42,7 +42,8 @@ const UtilitiesCards: React.FC = () => {
                     />
                   </svg>
                 </div>
-                Explore the Dynamic Capabilities of 7Unique Verify's Utilities API
+                Explore the Dynamic Capabilities of 7uniqueverify Utilities API
+
               </h2>
             </div>
             <div className="p-8">
@@ -50,9 +51,8 @@ const UtilitiesCards: React.FC = () => {
                 {utilitiesFeatures.map((feature, index) => (
                   <div
                     key={index}
-                    className={`bg-white p-6 rounded-lg shadow-xl text-center transition duration-300 hover:shadow-2xl border border-gray-100 hover:border-[#b7603d]/30 ${
-                      index === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""
-                    }`}
+                    className={`bg-white p-6 rounded-lg shadow-xl text-center transition duration-300 hover:shadow-2xl border border-gray-100 hover:border-[#b7603d]/30 ${index === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""
+                      }`}
                   >
                     <div className="relative mb-4">
                       <img

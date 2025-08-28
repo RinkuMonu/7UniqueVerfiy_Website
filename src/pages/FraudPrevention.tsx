@@ -15,15 +15,15 @@ const FraudPrevention: React.FC = () => {
           {/* Left: Content */}
           <div className="w-full lg:w-1/2 order-1">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Smarter <span className="text-[#b7603d]">Fraud Prevention</span> Starts with 7Unique Verify
+              Smarter <span className="text-[#b7603d]">Fraud Prevention</span> Starts with 7uniqueverify
             </h2>
 
             <p className="text-gray-600 mb-4">
-              Stay ahead of fraud with 7Unique Verify’s advanced API ecosystem. Whether you're screening new customers, validating transactions, or monitoring suspicious activity, our APIs deliver real-time insights that empower faster and safer decisions.
+              Stay steps ahead of fraud with 7uniqueverify’s intelligent API ecosystem. From customer onboarding to transaction monitoring, our solutions deliver real-time insights for faster, safer decision-making.
             </p>
 
             <p className="text-gray-600">
-              From financial institutions to fintech startups, our fraud prevention APIs scale with your business and integrate seamlessly into existing systems—backed by automation, data intelligence, and compliance-ready tools.
+              Designed for banks, NBFCs, fintechs, and digital platforms across India, our APIs scale effortlessly with your business—powered by automation, risk intelligence, and compliance-ready architecture that fits right into your existing systems.
             </p>
           </div>
 

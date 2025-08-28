@@ -12,21 +12,21 @@ const FinancialFeatures: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
   const features = [
     {
-      title: "Enhanced Security",
+      title: "Accurate Financial Background Checks",
       description:
-        "7Unique Verify's APIs use bank-grade encryption and secure authentication to safeguard every transaction. Prevent unauthorized access and ensure data privacy throughout your financial workflows.",
+        "Verify income details, account status, and transaction patterns in real time. Our API pulls verified financial data to help you assess creditworthiness and reduce lending risk.",
       icon: <RiShieldKeyholeLine className="text-[#b7603d] text-2xl" />,
     },
     {
-      title: "Built-in Compliance",
+      title: "Stay Compliant with Indian Regulations",
       description:
-        "Stay audit-ready and compliant with RBI, SEBI, and income tax regulations. Our Financial Checks API includes automated checks and reporting to keep your business aligned with changing norms.",
+        "Meet RBI, SEBI, and income tax compliance standards with automated checks. Generate audit-ready reports and reduce manual verification across lending, insurance, and fintech workflows.",
       icon: <FaBalanceScale className="text-[#b7603d] text-2xl" />,
     },
     {
-      title: "Effortless Integration",
+      title: "Trusted by Indian Fintech & Lending Platforms",
       description:
-        "Plug into your existing platforms in minutes. Our Fraud Indicators API is designed with a developer-first approach, ensuring smooth onboarding and low-code deployment across use cases.",
+        "From digital lenders to NBFCs and neobanks, our Financial Check API helps Indian businesses detect red flags early and approve only verified, credible profiles.",
       icon: <FiSettings className="text-[#b7603d] text-2xl" />,
     },
   ];
@@ -76,7 +76,7 @@ const FinancialFeatures: React.FC = () => {
                       />
                     </svg>
                   </div>
-                  Unveiling the Power of 7UniqueVerify for Fraud & Risk Checks
+                  Power Smarter Decisions with Financial Check API
                 </h2>
               </div>
               <motion.div

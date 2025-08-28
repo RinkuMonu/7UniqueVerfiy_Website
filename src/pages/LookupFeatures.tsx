@@ -7,21 +7,21 @@ import { Link } from "react-router-dom";
 const LookupFeatures: React.FC = () => {
   const features = [
     {
-      title: "Smart Access to Verified User Data",
+      title: "Smart Access to Verified Mobile Data",
       description:
-        "7Unique Verify's Mobile Number Lookup API lets you fetch critical details like telecom info, UPI-linked VPAs, and UANs in seconds—perfect for real-time user profiling and onboarding checks.",
+        "Instantly retrieve telecom details, UPI-linked VPAs, and UANs using just a mobile number. Perfect for user profiling, onboarding, and risk flagging during signup flows.",
       icon: <MdContactPhone className="text-white text-3xl" />,
     },
     {
-      title: "Boosted Identity & VPA Verification",
+      title: "Boost Identity & VPA-Level Trust",
       description:
-        "Easily validate phone numbers tied to financial credentials or employment IDs. Our API helps detect mismatches and block potential fraud before it affects your system.",
+        "Validate mobile numbers connected to bank accounts, employment IDs, or financial services. Detect mismatches early to prevent fraud and improve trust across your system.",
       icon: <RiShieldCheckLine className="text-white text-3xl" />,
     },
     {
-      title: "Faster Operations with Better Accuracy",
+      title: "Faster Operations, Fewer Errors",
       description:
-        "Speed up customer verification, reduce transaction errors, and automate backend checks. Our API fits perfectly into your fintech, HRMS, or KYC stack without extra overhead.",
+        "Accelerate customer verification and reduce backend failures. Our API integrates smoothly with fintech apps, HRMS tools, and KYC systems—without adding extra complexity.",
       icon: <MdSpeed className="text-white text-3xl" />,
     },
   ];
@@ -67,9 +67,10 @@ const LookupFeatures: React.FC = () => {
             <div className="lg:w-1/2 p-12 flex flex-col justify-center">
               <h3 className="text-3xl font-bold text-gray-900 mb-6">
                 Ready to Transform Your Verification Process?
+
               </h3>
               <p className="text-gray-600 mb-8 text-lg">
-                Our API delivers unmatched accuracy and speed with seamless integration into your existing systems.
+                Experience the best-in-India verification API solution with unmatched accuracy, lightning-fast performance, and effortless integration into your existing systems.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to={'/contact-us'}>

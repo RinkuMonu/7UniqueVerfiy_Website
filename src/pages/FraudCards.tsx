@@ -13,21 +13,21 @@ const FraudCards: React.FC = () => {
       alt: "Effortless Fraud Detection",
       title: "Effortless Fraud Detection",
       description:
-        "7Unique Verify's fraud prevention APIs streamline the process of identifying fake users and suspicious activities. With quick integration and smart insights, businesses can stay protected without heavy infrastructure.",
+        "Identify fake users, suspicious activity, and identity anomalies instantly. With seamless API integration and real-time intelligence, protect your platform without complex infrastructure.",
     },
     {
       image: "/img/Fraud Detection/Fraud Detection3.png",
-      alt: "AI-Powered Identification",
-      title: "AI-Powered Identification",
+      alt: "AI-Powered Fraud Identification",
+      title: "AI-Powered Fraud Identification",
       description:
-        "Our APIs use data analytics and pattern recognition to detect fraud attempts in real-time. Prevent impersonation, duplicate entries, and synthetic ID fraud with confidence.",
+        "Leverage advanced pattern recognition and behavioral analytics to detect fraud attempts in real time. Prevent impersonation, duplicates, and synthetic identity fraud with precision.",
     },
     {
       image: "/img/Fraud Detection/Fraud Detection4.png",
-      alt: "Trusted Risk Scoring",
-      title: "Trusted Risk Scoring",
+      alt: "Reliable Risk Scoring Engine",
+      title: "Reliable Risk Scoring Engine",
       description:
-        "Our API cross-verifies identity with official data and transaction behavior, delivering highly accurate fraud risk scores—ideal for financial institutions, NBFCs, and HR platforms.",
+        "Our APIs validate identities against official data and behavior patterns, delivering accurate fraud risk scores—ideal for banks, NBFCs, fintechs, and HR systems seeking secure onboarding.",
     },
   ];
 
@@ -51,7 +51,7 @@ const FraudCards: React.FC = () => {
                       />
                     </svg>
                   </div>
-                  7UniqueVerify's Fraud Detection APIs: Advanced Protection Against Sophisticated Fraud
+                  Fraud Detection APIs: Advanced Protection Against Sophisticated Fraud
                 </h2>
               </div>
               <div className="p-8">

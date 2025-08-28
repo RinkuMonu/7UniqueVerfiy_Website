@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 const UtilitiesOverview: React.FC = () => {
   const features = [
     {
-      title: "Powering Operations with Smart Utility APIs",
-      description: "7Unique Verify's Utility APIs are built for performance and flexibility, helping businesses in finance, e-commerce, telecom, logistics, and public services streamline verification, compliance, and data accuracy.",
+      title: "Built for Scale, Trusted Across India",
+      description: "7uniqueverify’s Utility APIs help businesses in finance, e-commerce, telecom, logistics, and public services streamline verification, compliance, and data workflows.",
       icon: <FaExchangeAlt className="text-[#b7603d] text-2xl" />,
     },
     {
-      title: "Seamless Integration for Critical Needs",
-      description: "From validating customer identities to automating bulk data processes—our APIs support real-time integration and scale effortlessly to meet mission-critical needs across departments and industries.",
+      title: "Seamless Integration for Every Need",
+      description: "Easily validate identities, automate bulk data tasks, and connect systems in real time. Our APIs scale across departments — from Jaipur startups to national enterprises.",
       icon: <FaShieldAlt className="text-[#b7603d] text-2xl" />,
     },
     {
-      title: "Versatile Solutions for Various Use Cases",
-      description: "Whether you're launching a fintech app, managing bulk account validations, or improving service delivery—our Utility API suite enhances your backend with speed, security, and simplicity.",
+      title: "Versatile Tools for Real-World Use",
+      description: "Whether you're building a fintech app or managing service delivery, 7uniqueverify boosts speed, accuracy, and security across all critical backend operations.",
       icon: <FaCheckCircle className="text-[#b7603d] text-2xl" />,
     },
   ];

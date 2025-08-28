@@ -14,17 +14,15 @@ const OCRHero: React.FC = () => {
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
         {/* Left: Text content */}
         <div className="w-full lg:w-1/2 text-[#c79784] space-y-6">
-          <div className="inline-block bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+          {/* <div className="inline-block bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
             <p className="text-sm font-medium text-[#b7603d]">AI-POWERED DOCUMENT VERIFICATION</p>
-          </div>
+          </div> */}
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Transform Documents Into <span className="text-[#b7603d]">Structured Data</span> Instantly
+            AI-Powered OCR Document Verification API
+            {/* Transform Documents Into <span className="text-[#b7603d]">Structured Data</span> Instantly */}
           </h1>
 
-          <h2 className="text-xl md:text-2xl font-medium text-[#4b4949]">
-            Automate verification workflows with our cutting-edge OCR technology
-          </h2>
 
           <div className="space-y-4">
             <div className="flex items-start">
@@ -36,7 +34,7 @@ const OCRHero: React.FC = () => {
                 </div>
               </div>
               <p className="ml-3 text-[#6e6d6d]">
-                Extract data from IDs, passports, invoices, and bank statements with 99.8% accuracy
+                Convert documents into verified data instantly — trusted for compliance and onboarding across India.
               </p>
             </div>
 
@@ -49,7 +47,7 @@ const OCRHero: React.FC = () => {
                 </div>
               </div>
               <p className="ml-3 text-[#6e6d6d]">
-                Seamless API integration for KYC, banking, HR, and compliance workflows
+                Our intelligent OCR API extracts structured data from Aadhaar, PAN, passports, invoices, and more with up to 99.8% accuracy.
               </p>
             </div>
 
@@ -62,7 +60,7 @@ const OCRHero: React.FC = () => {
                 </div>
               </div>
               <p className="ml-3 text-[#6e6d6d]">
-                Reduce processing time from hours to seconds with AI-powered automation
+                Reduce manual work and accelerate your KYC, banking, HR, and legal processes.
               </p>
             </div>
           </div>

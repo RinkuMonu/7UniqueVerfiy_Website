@@ -12,23 +12,33 @@ const LookUpHero: React.FC = () => {
         {/* Left: Text content */}
         <div className="w-full md:w-2/3 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Phone Number Lookup API
+            Real-Time Phone Number Lookup API for Mobile KYC in India
           </h1>
-          <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
+          {/* <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
             Verify Mobile Numbers with Real-Time Identity Insights
-          </h2>
+          </h2> */}
           <p className="text-lg mb-4 text-white">
-            Enhance your KYC and user validation with our Phone Number Lookup API. Instantly fetch verified details like UAN, VPA, telecom operator, and more — using just a mobile number.
+            Validate mobile numbers with enriched identity data — including VPA, UAN, and telecom  operator — in real-time.
+
           </p>
           <p className="mb-4 text-white">
-            Whether you're verifying transactions, onboarding users, or targeting communication campaigns, our API helps you retrieve real-time, reliable data with speed and security. Make smarter decisions, reduce fraud, and personalize customer experiences — all with one powerful API.
+            Perfect for platforms in India needing fast, secure mobile number verification to support KYC, fraud detection, and user onboarding.
           </p>
 
-          <Link to={'/contact-us'}
-            className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
-          >
-            Get Started
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              to={"/contact-us"}
+              className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+            >
+              Get Started
+            </Link>
+            <Link
+              to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+              className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+            >
+              View API Docs
+            </Link>
+          </div>
 
         </div>
 

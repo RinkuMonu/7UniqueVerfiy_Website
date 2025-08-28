@@ -12,25 +12,35 @@ const UtilitiesHero: React.FC = () => {
         {/* Left: Text Content */}
         <div className="w-full md:w-2/3 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Utilities Verification API Suite
+            Utilities Verification API Suite for Digital Workflows
           </h1>
-          <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
+          {/* <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
             Verify, Validate & Integrate — Smarter Utilities for Smarter Systems
-          </h2>
+          </h2> */}
           <p className="text-lg mb-4 text-white">
-            Automate compliance, enhance data accuracy, and reduce manual workloads with 7Unique Verify’s advanced Utility APIs. From LEI to IMEI validation, empower your backend with real-time intelligence.
+            Automate verification of LEI, IMEI, and other utility data with 7uniqueverify’s secure API suite.
+            Ideal for fintech, telecom, and logistics platforms looking to streamline compliance and reduce risk.
           </p>
           <p className="mb-4 text-white">
-            Designed for industries like fintech, logistics, and telecom, our Utilities API suite helps you verify critical identifiers—instantly and securely. Make onboarding, auditing, and validation faster and smarter.
+            Get real-time data checks to power reliable identity, audit, and onboarding processes with confidence.
           </p>
-          <p className="mb-6 text-white">
+          {/* <p className="mb-6 text-white">
             Stay compliant, reduce fraud risks, and accelerate your decision-making processes—all through one integrated API platform. Built for performance, backed by accuracy.
-          </p>
-          <Link to={'https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/'}
-            className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-          >
-            Explore APIs
-          </Link>
+          </p> */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              to={"/contact-us"}
+              className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+            >
+              Get Started
+            </Link>
+            <Link
+              to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+              className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+            >
+              View API Docs
+            </Link>
+          </div>
         </div>
 
         {/* Right: Image */}

@@ -20,36 +20,28 @@ const WhatsappVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                7Unique Verify: WhatsApp Number Verification API
+                WhatsApp Number Verification API – By 7UniqueVerify
+
               </h1>
-              <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
+              {/* <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Secure and Instant WhatsApp Verification for Your Business
-              </h2>
+              </h2> */}
               <p className="text-lg mb-4 text-white">
-                With <strong>7Unique Verify</strong>, you can instantly verify
-                WhatsApp numbers for your users with ease. Our comprehensive
-                WhatsApp Verification API ensures reliable and authentic user
-                verification through the world’s leading messaging platform,
-                WhatsApp.
+                Check if a number is active on WhatsApp in real-time and enable secure OTP delivery.
               </p>
               <p className="mb-4 text-white">
-                Our API provides robust features such as WhatsApp number
-                validation, OTP delivery through WhatsApp, business account
-                verification, and real-time status checking, ensuring seamless
-                user authentication for your platform.
+                Verify personal or business WhatsApp accounts instantly — perfect for onboarding, KYC, and fraud prevention.
               </p>
               <p className="mb-6 text-white">
-                <strong>7Unique Verify</strong> is the perfect solution for
-                customer onboarding, two-factor authentication (2FA), business
-                account verification, and any other application that requires
-                secure WhatsApp-based user verification.
+                Trusted by fintechs, e-commerce, and digital platforms across India.
+
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/whatsapp-verification-page-api"
                   className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
                 >
-                  Get Started with 7Unique Verify
+                  Get Started
                 </Link>
                 <Link
                   to={
@@ -260,7 +252,7 @@ const WhatsappVerificationPage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">
-                     Bulk Meassage
+                      Bulk Meassage
                     </h3>
                     <span className="text-sm text-[#b7603d]   font-medium">
                       AI-Powered

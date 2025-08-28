@@ -123,12 +123,12 @@ export default function Footer() {
               "Email Authentication",
               "Liveness check API",
               // "OCR Validation",
-              // "Whatsapp Verification",
+              "Whatsapp Verification",
               "Face Match API",
               "Name Match API",
               // "ITR Profile Summary",
               // "Credit Score API",
-              // "Digilocker",
+              "Digilocker",
             ].map((item, index) => {
               const path = `/${item.toLowerCase().replace(/ /g, "-")}`;
               return (

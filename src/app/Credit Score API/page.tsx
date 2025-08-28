@@ -64,33 +64,35 @@ export const CreditScoreAPI: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                7Unique Verify – Credit Score API
+                Credit Score API for Smart Risk Decisions
+
               </h1>
-              <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-                Instant & Reliable Mobile Number Authentication
-              </h2>
+
               <p className="text-lg mb-4 text-white">
-                Secure your platforms with real-time mobile number verification
-                through our robust API. Whether you're onboarding users or
-                implementing 2FA, our system ensures legitimate mobile access
-                with minimal friction.
+                Access verified credit scores in real-time with direct bureau integration.
+
               </p>
               <p className="mb-4 text-white">
-                Gain access to accurate telecom data, carrier detection, OTP
-                generation & verification, and fraud prevention tools—all in one
-                unified mobile verification service.
+                Enable informed lending, faster onboarding, and accurate risk profiling with our secure and scalable Credit Score API.
               </p>
               <p className="mb-6 text-white">
-                Ideal for financial apps, eCommerce platforms, KYC processes,
-                and login verifications. Power your trust layer with{" "}
-                <strong>7Unique Verify</strong>.
+                Ideal for NBFCs, loan apps, credit platforms, and financial institutions.
+
               </p>
-              <Link
-                to="/contact-us"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img

@@ -54,10 +54,13 @@ const RefundCancellationPage: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="mb-12 text-center"
           >
-            <h1 className="text-4xl font-bold mb-4 text-gray-900">Refund and Cancellation Policy</h1>
+            <h1 className="text-4xl font-bold mb-4 text-gray-900">Refund & Cancellation Policy</h1>
             <div className="w-32 h-1.5 bg-[#b7603d] mx-auto rounded-full"></div>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              Effective Date: 3 August 2025
+            </p>
+            <p className="text-gray-500 text-sm mt-1">
+              Brand: 7UniqueVerify, a brand of Sevenunique Tech Solutions Pvt. Ltd.
             </p>
           </motion.div>
 
@@ -71,142 +74,259 @@ const RefundCancellationPage: React.FC = () => {
             <div className="space-y-8 text-gray-700">
               <motion.section variants={itemVariants}>
                 <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
-                  1. Cancellation Policy
+                  1. Payment & Collection Policy
                 </h2>
-                <p>
-                  You can cancel your subscription or service at any time directly from your account dashboard. Alternatively, you can reach out to our customer support team for assistance.
-                </p>
-                <p>
-                  Please note that any cancellation will take effect at the end of your current billing cycle. For monthly subscriptions, this means you will continue to have access to the service until the end of the current month. For annual subscriptions, cancellation will be effective at the end of the year.
-                </p>
-              </motion.section>
-
-              <motion.section variants={itemVariants}>
-                <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
-                  2. Refund Eligibility
-                </h2>
-                <p>
-                  Refunds may be provided under specific circumstances, including but not limited to:
-                </p>
-                <ul className="space-y-3 mt-3">
-                  <li className="flex items-start">
-                    <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-[#b7603d]/10 text-[#b7603d] rounded-full text-sm font-medium">1</span>
-                    <span>Service outages or technical issues that prevent access to the service for an extended period.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-[#b7603d]/10 text-[#b7603d] rounded-full text-sm font-medium">2</span>
-                    <span>Billing errors such as incorrect charges or overbilling.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-[#b7603d]/10 text-[#b7603d] rounded-full text-sm font-medium">3</span>
-                    <span>Cancellation within the first 7 days of a new subscription (with no usage of the service).</span>
-                  </li>
-                </ul>
-                <p className="mt-4">
-                  Please note that API usage charges for successfully completed transactions are non-refundable, as these are processed in real-time and cannot be reversed.
-                </p>
-              </motion.section>
-
-              <motion.section variants={itemVariants}>
-                <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
-                  3. Refund Process
-                </h2>
-                <p>
-                  To initiate a refund request, please contact our customer support team and provide the following details:
-                </p>
                 <ul className="space-y-3 mt-3">
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
-                    <span>Your account information (email address, username, or account ID).</span>
+                    <span>7UniqueVerify operates on a <strong>prepaid model</strong>. Full payment must be made before clients can access any API services.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
-                    <span>A detailed reason for your refund request.</span>
+                    <span>We accept payments through <strong>bank transfers, UPI, credit/debit cards, net banking, and other digital payment methods</strong> available on our platform.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
-                    <span>Any supporting documents or screenshots related to your issue (if applicable).</span>
-                  </li>
-                </ul>
-                <p className="mt-4">
-                  Once your request is received, our team will review it and provide a response within 5-7 business days. If your request is approved, the refund will be processed within 10-15 business days.
-                </p>
-              </motion.section>
-
-              <motion.section variants={itemVariants}>
-                <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
-                  4. Pro-rated Refunds
-                </h2>
-                <p>
-                  In cases where a refund is applicable for part of the subscription period (e.g., if you cancel mid-month), we will calculate the refund amount on a pro-rated basis for the unused portion of your subscription. This ensures fairness for both parties.
-                </p>
-              </motion.section>
-
-              <motion.section variants={itemVariants}>
-                <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
-                  5. Non-refundable Items
-                </h2>
-                <p>
-                  The following items are typically non-refundable:
-                </p>
-                <ul className="space-y-3 mt-3">
-                  <li className="flex items-start">
-                    <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-red-100 text-red-600 rounded-full text-sm font-medium">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </span>
-                    <span>Completed API transactions (once the service is used or the transaction is processed).</span>
+                    <span>If your prepaid balance falls below the required minimum, access to API services may be temporarily suspended until payment is completed.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-red-100 text-red-600 rounded-full text-sm font-medium">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </span>
-                    <span>Setup fees and customization charges for services that require specialized work or adjustments.</span>
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Late payments may incur penalties or late fees as per the service agreement.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-red-100 text-red-600 rounded-full text-sm font-medium">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </span>
-                    <span>Custom development work, unless agreed upon by both parties before the commencement of the work.</span>
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>7UniqueVerify reserves the right to modify pricing or payment terms with prior notice to clients.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-red-100 text-red-600 rounded-full text-sm font-medium">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </span>
-                    <span>Services or subscriptions used beyond the trial period, unless there is a service failure or issue on our end.</span>
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Clients are responsible for providing and maintaining accurate billing information to avoid service disruptions.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Any payment processing delays caused by third-party banks or payment gateways are beyond our control and not the responsibility of 7UniqueVerify.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>All applicable taxes, levies, and government fees must be borne by the client. 7UniqueVerify reserves the right to recover unpaid taxes.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Accounts with overdue payments may be suspended or terminated. Reactivation after suspension may require an additional fee.</span>
                   </li>
                 </ul>
               </motion.section>
 
-              {/* Continue with the same pattern for other sections */}
+              <motion.section variants={itemVariants}>
+                <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
+                  2. Refund Policy
+                </h2>
+
+                <h3 className="font-medium text-lg mt-6 mb-3 text-gray-800">2.1 Non-Refundable Services</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>All API services, once <strong>approved, activated, and used</strong>, are non-refundable.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>One-time setup fees, onboarding charges, or integration fees are non-refundable.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Refund requests due to changes in business operations or client preferences after payment will not be entertained.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Partial usage of API credits does not qualify for a refund.</span>
+                  </li>
+                </ul>
+
+                <h3 className="font-medium text-lg mt-6 mb-3 text-gray-800">2.2 Refund Eligibility</h3>
+                <p className="mb-3">Refunds will only be processed in these cases:</p>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span><strong>Incorrect Payment Deduction:</strong> If a client is wrongly charged due to a system error, 7UniqueVerify will verify and refund the amount.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span><strong>Duplicate Payments:</strong> If a duplicate payment for the same service is detected, the extra amount will be refunded after verification.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span><strong>Service Non-Approval:</strong> If 7UniqueVerify, or any regulatory body involved, does not approve the requested service, a refund will be initiated.</span>
+                  </li>
+                </ul>
+
+                <h3 className="font-medium text-lg mt-6 mb-3 text-gray-800">2.3 Refund Exemptions</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span><strong>Client Errors:</strong> Refunds are not issued for incorrect payments caused by client errors like wrong account details or API misconfiguration.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span><strong>Third-Party Failures:</strong> We are not responsible for service interruptions or failures caused by third-party providers, including banks or payment gateways.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span><strong>Unauthorized Usage:</strong> If your account is accessed fraudulently, 7UniqueVerify will not be liable for unauthorized transactions.</span>
+                  </li>
+                </ul>
+
+                <h3 className="font-medium text-lg mt-6 mb-3 text-gray-800">2.4 How to Request a Refund</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Clients should send an email to their <strong>Relationship Manager</strong> and copy <a href="mailto:support@7unique.in" className="text-[#b7603d] font-medium  hover:text-[#9a4f32] transition-colors">✉️ support@7unique.in </a>with transaction details and refund reasons.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Refund requests will be reviewed and verified.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Approved refunds will be processed within <strong>90 business days</strong> and credited to the original payment method.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Refunds are not issued in cash or to third-party accounts.</span>
+                  </li>
+                </ul>
+
+                <h3 className="font-medium text-lg mt-6 mb-3 text-gray-800">2.5 Chargeback Policy</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Clients must contact 7UniqueVerify <strong>support team before initiating any chargebacks</strong> with banks or payment processors.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Unauthorized chargebacks may lead to immediate suspension of services.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>7UniqueVerify reserves the right to pursue legal action against fraudulent chargeback claims.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Any chargeback fees levied by financial institutions will be charged back to the client.</span>
+                  </li>
+                </ul>
+              </motion.section>
 
               <motion.section variants={itemVariants}>
                 <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
-                  8. Contact for Refunds
+                  3. Cancellation Policy
                 </h2>
-                <p>
-                  For all refund and cancellation requests, please reach out to our support team through the contact details provided on our website. Be sure to include your account information and clearly state the reason for your refund or cancellation request.
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Once an API service is activated, <strong>cancellations are not permitted</strong>.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Clients should thoroughly review service requirements before making payments.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Contract-based cancellations are subject to the terms specified in the signed service agreement.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>7UniqueVerify reserves the right to terminate services if a client:
+                      <ul className="mt-2 ml-4 space-y-2">
+                        <li>- Violates terms of service</li>
+                        <li>- Engages in fraudulent or illegal activity</li>
+                        <li>- Misuses the API services</li>
+                      </ul>
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Early termination fees may apply as per contract terms.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Refunds due to termination for policy violations are at the sole discretion of 7UniqueVerify.</span>
+                  </li>
+                </ul>
+              </motion.section>
+
+              <motion.section variants={itemVariants}>
+                <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
+                  4. Liability Disclaimer
+                </h2>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>7UniqueVerify provides API services <strong>"as is"</strong> without warranties regarding uninterrupted or error-free service.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Total liability for claims shall not exceed the fees paid by the client in the last <strong>three months</strong>.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>7UniqueVerify is not liable for indirect or consequential damages, including loss of business, profits, or data.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Clients are responsible for complying with applicable laws regarding API usage, data privacy, and financial transactions.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Any legal or regulatory penalties arising from misuse of APIs are the client's responsibility.</span>
+                  </li>
+                </ul>
+              </motion.section>
+
+              <motion.section variants={itemVariants}>
+                <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
+                  5. Dispute Resolution
+                </h2>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Payment or refund disputes must be reported within <strong>7 days</strong> of the transaction date.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Clients can raise disputes by contacting <a href="mailto:support@7unique.in" className="text-[#b7603d] font-medium  hover:text-[#9a4f32] transition-colors">✉️ support@7unique.in </a>.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>7UniqueVerify will investigate and respond within <strong>10 business days.</strong></span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span>Unresolved disputes will be addressed according to the legal procedures specified in the service agreement.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span><strong>Governing Law:</strong> This policy is governed by the laws of <strong>India</strong>, with jurisdiction in <strong>Jaipur, Rajasthan</strong>.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-[#b7603d] mt-2.5 mr-2"></span>
+                    <span><strong>Arbitration:</strong> Both parties agree to resolve disputes via arbitration in Jaipur under the Arbitration and Conciliation Act, 1996, before pursuing legal action. The arbitrator's decision shall be final and binding.</span>
+                  </li>
+                </ul>
+              </motion.section>
+
+              <motion.section variants={itemVariants}>
+                <h2 className="text-xl font-semibold mb-4 text-[#b7603d] border-l-4 border-[#b7603d] pl-3 py-1">
+                  6. Contact Us
+                </h2>
+                <p>For any questions regarding this Refund & Cancellation Policy, please  <a href="/contact-us" className="text-[#b7603d] font-medium underline hover:text-[#9a4f32] transition-colors">Contact</a>.</p>
+
+                <p className="mt-4 text-sm italic font-bold">
+                  By using 7UniqueVerify's API services, you agree to the terms outlined in this Refund & Cancellation Policy. 7UniqueVerify reserves the right to modify this policy with prior notice.
                 </p>
-                <p className="mt-4">
-                  Our customer support team is available 24/7 and is dedicated to resolving your concerns as quickly as possible.
-                </p>
-                <div className="mt-6 p-4 bg-[#b7603d]/5 rounded-lg border border-[#b7603d]/20">
-                  <h3 className="font-medium text-[#b7603d] mb-2">Support Contact:</h3>
-                  <p className="text-gray-700">Email: <a href="mailto:info@7uniqueverfiy.com" className="text-[#b7603d] hover:underline">info@7uniqueverfiy.com</a></p>
-                  <p className="text-gray-700">Phone: 0141-4511098</p>
-                </div>
               </motion.section>
             </div>
-          </motion.div>
-        </main>
-      </div>
+          </motion.div >
+        </main >
+      </div >
     </>
   );
 };
