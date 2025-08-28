@@ -192,10 +192,10 @@ export default function ContactUsPage() {
       label: "Location:",
       value: contactDetails?.address
         ? contactDetails.address.split("|").map((addr: string, i: number) => (
-            <p key={i} className="leading-snug">
-              {addr.trim()}
-            </p>
-          ))
+          <p key={i} className="leading-snug">
+            {addr.trim()}
+          </p>
+        ))
         : "Not available",
     },
     {
@@ -213,14 +213,14 @@ export default function ContactUsPage() {
       label: "Email address:",
       value: contactDetails?.email
         ? contactDetails.email.split(",").map((email: string, i: number) => (
-            <a
-              key={i}
-              href={`mailto:${email.trim()}`}
-              className="block text-sm text-gray-700 hover:underline"
-            >
-              {email.trim()}
-            </a>
-          ))
+          <a
+            key={i}
+            href={`mailto:${email.trim()}`}
+            className="block text-sm text-gray-700 hover:underline"
+          >
+            {email.trim()}
+          </a>
+        ))
         : "Not available",
     },
     {
@@ -292,8 +292,8 @@ export default function ContactUsPage() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-sm sm:text-base text-black px-2 mt-4 max-w-md mx-auto leading-relaxed relative z-10"
           >
-            We are passionate about transforming the way businesses communicate.
-            Specializing in VOIP, telecom.
+            We specialize in PAN, Aadhaar, RC, Voter ID, WhatsApp Verification & more — built for seamless KYC, compliance, and digital onboarding.
+
           </motion.p>
           <div
             aria-hidden="true"

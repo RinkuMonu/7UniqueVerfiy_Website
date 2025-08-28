@@ -12,26 +12,21 @@ const NameMatchPageAPI: React.FC = () => {
         <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="w-full md:w-2/3 text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Verify Name Matches Instantly with AI-Powered Accuracy
+              AI-Powered Name Match API for Accurate Identity Verification
+
             </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-              Ensure identity verification, prevent fraud, and streamline KYC
-              processes with our intelligent Name Match APIs that handle
-              variations and aliases.
-            </h2>
+
             <p className="text-lg mb-4 text-white">
-              Our Name Match API provides intelligent comparison of names across
-              documents, handling variations, nicknames, and cultural
-              differences to ensure accurate identity verification.
+              Verify name matches across documents with intelligent comparison, fuzzy logic, and confidence scoring.
+
             </p>
             <p className="mb-4 text-white">
-              From basic exact matches to fuzzy matching with confidence scores,
-              we offer comprehensive methods to meet your specific business
-              requirements and compliance needs.
+              Handle spelling variations, nicknames, and cultural differences to streamline KYC, reduce fraud, and meet compliance needs.
+
             </p>
             <p className="mb-6 text-white">
-              Trusted by banks, financial institutions, and businesses worldwide
-              to ensure accurate name verification and prevent identity fraud.
+              Trusted by banks, fintechs, and global platforms for secure and reliable identity validation.
+
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

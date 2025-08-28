@@ -66,32 +66,32 @@ export const DigilockerApi = () => {
         <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="w-full md:w-2/3 text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              7Unique DigiLocker API – Seamless Document Access & Verification
+              7UniqueVerify DigiLocker API – Verified Document Access Made Easy
             </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-              Instant Access to Government-Issued Documents
-            </h2>
+
             <p className="text-lg mb-4 text-white">
-              Integrate DigiLocker with your application to securely fetch,
-              verify, and store user documents issued by Indian government
-              agencies — including Aadhaar, PAN, Driving License, and more.
+              Instantly fetch Aadhaar, PAN, Driving License & more with secure, government-compliant integration.
+
             </p>
             <p className="mb-4 text-white">
-              7Unique DigiLocker API offers a reliable, easy-to-integrate
-              solution for accessing official documents directly from the
-              DigiLocker system. Reduce paperwork, automate KYC, and stay
-              compliant with digital India initiatives.
+              Simplify KYC, reduce fraud, and accelerate onboarding using a single, powerful DigiLocker API.
+
             </p>
-            <p className="mb-6 text-white">
-              Perfect for banks, NBFCs, fintech, ed-tech, and government-related
-              apps needing verified digital documents with user consent.
-            </p>
-            <Link
-              to="/contact-us"
-              className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-            >
-              Get Started
-            </Link>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to={"/contact-us"}
+                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+              >
+                Get Started
+              </Link>
+              <Link
+                to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+              >
+                View API Docs
+              </Link>
+            </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img

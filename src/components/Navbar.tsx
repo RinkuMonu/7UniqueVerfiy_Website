@@ -93,16 +93,16 @@ const verificationServices: DropdownItem[] = [
   //   icon: <FaUserLock />,
   //   href: "/digilocker",
   // },
-  // {
-  //   title: "Credit Score API",
-  //   icon: <MdOutlineScoreboard />,
-  //   href: "/credit-score-api",
-  // },
-  // {
-  //   title: "ITR Profile Summary",
-  //   icon: <TbTax />,
-  //   href: "/itr-profile-summary",
-  // },
+  {
+    title: "Credit Score API",
+    icon: <MdOutlineScoreboard />,
+    href: "/credit-score-api",
+  },
+  {
+    title: "ITR Profile Summary",
+    icon: <TbTax />,
+    href: "/itr-profile-summary",
+  },
   // {
   //   title: "CKYC Search & Download",
   //   icon: <FaDownload />,
@@ -222,25 +222,22 @@ export default function Navbar() {
 
         {/* Hamburger for Mobile */}
         <button
-          className={`md:hidden text-2xl text-[#373533] transition duration-200 ${
-            menuOpen ? "text-[#b7603d] rotate-90" : ""
-          }`}
+          className={`md:hidden text-2xl text-[#373533] transition duration-200 ${menuOpen ? "text-[#b7603d] rotate-90" : ""
+            }`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <i
-            className={`fas ${
-              menuOpen
-                ? "bi bi-chevron-bar-right"
-                : "bi bi-layout-sidebar-inset"
-            }`}
+            className={`fas ${menuOpen
+              ? "bi bi-chevron-bar-right"
+              : "bi bi-layout-sidebar-inset"
+              }`}
           ></i>
         </button>
 
         {/* Navigation Links */}
         <ul
-          className={`${
-            menuOpen ? "block hamburgerMenu active" : "hidden"
-          } md:flex gap-8 items-start md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:shadow-none shadow-md transition-all duration-300 p-4 md:p-0 z-50`}
+          className={`${menuOpen ? "block hamburgerMenu active" : "hidden"
+            } md:flex gap-8 items-start md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:shadow-none shadow-md transition-all duration-300 p-4 md:p-0 z-50`}
         >
           {navLinks.map((link) => (
             <li
@@ -252,9 +249,8 @@ export default function Navbar() {
               {link.dropdown ? (
                 <>
                   <div
-                    className={`font-medium text-base flex items-center gap-1 cursor-pointer hover:text-[#b3765e] transition-colors ${
-                      isActive(link.to) ? "text-[#b7603d]" : "text-[#373533]"
-                    }`}
+                    className={`font-medium text-base flex items-center gap-1 cursor-pointer hover:text-[#b3765e] transition-colors ${isActive(link.to) ? "text-[#b7603d]" : "text-[#373533]"
+                      }`}
                     onClick={() => {
                       if (menuOpen) {
                         setHovered(hovered === link.to ? null : link.to);
@@ -263,21 +259,18 @@ export default function Navbar() {
                   >
                     {link.label}
                     <i
-                      className={`fa-solid ${
-                        hovered === link.to
-                          ? "bi bi-chevron-up"
-                          : "bi bi-chevron-down"
-                      } text-xs`}
+                      className={`fa-solid ${hovered === link.to
+                        ? "bi bi-chevron-up"
+                        : "bi bi-chevron-down"
+                        } text-xs`}
                     ></i>
                   </div>
 
                   {/* Dropdown Menu */}
                   <div
-                    className={`${
-                      hovered === link.to ? "block" : "hidden"
-                    } absolute md:left-0 bg-white rounded-md shadow-lg z-40 transition-all duration-200 flex ${
-                      menuOpen ? "relative w-full mt-3" : "w-[250px]"
-                    }`}
+                    className={`${hovered === link.to ? "block" : "hidden"
+                      } absolute md:left-0 bg-white rounded-md shadow-lg z-40 transition-all duration-200 flex ${menuOpen ? "relative w-full mt-3" : "w-[250px]"
+                      }`}
                   >
                     <div className="p-4 space-y-3">
                       {link.items?.map((item, idx) => (
@@ -305,11 +298,10 @@ export default function Navbar() {
               ) : (
                 <Link
                   to={link.to}
-                  className={`block py-2 font-medium text-base hover:text-[#b3765e] transition-colors ${
-                    location.pathname === link.to
-                      ? "text-[#b7603d]"
-                      : "text-[#373533]"
-                  }`}
+                  className={`block py-2 font-medium text-base hover:text-[#b3765e] transition-colors ${location.pathname === link.to
+                    ? "text-[#b7603d]"
+                    : "text-[#373533]"
+                    }`}
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

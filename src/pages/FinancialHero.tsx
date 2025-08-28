@@ -19,28 +19,33 @@ const FinancialHero: React.FC = () => {
           {/* Left: Text content */}
           <div className="w-full md:w-2/3 text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Financial Checks API
+              Financial Checks API for Smarter Credit Decisions
             </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
+            {/* <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
               Power Smarter Lending with 7Unique Verify’s Financial APIs
-            </h2>
+            </h2> */}
             <p className="text-lg mb-4 text-white">
-              Looking to automate financial verification, reduce manual errors, and enhance decision-making?
+              Automate financial data validation with real-time access to ITR, credit scores, and bank account insights.
+
             </p>
             <p className="mb-4 text-white">
-              7Unique Verify’s Financial Checks API enables you to instantly retrieve and validate financial details like ITR, credit score, bank account info, and more.
+              Built for lenders, NBFCs, and fintechs in India seeking faster onboarding, fraud reduction, and accurate credit assessment—powered by 7uniqueverify.
             </p>
-            <p className="mb-4 text-white">
-              Whether you're a lender, NBFC, insurance company, or fintech startup — our API suite helps assess creditworthiness, minimize fraud risk, and stay compliant.
-            </p>
-            <p className="mb-6 text-white">
-              Integrate in minutes. Make informed decisions. Go beyond legacy processes and unlock faster onboarding, safer underwriting, and seamless customer journeys.
-            </p>
-            <Link to={'/contact-us'}
-              className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
-            >
-              Get Started
-            </Link>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to={"/contact-us"}
+                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+              >
+                Get Started
+              </Link>
+              <Link
+                to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+              >
+                View API Docs
+              </Link>
+            </div>
           </div>
 
           {/* Right: Image */}

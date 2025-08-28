@@ -26,9 +26,8 @@ const OCRCards: React.FC = () => {
             </h2>
           </div>
 
-          <p className="text-xl text-gray-600 max-w-2xl p-4">
-            Transform your document processing with cutting-edge optical
-            character recognition powered by AI
+          <p className="text-xl text-gray-600  p-4">
+            Transform your document processing with advanced AI-based OCR technology — built for speed, precision, and fraud protection in India’s digital-first ecosystem.
           </p>
 
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5">
@@ -49,9 +48,7 @@ const OCRCards: React.FC = () => {
                   Eliminate Manual Errors
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Our AI-powered OCR ensures 99.9% accuracy in document
-                  verification, eliminating human errors with consistent,
-                  automated processing.
+                  Achieve 99.9% accuracy in document extraction and verification. Our AI OCR removes human error and ensures consistent, automated data entry across platforms.
                 </p>
               </div>
             </div>
@@ -73,9 +70,7 @@ const OCRCards: React.FC = () => {
                   KYC Fraud Prevention
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Advanced document analysis detects forged IDs with 95%
-                  accuracy, strengthening your compliance while reducing fraud
-                  risks.
+                  Detect fake or tampered IDs with 95% precision. Strengthen compliance and reduce fraud risks with smart OCR tools trusted by fintechs and banks across Jaipur and India.
                 </p>
               </div>
             </div>
@@ -94,12 +89,11 @@ const OCRCards: React.FC = () => {
               </div>
               <div className="p-6 pt-5">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  Instant Processing
+                  Instant Document Processing
+
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Process documents in real-time with sub-second response times,
-                  accelerating workflows while maintaining enterprise-grade
-                  accuracy.
+                  Process ID cards, forms, and contracts in real time. Get sub-second response speeds with enterprise-grade accuracy — ideal for high-volume digital workflows.
                 </p>
               </div>
             </div>

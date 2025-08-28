@@ -19,25 +19,35 @@ const FraudDetectionHero: React.FC = () => {
           {/* Left: Text content */}
           <div className="w-full md:w-2/3 text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Fraud Detection API
+              Real-Time Fraud Detection API for Smarter Onboarding
+
             </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-              Stop Fraud Before It Starts – Powered by 7Unique Verify
-            </h2>
+
             <p className="text-lg mb-4 text-white">
-              Instantly screen individuals, businesses, and partners using our real-time fraud detection APIs—designed to strengthen risk and compliance operations.
+              Screen users and businesses instantly with access to court records, challans, and behavioral data.
             </p>
             <p className="mb-4 text-white">
-              With access to behavioral data, court records, challans, and anomaly patterns, 7Unique Verify helps you identify red flags before they become liabilities.
+              Prevent fraud, reduce risk, and stay compliant with trusted verification built for platforms across the country.
+
             </p>
             <p className="mb-6 text-white">
-              Trusted by fintechs, NBFCs, HR tech, and platforms across India for safe, compliant, and reliable onboarding.
+              Widely used by fintechs, NBFCs, and digital businesses in growing tech hubs like Jaipur and beyond.
+
             </p>
-             <Link to={'/contact-us'}
-            className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-          >
-            Get Started
-          </Link>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to={"/contact-us"}
+                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+              >
+                Get Started
+              </Link>
+              <Link
+                to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+              >
+                View API Docs
+              </Link>
+            </div>
           </div>
 
           {/* Right: Image */}

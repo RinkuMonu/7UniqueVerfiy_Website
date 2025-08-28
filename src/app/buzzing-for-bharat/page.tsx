@@ -20,9 +20,11 @@ const BuzzingForBharatPage: React.FC = () => {
           <div className="relative z-10">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Buzzing for <span className="text-[#b7603d]">भारत</span>
+
             </h2>
             <p className="text-sm sm:text-base text-gray-600 mt-4 leading-relaxed max-w-2xl mx-auto">
-              Empowering India's digital transformation with innovative verification solutions.
+              Empowering India's digital transformation with real-time, secure verification APIs.
+              From Aadhaar to PAN, DigiLocker to Face Match — we help businesses onboard users faster, safer, and fully compliant.
             </p>
           </div>
 
@@ -57,15 +59,18 @@ const BuzzingForBharatPage: React.FC = () => {
           {/* Feature 1 */}
           <div className="grid md:grid-cols-2 gap-12 items-center bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">Digital India Initiative</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-800">Supporting the Digital India Initiative with Trusted Verification Solutions
+              </h3>
               <p className="text-gray-700 mb-4">
-                7Unique Verify is proud to be part of India's digital transformation journey. We are committed to supporting
-                the Digital India initiative by providing cutting-edge verification and identity solutions that enable
-                secure, efficient, and inclusive digital services for all Indians.
+                7uniqueverify is proud to contribute to India’s digital transformation. As a key enabler of the Digital India initiative, we offer advanced identity verification APIs, KYC solutions, and digital onboarding tools that support secure, fast, and inclusive access to digital services across the country.
+
               </p>
               <p className="text-gray-700">
-                Our technology empowers businesses, government agencies, and financial institutions to build trust in the
-                digital ecosystem while ensuring compliance with Indian regulations and standards.
+                Our technology empowers businesses, fintech platforms, banks, and government agencies to build trust in the digital ecosystem through Aadhaar verification, PAN validation, and GST-based business checks—all while ensuring full compliance with Indian regulations and data protection laws.
+              </p>
+              <p className="text-gray-700">
+                By enabling real-time verification, we help accelerate Digital India’s goals of transparency, efficiency, and universal digital access.
+
               </p>
             </div>
             <div className="flex justify-center relative">
@@ -89,16 +94,15 @@ const BuzzingForBharatPage: React.FC = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">Innovation for Bharat</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-800">Innovation for Bharat
+              </h3>
               <p className="text-gray-700 mb-4">
-                We believe in the power of innovation to solve real-world problems. Our solutions are designed
-                specifically for the Indian market, understanding the unique challenges and opportunities in our diverse
-                nation.
+                At 7uniqueverify, we believe in India-first innovation—developing solutions that solve real-world problems across every corner of Bharat, from rural villages to bustling metros.
+
               </p>
               <p className="text-gray-700">
-                From rural areas to metropolitan cities, our APIs and verification services are built to work seamlessly
-                across India's varied technological landscape, ensuring that digital services reach every corner of
-                Bharat.
+                Our identity verification APIs, KYC solutions, and compliance tools are designed to meet the needs of India’s diverse population, working seamlessly across regional languages, variable internet speeds, and localized tech environments. Whether for financial inclusion, government schemes, or digital onboarding, we ensure that digital services reach every Indian citizen—securely, reliably, and at scale.
+
               </p>
             </div>
           </div>
@@ -106,14 +110,15 @@ const BuzzingForBharatPage: React.FC = () => {
           {/* Feature 3 */}
           <div className="grid md:grid-cols-2 gap-12 items-center bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">Empowering Businesses</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-800">Empowering Businesses Across India
+              </h3>
               <p className="text-gray-700 mb-4">
-                We are committed to empowering Indian businesses of all sizes - from startups to large enterprises - with
-                the tools they need to verify identities, prevent fraud, and ensure compliance in the digital age.
+                At 7uniqueverify, we’re dedicated to empowering Indian businesses—from early-stage startups to large enterprises—with the tools they need to verify identities, prevent fraud, and stay compliant in today’s fast-evolving digital ecosystem.
+
               </p>
               <p className="text-gray-700">
-                Our mission is to make advanced verification technology accessible and affordable for every business in
-                India, contributing to the growth of a secure and trustworthy digital economy.
+                Our mission is to make advanced identity verification solutions, eKYC APIs, and compliance automation tools accessible and affordable for every business in India. By supporting secure onboarding and risk management, we help fuel the growth of a trusted, transparent, and digitally empowered economy.
+
               </p>
             </div>
             <div className="flex justify-center relative">
@@ -135,8 +140,8 @@ const BuzzingForBharatPage: React.FC = () => {
 
           <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Join the Digital Revolution</h3>
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Be part of India's digital transformation. Partner with 7Unique Verify to build secure, efficient, and inclusive
-            digital services that serve all of Bharat.
+            Be a part of India’s digital transformation journey. Partner with 7uniqueverify to create secure, compliant, and inclusive digital services—built to serve every citizen of Bharat.
+
           </p>
           <a
             href="/contact-us"
