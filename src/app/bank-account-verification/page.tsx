@@ -67,28 +67,21 @@ const BankAccountVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                7UniqueVerify – Bank Account Verification API
+                Instant Bank Account Verification Across India
               </h1>
-              <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-                Secure & Instant Bank Account Validation
-              </h2>
               <p className="text-lg mb-4 text-white">
-                Validate bank account details in real time using the trusted
-                7UniqueVerify Bank Account Verification API. Ensure error-free
-                transactions, compliance, and fraud prevention with our advanced
-                verification engine.
+                Use 7UniqueVerify to instantly confirm account details and
+                ownership with real-time validation.
               </p>
               <p className="mb-4 text-white">
-                Our system confirms account number validity, verifies IFSC
-                codes, and cross-checks account holder names across all major
-                Indian banks, offering seamless API integration for your
-                business.
+                Built for lenders, payroll systems, fintech apps, and businesses
+                that demand secure, fast, and compliant payouts.
               </p>
-              <p className="mb-6 text-white">
+              {/*<p className="mb-6 text-white">
                 Ideal for payment gateways, lending platforms, e-commerce
                 stores, salary disbursals, and any process where reliable bank
                 verification is crucial.
-              </p>
+              </p> */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to={"/contact-us"}
@@ -169,7 +162,7 @@ const BankAccountVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaCheckCircle className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    Features of Bank Account Verification
+                    Features of Bank Account Verification API
                   </h2>
                 </div>
                 <div className="p-8">
@@ -217,25 +210,25 @@ const BankAccountVerificationPage: React.FC = () => {
                             icon: (
                               <FaSearch className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Real-time Account Validation",
+                            title: "Real-Time Bank Account Validation",
                             description:
-                              "Instantly verify bank account numbers and IFSC codes across all major Indian banks with real-time validation and accurate results.",
+                              "Quickly validate bank account numbers and IFSC codes with 7uniqueverify’s real-time API, trusted by platforms across Jaipur and India for accurate, instant verification.",
                           },
                           {
                             icon: (
                               <FaUserTie className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Account Holder Name Verification",
+                            title: "Verified Account Holder Name Match",
                             description:
-                              "Verify account holder names to ensure transactions are processed to the correct beneficiary, reducing errors and fraud risks.",
+                              "Cross-check account holder names with bank records to ensure payments go to the correct person, reducing failed transactions and fraud risks.",
                           },
                           {
                             icon: (
                               <FaBuilding className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Multi-bank Coverage",
+                            title: "Wide Coverage Across Indian Banks",
                             description:
-                              "Support for all major banks and financial institutions in India, ensuring comprehensive coverage for your verification needs.",
+                              " Supports all major Indian banks and financial institutions, providing complete coverage for businesses needing reliable bank verification across multiple use cases.",
                           },
                         ].map((feature, index) => (
                           <motion.div
@@ -530,85 +523,54 @@ const BankAccountVerificationPage: React.FC = () => {
  to-transparent"
               ></div>
 
-              <div className="grid gap-8 grid-cols-1 md:grid-cols-5">
+              <div className="grid gap-8 grid-cols-1 md:grid-cols-4">
                 <div className="text-center relative">
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     1
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">User Input</h3>
+                  <h3 className="text-lg font-semibold mb-2">Submit Details</h3>
                   <p className="text-gray-600 text-sm">
-                    User enters account info (A/C No + IFSC or UPI ID)
+                    Enter the customer’s bank account number, IFSC code, and
+                    account holder name into the verification API request.
                   </p>
                 </div>
                 <div className="text-center relative">
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     2
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">API Request</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Real-Time Processing
+                  </h3>
                   <p className="text-gray-600 text-sm">
-                    API sends secure request to banking partner network
+                    7uniqueverify connects securely to bank systems and
+                    processes the request in real time using RBI-compliant
+                    protocols.
                   </p>
                 </div>
                 <div className="text-center relative">
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     3
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Bank Response</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Validation Check
+                  </h3>
                   <p className="text-gray-600 text-sm">
-                    Bank returns account holder name and status
+                    The provided account details are verified against official
+                    bank databases to confirm accuracy and match.
                   </p>
                 </div>
                 <div className="text-center relative">
                   <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                     4
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Name Matching</h3>
-                  <p className="text-gray-600 text-sm">
-                    System checks for name match and validates data
-                  </p>
-                </div>
-                <div className="text-center relative">
-                  <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
-                    5
-                  </div>
                   <h3 className="text-lg font-semibold mb-2">
                     Instant Results
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Response is delivered to user/client in real-time
+                    Get instant verification results, including account status,
+                    name match outcome, and validation success, ready for
+                    business workflows.
                   </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="mt-12 bg-[#f7f1ef]
-
-
-
-
-
-
-
-
- p-6 rounded-lg"
-            >
-              <div className="flex flex-wrap justify-center gap-6 text-sm">
-                <div className="flex items-center space-x-2">
-                  <span className="w-3 h-3 bg-[#d38769] rounded-full"></span>
-                  <span>Supports Webhooks</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
-                  <span>RESTful API</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
-                  <span>JSON Response Format</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span className="w-3 h-3 bg-orange-500 rounded-full"></span>
-                  <span>PCI-DSS Compliant</span>
                 </div>
               </div>
             </div>
@@ -640,22 +602,22 @@ const BankAccountVerificationPage: React.FC = () => {
                       {
                         title: "Reduce Payment Failures",
                         description:
-                          "Verify account details before processing payments to minimize failed transactions.",
+                          " Validate account details before initiating payments to reduce errors and minimise failed      transactions across platforms in Jaipur and India.",
                       },
                       {
-                        title: "Prevent Fraud",
+                        title: "Prevent Fraud & Mismatches",
                         description:
-                          "Detect fraudulent accounts and protect your business from financial losses.",
+                          "Identify incorrect or suspicious accounts early and protect your business from fraud and financial loss with verified data",
                       },
                       {
-                        title: "Improve Customer Experience",
+                        title: " Boost Customer Experience",
                         description:
-                          "Ensure smooth payment processing and reduce customer friction during transactions.",
+                          "Enable fast, error-free transactions and reduce delays — delivering a smoother payment experience to your customers.",
                       },
                       {
-                        title: "Regulatory Compliance",
+                        title: "Ensure Regulatory Compliance",
                         description:
-                          "Meet KYC and AML requirements with verified bank account information.",
+                          "Meet KYC and AML guidelines by verifying bank account information through a secure, RBI-compliant API.",
                       },
                     ].map((benefit, index) => (
                       <div key={index} className="flex items-start space-x-4">
@@ -704,15 +666,13 @@ const BankAccountVerificationPage: React.FC = () => {
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🏦</div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-800">
-                  Fintech / Lending
+                  Banking & Finance
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Verify borrower accounts before loan disbursal to ensure
-                  accurate fund transfers.
+                  Verify customer bank details during loan disbursal, account
+                  opening, and other financial services to ensure safe,
+                  compliant transactions.
                 </p>
-                <div className="text-xs text-[#b7603d]   font-medium">
-                  "Avoid failed loan disbursals!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🛒</div>
@@ -720,12 +680,9 @@ const BankAccountVerificationPage: React.FC = () => {
                   E-commerce
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Validate seller and customer accounts for refunds,
-                  settlements, and marketplace payments.
+                  Authenticate seller and buyer bank accounts for secure
+                  refunds, payouts, and marketplace transactions across India.
                 </p>
-                <div className="text-xs text-[#b7603d]   font-medium">
-                  "Streamline seller settlements!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">💼</div>
@@ -743,56 +700,50 @@ const BankAccountVerificationPage: React.FC = () => {
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🎮</div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-800">
-                  Gaming / Fantasy Apps
+                  Fintech
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Verify user accounts for prize money withdrawals and ensure
-                  legitimate winners.
+                  Seamlessly integrate bank verification into payment apps,
+                  digital wallets, and financial platforms for fast and secure
+                  onboarding.
                 </p>
-                <div className="text-xs text-orange-600 font-medium">
-                  "Secure gaming withdrawals!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🏥</div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-800">
-                  Insurance
+                  Corporate & Enterprises
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Validate policyholder accounts for claim settlements and
-                  premium refunds.
+                  Verify employee and vendor bank details before salary
+                  transfers, incentives, and business payouts — improving
+                  accuracy and trust.
                 </p>
-                <div className="text-xs text-red-600 font-medium">
-                  "Faster claim settlements!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">💳</div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-800">
-                  Digital Wallets
+                  Insurance
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Verify linked bank accounts for wallet top-ups and money
-                  transfers.
+                  Validate policyholder bank accounts to streamline premium
+                  collection and ensure smooth claim settlements.
                 </p>
-                <div className="text-xs text-teal-600 font-medium">
-                  "Secure wallet transactions!"
-                </div>
+              </div>
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🏫</div>
+                <h3 className="text-lg font-semibold mb-2 text-gray-800">
+                  Education
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Confirm student and parent account details for fee payments,
+                  scholarship disbursement, and other financial workflows.
+                </p>
               </div>
             </div>
           </div>
         </section>
         <section
-          className="bg-[#f7f1ef]
-
-
-
-
-
-
-
-
- py-16 px-4 md:px-8 lg:px-20"
+          className="bg-[#f7f1ef] py-16 px-4 md:px-8 lg:px-20"
         >
           <div className="w-full mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">

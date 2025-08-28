@@ -108,6 +108,16 @@ const verificationServices: DropdownItem[] = [
   //   icon: <FaDownload />,
   //   href: "/ckyc-search-&-download",
   // },
+  // {
+  //   title: "ITR Profile Summary",
+  //   icon: <TbTax />,
+  //   href: "/itr-profile-summary",
+  // },
+  {
+    title: "CKYC Search & Download",
+    icon: <FaDownload />,
+    href: "/ckyc-search-&-download",
+  },
   {
     title: "Passport Verification",
     icon: <FaPassport />,

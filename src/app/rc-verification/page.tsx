@@ -5,6 +5,8 @@ import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
 import SEO from "../Helmet/helment";
 import { useContext } from "react";
+import { GiCrimeSceneTape } from "react-icons/gi";
+
 import {
   FaCar,
   FaShieldAlt,
@@ -66,34 +68,34 @@ const RCVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                RC Verification API – by 7Unique Verify
+                Instant RC Verification API – Powered by 7UniqueVerify
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-Time Vehicle Registration Certificate Validation
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly verify vehicle registration details with 7Unique
-                Verify's RC Verification API. Get access to real-time data
-                directly from RTO databases for reliable and official vehicle
-                authentication.
+                Verify vehicle registration details in real-time with direct RTO
+                database access. Check owner name, fuel type, registration
+                status, insurance info, and more — securely and instantly.
               </p>
               <p className="mb-4 text-white">
-                This API delivers accurate vehicle information including owner
-                name, registration status, fuel type, vehicle class, insurance
-                validity, and more — directly sourced from regional transport
-                offices.
+                Built for insurers, NBFCs, used vehicle platforms, and transport
+                businesses across India.
               </p>
-              <p className="mb-6 text-white">
-                Trusted by insurance providers, used car platforms, banks, and
-                fleet operators for fraud prevention, compliance checks, and
-                transparent transactions.
-              </p>
-              <Link
-                to="/contact-us"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -115,7 +117,7 @@ const RCVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    RC Verification Features
+                    Features of RC Verification API
                   </h2>
                 </div>
                 <div className="p-8">
@@ -169,17 +171,25 @@ const RCVerificationPage: React.FC = () => {
                             icon: (
                               <FaUserTie className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Owner & Registration Details",
+                            title: "Complete Vehicle Data from RTO",
                             description:
-                              "Verify owner information, registration date, validity period, and tax payment status for comprehensive vehicle due diligence.",
+                              "Fetch accurate details like registration number, chassis & engine number, make/model, and fuel type — directly from authorised RTO databases.",
                           },
                           {
                             icon: (
                               <FaShieldAlt className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Compliance & Status Check",
+                            title: "Owner & Registration Verification",
                             description:
-                              "Monitor vehicle compliance status, insurance validity, pollution certificate status, and current standing with regulatory authorities.",
+                              "Instantly verify the vehicle owner's name, registration date, validity, and road tax status to ensure transparency and trust.",
+                          },
+                          {
+                            icon: (
+                              <GiCrimeSceneTape className="text-[#b7603d] text-2xl" />
+                            ),
+                            title: "Compliance & Legal Status Check",
+                            description:
+                              "Check insurance validity, PUC (Pollution Under Control) certificate, and the vehicle’s compliance status for secure transactions and due diligence.",
                           },
                         ].map((feature, index) => (
                           <motion.div
@@ -421,7 +431,7 @@ const RCVerificationPage: React.FC = () => {
                     step: "2",
                     title: "RTO Database Query",
                     description:
-                      "Our system connects to official RTO databases and retrieves vehicle information.",
+                      "Provide the vehicle registration number through our secure API interface.",
                     icon: <FaDatabase className="text-[#b7603d] text-4xl" />,
                   },
                   {

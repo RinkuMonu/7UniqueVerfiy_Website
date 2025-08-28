@@ -61,18 +61,17 @@ const MCAVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                MCA Verification API by 7Unique Verify
+                Instant Company Verification API – Powered by 7UniqueVerify
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Ministry of Corporate Affairs Verification – Instantly Reliable
               </h2>
               <p className="text-lg mb-4 text-white">
-                Seamlessly verify company credentials with our MCA Verification
-                API, powered by 7Unique Verify. Gain real-time access to
-                official corporate data from the Ministry of Corporate Affairs
-                (MCA) database.
+                Verify Indian company details in real-time with direct MCA
+                integration. Access CIN, director info, ROC data, and
+                incorporation status — all through one secure API.
               </p>
-              <p className="mb-4 text-white">
+              {/* <p className="mb-4 text-white">
                 Instantly retrieve verified company CIN numbers, director and
                 ROC details, incorporation status, and key compliance
                 insights—all in one secure API.
@@ -80,7 +79,7 @@ const MCAVerificationPage: React.FC = () => {
               <p className="mb-6 text-white">
                 Ideal for B2B onboarding, vendor validation, KYC automation,
                 fintech applications, and legal due diligence.
-              </p>
+              </p> */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to={"/contact-us"}
@@ -116,7 +115,7 @@ const MCAVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    7UniqueVerify MCA API Features
+                   Feature of  MCA API 
                   </h2>
                 </div>
                 <div className="p-8">
