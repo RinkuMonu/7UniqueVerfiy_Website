@@ -64,17 +64,17 @@ const PANVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                PAN Verification API – by 7Unique Verify
+                India’s Best PAN Verification API – Powered by 7UniqueVerify
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-time PAN Card Authentication & Status Check
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly validate PAN card numbers, match names, and verify
-                status with 7Unique Verify's secure and accurate API
-                integration.
+                Instantly verify PAN numbers, match names, and check validity in
+                real-time. Fast, secure & compliant – built for fintechs, NBFCs,
+                and digital KYC platforms.
               </p>
-              <p className="mb-4 text-white">
+              {/* <p className="mb-4 text-white">
                 Our PAN Verification API fetches real-time details from the
                 Income Tax database, ensuring error-free KYC, fraud detection,
                 and regulatory compliance across industries.
@@ -83,7 +83,7 @@ const PANVerificationPage: React.FC = () => {
                 Ideal for fintech platforms, NBFCs, e-commerce apps, loan
                 providers, and any business requiring valid tax identification
                 and customer onboarding.
-              </p>
+              </p> */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to={"/contact-us"}
@@ -119,7 +119,7 @@ const PANVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    Advanced Verification Capabilities
+                    Features of PAN Verification API
                   </h2>
                 </div>
                 <p className="p-4">
@@ -173,7 +173,7 @@ const PANVerificationPage: React.FC = () => {
                             ),
                             title: "Real-time PAN Validation",
                             description:
-                              "Instantly validate PAN numbers against the Income Tax Department database to ensure authenticity and active status of PAN cards.",
+                              " Instantly verify PAN numbers via the Income Tax Department to confirm authenticity and active status.",
                           },
                           {
                             icon: (
@@ -181,7 +181,7 @@ const PANVerificationPage: React.FC = () => {
                             ),
                             title: "Name Verification",
                             description:
-                              "Verify the name associated with PAN numbers to ensure accurate identity matching and prevent fraudulent activities.",
+                              " Match the PAN holder's name to ensure identity accuracy and reduce fraud risk.",
                           },
                           {
                             icon: (
@@ -189,7 +189,7 @@ const PANVerificationPage: React.FC = () => {
                             ),
                             title: "Tax Compliance Check",
                             description:
-                              "Ensure tax compliance by verifying PAN status and validity, helping businesses maintain regulatory compliance and avoid penalties.",
+                              " Verify PAN card status for regulatory needs and ensure tax compliance across services.",
                           },
                         ].map((feature, index) => (
                           <motion.div
@@ -364,7 +364,6 @@ const PANVerificationPage: React.FC = () => {
           </div>
         </section>
         <KnowMore />
-        
 
         {/* How It Works Section */}
         <section className="container mx-auto px-4 py-12 ">
@@ -412,28 +411,28 @@ const PANVerificationPage: React.FC = () => {
                     step: "1",
                     title: "Submit PAN Number",
                     description:
-                      "Enter the PAN number you want to verify through our secure API endpoint.",
+                      " Enter the PAN number to be verified using our secure PAN API integration.",
                     icon: <FaIdCard className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "2",
                     title: "Database Validation",
                     description:
-                      "Our system validates the PAN against official Income Tax Department records.",
+                      " System checks the PAN details with the Income Tax Department in real-time.",
                     icon: <FaDatabase className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "3",
                     title: "Name Matching",
                     description:
-                      "Verify the name associated with the PAN for complete identity validation.",
+                      "Cross-verify the PAN holder’s name for accurate identity validation.",
                     icon: <FaUserTie className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "4",
                     title: "Instant Results",
                     description:
-                      "Receive comprehensive verification results in real-time with detailed status information.",
+                      " Get real-time PAN verification results with complete status insights.",
                     icon: <FaFileAlt className="text-[#b7603d] text-4xl" />,
                   },
                 ].map((item, index) => (
@@ -501,22 +500,22 @@ const PANVerificationPage: React.FC = () => {
                       {
                         title: "Regulatory Compliance",
                         description:
-                          "Ensure compliance with tax regulations and KYC requirements.",
+                          " Meet KYC and tax compliance standards with real-time verification from Income Tax Department records.",
                       },
                       {
                         title: "Fraud Prevention",
                         description:
-                          "Prevent identity fraud and fake PAN submissions.",
+                          " Prevent fake PAN cards, identity theft, and fraudulent onboarding with authentic data validation.",
                       },
                       {
                         title: "Instant Verification",
                         description:
-                          "Real-time verification with immediate results.",
+                          "Get PAN details verified in 2 seconds via our fast and scalable PAN verification API.",
                       },
                       {
                         title: "High Accuracy",
                         description:
-                          "99.9% accuracy with official government database integration.",
+                          " Enjoy 99.9% accuracy using official government data, ideal for fintech, NBFCs, and digital platforms.",
                       },
                     ].map((benefit, index) => (
                       <div key={index} className="flex items-start space-x-4">
@@ -555,7 +554,7 @@ const PANVerificationPage: React.FC = () => {
         </section>
 
         {/* Industry Applications Section */}
-         <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
+        <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
           <div className="w-full mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
               Where Can You Use{" "}
@@ -568,64 +567,49 @@ const PANVerificationPage: React.FC = () => {
                   Banking & Finance
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Verify customer PAN for account opening, loan processing, and
-                  KYC compliance.
+                  Verify PAN for account opening, loan disbursal, and
+                  RBI-compliant KYC processes.
                 </p>
-                <div className="text-xs text-[#b7603d]   font-medium">
-                  "Ensure tax compliance!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">💳</div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-800">
-                  Credit & Lending
+                  E-commerce Platforms
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Validate PAN for credit card applications and loan eligibility
-                  assessments.
+                  Enable smooth seller onboarding, refund processing, and
+                  customer identity checks using PAN validation.
                 </p>
-                <div className="text-xs text-[#b7603d]   font-medium">
-                  "Prevent identity fraud!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">📊</div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-800">
-                  Investment Platforms
+                  Insurance Companies
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Verify investor PAN for mutual funds, stocks, and trading
-                  platforms.
+                  Use PAN to verify policyholders, automate claims settlement,
+                  and meet IRDAI compliance.
                 </p>
-                <div className="text-xs text-[#b7603d] font-medium">
-                  "Regulatory compliance!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🛒</div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-800">
-                  E-commerce
+                  Fintech & NBFCs
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Verify seller and high-value customer PAN for marketplace
-                  compliance.
+                  Ensure secure digital onboarding, wallet creation, and
+                  peer-to-peer payment validation.
                 </p>
-                <div className="text-xs text-orange-600 font-medium">
-                  "Secure transactions!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🏥</div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-800">
-                  Insurance
+                  Real Estate & Housing
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Validate policyholder PAN for insurance applications and claim
-                  processing.
+                  Authenticate property buyers/sellers and stay compliant with
+                  property transaction regulations.
                 </p>
-                <div className="text-xs text-red-600 font-medium">
-                  "Faster claim processing!"
-                </div>
               </div>
               <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🏢</div>
@@ -635,15 +619,10 @@ const PANVerificationPage: React.FC = () => {
                 <p className="text-gray-600 text-sm mb-3">
                   Verify employee PAN for payroll processing and tax compliance.
                 </p>
-                <div className="text-xs text-teal-600 font-medium">
-                  "Streamline payroll!"
-                </div>
               </div>
             </div>
           </div>
         </section>
-
-        
 
         {/* API Integration Section */}
         <section className="container mx-auto px-4 py-12">
@@ -681,17 +660,16 @@ const PANVerificationPage: React.FC = () => {
                       Simple Integration
                     </h3>
                     <p className="text-gray-600">
-                      Seamlessly integrate the 7Unique Verify PAN Verification
-                      API into your platform with clear documentation and
-                      developer-first tools. Designed for scalability and ease
-                      of use.
+                      Easily integrate 7UniqueVerify’s PAN Verification API with
+                      your platform using developer-friendly tools and clear
+                      documentation. Built for scalability and fast deployment
                     </p>
                     <div className="mt-4 space-y-2">
                       {[
-                        "RESTful API with secure JSON responses",
-                        "Supports custom webhooks & multiple output formats",
-                        "Complete SDKs and API documentation",
-                        "Dedicated sandbox environment",
+                        "RESTful PAN Verification API with secure JSON responses",
+                        "Supports custom webhooks and multiple response formats",
+                        "Complete SDKs and developer documentation",
+                        "Access to sandbox environment for testing",
                       ].map((item, idx) => (
                         <div key={idx} className="flex items-start">
                           <div className="flex-shrink-0 mt-1">

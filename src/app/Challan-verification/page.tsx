@@ -64,29 +64,39 @@ const ChallanVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Challan Verification API – by 7Unique Verify
+                Instant Traffic Challan Verification API – Powered by
+                7UniqueVerify
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-time Challan Status Check
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly verify traffic challans, match details, and validate
-                challan status with 7Unique Verify's secure API.
+                Check traffic challan status in real-time with direct RTO
+                database access. Get offense details, vehicle info, and payment
+                status instantly — perfect for insurance, fintech, legal, and
+                transport platforms.
               </p>
               <p className="mb-4 text-white">
-                Our Challan Verification API connects with official databases to
-                provide reliable KYC, reduce fraud, and ensure compliance.
+                Fast | Accurate | Official Data Integration
               </p>
-              <p className="mb-6 text-white">
+              {/* <p className="mb-6 text-white">
                 Perfect for fintech apps, insurance firms, legal service
                 providers, and compliance-driven industries.
-              </p>
-              <Link
-                to="/contact-us"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              </p> */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to={"/contact-us"}
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -108,7 +118,7 @@ const ChallanVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    Advanced Verification Capabilities
+                    Features of Challan Verification API
                   </h2>
                 </div>
                 <p className="p-4">
@@ -161,23 +171,23 @@ const ChallanVerificationPage: React.FC = () => {
                             ),
                             title: "Real-time Challan Validation",
                             description:
-                              "Instantly validate PAN numbers against the Income Tax Department database to ensure authenticity and active status of PAN cards.",
+                              " Instantly verify traffic challans against official RTO and traffic police databases. Get accurate information including challan number, vehicle details, offense type, and payment status.",
                           },
                           {
                             icon: (
                               <FaDatabase className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Status Check",
+                            title: "Challan Status Check",
                             description:
-                              "Verify the name associated with PAN numbers to ensure accurate identity matching and prevent fraudulent activities.",
+                              " Fetch current challan status (paid/unpaid), issue date, penalty amount, and issuing authority to ensure transparent and up-to-date compliance reporting.",
                           },
                           {
                             icon: (
                               <FaLock className="text-[#b7603d] text-2xl" />
                             ),
-                            title: "Prevent Duplicate Challans",
+                            title: "Duplicate & Fraud Detection",
                             description:
-                              "Ensure tax compliance by verifying PAN status and validity, helping businesses maintain regulatory compliance and avoid penalties.",
+                              " Prevent fake or duplicate challan records by validating each entry with government sources. Improve operational trust, reduce legal risk, and strengthen fraud control.",
                           },
                         ].map((feature, index) => (
                           <motion.div
@@ -282,7 +292,7 @@ const ChallanVerificationPage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800">
-                     Advance Detailed Verification
+                      Advance Detailed Verification
                     </h3>
                     <span className="text-sm text-[#b7603d]   font-medium">
                       Comprehensive Check
@@ -386,30 +396,30 @@ const ChallanVerificationPage: React.FC = () => {
                 {[
                   {
                     step: "1",
-                    title: "Submit Challan Number",
+                    title: "Submit Challan or Vehicle Number",
                     description:
-                      "Enter the PAN number you want to verify through our secure API endpoint.",
+                      " Enter the challan number or vehicle registration number through 7UniqueVerify’s secure API for verification.",
                     icon: <FaIdCard className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "2",
-                    title: "Database Validation",
+                    title: "Connect with Official Database",
                     description:
-                      "Our system validates the PAN against official Income Tax Department records.",
+                      " Our system instantly connects with authorized traffic police and RTO databases to fetch challan details.",
                     icon: <FaDatabase className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "3",
-                    title: "Matching",
+                    title: "Validate Offense & Status",
                     description:
-                      "Verify the name associated with the PAN for complete identity validation.",
+                      "Match offense type, penalty amount, issue date, and check if the challan is paid or unpaid for full transparency.",
                     icon: <FaUserTie className="text-[#b7603d] text-4xl" />,
                   },
                   {
                     step: "4",
-                    title: "Instant Results",
+                    title: "Get Real-Time Results",
                     description:
-                      "Receive comprehensive verification results in real-time with detailed status information.",
+                      " Receive verified challan data with real-time status updates, ensuring fast and reliable compliance.",
                     icon: <FaFileAlt className="text-[#b7603d] text-4xl" />,
                   },
                 ].map((item, index) => (
@@ -477,22 +487,22 @@ const ChallanVerificationPage: React.FC = () => {
                       {
                         title: "Regulatory Compliance",
                         description:
-                          "Ensure compliance with tax regulations and KYC requirements.",
+                          "Stay compliant with traffic laws and enforcement rules using verified challan data from official RTO and traffic police records.",
                       },
                       {
                         title: "Fraud Prevention",
                         description:
-                          "Prevent identity fraud and fake PAN submissions.",
+                          " Eliminate fake or tampered challan entries, reduce disputes, and improve trust in customer or vehicle onboarding processes.",
                       },
                       {
-                        title: "Instant Verification",
+                        title: " Real-Time Challan Verification",
                         description:
-                          "Real-time verification with immediate results.",
+                          "Instantly validate pending or cleared traffic challans with accurate, up-to-date status.",
                       },
                       {
-                        title: "High Accuracy",
+                        title: "Accurate & Reliable Data",
                         description:
-                          "99.9% accuracy with official government database integration.",
+                          " Get 99.9% accuracy with government-authorized sources, ensuring trustworthy vehicle and challan validation.",
                       },
                     ].map((benefit, index) => (
                       <div key={index} className="flex items-start space-x-4">
@@ -546,12 +556,12 @@ const ChallanVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaUsers className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    PAN Verification Across Industries
+                    Challan Verification API – Use Across Industries
                   </h2>
                 </div>
                 <p className="p-4 text-start">
-                  Trusted by businesses across sectors for secure identity
-                  verification
+                  Trusted by high-compliance industries for real-time traffic
+                  challan checks and legal compliance verification.
                 </p>
                 <div className="w-24 h-1.5 bg-gradient-to-r from-[#b7603d] to-[#d88a6e] mx-auto rounded-full" />
               </motion.div>
@@ -565,44 +575,44 @@ const ChallanVerificationPage: React.FC = () => {
               >
                 {[
                   {
-                    name: "Banking & Finance",
+                    name: " Logistics & Fleet Management",
                     icon: <FaUniversity className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Account opening, loan processing, and KYC compliance for financial institutions.",
+                      " Verify vehicle challans to reduce risk, manage liabilities, and maintain fleet compliance across regions.",
                   },
                   {
-                    name: "E-commerce",
+                    name: "Vehicle Rental & Ride-Hailing",
                     icon: <FaHandshake className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Seller verification and customer onboarding for online marketplaces.",
+                      " Ensure drivers and vehicles have no pending challans before onboarding for platforms like cab services or rental.",
                   },
                   {
-                    name: "Insurance",
+                    name: "Insurance Providers",
                     icon: (
                       <FaBriefcaseMedical className="text-[#b7603d] text-4xl" />
                     ),
                     description:
-                      "Policy holder verification and claims processing automation.",
+                      " Use challan data during policy issuance or claims assessment to analyze driver behavior and risk profiling.",
                   },
                   {
-                    name: "Fintech",
+                    name: " Banking & Auto Finance",
                     icon: <FaChartLine className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Digital wallet setup and peer-to-peer payment verification.",
+                      " Assess challan history for auto loan underwriting, repossession decisions, and vehicle ownership verification.",
                   },
                   {
-                    name: "Real Estate",
+                    name: "Legal & Compliance Services",
                     icon: <FaHome className="text-[#b7603d] text-4xl" />,
                     description:
-                      "Property buyer verification and transaction compliance.",
+                      "Help clients verify vehicle/legal records through authenticated challan data for legal documentation or background checks.",
                   },
                   {
-                    name: "Government",
+                    name: " Used Car Marketplaces",
                     icon: (
                       <FaBalanceScale className="text-[#b7603d] text-4xl" />
                     ),
                     description:
-                      "Citizen service delivery and subsidy distribution verification.",
+                      "Verify vehicle registration and challan status to provide buyers with transparent, clean vehicle histories.",
                   },
                 ].map((service, index) => (
                   <motion.div
@@ -681,17 +691,18 @@ const ChallanVerificationPage: React.FC = () => {
                       Simple Integration
                     </h3>
                     <p className="text-gray-600">
-                      Seamlessly integrate the 7Unique Verify PAN Verification
-                      API into your platform with clear documentation and
-                      developer-first tools. Designed for scalability and ease
-                      of use.
+                      Integrate the 7UniqueVerify Challan Verification API
+                      effortlessly into your platform with developer-first tools
+                      and complete documentation. Built for real-time challan
+                      validation and seamless scalability.
                     </p>
                     <div className="mt-4 space-y-2">
                       {[
-                        "RESTful API with secure JSON responses",
-                        "Supports custom webhooks & multiple output formats",
-                        "Complete SDKs and API documentation",
-                        "Dedicated sandbox environment",
+                        " RESTful API with secure JSON responses",
+                        "  Real-time traffic challan lookup from government sources",
+                        "  Supports custom webhooks & multiple output formats",
+                        "  Full SDKs and API documentation for quick integration",
+                        "  Sandbox environment for safe testing and validation",
                       ].map((item, idx) => (
                         <div key={idx} className="flex items-start">
                           <div className="flex-shrink-0 mt-1">

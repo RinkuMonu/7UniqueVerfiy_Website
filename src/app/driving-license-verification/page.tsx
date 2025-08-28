@@ -83,73 +83,73 @@ const DrivingLicenseVerificationPage: React.FC = () => {
       icon: <FaSearch className="text-[#b7603d] text-2xl" />,
       title: "Real-Time DL Verification",
       description:
-        "Instantly validate Indian driving license numbers by connecting with authorized RTO databases. Prevent fraud and ensure active, up-to-date license status.",
+        "uickly verify Indian Driving License numbers across all states by connecting directly with authorized RTO databases. Ensure license is active, valid, and authentic.",
     },
     {
       icon: <FaDatabase className="text-[#b7603d] text-2xl" />,
-      title: "Detailed Driver Profile",
+      title: "Complete Driver Information",
       description:
-        "Fetch complete driver information including name, date of birth, license type, issue/expiry dates, and any RTO remarks or restrictions.",
+        "Retrieve verified driver details like name, date of birth, license type, issue/expiry dates, and any remarks such as suspensions or disqualifications.",
     },
     {
       icon: <FaLock className="text-[#b7603d] text-2xl" />,
-      title: "Compliance & Safety Check",
+      title: "RTO & Transport Compliance",
       description:
-        "Ensure your business is aligned with transport regulatory standards. Ideal for companies in logistics, mobility, insurance, and financial services.",
+        "Ensure compliance with Indian transport laws. Ideal for logistics, fleet services, car rentals, insurance, and any industry that requires verified driver identity.",
     },
   ];
 
   const steps: StepItem[] = [
     {
       step: "1",
-      title: "Submit DL Details",
+      title: "Enter DL Information",
       description:
-        "Enter the driving license number along with name and date of birth on the 7Unique Verify platform.",
+        "Input the driving license number, along with name and date of birth on the 7UniqueVerify DL Verification API.",
       icon: <FaIdCard className="text-[#b7603d] text-4xl" />,
     },
     {
       step: "2",
-      title: "Verify via RTO Databases",
+      title: "Connect to RTO Databases",
       description:
-        "7Unique Verify connects securely with authorized RTO sources to validate the submitted license details.",
+        "Our system securely checks official RTO records across India to authenticate the license data.",
       icon: <FaDatabase className="text-[#b7603d] text-4xl" />,
     },
     {
       step: "3",
-      title: "Status Check & Validation",
+      title: "Verify Status & Details",
       description:
-        "Automatically checks the license's validity, issuance data, and any existing endorsements or blocks.",
+        "The API validates license status, type, issuance & expiry dates, and detects any disqualifications or flags.",
       icon: <FaSearch className="text-[#b7603d] text-4xl" />,
     },
     {
       step: "4",
-      title: "Get Real-Time Report",
+      title: " Instant DL Verification Report",
       description:
-        "Instantly receive a verified status report from 7Unique Verify with complete driver and license details.",
+        "Get a real-time, structured report from 7UniqueVerify with verified driver details and active license information.",
       icon: <FaFileAlt className="text-[#b7603d] text-4xl" />,
     },
   ];
 
   const benefits: BenefitItem[] = [
     {
-      title: "Enhanced Road Safety",
+      title: "Real-Time DL Verification",
       description:
-        "7Unique Verify helps ensure that only certified drivers are allowed, reducing accidents and liabilities.",
+        "nstantly check Driving License validity across India with direct RTO integration.",
     },
     {
-      title: "Regulatory Compliance",
+      title: "Prevent Fake Licenses",
       description:
-        "Stay compliant with transport and insurance rules using verified license data through 7Unique Verify.",
+        "Stop fraud by detecting expired, blocked, or invalid DLs in seconds.",
     },
     {
-      title: "Fraud Prevention",
+      title: "Fast & Secure Checks",
       description:
-        "Avoid fraudulent or expired licenses by verifying every detail via 7Unique Verify's secure system.",
+        "Quick verification with bank-grade security using 7UniqueVerify’s DL API.",
     },
     {
-      title: "Real-time Validation",
+      title: "Transport Compliance",
       description:
-        "Instantly fetch valid status, expiry, and issuance details for faster onboarding and verification.",
+        "Meet regulatory standards with verified driver license data.",
     },
   ];
 
@@ -158,37 +158,37 @@ const DrivingLicenseVerificationPage: React.FC = () => {
       name: "Ride-sharing Platforms",
       icon: <FaCar className="text-[#b7603d] text-4xl" />,
       description:
-        "Driver onboarding and continuous verification for Uber, Ola, and other ride-sharing services.",
+        "Onboard and verify drivers for services like Ola, Uber, and Rapido with real-time Driving  License API checks.",
     },
     {
       name: "Vehicle Rental Services",
       icon: <FaHandshake className="text-[#b7603d] text-4xl" />,
       description:
-        "Customer verification for car rentals, bike rentals, and commercial vehicle leasing.",
+        "Validate customer DLs for car, bike, and commercial vehicle rentals to prevent fraud.",
     },
     {
       name: "Insurance Companies",
       icon: <FaBriefcaseMedical className="text-[#b7603d] text-4xl" />,
       description:
-        "Policy underwriting and claims processing with verified driver credentials.",
+        "Ensure valid DL data for policy issuance, risk evaluation, and smooth claims processing.",
     },
     {
       name: "Logistics & Delivery",
       icon: <FaTruck className="text-[#b7603d] text-4xl" />,
       description:
-        "Driver verification for delivery services, trucking companies, and logistics providers.",
+        "Verify drivers' licenses for last-mile delivery, courier, and interstate logistics operations.",
     },
     {
       name: "Fleet Management",
       icon: <FaUsers className="text-[#b7603d] text-4xl" />,
       description:
-        "Corporate fleet driver verification and compliance monitoring for businesses.",
+        " Monitor and verify corporate drivers’ licenses for compliance and safety management.",
     },
     {
       name: "Employment Verification",
       icon: <FaUserTie className="text-[#b7603d] text-4xl" />,
       description:
-        "Background checks for jobs requiring driving, including delivery and transportation roles.",
+        "Verify DLs during hiring for driving roles in transport, delivery, and service-based jobs.",
     },
   ];
 
@@ -204,32 +204,40 @@ const DrivingLicenseVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Driving License Verification API
+                Driving License Verification API for Fast & Compliant Checks
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-time DL Authentication by 7Unique Verify
               </h2>
               <p className="text-lg mb-4 text-white">
-                Instantly verify driving license details across India with
-                7Unique Verify's secure and scalable API. Validate genuine
-                drivers and stay compliant with transport norms effortlessly.
+                Verify Indian driving license details instantly with
+                7UniqueVerify’s secure, RTO-compliant API. Validate DL number,
+                holder name, issue/expiry date, and license class — directly
+                matched against official RTO records.
               </p>
               <p className="mb-4 text-white">
-                Our DL API cross-verifies license numbers with official RTO
-                data, checks license validity, class, holder info, and flags any
-                disqualifications or restrictions.
+                Ideal for fleet operators, rentals, logistics, insurance &
+                ride-hailing platforms across India.
               </p>
-              <p className="mb-6 text-white">
+              {/* <p className="mb-6 text-white">
                 Ideal for fleet operators, ride-hailing apps, logistics, vehicle
                 rentals, and any business needing trusted driver identity
                 verification.
-              </p>
-              <Link
-                to="/contact-us"
-                className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
-              >
-                Get Started
-              </Link>
+              </p> */}
+              <div className="flex  gap-4">
+                <Link
+                  to="/contact-us"
+                  className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                  className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                >
+                  View API Docs
+                </Link>
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
@@ -251,7 +259,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
                     <div className="rounded-full bg-[#b7603d]/10 p-2">
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
-                    Powerful Driving License Verification Features
+                    Features of Driving License Verification API
                   </h2>
                 </div>
                 <p className="p-4">
