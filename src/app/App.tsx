@@ -94,6 +94,13 @@ import { DigilockerApi } from "./Digilocker/page";
 import ChallanVerificationPage from "./Challan-verification/page";
 import { CreditScoreAPI } from "./Credit Score API/page";
 import { ITRProfileSummary } from "./ITR Profile Summary/page";
+import CourtCaseCheck from "./court-case-check/page";
+import RationCardVerification from "./Ration-Card-Verification/page";
+import MobileToFil from "./Mobile-to-fill/page";
+import LandVerification from "./Land-Verification/page";
+import DoctorVerification from "./Doctor-verification/page";
+import NurseID from "./NurseID/page";
+import TheESignVerification from "./The eSign Verification/page";
 
 function Placeholder({ name }: { name: string }) {
   return (
@@ -424,6 +431,16 @@ export default function App() {
             path="/telecom-operator-fetch-page-api"
             element={<TelecomOperatorFetchPageAPI />}
           />
+          <Route path="/court-case-check" element={<CourtCaseCheck />} />
+          <Route
+            path="/ration-card-verification"
+            element={<RationCardVerification />}
+          />
+          <Route path="/mobile-to-fill" element={<MobileToFil />} />
+          <Route path="/land-verification" element={<LandVerification />} />
+          <Route path="/doctor-verification" element={<DoctorVerification />} />
+          <Route path="/nurse-id-verification" element={<NurseID />} />
+          <Route path="/esign-verification" element={<TheESignVerification />} />
 
           <Route path="*" element={<Placeholder name="404 Not Found" />} />
         </Routes>

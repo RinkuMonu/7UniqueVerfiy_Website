@@ -91,6 +91,7 @@ export default function Footer() {
               "MCA Verification",
               // "Mobile Verification API",
               "Challan verification",
+              "Court Case Check",
             ].map((item, index) => {
               const path = `/${item.toLowerCase().replace(/ /g, "-")}`;
               return (
@@ -128,6 +129,14 @@ export default function Footer() {
               "Name Match API",
               // "ITR Profile Summary",
               // "Credit Score API",
+
+              // "Digilocker",
+              "Ration Card Verification",
+              "Mobile To Fill",
+              "Land Verification",
+              "Doctor Verification",
+              // "Nurse ID Verification",
+              "eSign Verification",
               "Digilocker",
             ].map((item, index) => {
               const path = `/${item.toLowerCase().replace(/ /g, "-")}`;
@@ -160,7 +169,10 @@ export default function Footer() {
               { name: "Terms and Conditions", path: "/terms-and-conditions" },
               { name: "Privacy Policy", path: "/privacy-policy" },
               { name: "Refund and Cancellation", path: "/refund-cancellation" },
-              { name: "Documentation", path: "https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/" },
+              {
+                name: "Documentation",
+                path: "https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/",
+              },
               { name: "Blog", path: "/blog" },
               { name: "Buzzing for भारत", path: "/buzzing-for-bharat" },
             ].map((item, index) => (
