@@ -10,21 +10,21 @@ const FraudFeatures: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
   const features = [
     {
-      title: "Reliable Documentation",
+      title: "Reliable, Audit-Ready Documentation",
       description:
-        "With 7Unique Verify's fraud indicators, keep your user, partner, or vendor records verified and consistently updated. From onboarding to audits, maintain compliance with dependable and tamper-free documentation.",
+        "Maintain verified, tamper-proof records for users, vendors, and partners. From onboarding to compliance checks, our fraud indicators ensure your documentation stays secure and up to date.",
       icon: <FiFileText className="text-[#b7603d] text-2xl" />,
     },
     {
-      title: "Built-in Financial Safety",
+      title: "Real-Time Financial Risk Prevention",
       description:
-        "Stop fraud before it happens. Use 7Unique Verify's APIs to flag suspicious user data and prevent risky transactions in real-time—ensuring your platform stays secure and financially protected.",
+        "Stop fraud before it impacts your business. Our APIs detect high-risk user behavior and flag suspicious transactions instantly—ensuring ongoing financial safety and trust.",
       icon: <FiShield className="text-[#b7603d] text-2xl" />,
     },
     {
-      title: "Plug & Play Integration",
+      title: "Plug & Play API Integration",
       description:
-        "Our APIs are developer-friendly and quick to integrate. Whether you use legacy systems or new tech stacks, 7Unique Verify fits right in—without interrupting your workflow.",
+        "Designed for easy adoption, our developer-friendly APIs integrate quickly with both legacy systems and modern tech stacks—without disrupting your operations or timelines.",
       icon: <FiZap className="text-[#b7603d] text-2xl" />,
     },
   ];
@@ -59,6 +59,7 @@ const FraudFeatures: React.FC = () => {
                     </svg>
                   </div>
                   Secure Your Business with Advanced Protection
+
                 </h2>
               </div>
 

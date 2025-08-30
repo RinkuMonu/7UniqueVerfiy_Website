@@ -12,26 +12,34 @@ const VerificationHero: React.FC = () => {
                 {/* Left: Text content */}
                 <div className="w-full md:w-2/3 text-white">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                        Employee Background Verification API
+                        Employee Background Verification API for Smarter Hiring
+
                     </h1>
-                    <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-                        Hire Trusted Candidates with Confidence — Power Your HR with Seamless Verification
-                    </h2>
                     <p className="text-lg mb-4 text-white">
-                        Step into the future of secure hiring with our advanced background verification API. As a trusted BGV API provider, we empower businesses to screen employees quickly, accurately, and with complete reliability.
+                        Streamline hiring with real-time employee screening and background checks — trusted by HR teams from Jaipur to nationwide.
+
                     </p>
                     <p className="mb-4 text-white">
-                        In today’s competitive landscape, hiring the wrong candidate can be costly. Our Employee Background Check API ensures you make smart hiring decisions by delivering real-time, verified employment and identity data.
+                        Verify employment history, identity, and credentials instantly with our secure BGV API.
                     </p>
                     <p className="mb-6 text-white">
-                        Ready to take control of your hiring process? Our solution offers unmatched accuracy, compliance, and automation — allowing HR teams to conduct thorough background verifications with minimal effort. Build a trusted team, faster and smarter.
+                        Reduce hiring risks, ensure compliance, and build a reliable workforce with 7uniqueverify.
                     </p>
-                    <Link to={'/contact-us'}
-                        className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
-                    >
-                        Get Started
-                    </Link>
-                    
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <Link
+                            to={"/contact-us"}
+                            className="inline-block bg-[#b7603d] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#d19983] transition-colors text-center"
+                        >
+                            Get Started
+                        </Link>
+                        <Link
+                            to="https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/"
+                            className="inline-block bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#b7603d] transition-colors text-center"
+                        >
+                            View API Docs
+                        </Link>
+                    </div>
+
 
                 </div>
 

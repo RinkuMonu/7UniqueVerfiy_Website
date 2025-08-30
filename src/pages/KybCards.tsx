@@ -25,12 +25,14 @@ const KybCards: React.FC = () => {
                 </svg>
               </div>
               <span className="relative z-10">
-                Unlocking the Benefits of{" "}
+                {/* Unlocking the Benefits of{" "}
                 <span className="relative whitespace-nowrap">
                   <span className="relative z-10">7Unique Verify's</span>
                   <span className="absolute bottom-0 left-0 w-full h-3 bg-[#f0d9d0] -z-1"></span>
                 </span>{" "}
-                Business Identity API
+                Business Identity API */}
+                Unlocking the Benefits of  Business Identity API
+
               </span>
             </h2>
           </div>
@@ -50,12 +52,10 @@ const KybCards: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center">
               <span className="w-4 h-4 bg-[#b7603d] rounded-full mr-3"></span>
-              Streamlined Onboarding
+              Streamlined Onboarding Experience
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Our KYB API simplifies business verification with smooth
-              integration and frictionless onboarding. Ensures high accuracy
-              with minimal manual input, reducing delays and improving trust.
+              Our KYB API integrates smoothly into your system, enabling fast, frictionless onboarding with minimal manual input. Reduce delays and build trust from the first step.
             </p>
             {/* <div className="mt-4 pt-4 border-t border-gray-100 flex justify-end">
               <span className="text-sm font-medium text-[#b7603d]">Learn more →</span>
@@ -79,9 +79,8 @@ const KybCards: React.FC = () => {
               Proactive Fraud Prevention
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Detect shell entities and fake registrations before onboarding.
-              Flags inconsistencies using real-time government data to reduce
-              risk with minimal effort.
+              Detect shell companies, fake registrations, and inconsistent data before onboarding. 7uniqueverify uses live GST, MCA, and Udyam data to flag risk instantly.
+
             </p>
             <div className="mt-6">
               <Link to={"/contact-us"}>
@@ -103,16 +102,15 @@ const KybCards: React.FC = () => {
             </div>
             <div className="flex justify-between items-start mb-4">
               <h3 className="text-xl font-bold text-gray-800">
-                Verified Accuracy
+                Reliable Business Verification You Can Trust
+
               </h3>
               <span className="bg-[#b7603d] text-white text-sm px-2 py-1 rounded">
                 99.8%
               </span>
             </div>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Matched against official government sources (GST, MCA, Udyam) for
-              validated, error-free results you can trust for confident
-              decision-making.
+              Achieve 99.8% match accuracy with official databases. Real-time checks ensure legal compliance, audit readiness, and confident decision-making across fintech, BFSI, and enterprise platforms
             </p>
             <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center">

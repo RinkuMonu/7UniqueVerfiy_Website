@@ -7,21 +7,21 @@ import { motion } from "framer-motion";
 const OCRFeatures: React.FC = () => {
   const features = [
     {
-      title: "Effortless to Use",
+      title: "Effortless to Use, Built for India’s Digital Needs",
       description:
-        "7Unique Verify's AI-based OCR tool is designed for simplicity. Whether you're automating KYC or onboarding users, it integrates smoothly without complicating your workflow.",
+        "7uniqueverify’s AI OCR is simple to deploy. Whether you're automating KYC, onboarding users, or verifying documents, it fits into your workflow without extra complexity.",
       icon: <FaRegSmileWink className="text-[#b7603d] text-2xl" />,
     },
     {
-      title: "Seamless Integration",
+      title: "Seamless Integration, Faster Results",
       description:
-        "Easily plug into your current system or app. Our OCR API supports fast integration, helping businesses speed up operations and reduce manual errors instantly.",
+        "Plug into your app or backend in minutes. Our OCR API helps Jaipur startups and Indian enterprises reduce manual tasks and speed up operations with real-time accuracy.",
       icon: <MdIntegrationInstructions className="text-[#b7603d] text-2xl" />,
     },
     {
-      title: "Real-Time Document Processing",
+      title: "Real-Time Document Automation",
       description:
-        "Get instant results with 7Unique Verify's OCR API. Upload documents, extract data, and verify information in seconds — all with industry-grade accuracy.",
+        "Upload and process documents instantly. 7uniqueverify extracts and verifies critical data in seconds — combining precision, speed, and industry-grade reliability.",
       icon: <AiOutlineThunderbolt className="text-[#b7603d] text-2xl" />,
     },
   ];
@@ -69,7 +69,7 @@ const OCRFeatures: React.FC = () => {
                     />
                   </svg>
                 </div>
-                Unlocking the Power of AI-Driven OCR with 7Unique Verify
+                Unlocking the Power of AI-Driven OCR with 7uniqueverify
               </h2>
             </div>
             <motion.div

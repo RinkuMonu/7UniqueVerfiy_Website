@@ -6,24 +6,24 @@ const KycCards: React.FC = () => {
   const kycFeatures = [
     {
       image: "/img/KYC/KYC2.png",
-      alt: "Simplifying Identity Verification",
-      title: "Simplifying Identity Verification",
+      alt: "Simplified Identity Verification",
+      title: "Simplified Identity Verification",
       description:
-        "Our KYC APIs are designed for fast integration and high accuracy—making it easy for developers and businesses to validate users in real time with a seamless experience.",
+        "Our KYC APIs are built for easy integration and real-time validation. Whether you're a developer or enterprise, enjoy a smooth user experience with high-accuracy results.",
     },
     {
       image: "/img/KYC/KYC3.png",
-      alt: "Fraud Prevention",
-      title: "Strengthen Fraud Prevention",
+      alt: "Stronger Fraud Prevention",
+      title: "Stronger Fraud Prevention",
       description:
-        "Built to combat fake identities, our KYC suite empowers banks, fintechs, and marketplaces to detect fraud before it enters the system—boosting trust and compliance.",
+        "Detect and block fake identities before they affect your system. 7uniqueverify empowers banks, fintechs, and marketplaces to stay secure and compliant from the start.",
     },
     {
       image: "/img/KYC/KYC4.png",
-      alt: "Reliable KYC Verification",
-      title: "Accurate and Compliant KYC",
+      alt: "Accurate, Compliant KYC Checks",
+      title: "Accurate, Compliant KYC Checks",
       description:
-        "Our KYC APIs validate user identity by matching official records—ensuring the process is accurate, compliant with Indian norms, and recognized for legal onboarding.",
+        "Match user details against official Indian government records to ensure accurate identity verification—fully compliant with digital onboarding norms and legal standards.",
     },
   ]
 
@@ -47,7 +47,8 @@ const KycCards: React.FC = () => {
                     />
                   </svg>
                 </div>
-                7UniqueVerify's KYC APIs: The Smarter Way to Authenticate Identities
+                KYC APIs: The Smarter Way to Authenticate Identities
+
               </h2>
             </div>
             <div className="p-8">
@@ -56,9 +57,8 @@ const KycCards: React.FC = () => {
                 {kycFeatures.map((feature, index) => (
                   <div
                     key={index}
-                    className={`bg-white p-6 rounded-lg shadow-xl text-center transition duration-300 hover:shadow-2xl border border-gray-100 hover:border-[#b7603d]/30 ${
-                      index === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""
-                    }`}
+                    className={`bg-white p-6 rounded-lg shadow-xl text-center transition duration-300 hover:shadow-2xl border border-gray-100 hover:border-[#b7603d]/30 ${index === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""
+                      }`}
                   >
                     <div className="relative mb-4">
                       <img

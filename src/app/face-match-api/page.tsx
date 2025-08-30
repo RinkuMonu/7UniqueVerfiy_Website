@@ -20,25 +20,20 @@ const FaceMatchAPIPage: React.FC = () => {
           <div className="container mx-auto  flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                7Unique Verify – Face Match API
+                AI-Based Face Match API for Real-Time Identity Verification
+
               </h1>
-              <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-                Real-time Facial Recognition & Identity Match
-              </h2>
+
               <p className="text-lg mb-4 text-white">
-                Verify identities with precision using 7Unique Verify’s Face
-                Match API. Match faces in real-time using AI-powered facial
-                feature detection and comparison technology.
+                Match selfies with ID photos using advanced facial recognition and similarity scoring.
+                Ensure secure, contactless KYC and onboarding with liveness detection and accurate face comparison.
+
               </p>
               <p className="mb-4 text-white">
-                This API supports live face detection, selfie vs ID photo
-                comparison, and similarity scoring – ensuring secure and
-                contactless identity verification.
+              Ideal for fintech, HR tech, and digital access control systems.
+
               </p>
-              <p className="mb-6 text-white">
-                Perfect for KYC, user onboarding, attendance systems, fintech
-                apps, and access control where facial biometrics are critical.
-              </p>
+            
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to={"/contact-us"}

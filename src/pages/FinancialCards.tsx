@@ -24,7 +24,8 @@ const FinancialCards: React.FC = () => {
                     />
                   </svg>
                 </div>
-                Key Capabilities of Financial Checks API Solutions
+                Key Capabilities of Financial Checks API
+
               </h2>
             </div>
 
@@ -38,10 +39,10 @@ const FinancialCards: React.FC = () => {
                   className="w-full h-48 object-contain mb-4"
                 />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Detect Financial Fraud Before It Hits
+                  Fraud Detection
                 </h3>
                 <p className="text-gray-600">
-                  7Unique Verify’s Financial APIs help identify suspicious behavior through transaction pattern analysis and risk scoring—empowering businesses to prevent fraud and protect user trust.
+                  Identify financial fraud in real time using advanced transaction pattern analysis and risk scoring. 7uniqueverify empowers Indian businesses to act early and build user trust.
                 </p>
               </div>
 
@@ -53,10 +54,11 @@ const FinancialCards: React.FC = () => {
                   className="w-full h-48 object-contain mb-4"
                 />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Credit Risk Intelligence Made Easy
+                  Credit Risk Analysis
+
                 </h3>
                 <p className="text-gray-600">
-                  Assess the creditworthiness of individuals and businesses by analyzing ITRs, debt levels, and repayment behavior—making better lending and underwriting decisions.
+                  Easily assess the creditworthiness of users and businesses by analyzing ITR data, liabilities, and repayment behavior—enabling better decisions in loans, BNPL, and insurance.
                 </p>
               </div>
 
@@ -71,10 +73,11 @@ const FinancialCards: React.FC = () => {
                   className="w-full h-48 object-cover mb-4"
                 />
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Simplify Compliance and Stay Audit-Ready
+                  Regulatory Compliance
                 </h3>
                 <p className="text-gray-600">
-                  Our APIs help ensure financial data accuracy and compliance with RBI, SEBI, and tax norms—reducing legal exposure while improving governance.
+                  Meet Indian regulatory standards with automated data checks and audit-ready reporting. Reduce risk, boost transparency, and ensure smoother financial operations.
+
                 </p>
               </div>
             </div>
