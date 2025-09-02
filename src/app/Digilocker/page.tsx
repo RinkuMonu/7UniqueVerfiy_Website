@@ -245,7 +245,7 @@ export const DigilockerApi = () => {
                   <span className="font-medium text-gray-600">2-3 seconds</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
+                   
                   <span className="font-medium text-gray-600">
                     ₹0.75 - 1.25
                   </span>
@@ -284,7 +284,7 @@ export const DigilockerApi = () => {
                   <span className="font-medium text-gray-600">1-2 seconds</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
+                   
                   <span className="font-medium text-gray-600">
                     ₹0.50 - 0.80
                   </span>
@@ -323,7 +323,7 @@ export const DigilockerApi = () => {
                   <span className="font-medium text-gray-600">2-4 seconds</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
+                   
                   <span className="font-medium text-gray-600">
                     ₹1.20 - 2.00
                   </span>
@@ -360,7 +360,7 @@ export const DigilockerApi = () => {
                   <span className="font-medium text-gray-600">2-4 seconds</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
+                   
                   <span className="font-medium text-gray-600">
                     ₹1.20 - 2.00
                   </span>
@@ -398,7 +398,7 @@ export const DigilockerApi = () => {
                   <span className="font-medium text-gray-600">2-4 seconds</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
+                   
                   <span className="font-medium text-gray-600">
                     ₹1 - 2 per document
                   </span>
@@ -437,7 +437,7 @@ export const DigilockerApi = () => {
                   <span className="font-medium text-gray-600">1-3 seconds</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
+                   
                   <span className="font-medium text-gray-600">
                     ₹0.75 - 1.50
                   </span>
@@ -670,7 +670,7 @@ export const DigilockerApi = () => {
                 className="w-full lg:w-1/2"
               >
                 <img
-                  src="../img/images/5.png"
+                  src="../img/images/digilocker3.png"
                   alt="DigiLocker Illustration"
                   className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                 />

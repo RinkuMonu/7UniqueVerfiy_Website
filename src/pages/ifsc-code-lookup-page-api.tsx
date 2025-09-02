@@ -152,11 +152,7 @@ const IFSCCodeLookupPageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">Under 1 second</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹1-3 per lookup</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Quick validations</span>
                 </div>
@@ -190,11 +186,7 @@ const IFSCCodeLookupPageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">1-2 seconds</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹3-5 per lookup</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Detailed branch information</span>
                 </div>

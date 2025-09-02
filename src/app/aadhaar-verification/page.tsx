@@ -134,7 +134,7 @@ const AadhaarVerificationPage: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="https://img.freepik.com/free-vector/two-factor-authentication-concept-illustration_114360-5488.jpg"
+                          src="../img/Aadhaar2.png"
                           alt="Aadhaar Verification Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
@@ -248,10 +248,10 @@ const AadhaarVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">3-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
+                  {/* <div className="flex justify-between">
+                     
                     <span className="font-medium">₹3.5 per verification</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">
@@ -284,10 +284,10 @@ const AadhaarVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
+                  {/* <div className="flex justify-between">
+                     
                     <span className="font-medium">₹4.5 per verification</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">
@@ -320,11 +320,7 @@ const AadhaarVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1-2 per verification</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">
                       Quick verification needs
@@ -355,10 +351,10 @@ const AadhaarVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
+                  {/* <div className="flex justify-between">
+                     
                     <span className="font-medium">₹4 per verification</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">
@@ -587,7 +583,7 @@ const AadhaarVerificationPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/Aadhaar4.png"
+                    src="../img/Aadhaar3.png"
                     alt="UIDAI Compliance"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

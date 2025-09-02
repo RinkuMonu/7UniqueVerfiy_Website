@@ -159,10 +159,7 @@ const DINVerificationPageAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹10-15 per verification</span>
-                  </div>
+               
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Quick validations</span>
@@ -197,10 +194,7 @@ const DINVerificationPageAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">3-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹20-30 per verification</span>
-                  </div>
+                
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Thorough director checks</span>

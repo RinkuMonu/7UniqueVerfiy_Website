@@ -192,11 +192,7 @@ const RCVerificationPageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">2-3 seconds</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹4 per verification</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Quick validations</span>
                 </div>
@@ -226,11 +222,7 @@ const RCVerificationPageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">3-5 seconds</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹6 per verification</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Thorough vehicle checks</span>
                 </div>
@@ -263,11 +255,7 @@ const RCVerificationPageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">3-5 seconds</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹8-12 per verification</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Thorough vehicle checks</span>
                 </div>

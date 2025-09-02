@@ -157,11 +157,7 @@ const OCRValidationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">1-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1-2 per page</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Simple documents</span>
                   </div>
@@ -191,11 +187,7 @@ const OCRValidationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">3-8 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹3-5 per page</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Complex documents</span>
                   </div>

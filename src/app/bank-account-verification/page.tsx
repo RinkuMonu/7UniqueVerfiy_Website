@@ -293,10 +293,7 @@ const BankAccountVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹2-3 per verification</span>
-                  </div>
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">High-value transactions</span>
@@ -326,10 +323,7 @@ const BankAccountVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹2-3 per verification</span>
-                  </div>
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">High-value transactions</span>
@@ -360,12 +354,7 @@ const BankAccountVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">1-2 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">
-                      ₹0.50-1 per verification
-                    </span>
-                  </div>
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Bulk verifications</span>
@@ -395,10 +384,7 @@ const BankAccountVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">1-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1-2 per verification</span>
-                  </div>
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">UPI-based platforms</span>
@@ -428,10 +414,7 @@ const BankAccountVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">1-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1-2 per verification</span>
-                  </div>
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">UPI-based platforms</span>
@@ -461,10 +444,6 @@ const BankAccountVerificationPage: React.FC = () => {
                   <div className="flex justify-between">
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-4 seconds</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹1.50-2.50 per query</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
@@ -645,7 +624,7 @@ const BankAccountVerificationPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/images/5.png"
+                    src="../img/Bank3.png"
                     alt="Bank Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

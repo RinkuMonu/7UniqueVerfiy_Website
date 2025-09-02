@@ -159,11 +159,7 @@ const BankStatementAnalyzerPageAPI: React.FC = () => {
                     <span className="text-gray-500">Processing Time:</span>
                     <span className="font-medium">10-30 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹10-15 per statement</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Basic financial overview</span>
                   </div>
@@ -197,11 +193,7 @@ const BankStatementAnalyzerPageAPI: React.FC = () => {
                     <span className="text-gray-500">Processing Time:</span>
                     <span className="font-medium">30-60 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹20-30 per statement</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Lending decisions and deep insights</span>
                   </div>

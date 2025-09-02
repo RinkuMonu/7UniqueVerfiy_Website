@@ -241,7 +241,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="../img/Driving5.png"
+                src="../img/driving-license-verification/img1_Artboard 1.png"
                 alt="Driving License Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -280,7 +280,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="../img/images/21.png"
+                          src="../img/driving-license-verification/img2_Artboard 1.png"
                           alt="Driving License Verification Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
@@ -392,10 +392,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹3 per verification</span>
-                  </div>
+                
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Basic license checks</span>
@@ -437,10 +434,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">3-4 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹5 per verification</span>
-                  </div>
+                
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">
@@ -608,7 +602,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/Driving3.png"
+                    src="../img/driving-license-verification/img3_Artboard 1.png"
                     alt="Driving License Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

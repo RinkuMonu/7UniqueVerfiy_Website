@@ -159,11 +159,7 @@ const CurrencyExchangePageAPI: React.FC = () => {
                     <span className="text-gray-500">Update Frequency:</span>
                     <span className="font-medium">Hourly</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">$19/month</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Basic conversions</span>
                   </div>
@@ -197,11 +193,7 @@ const CurrencyExchangePageAPI: React.FC = () => {
                     <span className="text-gray-500">Update Frequency:</span>
                     <span className="font-medium">Every 5 minutes</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">$49/month</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Financial applications</span>
                   </div>
