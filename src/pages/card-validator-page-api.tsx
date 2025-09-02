@@ -159,10 +159,7 @@ const CardValidatorPageAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">Instant</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">$0.001 per verification</span>
-                  </div>
+                 
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Basic format validation</span>
@@ -197,11 +194,7 @@ const CardValidatorPageAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">50-100ms</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">$0.005 per lookup</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed card information</span>
                   </div>

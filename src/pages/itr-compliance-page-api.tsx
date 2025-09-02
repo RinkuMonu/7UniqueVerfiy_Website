@@ -152,11 +152,7 @@ const ITRComplianceProfilePageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">2-3 seconds</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹15-20 per verification</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Quick validations</span>
                 </div>
@@ -190,11 +186,7 @@ const ITRComplianceProfilePageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">5-8 seconds</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹30-40 per verification</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Thorough financial checks</span>
                 </div>

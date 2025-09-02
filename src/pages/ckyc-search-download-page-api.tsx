@@ -164,11 +164,7 @@ const CKYCSearchDownloadPageAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹7-10 per search</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Customer verification</span>
                   </div>
@@ -202,11 +198,7 @@ const CKYCSearchDownloadPageAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">3-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹12-15 per download</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Complete KYC onboarding</span>
                   </div>

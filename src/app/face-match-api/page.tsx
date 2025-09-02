@@ -266,9 +266,7 @@ const FaceMatchAPIPage: React.FC = () => {
                     <span>Fast Processing</span>
                   </li>
                 </ul>
-                <div className="text-2xl font-bold text-[#b7603d] mb-4">
-                  ₹3 per verification
-                </div>
+                
                 <Link to={"/contact-us"}>
                   <button className="w-full bg-[#b7603d] text-white py-3 rounded-lg font-semibold hover:bg-[#d19983] transition-colors">
                     Get API's
@@ -322,9 +320,9 @@ const FaceMatchAPIPage: React.FC = () => {
                     <span>Fraud Risk Assessment</span>
                   </li>
                 </ul>
-                <div className="text-2xl font-bold mb-4">
+                {/* <div className="text-2xl font-bold mb-4">
                   ₹5 per verification
-                </div>
+                </div> */}
                 <Link to={"/contact-us"}>
                   <button className="w-full bg-white text-[#b7603d] py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                     Choose Advanced

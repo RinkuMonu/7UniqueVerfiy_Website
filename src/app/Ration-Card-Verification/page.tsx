@@ -164,11 +164,7 @@ const RationCardVerification: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">2–3 seconds</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">₹4–8 per check</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">
                     Accurate beneficiary verification

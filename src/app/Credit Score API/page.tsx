@@ -96,7 +96,7 @@ export const CreditScoreAPI: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="../img/Mobile Verification API/Mobile1.png"
+                src="../img/credit-score-api/img1_Artboard 1.png"
                 alt="Mobile Verification API"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -131,7 +131,7 @@ export const CreditScoreAPI: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="../img/Blog2.png"
+                          src="../img/credit-score-api/img2_Artboard 1.png"
                           alt="Mobile Verification Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
@@ -339,12 +339,7 @@ export const CreditScoreAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">
-                      ₹1-1.50 per verification
-                    </span>
-                  </div>
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -374,12 +369,7 @@ export const CreditScoreAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">
-                      ₹1-1.50 per verification
-                    </span>
-                  </div>
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -409,12 +399,7 @@ export const CreditScoreAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">
-                      ₹1-1.50 per verification
-                    </span>
-                  </div>
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -525,7 +510,7 @@ export const CreditScoreAPI: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/Mobile Verification API/Mobile2.png"
+                   src="../img/credit-score-api/img3_Artboard 1.png"
                     alt="Mobile Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

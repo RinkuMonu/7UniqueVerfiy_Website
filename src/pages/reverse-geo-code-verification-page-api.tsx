@@ -152,11 +152,7 @@ const ReverseGeoCodeVerificationPageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">50-100ms</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">$0.0005 per request</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Simple address display</span>
                 </div>
@@ -190,11 +186,7 @@ const ReverseGeoCodeVerificationPageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">100-200ms</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">$0.001 per request</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Detailed location analysis</span>
                 </div>

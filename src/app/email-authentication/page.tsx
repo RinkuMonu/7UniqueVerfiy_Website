@@ -55,7 +55,7 @@ const EmailAuthenticationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="../img/images/3.png"
+                src="../img/Email Authentication/Email1.png"
                 alt="Email Authentication - 7Unique Verify"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px] rounded-lg"
               />
@@ -253,10 +253,7 @@ const EmailAuthenticationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">Instant</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹2.8 per verification</span>
-                  </div>
+                 
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Initial screening</span>
@@ -298,10 +295,7 @@ const EmailAuthenticationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹3.8 per verification</span>
-                  </div>
+              
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Critical communications</span>

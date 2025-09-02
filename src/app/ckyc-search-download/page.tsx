@@ -92,7 +92,7 @@ const CKYCSearchPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="../img/CKYC1.png"
+                src="../img/ckyc/img1_Artboard 1.png"
                 alt="CKYC Search & Download with 7Unique Verify"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -127,7 +127,7 @@ const CKYCSearchPage: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="../img/images/14.png"
+                          src="../img/ckyc/img2_Artboard 1.png"
                           alt="CKYC Search Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
@@ -264,11 +264,7 @@ const CKYCSearchPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹5-15 per search</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Customer verification</span>
                   </div>
@@ -309,11 +305,7 @@ const CKYCSearchPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">3-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹6-16 per download</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Complete KYC onboarding</span>
                   </div>
@@ -531,7 +523,7 @@ const CKYCSearchPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/CKYC5.png"
+                    src="../img/ckyc/img3_Artboard 1.png"
                     alt="CKYC Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

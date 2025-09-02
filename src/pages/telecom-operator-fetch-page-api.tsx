@@ -152,11 +152,7 @@ const TelecomOperatorFetchPageAPI: React.FC = () => {
                   <span className="text-gray-500">Lookup Speed:</span>
                   <span className="font-medium">Standard</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">$29/month</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Basic carrier lookup</span>
                 </div>
@@ -190,11 +186,7 @@ const TelecomOperatorFetchPageAPI: React.FC = () => {
                   <span className="text-gray-500">Lookup Speed:</span>
                   <span className="font-medium">Real-time</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Cost:</span>
-                  <span className="font-medium">$79/month</span>
-                </div>
-                <div className="flex justify-between">
+                                 <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">Enterprise applications</span>
                 </div>

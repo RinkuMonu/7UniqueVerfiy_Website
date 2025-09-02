@@ -159,11 +159,7 @@ const GSTINOCRPageAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">Instant</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹2-5 per verification</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Initial format checks</span>
                   </div>
@@ -197,11 +193,7 @@ const GSTINOCRPageAPI: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">3-5 seconds</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Cost:</span>
-                    <span className="font-medium">₹15-25 per verification</span>
-                  </div>
-                  <div className="flex justify-between">
+                                     <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Thorough GSTIN verification</span>
                   </div>
