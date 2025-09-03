@@ -13,20 +13,19 @@ const NameMatchPageAPI: React.FC = () => {
           <div className="w-full md:w-2/3 text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               AI-Powered Name Match API for Accurate Identity Verification
-
             </h1>
 
             <p className="text-lg mb-4 text-white">
-              Verify name matches across documents with intelligent comparison, fuzzy logic, and confidence scoring.
-
+              Verify name matches across documents with intelligent comparison,
+              fuzzy logic, and confidence scoring.
             </p>
             <p className="mb-4 text-white">
-              Handle spelling variations, nicknames, and cultural differences to streamline KYC, reduce fraud, and meet compliance needs.
-
+              Handle spelling variations, nicknames, and cultural differences to
+              streamline KYC, reduce fraud, and meet compliance needs.
             </p>
             <p className="mb-6 text-white">
-              Trusted by banks, fintechs, and global platforms for secure and reliable identity validation.
-
+              Trusted by banks, fintechs, and global platforms for secure and
+              reliable identity validation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -45,7 +44,7 @@ const NameMatchPageAPI: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="https://img.freepik.com/free-vector/name-matching-concept-illustration_114360-1234.jpg?uid=R200786995&ga=GA1.1.1683687550.1747121644&semt=ais_hybrid&w=740"
+              src="/public/ui/Name-match-api/img1_Artboard 1.png"
               alt="Name Match"
               className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
             />
@@ -204,7 +203,7 @@ const NameMatchPageAPI: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">2-3 seconds</span>
                 </div>
-                                 <div className="flex justify-between">
+                <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">
                     Real-world name variations

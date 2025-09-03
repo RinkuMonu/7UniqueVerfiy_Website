@@ -47,12 +47,21 @@ const KycFeatures: React.FC = () => {
             <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
               <h2 className="flex items-center gap-3 text-2xl font-semibold">
                 <div className="rounded-full bg-[#b7603d]/10 p-2">
-                  <svg className="h-6 w-6 text-[#b7603d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <svg
+                    className="h-6 w-6 text-[#b7603d]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
                   </svg>
                 </div>
-                Choose Excellence:  KYC API Suite
-
+                Choose Excellence: KYC API Suite
               </h2>
             </div>
 
@@ -71,7 +80,7 @@ const KycFeatures: React.FC = () => {
                 >
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                     <motion.img
-                      src="/img/KYC/KYC5.png"
+                      src="/public/ui/KYC/IMG4_Artboard 1.png"
                       alt="KYC Verification Illustration"
                       className="w-full h-auto object-contain"
                       whileHover={{ scale: 1.03 }}
@@ -88,7 +97,6 @@ const KycFeatures: React.FC = () => {
                   className="w-full lg:w-1/2 space-y-10"
                 >
                   <motion.div variants={item}>
-
                     <motion.div
                       className="w-32 h-1.5 bg-gradient-to-r from-[#b7603d] to-[#d88a6e] mt-6 mb-8 rounded-full"
                       initial={{ scaleX: 0 }}
@@ -98,17 +106,14 @@ const KycFeatures: React.FC = () => {
                     />
                   </motion.div>
 
-                  <motion.div
-                    className="space-y-8"
-                    variants={container}
-                  >
+                  <motion.div className="space-y-8" variants={container}>
                     {features.map((feature, index) => (
                       <motion.div
                         key={index}
                         variants={item}
                         whileHover={{
                           y: -5,
-                          transition: { duration: 0.2 }
+                          transition: { duration: 0.2 },
                         }}
                         className="group flex gap-5 p-5 rounded-xl bg-white hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow-md"
                       >

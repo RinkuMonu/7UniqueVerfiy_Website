@@ -15,16 +15,24 @@ const LandVerification: React.FC = () => {
               Instant Land Verification with Multi‑State Coverage
             </h1>
             <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
-              Verify land ownership and property details from authorized land registry databases to reduce fraud and speed up underwriting.
+              Verify land ownership and property details from authorized land
+              registry databases to reduce fraud and speed up underwriting.
             </h2>
             <p className="text-lg mb-4 text-white">
-              Our Land Verification API fetches and standardizes records such as Khata/Khatauni, Khasra/Survey numbers, owner names, land type, area, and mutation/encumbrance status (where available). Search by property identifiers or owner name with state and district filters.
+              Our Land Verification API fetches and standardizes records such as
+              Khata/Khatauni, Khasra/Survey numbers, owner names, land type,
+              area, and mutation/encumbrance status (where available). Search by
+              property identifiers or owner name with state and district
+              filters.
             </p>
             <p className="mb-4 text-white">
-              Use it for lending/LOS, title due‑diligence, real‑estate onboarding, insurance/agri schemes, and government benefit verification.
+              Use it for lending/LOS, title due‑diligence, real‑estate
+              onboarding, insurance/agri schemes, and government benefit
+              verification.
             </p>
             <p className="mb-6 text-white">
-              Trusted by banks, NBFCs, insurers, prop‑techs, and enterprises to ensure authenticity and accelerate decisions.
+              Trusted by banks, NBFCs, insurers, prop‑techs, and enterprises to
+              ensure authenticity and accelerate decisions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -43,7 +51,7 @@ const LandVerification: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="https://img.freepik.com/free-vector/legal-research-court-case-check-concept-illustration_114360-1234.jpg?w=740"
+              src="/public/ui/land-verification/img_Artboard 1.png"
               alt="Land Verification"
               className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
             />
@@ -55,7 +63,8 @@ const LandVerification: React.FC = () => {
       <section className="bg-white py-16 px-4 md:px-8 lg:px-20">
         <div className="w-full mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-            Where Can You Use <span className="text-[#b7603d]">Land Verification</span>?
+            Where Can You Use{" "}
+            <span className="text-[#b7603d]">Land Verification</span>?
           </h2>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
@@ -64,7 +73,8 @@ const LandVerification: React.FC = () => {
                 Banking & Finance
               </h3>
               <p className="text-gray-600 text-sm mb-3">
-                Validate collateral by checking ownership, area, and mutation status during lending.
+                Validate collateral by checking ownership, area, and mutation
+                status during lending.
               </p>
               <div className="text-xs text-[#b7603d] font-medium">
                 "Safer underwriting!"
@@ -76,7 +86,8 @@ const LandVerification: React.FC = () => {
                 Title Due‑Diligence
               </h3>
               <p className="text-gray-600 text-sm mb-3">
-                Verify ownership history and encumbrance/mutation details for legal diligence.
+                Verify ownership history and encumbrance/mutation details for
+                legal diligence.
               </p>
               <div className="text-xs text-[#b7603d] font-medium">
                 "Regulatory compliance!"
@@ -88,7 +99,8 @@ const LandVerification: React.FC = () => {
                 Risk & Fraud Investigation
               </h3>
               <p className="text-gray-600 text-sm mb-3">
-                Detect ownership mismatches, duplicate claims, and suspicious transfers.
+                Detect ownership mismatches, duplicate claims, and suspicious
+                transfers.
               </p>
               <div className="text-xs text-[#b7603d] font-medium">
                 "Fraud detection!"
@@ -100,7 +112,8 @@ const LandVerification: React.FC = () => {
                 Real Estate & Prop‑Tech
               </h3>
               <p className="text-gray-600 text-sm mb-3">
-                Verify sellers and listings by confirming official registry data.
+                Verify sellers and listings by confirming official registry
+                data.
               </p>
               <div className="text-xs text-orange-600 font-medium">
                 "Authentic listings!"
@@ -112,7 +125,8 @@ const LandVerification: React.FC = () => {
                 Insurance & Agri Schemes
               </h3>
               <p className="text-gray-600 text-sm mb-3">
-                Confirm land holding and area for crop insurance and benefit eligibility.
+                Confirm land holding and area for crop insurance and benefit
+                eligibility.
               </p>
               <div className="text-xs text-red-600 font-medium">
                 "Eligibility check!"
@@ -124,7 +138,8 @@ const LandVerification: React.FC = () => {
                 Collections & Recovery
               </h3>
               <p className="text-gray-600 text-sm mb-3">
-                Track mutation and encumbrance updates to prioritize enforcement.
+                Track mutation and encumbrance updates to prioritize
+                enforcement.
               </p>
               <div className="text-xs text-teal-600 font-medium">
                 "Operational efficiency!"
@@ -138,11 +153,9 @@ const LandVerification: React.FC = () => {
       <section className="bg-[#f7f1ef] py-16 px-4 md:px-8 lg:px-20">
         <div className="w-full mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-            Choose Your{" "}
-            <span className="text-[#b7603d]">Land Search Mode</span>
+            Choose Your <span className="text-[#b7603d]">Land Search Mode</span>
           </h2>
           <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
-
             <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-500">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-[#f7f1ef] rounded-full flex items-center justify-center mr-4">
@@ -158,16 +171,21 @@ const LandVerification: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                Search by Khasra/Survey No., Khata/Account No., Property/Mutation ID, or Owner name with state, district, tehsil/taluka, and village filters. Intelligent normalization improves hit‑rates across state formats.
+                Search by Khasra/Survey No., Khata/Account No.,
+                Property/Mutation ID, or Owner name with state, district,
+                tehsil/taluka, and village filters. Intelligent normalization
+                improves hit‑rates across state formats.
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">2–3 seconds</span>
                 </div>
-                                 <div className="flex justify-between">
+                <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
-                  <span className="font-medium">Authentic ownership verification</span>
+                  <span className="font-medium">
+                    Authentic ownership verification
+                  </span>
                 </div>
               </div>
             </div>
@@ -180,16 +198,21 @@ const LandVerification: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>✓ Owner name(s) & guardian/father's name (when available)</li>
+                  <li>
+                    ✓ Owner name(s) & guardian/father's name (when available)
+                  </li>
                   <li>✓ Khata/Khatauni & Khasra/Survey numbers</li>
                   <li>✓ Area with unit, land type/category</li>
-                  <li>✓ Mutation/encumbrance status & registry refs (when available)</li>
+                  <li>
+                    ✓ Mutation/encumbrance status & registry refs (when
+                    available)
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       <KnowMore />
 
@@ -213,16 +236,15 @@ const LandVerification: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Query Input</h3>
                 <p className="text-gray-600 text-sm">
-                  Provide Khasra/Survey/Khata/Property ID or Owner name with region filters
+                  Provide Khasra/Survey/Khata/Property ID or Owner name with
+                  region filters
                 </p>
               </div>
               <div className="text-center relative">
                 <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                   2
                 </div>
-                <h3 className="text-lg font-semibold mb-2">
-                  Normalization
-                </h3>
+                <h3 className="text-lg font-semibold mb-2">Normalization</h3>
                 <p className="text-gray-600 text-sm">
                   Standardize numbers and locale fields for reliable lookups
                 </p>
@@ -231,11 +253,10 @@ const LandVerification: React.FC = () => {
                 <div className="w-16 h-16 bg-[#b7603d] rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4 relative z-10">
                   3
                 </div>
-                <h3 className="text-lg font-semibold mb-2">
-                  Source Fetch
-                </h3>
+                <h3 className="text-lg font-semibold mb-2">Source Fetch</h3>
                 <p className="text-gray-600 text-sm">
-                  Retrieve records from authorized land registries and parse details
+                  Retrieve records from authorized land registries and parse
+                  details
                 </p>
               </div>
               <div className="text-center relative">
@@ -246,7 +267,8 @@ const LandVerification: React.FC = () => {
                   Matching & Scoring
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Disambiguate multi‑match results by village/owner and compute confidence
+                  Disambiguate multi‑match results by village/owner and compute
+                  confidence
                 </p>
               </div>
               <div className="text-center relative">
@@ -255,7 +277,8 @@ const LandVerification: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Results</h3>
                 <p className="text-gray-600 text-sm">
-                  Get structured output: owners, numbers, area, land type, mutation/encumbrance
+                  Get structured output: owners, numbers, area, land type,
+                  mutation/encumbrance
                 </p>
               </div>
             </div>
@@ -308,7 +331,8 @@ const LandVerification: React.FC = () => {
       >
         <div className="w-full mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-            Why Use Our <span className="text-[#b7603d]">Land Verification API</span>?
+            Why Use Our{" "}
+            <span className="text-[#b7603d]">Land Verification API</span>?
           </h2>
           <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -331,7 +355,8 @@ const LandVerification: React.FC = () => {
                 </h3>
               </div>
               <p className="text-gray-600 text-sm">
-                Get results in 1–3 seconds with optimized fetching and parsing from official sources.
+                Get results in 1–3 seconds with optimized fetching and parsing
+                from official sources.
               </p>
             </div>
 
@@ -354,7 +379,8 @@ const LandVerification: React.FC = () => {
                 </h3>
               </div>
               <p className="text-gray-600 text-sm">
-                State land registries supported with standardized output across jurisdictions.
+                State land registries supported with standardized output across
+                jurisdictions.
               </p>
             </div>
 
@@ -377,7 +403,8 @@ const LandVerification: React.FC = () => {
                 </h3>
               </div>
               <p className="text-gray-600 text-sm">
-                Owners, identifiers, area, land type, and status—ready for workflows.
+                Owners, identifiers, area, land type, and status—ready for
+                workflows.
               </p>
             </div>
 
@@ -391,7 +418,8 @@ const LandVerification: React.FC = () => {
                 </h3>
               </div>
               <p className="text-gray-600 text-sm">
-                Audit‑friendly logs and schemas for KYC/AML, underwriting, and legal diligence.
+                Audit‑friendly logs and schemas for KYC/AML, underwriting, and
+                legal diligence.
               </p>
             </div>
 
@@ -405,7 +433,8 @@ const LandVerification: React.FC = () => {
                 </h3>
               </div>
               <p className="text-gray-600 text-sm">
-                Highlight encumbrances, adverse mutations, and ownership mismatches.
+                Highlight encumbrances, adverse mutations, and ownership
+                mismatches.
               </p>
             </div>
 
@@ -435,8 +464,8 @@ const LandVerification: React.FC = () => {
                 Simple <span className="text-[#b7603d]">API Integration</span>
               </h2>
               <p className="text-gray-600">
-                Integrate Land Verification seamlessly into your applications with
-                our developer‑friendly API and comprehensive documentation.
+                Integrate Land Verification seamlessly into your applications
+                with our developer‑friendly API and comprehensive documentation.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-2">
@@ -449,7 +478,9 @@ const LandVerification: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-[#b7603d]">✓</span>
-                  <span>Filters for state, district, tehsil/taluka, village</span>
+                  <span>
+                    Filters for state, district, tehsil/taluka, village
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-[#b7603d]">✓</span>
@@ -490,14 +521,27 @@ const LandVerification: React.FC = () => {
                 <div className="mt-4 text-gray-400">// Sample Response</div>
                 <div className="text-yellow-400">{"{"}</div>
                 <div className="ml-4 text-white">"match": true,</div>
-                <div className="ml-4 text-white">"owner_names": ["Dinesh Kumar", "Sita Devi"],</div>
+                <div className="ml-4 text-white">
+                  "owner_names": ["Dinesh Kumar", "Sita Devi"],
+                </div>
                 <div className="ml-4 text-white">"khata_no": "456",</div>
                 <div className="ml-4 text-white">"khasra_no": "123/45",</div>
-                <div className="ml-4 text-white">"area": {"{"}"value": 0.75, "unit": "hectare"{"}"},</div>
-                <div className="ml-4 text-white">"land_type": "Agricultural",</div>
-                <div className="ml-4 text-white">"mutation_status": "Updated",</div>
-                <div className="ml-4 text-white">"encumbrance_status": "None",</div>
-                <div className="ml-4 text-white">"address": {"{"}"village": "Jagatpura", "tehsil": "Sanganer", "district": "Jaipur", "state": "Rajasthan"{"}"}</div>
+                <div className="ml-4 text-white">
+                  "area": {"{"}"value": 0.75, "unit": "hectare"{"}"},
+                </div>
+                <div className="ml-4 text-white">
+                  "land_type": "Agricultural",
+                </div>
+                <div className="ml-4 text-white">
+                  "mutation_status": "Updated",
+                </div>
+                <div className="ml-4 text-white">
+                  "encumbrance_status": "None",
+                </div>
+                <div className="ml-4 text-white">
+                  "address": {"{"}"village": "Jagatpura", "tehsil": "Sanganer",
+                  "district": "Jaipur", "state": "Rajasthan"{"}"}
+                </div>
                 <div className="text-yellow-400">{"}"}</div>
               </div>
             </div>

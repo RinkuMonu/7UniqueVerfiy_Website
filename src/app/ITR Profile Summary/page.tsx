@@ -65,15 +65,16 @@ export const ITRProfileSummary: React.FC = () => {
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Instant ITR Profile Summary API for Smart Financial Decisions
-
               </h1>
 
               <p className="text-lg mb-4 text-white">
-                Access verified income tax data including filed returns, income breakdowns, and tax status in real-time.
-
+                Access verified income tax data including filed returns, income
+                breakdowns, and tax status in real-time.
               </p>
               <p className="mb-4 text-white">
-                Use 7UniqueVerify’s secure API to power credit risk assessments, KYC, and onboarding — trusted by NBFCs, lenders, and fintechs across India.
+                Use 7UniqueVerify’s secure API to power credit risk assessments,
+                KYC, and onboarding — trusted by NBFCs, lenders, and fintechs
+                across India.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -93,7 +94,7 @@ export const ITRProfileSummary: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="../img/Mobile Verification API/Mobile1.png"
+                src="/public/ui/ITR Profile Summary API/ITR Profile1_Artboard 1.png"
                 alt="Mobile Verification API"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -128,7 +129,7 @@ export const ITRProfileSummary: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="../img/Blog2.png"
+                          src="/public/ui/ITR Profile Summary API/ITR Profile2_Artboard 1.png"
                           alt="ITR Profile Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
@@ -337,7 +338,7 @@ export const ITRProfileSummary: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                  
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -366,7 +367,7 @@ export const ITRProfileSummary: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -395,7 +396,7 @@ export const ITRProfileSummary: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -424,7 +425,7 @@ export const ITRProfileSummary: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -453,7 +454,7 @@ export const ITRProfileSummary: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-                
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -483,7 +484,7 @@ export const ITRProfileSummary: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">2-3 seconds</span>
                   </div>
-              
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">Detailed analysis</span>
@@ -594,7 +595,7 @@ export const ITRProfileSummary: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/Mobile Verification API/Mobile2.png"
+                    src="/public/ui/ITR Profile Summary API/ITR Profile3_Artboard 1.png"
                     alt="Mobile Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

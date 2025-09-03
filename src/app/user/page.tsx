@@ -36,7 +36,7 @@ const UserManagement = () => {
             </div>
             <div className="md:w-1/2">
               <img
-                src="../img/images/43.png"
+                src="/public/ui/user/img1_Artboard 1.png"
                 alt="User Management Dashboard"
                 className="rounded-lg"
               />
@@ -305,7 +305,7 @@ const UserManagement = () => {
             </div>
             <div className="md:w-1/2">
               <img
-                src="../img/images/44.png"
+                src="/public/ui/user/img2_Artboard 1.png"
                 alt="Security Features"
                 className="rounded-lg"
               />

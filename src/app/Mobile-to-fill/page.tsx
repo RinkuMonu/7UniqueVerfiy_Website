@@ -51,7 +51,7 @@ const MobileToFil: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="https://img.freepik.com/free-vector/legal-research-court-case-check-concept-illustration_114360-1234.jpg?w=740"
+              src="/public/ui/mobile to fill/img1_Artboard 1.png"
               alt="Mobile to Prefill"
               className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
             />
@@ -180,7 +180,7 @@ const MobileToFil: React.FC = () => {
                   <span className="text-gray-500">Response Time:</span>
                   <span className="font-medium">2–3 seconds</span>
                 </div>
-                                 <div className="flex justify-between">
+                <div className="flex justify-between">
                   <span className="text-gray-500">Best For:</span>
                   <span className="font-medium">
                     Fast, accurate form prefill
