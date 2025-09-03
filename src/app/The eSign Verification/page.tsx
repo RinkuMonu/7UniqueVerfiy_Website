@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import KnowMore from "../../components/KnowMore";
+import img from "../../../public/ui/e-sign/E-sign_Artboard 1.png"
 
 const TheESignVerification: React.FC = () => {
   return (
@@ -43,7 +44,7 @@ const TheESignVerification: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="https://img.freepik.com/free-vector/legal-research-court-case-check-concept-illustration_114360-1234.jpg?w=740"
+              src="../../../public/ui/e-sign/E-sign_Artboard 1.png"
               alt="eSign Verification"
               className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
             />

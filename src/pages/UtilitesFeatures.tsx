@@ -6,17 +6,20 @@ const UtilitiesOverview: React.FC = () => {
   const features = [
     {
       title: "Built for Scale, Trusted Across India",
-      description: "7uniqueverify’s Utility APIs help businesses in finance, e-commerce, telecom, logistics, and public services streamline verification, compliance, and data workflows.",
+      description:
+        "7uniqueverify’s Utility APIs help businesses in finance, e-commerce, telecom, logistics, and public services streamline verification, compliance, and data workflows.",
       icon: <FaExchangeAlt className="text-[#b7603d] text-2xl" />,
     },
     {
       title: "Seamless Integration for Every Need",
-      description: "Easily validate identities, automate bulk data tasks, and connect systems in real time. Our APIs scale across departments — from Jaipur startups to national enterprises.",
+      description:
+        "Easily validate identities, automate bulk data tasks, and connect systems in real time. Our APIs scale across departments — from Jaipur startups to national enterprises.",
       icon: <FaShieldAlt className="text-[#b7603d] text-2xl" />,
     },
     {
       title: "Versatile Tools for Real-World Use",
-      description: "Whether you're building a fintech app or managing service delivery, 7uniqueverify boosts speed, accuracy, and security across all critical backend operations.",
+      description:
+        "Whether you're building a fintech app or managing service delivery, 7uniqueverify boosts speed, accuracy, and security across all critical backend operations.",
       icon: <FaCheckCircle className="text-[#b7603d] text-2xl" />,
     },
   ];
@@ -44,8 +47,18 @@ const UtilitiesOverview: React.FC = () => {
             <div className="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4">
               <h2 className="flex items-center gap-3 text-2xl font-semibold">
                 <div className="rounded-full bg-[#b7603d]/10 p-2">
-                  <svg className="h-6 w-6 text-[#b7603d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <svg
+                    className="h-6 w-6 text-[#b7603d]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
                   </svg>
                 </div>
                 Powering Operations with Smart Utility APIs
@@ -67,7 +80,7 @@ const UtilitiesOverview: React.FC = () => {
                 >
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                     <motion.img
-                      src="https://img.freepik.com/free-vector/flat-design-api-illustration_23-2149392285.jpg?uid=R200786995&ga=GA1.1.1683687550.1747121644&semt=ais_hybrid&w=740"
+                      src="/public/ui/Utilities-verification/img4_Artboard 1.png"
                       alt="Utilities API Illustration"
                       className="w-full h-auto object-contain"
                       whileHover={{ scale: 1.03 }}
@@ -93,17 +106,14 @@ const UtilitiesOverview: React.FC = () => {
                     />
                   </motion.div>
 
-                  <motion.div
-                    className="space-y-8"
-                    variants={container}
-                  >
+                  <motion.div className="space-y-8" variants={container}>
                     {features.map((feature, index) => (
                       <motion.div
                         key={index}
                         variants={item}
                         whileHover={{
                           y: -5,
-                          transition: { duration: 0.2 }
+                          transition: { duration: 0.2 },
                         }}
                         className="group flex gap-5 p-5 rounded-xl bg-white hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow-md"
                       >

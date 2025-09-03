@@ -20,19 +20,19 @@ const LivenessCheckAPIPage: React.FC = () => {
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 AI-Powered Liveness Detection API – By 7UniqueVerify
-
               </h1>
 
               <p className="text-lg mb-4 text-white">
-                Detect real human presence in real-time with advanced facial motion analysis.
+                Detect real human presence in real-time with advanced facial
+                motion analysis.
               </p>
               <p className="mb-4 text-white">
-                Prevent spoofing, deepfakes, and identity fraud — ideal for secure onboarding, KYC, and biometric login systems.
-
+                Prevent spoofing, deepfakes, and identity fraud — ideal for
+                secure onboarding, KYC, and biometric login systems.
               </p>
               <p className="mb-6 text-white">
-                Trusted by fintech, telecom, and healthcare platforms across India.
-
+                Trusted by fintech, telecom, and healthcare platforms across
+                India.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -51,7 +51,7 @@ const LivenessCheckAPIPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/img/image/mobile-login-concept-illustration.png"
+                src="/public/ui/liveness/img1_Artboard 1.png"
                 alt="Liveness Check API by 7Unique Verify"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px] rounded-lg"
               />
@@ -75,8 +75,7 @@ const LivenessCheckAPIPage: React.FC = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Features of  Liveness Detection API
-
+                Features of Liveness Detection API
               </h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
                 AI-Powered Real-Time Biometric Verification with 7UniqueVerify
@@ -122,8 +121,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Real-time Detection
                 </h3>
                 <p className="text-gray-600">
-                  Instantly detect genuine human presence using computer vision and AI algorithms for live, on-the-spot validation.
-
+                  Instantly detect genuine human presence using computer vision
+                  and AI algorithms for live, on-the-spot validation.
                 </p>
               </div>
 
@@ -159,8 +158,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Anti-Spoofing Protection
                 </h3>
                 <p className="text-gray-600">
-                  Block spoofing attempts such as photos, videos, deepfakes, and 3D masks with advanced detection techniques.
-
+                  Block spoofing attempts such as photos, videos, deepfakes, and
+                  3D masks with advanced detection techniques.
                 </p>
               </div>
 
@@ -194,8 +193,9 @@ const LivenessCheckAPIPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">High Accuracy</h3>
                 <p className="text-gray-600">
-                  Industry-leading accuracy with minimal false positives—ensuring trusted identity verification in mission-critical flows.
-
+                  Industry-leading accuracy with minimal false
+                  positives—ensuring trusted identity verification in
+                  mission-critical flows.
                 </p>
               </div>
             </div>
@@ -208,11 +208,9 @@ const LivenessCheckAPIPage: React.FC = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 How Liveness Detection Works
-
               </h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
                 A 4-Step Secure Process for Real-Time Biometric Authentication
-
               </p>
             </div>
 
@@ -223,8 +221,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Face Detection</h3>
                 <p className="text-gray-600">
-                  Detect and locate human facial patterns using AI-powered recognition tools from video or camera input.
-
+                  Detect and locate human facial patterns using AI-powered
+                  recognition tools from video or camera input.
                 </p>
               </div>
 
@@ -236,8 +234,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Liveness Analysis
                 </h3>
                 <p className="text-gray-600">
-                  Track micro-expressions, blinking, facial movement, and depth for real-time presence analysis.
-
+                  Track micro-expressions, blinking, facial movement, and depth
+                  for real-time presence analysis.
                 </p>
               </div>
 
@@ -249,8 +247,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Spoofing Detection
                 </h3>
                 <p className="text-gray-600">
-                  Automatically block impersonation attempts via static photos, recorded videos, or printed masks.
-
+                  Automatically block impersonation attempts via static photos,
+                  recorded videos, or printed masks.
                 </p>
               </div>
 
@@ -262,8 +260,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Verification Result
                 </h3>
                 <p className="text-gray-600">
-                  Return instant results with a confidence score, verification status, and fraud risk flags.
-
+                  Return instant results with a confidence score, verification
+                  status, and fraud risk flags.
                 </p>
               </div>
             </div>
@@ -290,8 +288,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Benefits of Liveness Detection
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  Why 7UniqueVerify’s Liveness API Is Trusted for Secure Digital Identity
-
+                  Why 7UniqueVerify’s Liveness API Is Trusted for Secure Digital
+                  Identity
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start">
@@ -313,8 +311,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                       <strong className="font-medium">
                         Prevent Identity Fraud:
                       </strong>{" "}
-                      Eliminate fake logins and impersonation in high-risk scenarios.
-
+                      Eliminate fake logins and impersonation in high-risk
+                      scenarios.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -336,8 +334,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                       <strong className="font-medium">
                         Enhanced Security:
                       </strong>{" "}
-                      Add an advanced layer of biometric security to user onboarding and access flows.
-
+                      Add an advanced layer of biometric security to user
+                      onboarding and access flows.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -359,7 +357,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                       <strong className="font-medium">
                         Regulatory Compliance:
                       </strong>{" "}
-                      Align with KYC/AML regulations through live user validation
+                      Align with KYC/AML regulations through live user
+                      validation
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -379,15 +378,15 @@ const LivenessCheckAPIPage: React.FC = () => {
                     </svg>
                     <span>
                       <strong className="font-medium">Frictionless UX:</strong>{" "}
-                      Deliver strong identity assurance without slowing down the user journey.
-
+                      Deliver strong identity assurance without slowing down the
+                      user journey.
                     </span>
                   </li>
                 </ul>
               </div>
               <div className="md:w-1/2">
                 <img
-                  src="/img/image/social-networks-chat-using-phone-online-communication-digital-environment.png"
+                  src="/public/ui/liveness/img2_Artboard 1.png"
                   alt="Liveness Detection Benefits"
                   className="rounded-lg"
                 />
@@ -402,11 +401,10 @@ const LivenessCheckAPIPage: React.FC = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Where Liveness Detection is Used
-
               </h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
-                Popular Industry Use Cases for Liveness Check API in India & Beyond
-
+                Popular Industry Use Cases for Liveness Check API in India &
+                Beyond
               </p>
             </div>
 
@@ -443,8 +441,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Banking & Finance
                 </h3>
                 <p className="text-gray-600">
-                  Secure digital account openings, eKYC, and high-value transaction authorizations.
-
+                  Secure digital account openings, eKYC, and high-value
+                  transaction authorizations.
                 </p>
               </div>
 
@@ -480,8 +478,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                   Digital Onboarding
                 </h3>
                 <p className="text-gray-600">
-                  Validate real users at sign-up on fintech, healthtech, or e-learning platforms.
-
+                  Validate real users at sign-up on fintech, healthtech, or
+                  e-learning platforms.
                 </p>
               </div>
 
@@ -515,8 +513,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Access Control</h3>
                 <p className="text-gray-600">
-                  Prevent unauthorized logins or entry into systems, apps, or secure zones.
-
+                  Prevent unauthorized logins or entry into systems, apps, or
+                  secure zones.
                 </p>
               </div>
 
@@ -550,8 +548,8 @@ const LivenessCheckAPIPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Healthcare</h3>
                 <p className="text-gray-600">
-                  Authenticate patients before teleconsultations or digital medical record access.
-
+                  Authenticate patients before teleconsultations or digital
+                  medical record access.
                 </p>
               </div>
 
@@ -583,10 +581,12 @@ const LivenessCheckAPIPage: React.FC = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Education & Exams</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Education & Exams
+                </h3>
                 <p className="text-gray-600">
-                  Confirm student identity during remote exams or online class logins.
-
+                  Confirm student identity during remote exams or online class
+                  logins.
                 </p>
               </div>
 
@@ -618,12 +618,10 @@ const LivenessCheckAPIPage: React.FC = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">
-                  e-Governance
-                </h3>
+                <h3 className="text-xl font-semibold mb-2">e-Governance</h3>
                 <p className="text-gray-600">
-                  Power secure citizen verification for online government services or subsidy programs.
-
+                  Power secure citizen verification for online government
+                  services or subsidy programs.
                 </p>
               </div>
             </div>

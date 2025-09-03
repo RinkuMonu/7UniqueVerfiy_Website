@@ -8,20 +8,19 @@ const KybHero: React.FC = () => {
       style={{ backgroundImage: "url('/img/bg (2).png')" }}
     >
       <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
-
         {/* Left: Text content */}
         <div className="w-full md:w-2/3 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Real-Time KYB API for Seamless Business Verification Across India
-
           </h1>
 
           <p className="text-lg mb-4 text-white">
-            Instantly verify companies, directors, and GST details with our trusted KYB API.
+            Instantly verify companies, directors, and GST details with our
+            trusted KYB API.
           </p>
           <p className="mb-4 text-white">
-            Trusted by businesses in Jaipur and across India to reduce onboarding risks, prevent fraud, and ensure full compliance.
-
+            Trusted by businesses in Jaipur and across India to reduce
+            onboarding risks, prevent fraud, and ensure full compliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -37,13 +36,12 @@ const KybHero: React.FC = () => {
               View API Docs
             </Link>
           </div>
-
         </div>
 
         {/* Right: Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
-            src="/img/KYB/KYB1.png"
+            src="/public/ui/KYB/img1_Artboard 1.png"
             alt="KYB Verification Illustration"
             className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
           />

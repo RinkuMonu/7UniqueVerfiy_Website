@@ -21,20 +21,21 @@ const WhatsappVerificationPage: React.FC = () => {
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 WhatsApp Number Verification API – By 7UniqueVerify
-
               </h1>
               {/* <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Secure and Instant WhatsApp Verification for Your Business
               </h2> */}
               <p className="text-lg mb-4 text-white">
-                Check if a number is active on WhatsApp in real-time and enable secure OTP delivery.
+                Check if a number is active on WhatsApp in real-time and enable
+                secure OTP delivery.
               </p>
               <p className="mb-4 text-white">
-                Verify personal or business WhatsApp accounts instantly — perfect for onboarding, KYC, and fraud prevention.
+                Verify personal or business WhatsApp accounts instantly —
+                perfect for onboarding, KYC, and fraud prevention.
               </p>
               <p className="mb-6 text-white">
-                Trusted by fintechs, e-commerce, and digital platforms across India.
-
+                Trusted by fintechs, e-commerce, and digital platforms across
+                India.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -55,7 +56,7 @@ const WhatsappVerificationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/img/image/enter-otp-concept-illustration.png"
+                src="/public/ui/whatsapp/img1_Artboard 1.png"
                 alt="7Unique Verify WhatsApp Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px] rounded-lg"
               />
@@ -230,7 +231,7 @@ const WhatsappVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Delivery Time:</span>
                     <span className="font-medium">2-5 seconds</span>
                   </div>
-                 
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">
@@ -264,7 +265,7 @@ const WhatsappVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">5-10 seconds</span>
                   </div>
-                 
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">High-risk transactions</span>
@@ -481,7 +482,7 @@ const WhatsappVerificationPage: React.FC = () => {
               </div>
               <div className="md:w-1/2">
                 <img
-                  src="/img/image/social-media-whatsapp-app-smartphone.png"
+                  src="/public/ui/whatsapp/img2_Artboard 1.png"
                   alt="WhatsApp Verification Benefits"
                   className="rounded-lg"
                 />

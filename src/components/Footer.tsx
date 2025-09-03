@@ -67,7 +67,7 @@ export default function Footer() {
       className="border-t border-[#eaeaea] pt-12 pb-6 bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://img.freepik.com/premium-vector/abstract-background-wallpaper-design-vector-image-with-curve-line-backdrop-presentation_1110513-430.jpg?ga=GA1.1.389685255.1745228264&semt=ais_hybrid&w=740')",
+          "url('../../../public/ui/footer/img1_Artboard 1.png')",
       }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-5 gap-5 pb-10">

@@ -203,13 +203,13 @@ export default function HomeServices() {
               </motion.div>
 
               {/* Main image container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-md  border border-gray-100">
+              <div className="relative rounded-2xl overflow-hidden shadow-md  border border-gray-100 mt-10">
                 <img
                   alt="Business communication dashboard"
-                  className="w-full h-auto md:h-96 lg:h-[700px] xl:h-[700px] object-fill transition-transform duration-500 hover:scale-105"
-                  src="https://img.freepik.com/premium-vector/concept-illustration-depicting-diverse-group-people-collaborating_1263357-35348.jpg?ga=GA1.1.389685255.1745228264&semt=ais_hybrid&w=740"
-                  width="800"
-                  height="500"
+                  className="w-full h-auto  object-cover transition-transform duration-500 hover:scale-105"
+                  src="/public/ui/home/HOME2.png"
+                  // width="800"
+                  // height="500"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src =
                       "https://via.placeholder.com/800x500?text=Business+Dashboard";

@@ -66,19 +66,20 @@ const VoterIDVerificationPage: React.FC = () => {
           <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-2/3 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-               Real-Time Voter ID Verification API – Trusted Across India
-
+                Real-Time Voter ID Verification API – Trusted Across India
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-6 text-[#f6fbfc]">
                 Real-time Electoral Identity Check & Address Proof Validation
               </h2>
               <p className="text-lg mb-4 text-white">
-               Authenticate Voter ID details instantly with 7UniqueVerify’s secure, ECI-compliant API.
- Verify identity, address, and electoral data in real-time — perfect for KYC, fraud prevention, and compliant onboarding.
-
+                Authenticate Voter ID details instantly with 7UniqueVerify’s
+                secure, ECI-compliant API. Verify identity, address, and
+                electoral data in real-time — perfect for KYC, fraud prevention,
+                and compliant onboarding.
               </p>
               <p className="mb-4 text-white">
-              Used by fintechs, NBFCs, insurers & digital platforms across India.
+                Used by fintechs, NBFCs, insurers & digital platforms across
+                India.
               </p>
               {/* <p className="mb-6 text-white">
                 Ideal for financial services, digital platforms, KYC processes,
@@ -102,7 +103,7 @@ const VoterIDVerificationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="../img/Voter4.png"
+                src="/public/ui/voter-id-verification/img1_Artboard 1.png"
                 alt="Voter ID Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -137,7 +138,7 @@ const VoterIDVerificationPage: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="../img/images/31.png"
+                          src="/public/ui/voter-id-verification/img2_Artboard 1.png"
                           alt="Voter ID Verification Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
@@ -729,7 +730,7 @@ const VoterIDVerificationPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/Voter2.png"
+                    src="/public/ui/voter-id-verification/img3_Artboard 1.png"
                     alt="Voter ID Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

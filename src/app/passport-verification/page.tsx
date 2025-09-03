@@ -106,7 +106,7 @@ const PassportVerificationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="../img/Passport1.png"
+                src="/public/ui/PASSPORT-VERIFICATION/img1_Artboard 1.png"
                 alt="Passport Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -125,7 +125,6 @@ const PassportVerificationPage: React.FC = () => {
                       <FaDatabase className="h-6 w-6 text-[#b7603d]" />
                     </div>
                     Features – Passport Verification API
-
                   </h2>
                 </div>
                 <div className="p-8">
@@ -142,7 +141,7 @@ const PassportVerificationPage: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="../img/images/2.png"
+                          src="/public/ui/PASSPORT-VERIFICATION/img2_Artboard 1.png"
                           alt="Passport Verification Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
@@ -287,7 +286,7 @@ const PassportVerificationPage: React.FC = () => {
                     <span className="text-gray-500">Response Time:</span>
                     <span className="font-medium">3-5 seconds</span>
                   </div>
-                  
+
                   <div className="flex justify-between">
                     <span className="text-gray-500">Best For:</span>
                     <span className="font-medium">
@@ -643,7 +642,7 @@ const PassportVerificationPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="../img/Passport5.png"
+                    src="/public/ui/PASSPORT-VERIFICATION/img3_Artboard 1.png"
                     alt="Passport Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

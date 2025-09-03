@@ -150,7 +150,7 @@ export default function HomeHero() {
               style={{ animationDelay: "0.2s" }}
             >
               <img
-                src="/img/4.png"
+                 src="/public/ui/home/H1_1.png"
                 alt="Hero visual with businesswoman and VOIP"
                 className="relative z-10 w-full h-auto object-contain"
               />
