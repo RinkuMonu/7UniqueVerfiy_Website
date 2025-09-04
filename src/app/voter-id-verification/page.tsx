@@ -103,7 +103,7 @@ const VoterIDVerificationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/public/ui/voter-id-verification/img1_Artboard 1.png"
+                src="/ui/voter-id-verification/img1_Artboard 1.png"
                 alt="Voter ID Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -138,7 +138,7 @@ const VoterIDVerificationPage: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="/public/ui/voter-id-verification/img2_Artboard 1.png"
+                          src="/ui/voter-id-verification/img2_Artboard 1.png"
                           alt="Voter ID Verification Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
@@ -730,7 +730,7 @@ const VoterIDVerificationPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="/public/ui/voter-id-verification/img3_Artboard 1.png"
+                    src="/ui/voter-id-verification/img3_Artboard 1.png"
                     alt="Voter ID Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

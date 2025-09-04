@@ -546,7 +546,7 @@ const RCVerificationPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="/public/ui/RC-verification/img3_Artboard 1.png"
+                    src="/ui/RC-verification/img3_Artboard 1.png"
                     alt="RC Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />

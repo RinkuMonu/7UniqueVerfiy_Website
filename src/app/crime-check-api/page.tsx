@@ -90,7 +90,7 @@ const CrimeCheckAPIPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/public/ui/crime-check/img1_Artboard 1.png"
+                src="/ui/crime-check/img1_Artboard 1.png"
                 alt="7Unique Verify – Bank Account Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
