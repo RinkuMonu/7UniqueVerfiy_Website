@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { Link } from "react-router-dom";
+import dental from "../assets/dental.png";
 
 import "./homeTestimonials.css";
 
@@ -281,7 +282,7 @@ export default function HomeHero() {
                   <img
                     alt="Capsule company logo with two overlapping blue circles"
                     className="h-10 w-10"
-                    src="/img/logo/Dentel.jpg"
+                    src={dental}
                   />
                   <span className="font-semibold text-gray-900 text-[15px] leading-6">
                     Seven Unique Dentel
