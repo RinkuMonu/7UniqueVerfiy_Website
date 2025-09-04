@@ -100,7 +100,7 @@ const ChallanVerificationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/ui/challan-verification/img1_Artboard 1.png"
+                src="/ui/challan-verification/IMG1_Artboard 1.png"
                 alt="PAN Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
