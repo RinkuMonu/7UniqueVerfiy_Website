@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { Link } from "react-router-dom";
-import dental from "../assets/dental.png";
 
+import { asset } from "../lib/asset";
 import "./homeTestimonials.css";
 
 export default function HomeHero() {
@@ -188,121 +188,122 @@ export default function HomeHero() {
       </div>
 
       {/* Trusted Companies Section (unchanged) */}
-      <div className="relative z-10 border-t border-b border-gray-200 bg-[#f7fbff]">
-        <div className="w-full mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="flex flex-col sm:flex-row items-center sm:items-stretch border-r border-gray-200">
-            <div className="w-full sm:w-48 border-b sm:border-b-0 sm:border-r border-gray-200 py-6 flex items-center justify-center sm:justify-start">
-              <p className="text-gray-700 text-[13px] leading-5 font-normal text-center sm:text-left max-w-[120px]">
-                Trusted by high-
-                <br />
-                growth Companies
-                <br />
-                and investors
-              </p>
-            </div>
-            <div
-              className="relative w-full sm:flex-1 overflow-hidden py-6 flex"
-              aria-label="Trusted companies slider"
-            >
-              <div
-                className="flex space-x-12 whitespace-nowrap animate-marquee"
-                style={{ animation: "marquee 20s linear infinite" }}
-              >
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Sisyphus company logo with green geometric shapes"
-                    className="h-10 w-10"
-                    src="/img/logo/cloth.jpg"
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    Seven Unique Branded Cloth
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Capsule company logo with two overlapping blue circles"
-                    className="h-6 w-6"
-                    src="/img/logo/FINUNIQUE-LOGO.png"
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    Finunique
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Lightbox company logo with black cube icon"
-                    className="h-6 w-6"
-                    src="/img/logo/digi.png"
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    DigiHub
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Luminous company logo with green wavy lines"
-                    className="h-6 w-20"
-                    src="/img/logo/finunique-rummy-logo.png"
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    Finunique Rummy
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Layers company logo with purple layered shapes"
-                    className="h-6 w-6"
-                    src="/img/logo/ABDKS-LOGO.png"
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    ABDKS
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Sisyphus company logo with green geometric shapes"
-                    className="h-6 w-20"
-                    src="/img/logo/LOGO.png"
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    Edusphere
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Sisyphus company logo with green geometric shapes"
-                    className="h-10 w-10"
-                    src="/img/logo/THE-BOOK-STORE.png"
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    The Book Store
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Capsule company logo with two overlapping blue circles"
-                    className="h-10 w-10"
-                    src={dental}
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    Seven Unique Dentel
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                  <img
-                    alt="Lightbox company logo with black cube icon"
-                    className="h-10 w-20"
-                    src="/img/logo/real-estate_1.png"
-                  />
-                  <span className="font-semibold text-gray-900 text-[15px] leading-6">
-                    Seven Unique Real State
-                  </span>
-                </div>
-              </div>
-            </div>
+     <div className="relative z-10 border-t border-b border-gray-200 bg-[#f7fbff]">
+  <div className="w-full mx-auto px-6 sm:px-8 lg:px-12">
+    <div className="flex flex-col sm:flex-row items-center sm:items-stretch border-r border-gray-200">
+      <div className="w-full sm:w-48 border-b sm:border-b-0 sm:border-r border-gray-200 py-6 flex items-center justify-center sm:justify-start">
+        <p className="text-gray-700 text-[13px] leading-5 font-normal text-center sm:text-left max-w-[120px]">
+          Trusted by high-
+          <br />
+          growth Companies
+          <br />
+          and investors
+        </p>
+      </div>
+      <div
+        className="relative w-full sm:flex-1 overflow-hidden py-6 flex"
+        aria-label="Trusted companies slider"
+      >
+        <div
+          className="flex space-x-12 whitespace-nowrap animate-marquee"
+          style={{ animation: "marquee 20s linear infinite" }}
+        >
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Sisyphus company logo with green geometric shapes"
+              className="h-10 w-10"
+              src={asset("img/logo/cloth.jpg")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              Seven Unique Branded Cloth
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Capsule company logo with two overlapping blue circles"
+              className="h-6 w-6"
+              src={asset("img/logo/FINUNIQUE-LOGO.png")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              Finunique
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Lightbox company logo with black cube icon"
+              className="h-6 w-6"
+              src={asset("img/logo/digi.png")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              DigiHub
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Luminous company logo with green wavy lines"
+              className="h-6 w-20"
+              src={asset("img/logo/finunique-rummy-logo.png")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              Finunique Rummy
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Layers company logo with purple layered shapes"
+              className="h-6 w-6"
+              src={asset("img/logo/ABDKS-LOGO.png")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              ABDKS
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Sisyphus company logo with green geometric shapes"
+              className="h-6 w-20"
+              src={asset("img/logo/LOGO.png")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              Edusphere
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Sisyphus company logo with green geometric shapes"
+              className="h-10 w-10"
+              src={asset("img/logo/THE-BOOK-STORE.png")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              The Book Store
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Capsule company logo with two overlapping blue circles"
+              className="h-10 w-10"
+              src={asset("img/logo/Dentel.jpg")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              Seven Unique Dentel
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <img
+              alt="Lightbox company logo with black cube icon"
+              className="h-10 w-20"
+              src={asset("img/logo/real-estate_1.png")}
+            />
+            <span className="font-semibold text-gray-900 text-[15px] leading-6">
+              Seven Unique Real State
+            </span>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
 
       {/* Add these keyframes to your global CSS */}
       {/* <style jsx global>{`
