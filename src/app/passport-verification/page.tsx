@@ -141,7 +141,7 @@ const PassportVerificationPage: React.FC = () => {
                     >
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <motion.img
-                          src="/public/ui/PASSPORT-VERIFICATION/img2_Artboard 1.png"
+                          src="/ui/PASSPORT-VERIFICATION/img2_Artboard 1.png"
                           alt="Passport Verification Illustration"
                           className="w-full h-auto object-contain"
                           whileHover={{ scale: 1.03 }}
