@@ -637,7 +637,7 @@ const CrimeCheckAPIPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="/public/ui/crime-check/img3_Artboard 1.png"
+                    src="/ui/crime-check/img3_Artboard 1.png"
                     alt="Crime Check Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
