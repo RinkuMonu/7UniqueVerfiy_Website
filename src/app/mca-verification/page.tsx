@@ -97,7 +97,7 @@ const MCAVerificationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/public/ui/MCA-VERIFICATION/img1_Artboard 1.png"
+                src="/ui/MCA-VERIFICATION/img1_Artboard 1.png"
                 alt="MCA Verification Illustration"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -517,7 +517,7 @@ const MCAVerificationPage: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                    src="/public/ui/MCA-VERIFICATION/img3_Artboard 1.png"
+                    src="/ui/MCA-VERIFICATION/img3_Artboard 1.png"
                     alt="MCA Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
