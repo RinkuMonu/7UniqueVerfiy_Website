@@ -51,7 +51,7 @@ const LivenessCheckAPIPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/public/ui/liveness/img1_Artboard 1.png"
+                src="/ui/liveness/img1_Artboard 1.png"
                 alt="Liveness Check API by 7Unique Verify"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px] rounded-lg"
               />
@@ -386,7 +386,7 @@ const LivenessCheckAPIPage: React.FC = () => {
               </div>
               <div className="md:w-1/2">
                 <img
-                  src="/public/ui/liveness/img2_Artboard 1.png"
+                  src="/ui/liveness/img2_Artboard 1.png"
                   alt="Liveness Detection Benefits"
                   className="rounded-lg"
                 />

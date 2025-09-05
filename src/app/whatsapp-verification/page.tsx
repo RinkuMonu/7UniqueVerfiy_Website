@@ -56,7 +56,7 @@ const WhatsappVerificationPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="/public/ui/whatsapp/img1_Artboard 1.png"
+                src="/ui/whatsapp/img1_Artboard 1.png"
                 alt="7Unique Verify WhatsApp Verification"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px] rounded-lg"
               />
@@ -482,7 +482,7 @@ const WhatsappVerificationPage: React.FC = () => {
               </div>
               <div className="md:w-1/2">
                 <img
-                  src="/public/ui/whatsapp/img2_Artboard 1.png"
+                  src="/ui/whatsapp/img2_Artboard 1.png"
                   alt="WhatsApp Verification Benefits"
                   className="rounded-lg"
                 />
