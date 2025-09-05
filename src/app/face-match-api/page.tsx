@@ -51,7 +51,7 @@ const FaceMatchAPIPage: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <img
-                src="../../../public/ui/face-match-api/img1_Artboard 1.png"
+                src="/ui/face-match-api/img1_Artboard 1.png"
                 alt="7Unique Verify Face Match API"
                 className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
               />
@@ -527,7 +527,7 @@ const FaceMatchAPIPage: React.FC = () => {
               </div>
               <div className="lg:w-1/2">
                 <img
-                  src="../../../public/ui/face-match-api/img2_Artboard 1.png"
+                  src="/ui/face-match-api/img2_Artboard 1.png"
                   alt="Face Match Benefits"
                   className="w-full h-auto rounded-lg"
                 />

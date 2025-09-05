@@ -51,7 +51,7 @@ const LandVerification: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="/public/ui/land-verification/img_Artboard 1.png"
+              src="/ui/land-verification/img_Artboard 1.png"
               alt="Land Verification"
               className="w-full h-auto object-contain max-w-[500px] md:max-w-[600px] lg:max-w-[700px]"
             />
