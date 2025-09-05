@@ -527,7 +527,7 @@ const FaceMatchAPIPage: React.FC = () => {
               </div>
               <div className="lg:w-1/2">
                 <img
-                  src="/ui/face-match-api/img2_Artboard 1.png"
+                  src="/ui/Face-match-API/img2_Artboard 1.png"
                   alt="Face Match Benefits"
                   className="w-full h-auto rounded-lg"
                 />
