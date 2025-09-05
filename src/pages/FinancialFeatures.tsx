@@ -89,7 +89,7 @@ const FinancialFeatures: React.FC = () => {
                 <motion.div className="w-full lg:w-1/2" variants={itemVariants}>
                   <div className="relative">
                     <img
-                      src="../../../public/ui/financial-checkAPI/img2_Artboard 1.png"
+                      src="/ui/financial-checkAPI/img2_Artboard 1.png"
                       alt="Financial API Illustration"
                       className="w-full h-auto object-contain rounded-xl "
                     />
