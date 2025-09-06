@@ -6,13 +6,13 @@ import Services from "../pages/Services";
 import ContactUsPage from "./contact-us/page";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from "../components/Footer";
-import BlogPage from "./blog/page";
-import BlogDetail from "./blog/BlogDetails";
+import BlogPage from "./blogs/page";
+import BlogDetail from "./blogs/BlogDetails";
 import ScrollToTop from "../components/ScrollToTop";
 import MediaArticles from "./media-articels/page";
 import ArticleDetail from "./media-articels/ArticleDetail";
 import CandyPage from "./candy/page";
-import KycPage from "./kyc/page";
+import KycPage from "./kyc/page"; 
 import KybPage from "./kyb/page";
 import FraudDetection from "./fraud-detection/page";
 import PhoneLookUpPage from "./phone-number-lookup/page";
@@ -134,12 +134,12 @@ export default function App() {
           {/* <Route path="/home" element={<Home />} /> */}
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blogs" element={<BlogPage />} />
           <Route path="/candy" element={<CandyPage />} />
-          <Route path="/Ai_Dashboard" element={<Lucky />} />
+          <Route path="/ai-dashboard" element={<Lucky />} />
           <Route path="/kyc" element={<KycPage />} />
           <Route path="/kyb" element={<KybPage />} />
-          <Route path="/Fraud_Detection" element={<FraudDetection />} />
+          <Route path="/fraud-detection" element={<FraudDetection />} />
           <Route path="/phone-number-lookup" element={<PhoneLookUpPage />} />
           <Route path="/financial-checks" element={<FinancialCheckPage />} />
           <Route
@@ -148,7 +148,7 @@ export default function App() {
           />
           <Route path="/ocr" element={<OCRPage />} />
           <Route path="/utilities" element={<UtilitiesPage />} />
-          <Route path="/blog/:slug" element={<BlogDetail />} />
+          <Route path="/blogs/:slug" element={<BlogDetail />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/media-articles" element={<MediaArticles />} />
           <Route path="/articles/:slug" element={<ArticleDetail />} />

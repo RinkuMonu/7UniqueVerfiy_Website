@@ -37,12 +37,12 @@ interface NavItem {
 }
 
 const productItems: DropdownItem[] = [
-  { icon: "bi bi-bar-chart-line", title: "AI_Dashboard", to: "/Ai_Dashboard" },
+  { icon: "bi bi-bar-chart-line", title: "AI_Dashboard", to: "/ai-dashboard" },
   { icon: "bi bi-person-bounding-box", title: "CANDY", to: "/candy" },
   {
     icon: "bi bi-person-fill-slash",
     title: "Fraud_Detection",
-    to: "/Fraud_Detection",
+    to: "/fraud-detection",
   },
 
   { icon: "bi bi-person-vcard-fill", title: "KYC", to: "/kyc" },
@@ -198,7 +198,7 @@ const navLinks: NavItem[] = [
     items: productItems,
   },
   { to: "/", label: "Home" },
-  { to: "/media-articles", label: "Media & Article" },
+  { to: "/blogs", label: "Blogs" },
   { to: "/contact-us", label: "Contact Us" },
   {
     to: "/verification-services",

@@ -173,7 +173,7 @@ export default function Footer() {
                 name: "Documentation",
                 path: "https://7uniqueverify-njzw.readme.io/reference/post_api-verify-bankverify#/",
               },
-              { name: "Blog", path: "/blog" },
+              { name: "Blogs", path: "/blogs" },
               { name: "Buzzing for भारत", path: "/buzzing-for-bharat" },
             ].map((item, index) => (
               <li key={index}>
