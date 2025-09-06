@@ -207,7 +207,8 @@ export default function HomeServices() {
                 <img
                   alt="Business communication dashboard"
                   className="w-full h-auto  object-cover transition-transform duration-500 hover:scale-105"
-                  src="/public/ui/home/HOME2.png"
+                  src="/ui/home/HOME2.png"
+                  
                   // width="800"
                   // height="500"
                   onError={(e) => {
