@@ -54,7 +54,7 @@ const schemaData = {
         {/* <HomeIntegrations /> */}
         <HomeTestimonials />
         <HomeFAQ />
-
+ 
         {/* <HomePricing />
      
       <HomeBlog />
