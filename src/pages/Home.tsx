@@ -45,6 +45,12 @@ const schemaData = {
 
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </Head>
       <SEO seo={seo} />
       <main>
         <HomeHero />
@@ -62,12 +68,7 @@ const schemaData = {
       <HomeCTA /> */}
         {/* <Footer /> */}
       </main>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-        />
-      </Head>
+    
     </>
   );
 }
