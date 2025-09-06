@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://7uniqueverfiy.com/sitemap.xml
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://www.7uniqueverfiy.com/sitemap.xml
