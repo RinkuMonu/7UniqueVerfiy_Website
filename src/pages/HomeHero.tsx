@@ -238,7 +238,7 @@ export default function HomeHero() {
               DigiHub
             </span>
           </div>
-          <div className="flex items-center space-x-2 flex-shrink-0">
+          {/* <div className="flex items-center space-x-2 flex-shrink-0">
             <img
               alt="Luminous company logo with green wavy lines"
               className="h-6 w-20"
@@ -247,7 +247,7 @@ export default function HomeHero() {
             <span className="font-semibold text-gray-900 text-[15px] leading-6">
               Finunique Rummy
             </span>
-          </div>
+          </div> */}
           <div className="flex items-center space-x-2 flex-shrink-0">
             <img
               alt="Layers company logo with purple layered shapes"
