@@ -12,7 +12,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import MediaArticles from "./media-articels/page";
 import ArticleDetail from "./media-articels/ArticleDetail";
 import CandyPage from "./candy/page";
-import KycPage from "./kyc/page"; 
+import KycPage from "./kyc/page";
 import KybPage from "./kyb/page";
 import FraudDetection from "./fraud-detection/page";
 import PhoneLookUpPage from "./phone-number-lookup/page";
@@ -209,7 +209,7 @@ export default function App() {
             element={<AadhaarVerificationPage />}
           />
           <Route path="/pan-verification" element={<PANVerificationPage />} />
-          <Route path="/ckyc-search-&-download" element={<CKYCSearchPage />} />
+          <Route path="/ckyc-search-download" element={<CKYCSearchPage />} />
           <Route
             path="/passport-verification"
             element={<PassportVerificationPage />}
@@ -440,7 +440,10 @@ export default function App() {
           <Route path="/land-verification" element={<LandVerification />} />
           <Route path="/doctor-verification" element={<DoctorVerification />} />
           <Route path="/nurse-id-verification" element={<NurseID />} />
-          <Route path="/esign-verification" element={<TheESignVerification />} />
+          <Route
+            path="/esign-verification"
+            element={<TheESignVerification />}
+          />
 
           <Route path="*" element={<Placeholder name="404 Not Found" />} />
         </Routes>

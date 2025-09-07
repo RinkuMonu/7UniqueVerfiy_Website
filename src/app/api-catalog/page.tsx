@@ -164,6 +164,7 @@ const APICatalogPage: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
               Choose the Right{" "}
               <span className="text-[#b7603d]">Verification Method</span>
+              
             </h2>
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
               <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
