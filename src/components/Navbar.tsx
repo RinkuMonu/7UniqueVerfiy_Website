@@ -106,7 +106,7 @@ const verificationServices: DropdownItem[] = [
   // {
   //   title: "CKYC Search & Download",
   //   icon: <FaDownload />,
-  //   href: "/ckyc-search-&-download",
+  //   href: "/ckyc-search-download",
   // },
   // {
   //   title: "ITR Profile Summary",
@@ -116,7 +116,7 @@ const verificationServices: DropdownItem[] = [
   {
     title: "CKYC Search & Download",
     icon: <FaDownload />,
-    href: "/ckyc-search-&-download",
+    href: "/ckyc-search-download",
   },
   {
     title: "Passport Verification",
@@ -151,7 +151,7 @@ const verificationServices: DropdownItem[] = [
   // {
   //   title: "CKYC Search & download",
   //   icon: <FaRegFileAlt />,
-  //   href: "/ckyc-search-&-download",
+  //   href: "/ckyc-search-download",
   // },
   // {
   //   title: "User",
