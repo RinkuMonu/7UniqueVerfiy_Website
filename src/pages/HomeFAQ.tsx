@@ -38,7 +38,8 @@ const keywordLinks: { [key: string]: string } = {
   GST: "/kyb",
   EPFO: "/financial-checks",
   CKYC: "/kyc",
-  UIDAI: "/kyb",
+  UIDAI: "/aadhaar-verification",
+  NSDL :"/pan-verification"
 };
 
 function linkifyText(text: string) {

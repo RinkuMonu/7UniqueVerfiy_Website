@@ -14,6 +14,7 @@ import {
   FaEye,
   FaFileInvoice,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const FraudIndicatorsAPIs: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
 
@@ -21,8 +22,9 @@ const FraudIndicatorsAPIs: React.FC = () => {
     {
       name: "Crime Check – Individual (Real-Time)",
       icon: <FaUserSecret />,
-      description:
-        "Instantly verify if a person has any criminal history by scanning official databases—ideal for onboarding, finance, or hiring processes.",
+      description:(
+          <>Instantly verify if a person has any <Link className="cursor-pointer font-bold text-black"  to='/crime-check-api'></Link> criminal history by scanning official databases—ideal for onboarding, finance, or hiring processes.</>
+      ),
     },
     // {
     //   name: "Mobile Number Crime Check",
@@ -39,26 +41,39 @@ const FraudIndicatorsAPIs: React.FC = () => {
     {
       name: "Challan & Violation Scan",
       icon: <FaTicketAlt />,
-      description:
-        "Detect unpaid challans or traffic violations tied to users or vehicles—used by insurers, NBFCs, and background check platforms.",
+      description: (
+          <>
+            <Link className="cursor-pointer font-bold text-black" to='/challan-verification'>Detect unpaid challans or traffic violations </Link>tied to users or vehicles—used by insurers, NBFCs, and background check platforms.
+          </>
+      ),
     },
     {
       name: "Face Match Verification",
       icon: <FaUserCheck />,
-      description:
-        "Authenticate user identity by matching uploaded selfies with official ID photos using AI-powered facial recognition.",
+      description: (
+        <>
+        <Link className="cursor-pointer font-bold text-black" to='/face-match-api'>Authenticate user identity by matching uploaded selfies with official ID photos using AI-powered facial recognition.</Link>
+        </>
+      ),
     },
     {
       name: "Name Match",
       icon: <FaUserTag />,
-      description:
-        "Verify exact or fuzzy matches of names across documents or databases—helpful in KYC or onboarding validation.",
+      description:(
+
+        <>
+            Verify exact or <Link className="cursor-pointer font-bold text-black" to="/name-match-api"> fuzzy matches of names across documents or databases—helpful in KYC or onboarding validation.</Link>
+        </>
+      ),
     },
     {
       name: "Liveness Check",
       icon: <FaEye />,
-      description:
-        "Ensure the user is physically present and not using spoofing methods like photo/video during verification.",
+      description: (
+        <>
+        Ensure the user is physically present and not using spoofing methods like <Link to='/liveness-check-api'> photo/video during verification.</Link>
+        </>
+      ),
     },
     {
       name: "Bank Statement Analyse",

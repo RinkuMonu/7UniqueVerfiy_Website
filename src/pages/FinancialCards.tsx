@@ -3,6 +3,7 @@ import SEO from "../app/Helmet/helment";
 import { useContext } from "react";
 import { ContextData } from "../config/context";
 import { SEOData } from "../type";
+import { Link } from "react-router-dom";
 
 const FinancialCards: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -42,7 +43,7 @@ const FinancialCards: React.FC = () => {
                   Fraud Detection
                 </h3>
                 <p className="text-gray-600">
-                  Identify financial fraud in real time using advanced transaction pattern analysis and risk scoring. 7uniqueverify empowers Indian businesses to act early and build user trust.
+                  Identify financial fraud in real time using advanced transaction pattern analysis and risk scoring. <Link to='/'>7uniqueverify</Link>  empowers Indian businesses to act early and build user trust.
                 </p>
               </div>
 

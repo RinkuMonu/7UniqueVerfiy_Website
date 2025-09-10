@@ -39,7 +39,7 @@ export default function HomeServices() {
     {
       icon: <FaFax className="text-lg" />,
       label: "Document & Face Match",
-      herf: "/Fraud_Detection",
+      herf: "/fraud-detection",
     },
   ];
 

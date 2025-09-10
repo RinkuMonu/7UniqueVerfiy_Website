@@ -6,14 +6,18 @@ import {
   FaUserCircle,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const LookupAPIs: React.FC = () => {
   const apiServices = [
     {
       name: "Passport Verification",
       icon: <FaPassport className="w-8 h-8" />,
-      description:
-        "Cross-check passport details using mobile linkage—ideal for identity validation during onboarding.",
+      description: (
+        <>
+      <Link to='/passport-verification'>Cross-check passport </Link>  details using mobile linkage—ideal for identity validation during onboarding.
+        </>
+      ),
     },
     {
       name: "Telecom Details",

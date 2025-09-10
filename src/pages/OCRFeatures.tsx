@@ -3,13 +3,17 @@ import { FaRegSmileWink } from "react-icons/fa";
 import { MdIntegrationInstructions } from "react-icons/md";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const OCRFeatures: React.FC = () => {
   const features = [
     {
       title: "Effortless to Use, Built for India’s Digital Needs",
-      description:
-        "7uniqueverify’s AI OCR is simple to deploy. Whether you're automating KYC, onboarding users, or verifying documents, it fits into your workflow without extra complexity.",
+      description: (
+        <>
+        <Link to='/'>7uniqueverify’s</Link>   AI OCR is simple to deploy. Whether you're automating KYC, onboarding users, or verifying documents, it fits into your workflow without extra complexity.
+        </>
+      ),
       icon: <FaRegSmileWink className="text-[#b7603d] text-2xl" />,
     },
     {

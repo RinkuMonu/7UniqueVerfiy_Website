@@ -160,8 +160,11 @@ export const DigilockerApi = () => {
                             <FaFileAlt className="text-[#b7603d] text-2xl" />
                           ),
                           title: "Document Fetching",
-                          description:
-                            "Securely fetch user documents such as Aadhaar, PAN, Driving License, and Marksheet directly from Digilocker.",
+                          description: (
+                            <>
+                            
+                            Securely fetch user documents such as <Link to='/aadhaar-verification'>Aadhaar,</Link> <Link to='/pan-verification'>PAN,</Link>  <Link to='/driving-license-verification'>Driving License,</Link> and Marksheet directly from Digilocker.</>
+                          ),
                         },
                         {
                           icon: (

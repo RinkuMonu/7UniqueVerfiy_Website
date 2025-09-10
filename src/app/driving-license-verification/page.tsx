@@ -83,7 +83,7 @@ const DrivingLicenseVerificationPage: React.FC = () => {
       icon: <FaSearch className="text-[#b7603d] text-2xl" />,
       title: "Real-Time DL Verification",
       description:
-        "uickly verify Indian Driving License numbers across all states by connecting directly with authorized RTO databases. Ensure license is active, valid, and authentic.",
+        "Quickly verify Indian Driving License numbers across all states by connecting directly with authorized RTO databases. Ensure the license is active, valid, and authentic.",
     },
     {
       icon: <FaDatabase className="text-[#b7603d] text-2xl" />,
