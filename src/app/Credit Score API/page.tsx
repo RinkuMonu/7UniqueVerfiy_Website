@@ -510,7 +510,7 @@ export const CreditScoreAPI: React.FC = () => {
                   className="w-full lg:w-1/2"
                 >
                   <img
-                   src="../img/credit-score-api/img3_Artboard 1.png"
+                    src="../img/credit-score-api/img3_Artboard 1.png"
                     alt="Mobile Verification Benefits"
                     className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
@@ -726,6 +726,99 @@ export const CreditScoreAPI: React.FC = () => {
             </div>
           </div>
         </section>
+
+
+        {/* seo content */}
+        <section className="py-10 px-5 bg-gradient-to-br from-[#b7603d] via-[#c87a5d] to-[#9f4a2a] text-white relative overflow-hidden">
+          {/* Background decorative elements */}
+          <div className="absolute top-0 left-0 w-full h-full opacity-10">
+            <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-white"></div>
+            <div className="absolute bottom-20 right-20 w-32 h-32 rounded-full bg-white"></div>
+            <div className="absolute top-1/2 left-1/3 w-16 h-16 rounded-full bg-white"></div>
+          </div>
+
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="text-center mb-16">
+              <span className="inline-block px-4 py-1 bg-white/20 rounded-full text-sm font-medium mb-4 backdrop-blur-sm">
+                Trust & Security
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+
+                Why Our Credit Score Check API Is a Trusted Partner
+
+              </h2>
+              <p className="max-w-2xl mx-auto text-lg text-white/80">
+                Secure, reliable, and lightning-fast verification solutions built for modern businesses
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Left Column */}
+              <div className="space-y-8">
+                <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-start mb-4">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 mr-4 group-hover:bg-white/30 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className="text-lg leading-relaxed text-white/90">
+                    7uniqueverify offers a secure and accurate Credit Score Check API in India to help businesses access customers' credit scores instantly. You can avoid financial risks with real-time checks, speedy decision-making, and trust through verified data.                                     </p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-start mb-4">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 mr-4 group-hover:bg-white/30 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className="text-lg leading-relaxed text-white/90">
+                    Through an innovative CIBIL Score API in India, we assist banks, fintechs, and lending platforms in obtaining timely access to trustworthy influencer credit reports or information. By utilizing this product, organizations can mitigate fraud and determine customer or potential customer eligibility with compliance as part of their value proposition.                                                     </p>
+                </div>
+              </div>
+
+              {/* Right Column */}
+              <div className="space-y-8">
+                <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-start mb-4">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 mr-4 group-hover:bg-white/30 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className="text-lg leading-relaxed text-white/90">
+                    Through a best-in-class Credit Score Check API India solution, we provide a method of quick and scalable integration to a digital platform. This provides better onboarding, fast and accurate or streamlined loan processing capabilities, and secure funding of business operations validated against verified and legitimate credit scores.                                        </p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-start mb-4">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 mr-4 group-hover:bg-white/30 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className="text-lg leading-relaxed text-white/90">
+                    As a trusted CIBIL Score API Integration in India,  <a href="https://www.7uniqueverfiy.com" className="font-bold  underline"> 7uniqueverify </a> provides advanced capabilities for their institutions or enterprises. Our CIBIL Credit Report API in India provides precisely captured reports designed to build long-term compliance, fast integration, and reliable insight and data for effective risk-free financial transactions.                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-16 text-center">
+              <a href="/contact-us">
+                <button className="px-8 py-3 bg-white text-[#b7603d] font-semibold rounded-xl hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl">
+                  Get Started Today
+                </button>
+              </a>
+            </div>
+
+          </div>
+        </section>
+
       </main>
     </>
   );
