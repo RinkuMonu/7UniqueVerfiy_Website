@@ -80,7 +80,7 @@ const seoData = {
   return (
     <>
       <SEO seo={seo} />
-      <main className="w-full pb-24">
+      <main className="w-full pb-0">
         {/* Hero Section */}
 
         <section
