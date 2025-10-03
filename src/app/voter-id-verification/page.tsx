@@ -30,6 +30,7 @@ import {
 } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const VoterIDVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -53,7 +54,32 @@ const VoterIDVerificationPage: React.FC = () => {
       },
     },
   };
-
+const seoData = {
+  badge: "Trust & Security",
+  title: "Reasons to Choose Us for Your Trusted Live Detection API’s Solution",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> offers the most trusted live detection API technology in its class for organizations to protect their identity verification systems. We have designed our technology to ensure that the verified person is physically present, reducing the opportunities for misuse or fraud (i.e., spoofing or still images).'
+    },
+    {
+      text: "Our advanced face liveness detection API provides real-time verification by analyzing facial characteristics, which confirms that the person is present in front of the camera. This is an optimal solution for businesses that require strong identity protection for remote onboarding or access control."
+    },
+    {
+      text: "Our liveness face recognition solution combines proven facial recognition technology and liveness detection to provide you with an even more extended identity verification footprint with users. This solution allows businesses to detect and deter fraudulent behaviors using live facial data."
+    },
+    {
+      text: 'Our forensic liveness detection API is a higher level of security that can be an additional feature for authentication needs, like liveness checks against sophisticated techniques to complete identity fraud. All with high levels of accuracy for putting liveness checks into your authentication system.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <>
       <SEO seo={seo} />
@@ -961,6 +987,7 @@ const VoterIDVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <TrustedSeo data={seoData} />
       </main>
     </>
   );
