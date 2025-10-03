@@ -1,7 +1,34 @@
 import { Link } from "react-router-dom";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const RationCardVerification: React.FC = () => {
+    const seoData = {
+  badge: "Trust & Security",
+  title: "Reasons We Are a Reliable Partner in Ration Card Verification Services",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> is your most trusted ration card verification API solution, enabling businesses to verify the validity of ration cards in a secure way. In the process, customers can feel confident only valid ration card data enters their operation, increasing efficiency and lessening the potential risk of becoming a victim of fraud.'
+    },
+    {
+      text: "Our digital ration card verification solution makes it easy for businesses to verify conditions of ration cards presented in digital formats, with an effortless operation to integrate or even validate in real time. In turn, customers can easily maintain compliance and security of their valuable information."
+    },
+    {
+      text: "Our instant ration card verification is designed for businesses to gain real-time results of the verification process in seconds; verifying ration cards is now as simple as clicking a button. The rapid, efficient process is seamless for your customers and minimizes efforts for your staff."
+    },
+    {
+      text: 'Our ration card verification online service enables businesses to verify ration cards anywhere on the go. Our verification system is simple and verified with one touch. Verification data is critical to your operation, and gaining access when you need it is vital. All information gathered will provide a quick return on investment regarding time.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <main className="w-full mx-auto">
       {/* Hero Section - What is Ration Card Verification? */}
@@ -493,6 +520,7 @@ const RationCardVerification: React.FC = () => {
           </div>
         </div>
       </section>
+        <TrustedSeo data={seoData}/>
     </main>
   );
 };

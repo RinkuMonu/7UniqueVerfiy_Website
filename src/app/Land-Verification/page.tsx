@@ -1,7 +1,34 @@
 import { Link } from "react-router-dom";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const LandVerification: React.FC = () => {
+    const seoData = {
+  badge: "Trust & Security",
+  title: "Why We Are an Industry Leader in Land Verification API’s  Solutions",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: 'With <a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> highly reputable land verification API, we provide companies with safe and accurate checks on land ownership identification. Our service provides an all-in-one solution where information is being verified in real-time to mitigate fraud and ensure legal compliance is at the highest standard.'
+    },
+    {
+      text: " We focus on verified land ownership, whether individuals have one parcel or several parcels. You can confirm land ownership details in real time prior to finalizing any land transaction."
+    },
+    {
+      text: "The process is faster and simpler because you can access property details remotely in our online land verification tool. You access land ownership records instantaneously and can track each land ownership transaction step of a property from your device."
+    },
+    {
+      text: 'With our land verification service suite, businesses can easily check land ownership and other crucial property details from anywhere and anytime. By doing this, we ensure that the entire operational process is as efficient as possible while confirming ownership in a secure and trustworthy manner.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <main className="w-full mx-auto">
       {/* Hero Section - What is Land Verification? */}
@@ -548,6 +575,7 @@ const LandVerification: React.FC = () => {
           </div>
         </div>
       </section>
+        <TrustedSeo data={seoData}/>
     </main>
   );
 };

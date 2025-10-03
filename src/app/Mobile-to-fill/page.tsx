@@ -1,7 +1,34 @@
 import { Link } from "react-router-dom";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const MobileToFil: React.FC = () => {
+    const seoData = {
+  badge: "Trust & Security",
+  title: "Why you can trust us to provide phone number verification  API’s solutions",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> offers the most reliable phone number verification API, allowing businesses to validate phone numbers in seconds. Our API allows businesses to know that only valid phone numbers will be used, which will improve your ability to communicate and protect you from fraud.'
+    },
+    {
+      text: "Our mobile number validation service will equip companies with the means to validate phone numbers instantly, so you’re always using a phone number that is in service, accurate, and legitimate. This service will help your customer engagement and communication."
+    },
+    {
+      text: "For any business that has a higher volume of phone verifications needed, we also offer a powerful bulk phone number verifier that allows you to verify hundreds or thousands of phone numbers at once—this can save your company time while helping you be accurate and reliable."
+    },
+    {
+      text: 'Partner with <a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> for secure and efficient phone number verification, whether validating one number or processing mass data.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <main className="w-full mx-auto">
       {/* Hero Section - What is Mobile to Prefill? */}
@@ -522,6 +549,7 @@ const MobileToFil: React.FC = () => {
           </div>
         </div>
       </section>
+        <TrustedSeo data={seoData}/>
     </main>
   );
 };

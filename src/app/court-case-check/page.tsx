@@ -1,7 +1,34 @@
 import { Link } from "react-router-dom";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const CourtCaseCheck: React.FC = () => {
+    const seoData = {
+  badge: "Trust & Security",
+  title: "Why You Can Depend on Us for Court Case Verification API’s",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: 'Our unique <a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> service offers the most trusted solutions in court case checks, providing businesses the ability to quickly and easily confirm the status of legal cases. Our API provides access to case records so you can make the best decisions on up-to-date legal facts.'
+    },
+    {
+      text: "Our case records search provides businesses with quick access to case records about court proceedings so that you can improve the due diligence process and manage your risk."
+    },
+    {
+      text: " For any business looking to check a Dubai case, we provide a customized service that checks for legal cases in the Dubai jurisdiction. With this, we give businesses access to court case information in real time to make sure you maintain and operate in compliance while keeping you informed."
+    },
+    {
+      text: 'We offer a Supreme Court case check service, which allows for the retrieval of case records from the highest courts in India. Our API allows businesses to efficiently and securely verify cases at the Supreme Court to stay up-to-date with important legal matters.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <main className="w-full mx-auto">
       {/* Hero Section - What is Court Case Check? */}
@@ -575,6 +602,7 @@ const CourtCaseCheck: React.FC = () => {
           </div>
         </div>
       </section>
+        <TrustedSeo data={seoData}/>
     </main>
   );
 };

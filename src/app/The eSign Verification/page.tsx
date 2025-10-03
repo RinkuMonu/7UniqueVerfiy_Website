@@ -1,8 +1,35 @@
 import { Link } from "react-router-dom";
 import KnowMore from "../../components/KnowMore";
 import img from "../../../public/ui/e-sign/E-sign_Artboard 1.png"
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const TheESignVerification: React.FC = () => {
+  const seoData = {
+  badge: "Trust & Security",
+  title: "Why we are a trusted partner for e-sign verification API solutions",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> offers the most trustworthy e-signature verification API so that businesses can confirm a secure and authentic digital signature in real time. Our e-signature verification solution ensures every e-signature is authentic and legally binding for a seamless digital verification process.'
+    },
+    {
+      text: "With our e-sign verify online service, businesses can quickly and easily verify e-signatures remotely to confirm compliance with the e-signature legislation while minimizing the risk of fraud in electronic transactions."
+    },
+    {
+      text: "Our Verify eSign solution provides a quick and secure way to validate e-signatures, thereby assuring the integrity of digital agreements. The service allows businesses to verify the authenticity of signed documents with minimal effort."
+    },
+    {
+      text: 'If you are looking for easy and secure e-signature validation online, you will have instant access online to validate an electronic signature in real time. We aim to also improve your document management and verification process when validating an e-signature online.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <main className="w-full mx-auto">
       {/* Hero Section - What is eSign Verification? */}
@@ -499,6 +526,7 @@ const TheESignVerification: React.FC = () => {
           </div>
         </div>
       </section>
+      <TrustedSeo data={seoData}/>
     </main>
   );
 };
