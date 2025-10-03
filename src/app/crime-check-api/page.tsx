@@ -27,6 +27,7 @@ import SEO from "../Helmet/helment";
 import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const CrimeCheckAPIPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -50,11 +51,37 @@ const CrimeCheckAPIPage: React.FC = () => {
       },
     },
   };
+const seoData = {
+  badge: "Trust & Security",
+  title: "What Sets Us Apart As A Trusted Resource For Criminal Background Checks API’s",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a>  provides the most dependable criminal background check API to assist businesses in verifying potential employees contractors or partners criminal history quickly and simply! Our tool can help you utilize the information in your hiring process securely, and also potentially harm your recruiting process'
+    },
+    {
+      text: "Using our criminal check API can give businesses instant access to criminal records, allowing them to make informed decisions when possible. Our easy-to-integrate API offers the ability to quickly integrate criminal checks into your HR and onboarding process."
+    },
+    {
+      text: "7uniqueverify provides a full background check API, allowing businesses to verify aspects of an individual's background, including criminal history, employment history, etc. This will help you to make decisions that mitigate risk in your workforce."
+    },
+    {
+      text: 'Our criminal record check is built to return accurate, detailed results while helping businesses confirm applicants criminal backgrounds quickly and securely. <a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> allows businesses to partner with other organizations to obtain reliable criminal background checks'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
 
   return (
     <>
       <SEO seo={seo} />
-      <main className="w-full pb-24">
+      <main className="w-full pb-0">
         <section
           className="w-full bg-cover bg-center min-h-screen flex items-center px-16"
           style={{ backgroundImage: "url('/img/bg (2).png')" }}
@@ -865,6 +892,7 @@ const CrimeCheckAPIPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <TrustedSeo data={seoData} />
       </main>
     </>
   );
