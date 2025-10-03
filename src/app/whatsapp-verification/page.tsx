@@ -5,9 +5,36 @@ import { SEOData } from "../../type";
 import SEO from "../Helmet/helment";
 import { useContext } from "react";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const WhatsappVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
+    const seoData = {
+  badge: "Trust & Security",
+  title: "Why We Are a Trusted Partner for WhatsApp Number Verification API’s",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> provides the best WhatsApp number verification API. Quickly and securely verify phone numbers for WhatsApp with confidence. We guarantee your customers phone numbers are active and valid to provide the best experience when communicating with customers.'
+    },
+    {
+      text: "Our WhatsApp verification API is ideal for any business looking to verify user phone numbers in real time, ensuring that you can communicate with your customers via WhatsApp without issue. This feature reduces concerns of non-delivery problems and provides a better experience for your customers."
+    },
+    {
+      text: "With our WhatsApp API verification service, it is easy to add number validation to any business system. We ensure numbers being used via WhatsApp messaging are verified and are linked to an active WhatsApp account. Helping reduce the chances of fraud while ensuring speeds and reliability."
+    },
+    {
+      text: 'Use <a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a>  for an active, fast, reliable WhatsApp verification API to improve overall efficiencies in your customer communications.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <>
       <SEO seo={seo} />
@@ -845,6 +872,7 @@ const WhatsappVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <TrustedSeo data={seoData} />
       </main>
     </>
   );

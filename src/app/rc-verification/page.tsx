@@ -32,6 +32,7 @@ import {
   FaBuilding,
 } from "react-icons/fa";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const RCVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -55,7 +56,32 @@ const RCVerificationPage: React.FC = () => {
       },
     },
   };
-
+const seoData = {
+  badge: "Trust & Security",
+  title: "Reasons Why 7uniqueverify Is a Trusted Source for Vehicle RC Verifications API’s",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> provides the most reliable RC verification API and helps businesses to quickly and efficiently verify vehicle registration details. Our service takes the guessing out of verifying vehicle data and reduces your tolerance for fraud while improving efficiency.'
+    },
+    {
+      text: "With our vehicle RC verification API, businesses can easily access real-time verification of vehicle registration certificates. Our verification API will help ensure that your vehicles are legally registered and in compliance with local regulations."
+    },
+    {
+      text: "With our online RC verify solution, businesses can instantly get vehicle registration details. Instant access can help you verify the authenticity of vehicle registration details without delays. It’s a quick and secure way to view your vehicle data."
+    },
+    {
+      text: 'As believers in providing a vehicle RC verification API in India, we leverage instant access to accurate vehicle registration data online. Partnering with <a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> you will provide rapid, reliable, and secure vehicle RC verification solutions for your business needs.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <>
       <SEO seo={seo} />
@@ -761,6 +787,7 @@ const RCVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <TrustedSeo data={seoData} />
       </main>
     </>
   );

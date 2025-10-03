@@ -27,6 +27,7 @@ import { ContextData } from "../../config/context";
 import { SEOData } from "../../type";
 import SEO from "../Helmet/helment";
 import KnowMore from "../../components/KnowMore";
+import TrustedSeo from "../../pages/TrustedSeo";
 
 const ChallanVerificationPage: React.FC = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
@@ -50,7 +51,32 @@ const ChallanVerificationPage: React.FC = () => {
       },
     },
   };
-
+const seoData = {
+  badge: "Trust & Security",
+  title: "Reasons Why We Are a Trusted Partner for Traffic Challan Verification API’s  Solutions",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> provides unauthentic traffic challan verification through our trustworthy traffic challan verification API, which permits both businesses and users alike to verify traffic violations quickly and accurately. Our service offers you the confidence that you are recycling up-to-date and trustworthy challan information, which promotes the efficient verification of traffic challans.'
+    },
+    {
+      text: "Our traffic challan verification service is streamlined for integration, providing the ability to verify in real time traffic challans issued across the country while allowing for compliance with local laws, service cost savings, and greater efficiency."
+    },
+    {
+      text: "Our online traffic challan verification service allows both businesses and users the ability to verify traffic challans from anywhere and at any time. Our online service makes access to challan information much more rapid and simpler, and employs less manual effort to verify."
+    },
+    {
+      text: 'Our vehicle challan API supports businesses in utilizing traffic challan verification easily and semi-automatically, ensuring a simple and accurate verification process. Work with <a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> to access a reliable and solid traffic violation verification service.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <>
       <SEO seo={seo} />
@@ -753,6 +779,7 @@ const ChallanVerificationPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <TrustedSeo data={seoData} />
       </main>
     </>
   );

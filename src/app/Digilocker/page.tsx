@@ -34,6 +34,7 @@ import SEO from "../Helmet/helment";
 import KnowMore from "../../components/KnowMore";
 import banner from "../../../public/img/digi/banner.png"
 import feature from "../../../public/img/digi/feature.png"
+import TrustedSeo from "../../pages/TrustedSeo";
 export const DigilockerApi = () => {
   const { seo } = useContext(ContextData) as { seo: SEOData };
   const container = {
@@ -56,6 +57,32 @@ export const DigilockerApi = () => {
       },
     },
   };
+    const seoData = {
+  badge: "Trust & Security",
+  title: "Why We Are a Trusted Partner for DigiLocker API Solutions",
+  subtitle: "Secure, reliable, and lightning-fast verification solutions built for modern businesses",
+  highlights: [
+    {
+      icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>,
+      text: '<a href="https://www.7uniqueverfiy.com" class="font-bold underline">7uniqueverify</a> provides a dependable DigiLocker API, allowing businesses to integrate a reliable document storage and verification service for secure document management. Our API facilitates real-time access to any government-issued documents, offering a simple, straightforward, and secure digital experience, the way it should be.'
+    },
+    {
+      text: "By utilizing our API Digilocker service, accessing and verifying documentation is easier than ever with a simple verification process that allows you to access files held in Digilocker. Businesses can implement streamlined verification processes to facilitate regulatory compliance."
+    },
+    {
+      text: "With our Digilocker API integration, businesses can set up a secure document management service following a link, boosting overall efficiency and reducing verification time. Our service is very easy to integrate into any workflow and makes continuity in the user experience more efficient."
+    },
+    {
+      text: 'We are proud to be a trusted DigiLocker API service provider with secure, scaled solutions, providing confidence that businesses can access important digital documents. Our service provides access to your important digital documents safely and securely while ensuring regulatory compliance and improving the management of your important documents for organizational efficiency.'
+    }
+  ],
+  button: {
+    text: "Get Started Today",
+    link: "/contact-us"
+  }
+};
   return (
     <>
       <SEO seo={seo} />
@@ -888,6 +915,7 @@ export const DigilockerApi = () => {
           </div>
         </div>
       </section>
+      <TrustedSeo data={seoData} />
     </>
   );
 };
